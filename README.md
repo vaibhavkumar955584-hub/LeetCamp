@@ -1,100 +1,82 @@
-<div align="center">
+# LeetCamp — Company-Wise LeetCode Interview Question Explorer
 
-# ⚡ LEETCAMP // TERMINAL.SYS
-### 🚀 Real-World LeetCode Interview Question Explorer by Company
-
-[![Next.js 15](https://img.shields.io/badge/Next.js-15.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React 18](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![SQLite3](https://img.shields.io/badge/SQLite-WAL_Mode-003B57?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)](https://www.docker.com/)
-
-<br/>
-
-**LeetCamp** is an ultra-fast, retro green-phosphor CRT-themed web application for exploring real-world technical interview problems asked by **429+ top tech companies** (Google, Amazon, Meta, Microsoft, Apple, Bloomberg, and more).
-
-[Features](#-key-features) • [Tech Stack](#-tech-stack) • [Quick Start](#-quick-start) • [Database & Ingestion](#-data-pipeline--ingestion) • [API Reference](#-api-endpoints) • [Deployment](#-deployment)
-
-</div>
+LeetCamp is a high-performance web application for exploring real-world technical interview problems asked by 429+ companies (such as Google, Amazon, Meta, Microsoft, Apple, Bloomberg, and more). It provides fast filtering by timeframe, difficulty, topic categories, and frequency rankings, with direct links to official LeetCode problem statements.
 
 ---
 
-## 🌟 Key Features
+## Features
 
-- 🏢 **429+ Company Directories**: Explore categorized interview question banks for top tier tech firms.
-- ⚡ **Blazing Fast SQLite Engine**: 37,700+ indexed problem records powered by `better-sqlite3` in WAL mode for sub-millisecond queries.
-- ⏳ **Recency Timeframe Filtering**:
-  - `30 Days` (Latest interview trends)
-  - `90 Days` (Past quarter)
+- **429+ Company Directories**: Explore categorized interview question banks across top tech companies.
+- **Fast SQLite Engine**: 37,700+ indexed problem records powered by `better-sqlite3` in WAL mode for sub-millisecond query responses.
+- **Recency Timeframe Filtering**:
+  - `30 Days` (Recent interview trends)
+  - `90 Days` (Quarterly)
   - `6 Months` (Semi-annual)
   - `More than 6 Months`
   - `All-Time`
-- 🎯 **Multi-Select Difficulty**: Real-time filtering by `Easy` (Green), `Medium` (Amber), and `Hard` (Red).
-- 🏷️ **Topic Tags & Grep Search**: Instant server-side SQL search across problem titles and topic tags (e.g. *Dynamic Programming*, *Graphs*, *Trie*).
-- 📊 **Dynamic Column Sorting**: Sort questions on-the-fly by **Frequency Score**, **Acceptance Rate**, **Difficulty**, and **Problem Title**.
-- 🔗 **Direct Official Links**: Instant 1-click external redirect directly to the official LeetCode problem page.
-- 🕹️ **Authentic CRT Retro Aesthetic**: High-contrast, responsive terminal arcade interface with scanline overlay and custom cursor.
+- **Multi-Select Difficulty**: Real-time filtering by Easy, Medium, and Hard.
+- **Topic Tags and Text Search**: Server-side SQL search across problem titles and topic tags (e.g., Dynamic Programming, Graphs, Trie).
+- **Dynamic Sorting**: Sort questions by Frequency Score, Acceptance Rate, Difficulty, and Problem Title.
+- **Direct Official Links**: Direct links to official LeetCode problem URLs.
+- **CRT Phosphor Terminal Aesthetic**: High-contrast, responsive terminal-inspired UI with scanline styling and monospace typography.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-| Layer | Technologies |
+| Layer | Technology |
 |---|---|
-| **Frontend Framework** | [Next.js 15](https://nextjs.org/) (App Router, Server & Client Components) |
-| **Language** | [TypeScript 5](https://www.typescriptlang.org/) |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) (Custom CRT Phosphor Theme) |
-| **Database Engine** | [SQLite 3](https://sqlite.org/) via [`better-sqlite3`](https://github.com/WiseLibs/better-sqlite3) (WAL Mode) |
-| **Icons** | [Lucide React](https://lucide.dev/) |
-| **Runtime / Container** | Node.js 20+ / Docker (Standalone output) |
+| Frontend Framework | Next.js 15 (App Router, React 18, TypeScript) |
+| Styling | Tailwind CSS |
+| Database | SQLite 3 via `better-sqlite3` (WAL Mode) |
+| Icons | Lucide React |
+| Runtime / Container | Node.js 20+ / Docker (Standalone Build) |
 
 ---
 
-## 📂 Project Architecture
+## Project Structure
 
-```plaintext
+```
 LeetCamp/
 ├── data/
-│   ├── problems.db                        # SQLite Database (37,714 records)
+│   ├── problems.db                        # SQLite database (37,714 records)
 │   └── leetcode-company-wise-problems/    # Raw CSV datasets for 471+ companies
 ├── scripts/
-│   └── ingest.ts                          # Automated CSV parser & SQLite ingest script
+│   └── ingest.ts                          # CSV parser and SQLite ingestion script
 ├── src/
 │   ├── app/
-│   │   ├── api/                           # High-speed JSON REST APIs
-│   │   │   ├── companies/                 # Companies list & problem queries
-│   │   │   └── health/                    # Production health check endpoint
-│   │   ├── company/[company]/             # Dynamic company explorer page
-│   │   ├── globals.css                    # CRT Scanlines & glow styles
-│   │   ├── layout.tsx                     # Root layout & terminal footer
+│   │   ├── api/                           # JSON REST API routes
+│   │   │   ├── companies/                 # Company directories and problem queries
+│   │   │   └── health/                    # Health check endpoint
+│   │   ├── company/[company]/             # Company problem explorer page
+│   │   ├── globals.css                    # Global CSS and CRT scanlines
+│   │   ├── layout.tsx                     # Root layout
 │   │   └── page.tsx                       # Main directory leaderboard
 │   ├── components/
-│   │   ├── BootSequence.tsx               # Retro session boot animation
-│   │   ├── CompanyDirectory.tsx           # Searchable directory with stats
-│   │   ├── Navbar.tsx                     # Sticky search bar & navigation
-│   │   └── ProblemExplorer.tsx            # Problem table with filters & sort
+│   │   ├── BootSequence.tsx               # Terminal boot animation
+│   │   ├── CompanyDirectory.tsx           # Company directory component
+│   │   ├── Navbar.tsx                     # Search bar and header
+│   │   └── ProblemExplorer.tsx            # Problem table with filters and pagination
 │   └── lib/
-│       └── db.ts                          # better-sqlite3 database connection & queries
+│       └── db.ts                          # Database connection and queries
 ├── Dockerfile                             # Multi-stage production container build
 ├── docker-compose.yml                     # Docker Compose configuration
-├── DEPLOYMENT.md                          # Full multi-cloud deployment guide
-└── package.json                           # Dependencies & run scripts
+├── DEPLOYMENT.md                          # Production deployment guide
+└── package.json                           # Dependencies and scripts
 ```
 
 ---
 
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
-- **Node.js**: v18.18+ or v20+ (Node v22 recommended)
-- **npm** or **yarn** / **pnpm**
+- Node.js 18.18+ or 20+ (Node v22 recommended)
+- npm, yarn, or pnpm
 
-### 1. Clone & Install Dependencies
+### 1. Installation
 ```bash
 git clone https://github.com/vaibhavkumar955584-hub/LeetCamp.git
 cd LeetCamp
-
 npm install
 ```
 
@@ -112,23 +94,22 @@ npm start
 
 ---
 
-## 🔄 Data Pipeline & Ingestion
+## Data Pipeline and Ingestion
 
-To re-index or ingest fresh company CSVs into the SQLite database:
+To re-index or ingest fresh company CSV files into the SQLite database:
 
 ```bash
-# Ingest all company CSVs into data/problems.db
 npm run ingest
 ```
 
-The script performs:
-1. Automated CSV discovery across all company folders.
-2. Timeframe, difficulty, frequency, and acceptance normalization.
-3. Indexed SQLite batch transactions for 37,700+ rows in < 2 seconds.
+The ingestion script:
+1. Discovers all company CSV directories in `data/leetcode-company-wise-problems/`.
+2. Normalizes timeframe, difficulty, frequency, and acceptance data.
+3. Inserts records using transactional batch writes into `data/problems.db`.
 
 ---
 
-## 📡 API Endpoints
+## API Documentation
 
 ### 1. Get All Companies
 ```http
@@ -136,7 +117,7 @@ GET /api/companies
 GET /api/companies?search=Google
 ```
 
-### 2. Get Company Problems (Filtered & Paginated)
+### 2. Get Company Problems (Filtered and Paginated)
 ```http
 GET /api/companies/:company/problems?difficulty=Easy,Medium&timeframe=30_days&sort=frequency&page=1&limit=50
 ```
@@ -153,30 +134,22 @@ GET /api/health
 
 ---
 
-## 🐳 Deployment
+## Deployment
 
-LeetCamp is fully optimized for containerized environments:
+LeetCamp is configured for containerized and self-hosted environments:
 
-### Deploy with Docker Compose
+### Run with Docker Compose
 ```bash
 docker compose up -d --build
 ```
 
-### Supported Hosting Targets
-Detailed step-by-step guides for **Render**, **Railway**, **Fly.io**, and **VPS** are documented in [DEPLOYMENT.md](DEPLOYMENT.md).
+### Hosting Options
+For step-by-step guides on deploying to Render, Railway, Fly.io, or a Linux VPS (with PM2 and Nginx), refer to [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ---
 
-## 📜 Disclaimer & Attribution
+## Disclaimer and Attribution
 
-- **Data Attribution**: Problem frequency dataset sourced from public interview archives.
-- **Content Policy**: This application does **not** host, scrape, or reproduce proprietary LeetCode problem descriptions or paid solutions. All links direct users to the official [LeetCode.com](https://leetcode.com) platform.
+- **Data Source**: Problem frequency dataset is derived from public community interview archives.
+- **Content Policy**: This application does not store, scrape, or reproduce proprietary LeetCode problem descriptions or official solutions. All external links point directly to official problem pages on [LeetCode.com](https://leetcode.com).
 - **Trademark**: LeetCode is a registered trademark of LeetCode, LLC.
-
----
-
-<div align="center">
-
-Made with 💚 for Developers Preparing for Technical Interviews.
-
-</div>
