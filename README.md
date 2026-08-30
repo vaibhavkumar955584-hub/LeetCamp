@@ -10,7 +10,7 @@
 
 **Prepare smarter. Target the company or master the pattern. Practice the problems that matter.**
 
-[Visit LeetCamp](https://leetcamp.onrender.com/) · [View Source](https://github.com/vaibhavkumar955584-hub/LeetCamp)
+[Visit LeetCamp](https://leet-camp.vercel.app/) · [View Source](https://github.com/vaibhavkumar955584-hub/LeetCamp)
 
 ---
 
