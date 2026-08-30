@@ -112,6 +112,8 @@ export interface Problem {
   frequency: number | null;
   acceptance: number | null;
   topics: string | null;
+  hiring_track?: string | null;
+  platform?: string | null;
 }
 
 export interface ProblemFilterParams {
@@ -119,6 +121,7 @@ export interface ProblemFilterParams {
   timeframe?: string;
   search?: string;
   topic?: string;
+  track?: string;
   sort?: string;
   page?: number;
   limit?: number;
@@ -299,6 +302,7 @@ export function getCompanyProblems(
     timeframe: string | null;
     search: string | null;
     topic: string | null;
+    track?: string | null;
     sort: string;
   };
 } {
@@ -366,6 +370,14 @@ export function getCompanyProblems(
     queryParams.push(`%${topicFilter}%`);
   }
 
+  // Hiring Track filter
+  let trackFilter: string | null = null;
+  if (params.track && params.track.trim() && params.track !== 'ALL') {
+    trackFilter = params.track.trim();
+    whereClauses.push(`hiring_track = ?`);
+    queryParams.push(trackFilter);
+  }
+
   const whereSql = whereClauses.join(' AND ');
 
   const countStmt = db.prepare(`SELECT COUNT(*) as total FROM problems WHERE ${whereSql}`);
@@ -410,7 +422,7 @@ export function getCompanyProblems(
   }
 
   const dataStmt = db.prepare(`
-    SELECT id, company, title, slug, leetcode_url, difficulty, timeframe, frequency, acceptance, topics
+    SELECT id, company, title, slug, leetcode_url, difficulty, timeframe, frequency, acceptance, topics, hiring_track, platform
     FROM problems
     WHERE ${whereSql}
     ORDER BY ${orderBySql}
@@ -432,6 +444,7 @@ export function getCompanyProblems(
       timeframe: timeframeFilter,
       search: searchTerm,
       topic: topicFilter,
+      track: trackFilter,
       sort: sortKey,
     },
   };
@@ -459,10 +472,57 @@ export function getCompanyOverview(company: string) {
   `);
   const timeframes = (timeframesStmt.all(exactCompany) as any[]).map((r) => r.timeframe);
 
+  // 1. Most frequently asked interview problems
+  const mostFrequentStmt = db.prepare(`
+    SELECT title, slug, difficulty, MAX(COALESCE(frequency, 0)) as frequency, acceptance, topics, hiring_track, platform, leetcode_url
+    FROM problems
+    WHERE company = ?
+    GROUP BY slug
+    ORDER BY frequency DESC
+    LIMIT 6
+  `);
+  const mostFrequent = mostFrequentStmt.all(exactCompany) as any[];
+
+  // 2. Recent recruitment round questions (30d / 90d / curated tracks)
+  const recentStmt = db.prepare(`
+    SELECT title, slug, difficulty, MAX(COALESCE(frequency, 0)) as frequency, acceptance, topics, hiring_track, platform, leetcode_url
+    FROM problems
+    WHERE company = ? AND (timeframe = '30_days' OR timeframe = '90_days' OR hiring_track IS NOT NULL)
+    GROUP BY slug
+    ORDER BY CASE WHEN hiring_track IS NOT NULL THEN 1 ELSE 2 END, frequency DESC
+    LIMIT 6
+  `);
+  const recentQuestions = recentStmt.all(exactCompany) as any[];
+
+  // 3. Hiring tracks breakdown (e.g. TCS Ninja / Digital / Prime, Infosys SP / DSE)
+  const tracksStmt = db.prepare(`
+    SELECT hiring_track as track, COUNT(DISTINCT slug) as count
+    FROM problems
+    WHERE company = ? AND hiring_track IS NOT NULL
+    GROUP BY hiring_track
+    ORDER BY count DESC
+  `);
+  const hiringTracks = tracksStmt.all(exactCompany) as { track: string; count: number }[];
+
+  // 4. Recommended DSA patterns for this company
+  const patternsStmt = db.prepare(`
+    SELECT DISTINCT category, category_slug as slug, COUNT(*) as count
+    FROM pattern_problems
+    WHERE company_tags LIKE ?
+    GROUP BY category, category_slug
+    ORDER BY count DESC
+    LIMIT 4
+  `);
+  const recommendedPatterns = patternsStmt.all(`%${exactCompany}%`) as any[];
+
   return {
     company: exactCompany,
     stats,
     timeframes,
+    mostFrequent,
+    recentQuestions,
+    hiringTracks,
+    recommendedPatterns,
   };
 }
 

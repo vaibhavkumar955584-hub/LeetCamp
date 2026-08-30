@@ -36,6 +36,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
     const timeframeParam = searchParams.get('timeframe');
     const searchParam = searchParams.get('search');
     const topicParam = searchParams.get('topic');
+    const trackParam = searchParams.get('track');
     const sortParam = searchParams.get('sort');
     const pageParam = searchParams.get('page');
     const limitParam = searchParams.get('limit');
@@ -84,6 +85,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
       timeframe: timeframeParam || undefined,
       search: searchParam || undefined,
       topic: topicParam || undefined,
+      track: trackParam || undefined,
       sort: sortParam || undefined,
       page,
       limit,

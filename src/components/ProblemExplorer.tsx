@@ -3,7 +3,22 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { AlertCircle, ExternalLink, ChevronLeft, ChevronRight, CheckCircle2, Search, ArrowLeft, Layers } from 'lucide-react';
+import {
+  AlertCircle,
+  ExternalLink,
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
+  Search,
+  ArrowLeft,
+  Layers,
+  Flame,
+  Clock,
+  Target,
+  Sparkles,
+  Zap,
+  Tag
+} from 'lucide-react';
 import { Problem } from '@/lib/db';
 
 interface ProblemExplorerProps {
@@ -40,11 +55,13 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     : [];
   const initialSearch = searchParams.get('search') || '';
   const initialTopic = searchParams.get('topic') || 'ALL';
+  const initialTrack = searchParams.get('track') || 'ALL';
   const initialSort = searchParams.get('sort') || 'frequency';
   const initialPage = parseInt(searchParams.get('page') || '1', 10) || 1;
   const initialLimit = parseInt(searchParams.get('limit') || '50', 10) || 50;
 
   const [problems, setProblems] = useState<Problem[]>(initialData?.problems || []);
+  const [overview, setOverview] = useState<any>(initialData?.overview || null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -53,7 +70,11 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
   const [selectedTimeframe, setSelectedTimeframe] = useState<string>(initialTimeframe);
   const [searchQuery, setSearchQuery] = useState(initialSearch);
   const [selectedTopic, setSelectedTopic] = useState<string>(initialTopic);
+  const [selectedTrack, setSelectedTrack] = useState<string>(initialTrack);
   const [sortBy, setSortBy] = useState<string>(initialSort);
+
+  // Active Insights Tab: 'frequent' | 'recent' | 'tracks' | 'patterns'
+  const [insightsTab, setInsightsTab] = useState<'frequent' | 'recent' | 'tracks'>('frequent');
 
   // Pagination States
   const [page, setPage] = useState(initialPage);
@@ -64,7 +85,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
   const [availableTopics, setAvailableTopics] = useState<string[]>(['ALL']);
   const [companyPatterns, setCompanyPatterns] = useState<any[]>([]);
 
-  // Fetch company topics and pattern cross-references on mount
+  // Fetch company topics, patterns and overview on mount
   useEffect(() => {
     async function loadTopicsAndPatterns() {
       try {
@@ -101,6 +122,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
       tf: string,
       search: string,
       topic: string,
+      track: string,
       sort: string,
       currPage: number,
       currLimit: number
@@ -110,6 +132,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
       if (tf !== 'all_time') params.set('timeframe', tf);
       if (search.trim()) params.set('search', search.trim());
       if (topic !== 'ALL') params.set('topic', topic);
+      if (track !== 'ALL') params.set('track', track);
       if (sort !== 'frequency') params.set('sort', sort);
       if (currPage > 1) params.set('page', currPage.toString());
       if (currLimit !== 50) params.set('limit', currLimit.toString());
@@ -131,6 +154,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
       if (selectedTimeframe) params.set('timeframe', selectedTimeframe);
       if (searchQuery.trim()) params.set('search', searchQuery.trim());
       if (selectedTopic && selectedTopic !== 'ALL') params.set('topic', selectedTopic);
+      if (selectedTrack && selectedTrack !== 'ALL') params.set('track', selectedTrack);
       if (sortBy) params.set('sort', sortBy);
       params.set('page', page.toString());
       params.set('limit', limit.toString());
@@ -145,6 +169,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
 
       const data = await res.json();
       setProblems(data.problems || []);
+      if (data.overview) setOverview(data.overview);
       setTotalCount(data.pagination?.total || 0);
       setTotalPages(data.pagination?.totalPages || 1);
     } catch (err: any) {
@@ -153,13 +178,13 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     } finally {
       setLoading(false);
     }
-  }, [company, selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, sortBy, page, limit]);
+  }, [company, selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, selectedTrack, sortBy, page, limit]);
 
   // Refetch whenever filters change
   useEffect(() => {
     fetchProblems();
-    updateUrl(selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, sortBy, page, limit);
-  }, [fetchProblems, updateUrl, selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, sortBy, page, limit]);
+    updateUrl(selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, selectedTrack, sortBy, page, limit);
+  }, [fetchProblems, updateUrl, selectedDifficulties, selectedTimeframe, searchQuery, selectedTopic, selectedTrack, sortBy, page, limit]);
 
   const toggleDifficulty = (diff: string) => {
     setPage(1);
@@ -183,6 +208,11 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     setSelectedTopic(newTopic);
   };
 
+  const handleTrackChange = (newTrack: string) => {
+    setPage(1);
+    setSelectedTrack(newTrack);
+  };
+
   const handleSortHeader = (column: 'title' | 'difficulty' | 'acceptance' | 'frequency') => {
     setPage(1);
     if (column === 'title') {
@@ -201,6 +231,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     setSelectedTimeframe('all_time');
     setSearchQuery('');
     setSelectedTopic('ALL');
+    setSelectedTrack('ALL');
     setSortBy('frequency');
     setPage(1);
   };
@@ -210,6 +241,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     selectedTimeframe !== 'all_time' ||
     searchQuery.trim() !== '' ||
     selectedTopic !== 'ALL' ||
+    selectedTrack !== 'ALL' ||
     sortBy !== 'frequency';
 
   const formatAcceptance = (rate: number | null) => {
@@ -235,10 +267,15 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
     return <span className="text-[var(--text-muted)] opacity-50 group-hover:opacity-100">↕</span>;
   };
 
+  const mostFrequentList = overview?.mostFrequent || [];
+  const recentList = overview?.recentQuestions || [];
+  const hiringTracksList = overview?.hiringTracks || [];
+  const recommendedPatternsList = overview?.recommendedPatterns || [];
+
   return (
     <div className="space-y-6 w-full mx-auto">
       {/* Header & Breadcrumb Surface */}
-      <div className="data-surface p-6 sm:p-7 space-y-4">
+      <div className="data-surface p-5 sm:p-7 space-y-4">
         <div className="flex items-center justify-between text-xs text-[var(--text-secondary)] border-b border-[var(--border-subtle)] pb-3">
           <div className="flex items-center gap-2">
             <Link href="/" className="hover:text-[var(--text-primary)] transition-colors font-medium">
@@ -258,16 +295,21 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
           <div>
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-2.5 flex-wrap">
               <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">
                 {company}
               </h1>
               <span className="chip bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] text-[var(--text-primary)] mono font-semibold">
                 {totalCount} Questions
               </span>
+              {hiringTracksList.length > 0 && (
+                <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 font-medium">
+                  {hiringTracksList.length} Hiring Tracks (Ninja, Prime, SP, DSE)
+                </span>
+              )}
             </div>
             <p className="text-sm text-[var(--text-secondary)] mt-1">
-              Interview question bank and frequency distribution for {company}
+              Interview question bank, recency analysis, and frequency ranking for {company}
             </p>
           </div>
         </div>
@@ -291,6 +333,190 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
           </div>
         )}
       </div>
+
+      {/* SMART PREPARATION INSIGHTS & RECOMMENDATIONS ENGINE */}
+      {(mostFrequentList.length > 0 || recentList.length > 0 || hiringTracksList.length > 0) && (
+        <div className="data-surface p-5 sm:p-6 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--border-subtle)] pb-3">
+            <div className="flex items-center gap-2">
+              <Sparkles size={18} className="text-[var(--accent-green)]" />
+              <div>
+                <h2 className="text-base font-semibold text-[var(--text-primary)]">
+                  Smart Preparation Insights & Recommendations
+                </h2>
+                <p className="text-xs text-[var(--text-muted)]">
+                  Curated intelligence: top reported questions, recent round appearances, and hiring tracks
+                </p>
+              </div>
+            </div>
+
+            {/* Tab Switches */}
+            <div className="flex items-center gap-1.5 bg-[var(--bg-surface-raised)] p-1 rounded-[var(--radius-sm)] border border-[var(--border-subtle)]">
+              <button
+                onClick={() => setInsightsTab('frequent')}
+                className={`px-3 py-1 text-xs font-medium rounded-[var(--radius-sm)] transition-all flex items-center gap-1.5 ${
+                  insightsTab === 'frequent'
+                    ? 'bg-[var(--accent-green)] text-[#0e0f12] font-semibold shadow-sm'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                <Flame size={13} />
+                <span>Most Frequent</span>
+              </button>
+              <button
+                onClick={() => setInsightsTab('recent')}
+                className={`px-3 py-1 text-xs font-medium rounded-[var(--radius-sm)] transition-all flex items-center gap-1.5 ${
+                  insightsTab === 'recent'
+                    ? 'bg-[var(--accent-green)] text-[#0e0f12] font-semibold shadow-sm'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                <Clock size={13} />
+                <span>Recent Rounds</span>
+              </button>
+              {hiringTracksList.length > 0 && (
+                <button
+                  onClick={() => setInsightsTab('tracks')}
+                  className={`px-3 py-1 text-xs font-medium rounded-[var(--radius-sm)] transition-all flex items-center gap-1.5 ${
+                    insightsTab === 'tracks'
+                      ? 'bg-[var(--accent-green)] text-[#0e0f12] font-semibold shadow-sm'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  }`}
+                >
+                  <Target size={13} />
+                  <span>Hiring Tracks ({hiringTracksList.length})</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Tab 1: Most Frequent Questions Carousel/Grid */}
+          {insightsTab === 'frequent' && (
+            <div className="space-y-3">
+              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
+                <span>🔥 High-Frequency Must-Solve Questions (Highest probability of appearing in upcoming rounds)</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+                {mostFrequentList.map((q: any) => (
+                  <a
+                    key={q.slug}
+                    href={q.leetcode_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="data-surface p-3.5 hover:border-[var(--accent-green)] transition-all flex flex-col justify-between gap-2.5 group bg-[var(--bg-surface-raised)]"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-1 mb-1">
+                        <span className={`chip ${q.difficulty === 'Easy' ? 'chip-easy' : q.difficulty === 'Medium' ? 'chip-medium' : 'chip-hard'}`}>
+                          {q.difficulty}
+                        </span>
+                        {q.frequency && (
+                          <span className="text-[11px] mono text-[var(--accent-green)] font-semibold">
+                            {q.frequency.toFixed(0)}% freq
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="text-xs sm:text-sm font-semibold text-[var(--text-primary)] group-hover:text-white line-clamp-2">
+                        {q.title}
+                      </h3>
+                    </div>
+                    {q.hiring_track && (
+                      <span className="text-[10px] text-[var(--text-muted)] mono truncate">
+                        🎯 {q.hiring_track}
+                      </span>
+                    )}
+                    <div className="flex items-center justify-between text-[11px] text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-1.5">
+                      <span>{q.platform || 'LeetCode'}</span>
+                      <ExternalLink size={12} className="group-hover:text-[var(--accent-green)]" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Tab 2: Recent Recruitment Round Questions */}
+          {insightsTab === 'recent' && (
+            <div className="space-y-3">
+              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
+                <span>⚡ Questions reported in recent 30-day, 90-day & 2025/2026 On-Campus cycles</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+                {recentList.map((q: any) => (
+                  <a
+                    key={q.slug}
+                    href={q.leetcode_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="data-surface p-3.5 hover:border-[var(--accent-green)] transition-all flex flex-col justify-between gap-2.5 group bg-[var(--bg-surface-raised)]"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-1 mb-1">
+                        <span className={`chip ${q.difficulty === 'Easy' ? 'chip-easy' : q.difficulty === 'Medium' ? 'chip-medium' : 'chip-hard'}`}>
+                          {q.difficulty}
+                        </span>
+                        <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] text-[10px]">
+                          Recent
+                        </span>
+                      </div>
+                      <h3 className="text-xs sm:text-sm font-semibold text-[var(--text-primary)] group-hover:text-white line-clamp-2">
+                        {q.title}
+                      </h3>
+                    </div>
+                    {q.hiring_track && (
+                      <span className="text-[10px] text-[var(--text-muted)] mono truncate">
+                        🎯 {q.hiring_track}
+                      </span>
+                    )}
+                    <div className="flex items-center justify-between text-[11px] text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-1.5">
+                      <span>{q.platform || 'LeetCode'}</span>
+                      <ExternalLink size={12} className="group-hover:text-[var(--accent-green)]" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Tab 3: Hiring Tracks Breakdown */}
+          {insightsTab === 'tracks' && hiringTracksList.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
+                <span>🎯 Select a hiring track to focus directly on relevant interview questions:</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                {hiringTracksList.map((t: any) => {
+                  const isSelected = selectedTrack === t.track;
+                  return (
+                    <button
+                      key={t.track}
+                      onClick={() => handleTrackChange(isSelected ? 'ALL' : t.track)}
+                      className={`data-surface p-4 text-left transition-all flex items-start justify-between gap-3 ${
+                        isSelected
+                          ? 'border-[var(--accent-green)] bg-[var(--bg-hover)]'
+                          : 'hover:border-[var(--border-strong)] bg-[var(--bg-surface-raised)]'
+                      }`}
+                    >
+                      <div>
+                        <span className="label-caps block mb-1">Track</span>
+                        <h3 className="text-sm font-bold text-[var(--text-primary)]">
+                          {t.track}
+                        </h3>
+                        <span className="text-xs text-[var(--text-muted)] mono mt-1 block">
+                          {t.count} Curated Questions
+                        </span>
+                      </div>
+                      <span className={`chip ${isSelected ? 'bg-[var(--accent-green)] text-[#0e0f12]' : 'bg-[var(--bg-hover)] text-[var(--text-primary)]'}`}>
+                        {isSelected ? 'Active' : 'Filter'}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Control Console Toolbar */}
       <div className="data-surface p-4 sm:p-5 space-y-4">
@@ -320,12 +546,12 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
         {/* Secondary Filter Console */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 pt-3 border-t border-[var(--border-subtle)]">
           {/* Difficulty Chips Selection */}
-          <div className="lg:col-span-4 space-y-1.5">
+          <div className="lg:col-span-3 space-y-1.5">
             <span className="label-caps block">Difficulty Filter</span>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => toggleDifficulty('Easy')}
-                className={`flex-1 py-1.5 px-2.5 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
+                className={`flex-1 py-1.5 px-2 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
                   selectedDifficulties.includes('Easy')
                     ? 'bg-[var(--diff-easy)] text-[#0e0f12] font-semibold border-[var(--diff-easy)]'
                     : 'bg-[var(--bg-surface-raised)] text-[var(--diff-easy)] border-[var(--border-subtle)] hover:border-[var(--diff-easy)]'
@@ -335,17 +561,17 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
               </button>
               <button
                 onClick={() => toggleDifficulty('Medium')}
-                className={`flex-1 py-1.5 px-2.5 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
+                className={`flex-1 py-1.5 px-2 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
                   selectedDifficulties.includes('Medium')
                     ? 'bg-[var(--diff-medium)] text-[#0e0f12] font-semibold border-[var(--diff-medium)]'
                     : 'bg-[var(--bg-surface-raised)] text-[var(--diff-medium)] border-[var(--border-subtle)] hover:border-[var(--diff-medium)]'
                 }`}
               >
-                Medium
+                Med
               </button>
               <button
                 onClick={() => toggleDifficulty('Hard')}
-                className={`flex-1 py-1.5 px-2.5 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
+                className={`flex-1 py-1.5 px-2 text-xs font-medium rounded-[var(--radius-sm)] transition-all border ${
                   selectedDifficulties.includes('Hard')
                     ? 'bg-[var(--diff-hard)] text-[#0e0f12] font-semibold border-[var(--diff-hard)]'
                     : 'bg-[var(--bg-surface-raised)] text-[var(--diff-hard)] border-[var(--border-subtle)] hover:border-[var(--diff-hard)]'
@@ -356,8 +582,27 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
             </div>
           </div>
 
+          {/* Hiring Track Filter */}
+          {hiringTracksList.length > 0 && (
+            <div className="lg:col-span-3 space-y-1.5">
+              <span className="label-caps block">Hiring Track</span>
+              <select
+                value={selectedTrack}
+                onChange={(e) => handleTrackChange(e.target.value)}
+                className="w-full bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] text-xs px-2.5 py-2 rounded-[var(--radius-sm)] cursor-pointer outline-none"
+              >
+                <option value="ALL">All Hiring Tracks</option>
+                {hiringTracksList.map((t: any) => (
+                  <option key={t.track} value={t.track}>
+                    {t.track} ({t.count})
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
           {/* Search Box */}
-          <div className="lg:col-span-3 space-y-1.5">
+          <div className={hiringTracksList.length > 0 ? "lg:col-span-3 space-y-1.5" : "lg:col-span-4 space-y-1.5"}>
             <span className="label-caps block">Search Problems</span>
             <div className="flex items-center bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3 py-1.5 rounded-[var(--radius-sm)]">
               <Search size={14} className="text-[var(--text-muted)] mr-2 shrink-0" />
@@ -372,7 +617,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
           </div>
 
           {/* Topic Select */}
-          <div className="lg:col-span-3 space-y-1.5">
+          <div className={hiringTracksList.length > 0 ? "lg:col-span-3 space-y-1.5" : "lg:col-span-3 space-y-1.5"}>
             <span className="label-caps block">Topic Category</span>
             <select
               value={selectedTopic}
@@ -386,28 +631,6 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
               ))}
             </select>
           </div>
-
-          {/* Sort Selector */}
-          <div className="lg:col-span-2 space-y-1.5">
-            <span className="label-caps block">Sort</span>
-            <select
-              value={sortBy}
-              onChange={(e) => {
-                setPage(1);
-                setSortBy(e.target.value);
-              }}
-              className="w-full bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] text-xs px-2.5 py-2 rounded-[var(--radius-sm)] cursor-pointer outline-none"
-            >
-              <option value="frequency">Frequency (High → Low)</option>
-              <option value="frequency-asc">Frequency (Low → High)</option>
-              <option value="title-asc">Title (A → Z)</option>
-              <option value="title-desc">Title (Z → A)</option>
-              <option value="difficulty-asc">Difficulty (Easy → Hard)</option>
-              <option value="difficulty-desc">Difficulty (Hard → Easy)</option>
-              <option value="acceptance-desc">Acceptance % (High → Low)</option>
-              <option value="acceptance-asc">Acceptance % (Low → High)</option>
-            </select>
-          </div>
         </div>
 
         {/* Active Filter Bar */}
@@ -419,6 +642,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
               {selectedDifficulties.map((d) => (
                 <span key={d} className="chip bg-[var(--bg-hover)] text-[var(--text-primary)]">{d}</span>
               ))}
+              {selectedTrack !== 'ALL' && <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)]">Track: {selectedTrack}</span>}
               {searchQuery && <span className="chip bg-[var(--bg-hover)] text-[var(--text-primary)]">&quot;{searchQuery}&quot;</span>}
               {selectedTopic !== 'ALL' && <span className="chip bg-[var(--bg-hover)] text-[var(--text-primary)]">{selectedTopic}</span>}
             </div>
@@ -493,6 +717,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
                     {renderSortIndicator('difficulty')}
                   </div>
                 </th>
+                <th className="py-3 px-4 hidden md:table-cell">Track / Source</th>
                 <th 
                   onClick={() => handleSortHeader('acceptance')}
                   className="py-3 px-4 w-24 text-right cursor-pointer hover:text-[var(--text-primary)] transition-colors group"
@@ -530,19 +755,39 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
                       {rowNumber}
                     </td>
                     <td className="py-3.5 px-4 font-medium text-[var(--text-primary)]">
-                      <a
-                        href={prob.leetcode_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-[var(--accent-green)] transition-colors inline-flex items-center gap-1.5 text-sm"
-                      >
-                        <span>{prob.title}</span>
-                      </a>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <a
+                          href={prob.leetcode_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[var(--accent-green)] transition-colors inline-flex items-center gap-1.5 text-sm"
+                        >
+                          <span>{prob.title}</span>
+                        </a>
+                        {prob.timeframe === '30_days' && (
+                          <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] text-[10px]">
+                            ⚡ Recent
+                          </span>
+                        )}
+                      </div>
                     </td>
                     <td className="py-3.5 px-4">
                       {isEasy && <span className="chip chip-easy">Easy</span>}
                       {isMed && <span className="chip chip-medium">Medium</span>}
                       {!isEasy && !isMed && <span className="chip chip-hard">Hard</span>}
+                    </td>
+                    {/* Track / Platform */}
+                    <td className="py-3.5 px-4 hidden md:table-cell">
+                      <div className="flex flex-col gap-1">
+                        {prob.hiring_track && (
+                          <span className="chip bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] text-[var(--accent-green)] text-[10px] w-fit">
+                            {prob.hiring_track}
+                          </span>
+                        )}
+                        <span className="text-[11px] text-[var(--text-muted)] mono">
+                          {prob.platform || 'LeetCode'}
+                        </span>
+                      </div>
                     </td>
                     <td className="py-3.5 px-4 text-right mono font-medium text-[var(--text-secondary)]">
                       {formatAcceptance(prob.acceptance)}
