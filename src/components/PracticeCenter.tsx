@@ -166,24 +166,26 @@ export function PracticeCenter() {
         {/* Mode Tabs */}
         <div className="flex flex-wrap gap-2 pt-2 border-t border-[var(--border-subtle)]">
           {[
-            { id: 'time', label: '⏱ Time-Based Practice', icon: Clock },
-            { id: 'weak', label: '🔴 Practice Weak Areas', icon: ShieldAlert },
-            { id: 'mock', label: '🎤 45-Min Mock Interview', icon: Mic },
-            { id: 'company', label: '🏢 By Company', icon: Building2 },
-            { id: 'pattern', label: '🧠 By DSA Pattern', icon: Layers },
+            { id: 'time', label: 'Time-Based Practice', icon: Clock },
+            { id: 'weak', label: 'Weak Areas Remediation', icon: ShieldAlert },
+            { id: 'mock', label: '45-Min Mock Interview', icon: Mic },
+            { id: 'company', label: 'Company Bank', icon: Building2 },
+            { id: 'pattern', label: 'Pattern Roadmap', icon: Layers },
           ].map((tab) => {
             const isSelected = activeTab === tab.id;
+            const Icon = tab.icon;
             return (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as any)}
-                className={`px-3.5 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold transition-all border ${
+                className={`px-3.5 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold transition-all border flex items-center gap-1.5 ${
                   isSelected
                     ? 'bg-[var(--accent-green)] text-[#0e0f12] border-[var(--accent-green)] shadow-sm'
                     : 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)] hover:text-white hover:border-[var(--border-strong)]'
                 }`}
               >
-                {tab.label}
+                <Icon size={14} className={isSelected ? 'text-[#0e0f12]' : 'text-[var(--text-muted)]'} />
+                <span>{tab.label}</span>
               </button>
             );
           })}
@@ -379,8 +381,9 @@ export function PracticeCenter() {
 
                 <div className="space-y-1.5">
                   <span className="label-caps block">Duration & Format</span>
-                  <div className="p-2 bg-[var(--bg-surface-raised)] rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-xs text-[var(--text-secondary)] mono">
-                    ⏱ 45 Minutes • 2 Questions (1 Med + 1 Hard)
+                  <div className="p-2 bg-[var(--bg-surface-raised)] rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-xs text-[var(--text-secondary)] mono flex items-center gap-1.5">
+                    <Clock size={13} className="text-[var(--accent-green)]" />
+                    <span>45 Minutes • 2 Questions (1 Med + 1 Hard)</span>
                   </div>
                 </div>
               </div>

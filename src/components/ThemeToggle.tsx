@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState, useRef } from 'react';
+import { Palette, Check } from 'lucide-react';
 
 export type ThemeMode = 'green' | 'amber' | 'dim' | 'cyan';
 
@@ -82,7 +83,7 @@ export function ThemeToggle() {
                   />
                   <span>{t.label}</span>
                 </div>
-                {theme === t.id && <span className="text-[var(--accent-green)] text-xs">✓</span>}
+                {theme === t.id && <Check size={13} className="text-[var(--accent-green)]" />}
               </button>
             ))}
           </div>

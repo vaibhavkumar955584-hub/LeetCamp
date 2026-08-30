@@ -15,7 +15,11 @@ import {
   RefreshCw,
   TrendingUp,
   Target,
-  ExternalLink
+  ExternalLink,
+  Zap,
+  Rocket,
+  HelpCircle,
+  BookOpen
 } from 'lucide-react';
 import {
   getUserStats,
@@ -53,11 +57,11 @@ export function ProgressDashboard() {
   const hardSolved = attempts.filter((a) => a.difficulty === 'Hard' && (a.status === 'solved' || a.status === 'mastered')).length;
 
   const milestones = [
-    { title: 'First 10 Problems', desc: 'Solve your first 10 interview questions', achieved: totalSolved >= 10, icon: '🎯' },
-    { title: '7-Day Streak', desc: 'Practice consecutively for 7 days', achieved: streak >= 7, icon: '🔥' },
-    { title: 'First Hard Question', desc: 'Master your first Hard-difficulty interview problem', achieved: hardSolved >= 1, icon: '🏆' },
-    { title: 'DSA Apprentice', desc: 'Earn 250+ XP across practice sessions', achieved: xp >= 250, icon: '⚡' },
-    { title: 'Interview Ready (50+ Solved)', desc: 'Complete 50 unique interview problems', achieved: totalSolved >= 50, icon: '🚀' },
+    { title: 'First 10 Problems', desc: 'Solve your first 10 interview questions', achieved: totalSolved >= 10, icon: Target },
+    { title: '7-Day Streak', desc: 'Practice consecutively for 7 days', achieved: streak >= 7, icon: Flame },
+    { title: 'First Hard Question', desc: 'Master your first Hard-difficulty interview problem', achieved: hardSolved >= 1, icon: Trophy },
+    { title: 'DSA Apprentice', desc: 'Earn 250+ XP across practice sessions', achieved: xp >= 250, icon: Zap },
+    { title: 'Interview Ready (50+ Solved)', desc: 'Complete 50 unique interview problems', achieved: totalSolved >= 50, icon: Rocket },
   ];
 
   return (
@@ -200,7 +204,7 @@ export function ProgressDashboard() {
           </div>
 
           {weakAreas.length === 0 ? (
-            <div className="p-8 text-center text-xs text-[var(--text-muted)] space-y-2">
+            <div className="p-8 text-center text-xs text-[var(--text-muted)] bg-[var(--bg-surface-raised)] rounded-[var(--radius-md)] border border-[var(--border-subtle)] space-y-2">
               <Sparkles size={20} className="text-[var(--accent-green)] mx-auto" />
               <p className="text-[var(--text-primary)] font-semibold">No weakness alerts yet</p>
               <p>As you log problem attempts with hints or failed attempts, LeetCamp will pinpoint your weak areas here.</p>
@@ -252,25 +256,34 @@ export function ProgressDashboard() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-          {milestones.map((m) => (
-            <div
-              key={m.title}
-              className={`p-4 rounded-[var(--radius-md)] border flex flex-col justify-between gap-3 transition-all ${
-                m.achieved
-                  ? 'bg-[var(--bg-hover)] border-[var(--accent-green)]/40 shadow-sm'
-                  : 'bg-[var(--bg-surface-raised)] border-[var(--border-subtle)] opacity-50'
-              }`}
-            >
-              <div>
-                <div className="text-2xl mb-1">{m.icon}</div>
-                <h3 className="text-xs font-bold text-[var(--text-primary)]">{m.title}</h3>
-                <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{m.desc}</p>
+          {milestones.map((m) => {
+            const Icon = m.icon;
+            return (
+              <div
+                key={m.title}
+                className={`p-4 rounded-[var(--radius-md)] border flex flex-col justify-between gap-3 transition-all ${
+                  m.achieved
+                    ? 'bg-[var(--bg-hover)] border-[var(--accent-green)]/40 shadow-sm'
+                    : 'bg-[var(--bg-surface-raised)] border-[var(--border-subtle)] opacity-50'
+                }`}
+              >
+                <div>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 border ${
+                    m.achieved
+                      ? 'bg-[var(--accent-green-dim)] text-[var(--accent-green)] border-[var(--accent-green)]/40'
+                      : 'bg-[var(--bg-surface)] text-[var(--text-muted)] border-[var(--border-subtle)]'
+                  }`}>
+                    <Icon size={16} />
+                  </div>
+                  <h3 className="text-xs font-bold text-[var(--text-primary)]">{m.title}</h3>
+                  <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{m.desc}</p>
+                </div>
+                <span className={`chip w-fit text-[10px] ${m.achieved ? 'bg-[var(--accent-green-dim)] text-[var(--accent-green)] font-semibold' : 'bg-[var(--bg-base)] text-[var(--text-muted)]'}`}>
+                  {m.achieved ? 'Unlocked' : 'Locked'}
+                </span>
               </div>
-              <span className={`chip w-fit text-[10px] ${m.achieved ? 'bg-[var(--accent-green-dim)] text-[var(--accent-green)] font-semibold' : 'bg-[var(--bg-base)] text-[var(--text-muted)]'}`}>
-                {m.achieved ? '✓ Unlocked' : 'Locked'}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -297,17 +310,31 @@ export function ProgressDashboard() {
                     <span className={`chip ${a.difficulty === 'Easy' ? 'chip-easy' : a.difficulty === 'Medium' ? 'chip-medium' : 'chip-hard'}`}>
                       {a.difficulty}
                     </span>
-                    <span className="chip bg-[var(--bg-surface-raised)] text-[var(--text-muted)] text-[10px]">
-                      {a.status === 'mastered'
-                        ? '★ Mastered'
-                        : a.status === 'solved'
-                        ? '✓ Solved'
-                        : a.status === 'hint_used'
-                        ? '💡 Hint Used'
-                        : a.status === 'solution_needed'
-                        ? '📖 Solution Needed'
-                        : '◷ Attempted'}
-                    </span>
+                    {a.status === 'mastered' && (
+                      <span className="chip bg-[#3b82f6]/10 text-[#60a5fa] border border-[#3b82f6]/30 text-[10px]">
+                        Mastered
+                      </span>
+                    )}
+                    {a.status === 'solved' && (
+                      <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 text-[10px]">
+                        Solved
+                      </span>
+                    )}
+                    {a.status === 'hint_used' && (
+                      <span className="chip bg-[#f59e0b]/10 text-[#f59e0b] border border-[#f59e0b]/30 text-[10px]">
+                        Hint Used
+                      </span>
+                    )}
+                    {a.status === 'solution_needed' && (
+                      <span className="chip bg-[#ec4899]/10 text-[#ec4899] border border-[#ec4899]/30 text-[10px]">
+                        Solution Needed
+                      </span>
+                    )}
+                    {a.status === 'attempted' && (
+                      <span className="chip bg-[var(--bg-surface-raised)] text-[var(--text-muted)] text-[10px]">
+                        Attempted
+                      </span>
+                    )}
                   </div>
                   {a.company && (
                     <span className="text-[11px] text-[var(--text-muted)] mt-0.5 block">

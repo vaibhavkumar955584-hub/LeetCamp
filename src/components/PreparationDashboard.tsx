@@ -18,8 +18,13 @@ import {
   TrendingUp,
   Layers,
   Building2,
-  Trash2
+  Trash2,
+  Zap,
+  Rocket,
+  BookOpen,
+  Trophy
 } from 'lucide-react';
+
 import {
   PreparationPlan,
   getActivePreparationPlan,
@@ -42,11 +47,11 @@ const PREPARATION_GOALS = [
 ];
 
 const TIMELINE_OPTIONS = [
-  { days: 7, label: '7 Days', subtitle: 'Emergency Sprint', icon: '⚡' },
-  { days: 14, label: '14 Days', subtitle: 'Rapid Crash Course', icon: '🚀' },
-  { days: 30, label: '30 Days', subtitle: 'Standard Interview Path', icon: '🎯' },
-  { days: 60, label: '60 Days', subtitle: 'In-Depth Prep', icon: '📚' },
-  { days: 90, label: '90 Days', subtitle: 'Mastery Bootcamp', icon: '🏆' },
+  { days: 7, label: '7 Days', subtitle: 'Emergency Sprint', icon: Zap },
+  { days: 14, label: '14 Days', subtitle: 'Rapid Crash Course', icon: Rocket },
+  { days: 30, label: '30 Days', subtitle: 'Standard Interview Path', icon: Target },
+  { days: 60, label: '60 Days', subtitle: 'In-Depth Prep', icon: BookOpen },
+  { days: 90, label: '90 Days', subtitle: 'Mastery Bootcamp', icon: Trophy },
 ];
 
 export function PreparationDashboard() {
@@ -310,22 +315,29 @@ export function PreparationDashboard() {
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
               {TIMELINE_OPTIONS.map((opt) => {
                 const isSelected = selectedDuration === opt.days;
+                const Icon = opt.icon;
                 return (
                   <button
                     key={opt.days}
                     onClick={() => setSelectedDuration(opt.days)}
-                    className={`p-4 text-center rounded-[var(--radius-md)] border transition-all flex flex-col justify-between gap-2 ${
+                    className={`p-4 text-center rounded-[var(--radius-md)] border transition-all flex flex-col justify-between gap-2.5 ${
                       isSelected
                         ? 'border-[var(--accent-green)] bg-[var(--bg-hover)]'
                         : 'border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] hover:border-[var(--border-strong)]'
                     }`}
                   >
-                    <div className="text-2xl mb-1">{opt.icon}</div>
+                    <div className={`w-9 h-9 rounded-full flex items-center justify-center mx-auto border transition-colors ${
+                      isSelected
+                        ? 'bg-[var(--accent-green-dim)] text-[var(--accent-green)] border-[var(--accent-green)]/40'
+                        : 'bg-[var(--bg-surface)] text-[var(--text-muted)] border-[var(--border-subtle)]'
+                    }`}>
+                      <Icon size={17} />
+                    </div>
                     <div>
-                      <h3 className="text-base font-bold text-[var(--text-primary)]">{opt.label}</h3>
+                      <h3 className="text-sm font-bold text-[var(--text-primary)]">{opt.label}</h3>
                       <p className="text-[11px] text-[var(--text-muted)] mt-0.5">{opt.subtitle}</p>
                     </div>
-                    <span className={`chip mx-auto ${isSelected ? 'bg-[var(--accent-green)] text-[#0e0f12]' : 'bg-[var(--bg-base)] text-[var(--text-muted)]'}`}>
+                    <span className={`chip mx-auto text-[10px] ${isSelected ? 'bg-[var(--accent-green)] text-[#0e0f12] font-semibold' : 'bg-[var(--bg-base)] text-[var(--text-muted)]'}`}>
                       {isSelected ? 'Active' : 'Choose'}
                     </span>
                   </button>

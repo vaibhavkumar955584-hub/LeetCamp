@@ -393,8 +393,9 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
           {/* Tab 1: Most Frequent Questions Carousel/Grid */}
           {insightsTab === 'frequent' && (
             <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
-                <span>🔥 High-Frequency Must-Solve Questions (Highest probability of appearing in upcoming rounds)</span>
+              <div className="flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
+                <Flame size={13} className="text-[#f59e0b]" />
+                <span>High-Frequency Must-Solve Questions (Highest probability of appearing in upcoming rounds)</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
                 {mostFrequentList.map((q: any) => (
@@ -422,7 +423,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
                     </div>
                     {q.hiring_track && (
                       <span className="text-[10px] text-[var(--text-muted)] mono truncate">
-                        🎯 {q.hiring_track}
+                        Track: {q.hiring_track}
                       </span>
                     )}
                     <div className="flex items-center justify-between text-[11px] text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-1.5">
@@ -438,8 +439,9 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
           {/* Tab 2: Recent Recruitment Round Questions */}
           {insightsTab === 'recent' && (
             <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
-                <span>⚡ Questions reported in recent 30-day, 90-day & 2025/2026 On-Campus cycles</span>
+              <div className="flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
+                <Clock size={13} className="text-[var(--accent-green)]" />
+                <span>Questions reported in recent 30-day, 90-day & 2025/2026 On-Campus cycles</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
                 {recentList.map((q: any) => (
@@ -465,7 +467,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
                     </div>
                     {q.hiring_track && (
                       <span className="text-[10px] text-[var(--text-muted)] mono truncate">
-                        🎯 {q.hiring_track}
+                        Track: {q.hiring_track}
                       </span>
                     )}
                     <div className="flex items-center justify-between text-[11px] text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-1.5">
@@ -481,8 +483,9 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
           {/* Tab 3: Hiring Tracks Breakdown */}
           {insightsTab === 'tracks' && hiringTracksList.length > 0 && (
             <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
-                <span>🎯 Select a hiring track to focus directly on relevant interview questions:</span>
+              <div className="flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
+                <Target size={13} className="text-[var(--accent-green)]" />
+                <span>Select a hiring track to focus directly on relevant interview questions:</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 {hiringTracksList.map((t: any) => {
@@ -765,8 +768,9 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
                           <span>{prob.title}</span>
                         </a>
                         {prob.timeframe === '30_days' && (
-                          <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] text-[10px]">
-                            ⚡ Recent
+                          <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] text-[10px] inline-flex items-center gap-1">
+                            <Clock size={10} />
+                            <span>Recent</span>
                           </span>
                         )}
                       </div>

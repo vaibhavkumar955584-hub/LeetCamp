@@ -146,9 +146,9 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           >
             <div>
               <div className="flex items-center gap-2 mb-1.5">
-                <Target size={18} className="text-[var(--accent-green)]" />
+                <Target size={16} className="text-[var(--accent-green)]" />
                 <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  🎯 COMPANY PREP
+                  Company Preparation Path
                 </h3>
               </div>
               <p className="text-xs text-[var(--text-secondary)]">
@@ -167,9 +167,9 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           >
             <div>
               <div className="flex items-center gap-2 mb-1.5">
-                <Layers size={18} className="text-[#3b82f6]" />
+                <Layers size={16} className="text-[#3b82f6]" />
                 <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  🧠 DSA ROADMAP
+                  DSA Pattern Roadmap
                 </h3>
               </div>
               <p className="text-xs text-[var(--text-secondary)]">
@@ -188,9 +188,9 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           >
             <div>
               <div className="flex items-center gap-2 mb-1.5">
-                <Zap size={18} className="text-[#f59e0b]" />
+                <Zap size={16} className="text-[#f59e0b]" />
                 <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  ⚡ QUICK PRACTICE & MOCK
+                  Quick Practice & Mock
                 </h3>
               </div>
               <p className="text-xs text-[var(--text-secondary)]">
