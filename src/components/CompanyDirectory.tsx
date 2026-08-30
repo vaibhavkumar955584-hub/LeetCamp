@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { Building2, X, Search, Layers, Flame, ArrowRight } from 'lucide-react';
+import { Building2, X, Search, Layers, Flame, ArrowRight, Target, Zap, Scale } from 'lucide-react';
 import { CompanySummary } from '@/lib/db';
 import CompanyCard from './CompanyCard';
 
@@ -75,41 +75,137 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
 
   return (
     <div className="space-y-8 w-full mx-auto">
-      {/* Hero Header Section */}
+      {/* Hero Header Section — LeetCamp v3 */}
       <div className="data-surface p-5 sm:p-7 lg:p-8 space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[var(--border-subtle)] pb-5">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 font-medium">
-                Interview Archive v2.0
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-[var(--border-subtle)] pb-6">
+          <div className="space-y-2 max-w-3xl">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="chip bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 font-semibold">
+                LeetCamp v3.0 • Preparation Platform
               </span>
-              <span className="text-xs text-[var(--text-muted)] mono">
-                {initialCompanies.length} Organizations · 48 Patterns
+              <span className="text-xs text-[var(--text-muted)] mono hidden sm:inline">
+                {initialCompanies.length} Companies · 48 Patterns · 17.3K+ Questions
               </span>
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[var(--text-primary)]">
-              Company-wise LeetCode Explorer
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[var(--text-primary)]">
+              Prepare smarter. Solve what companies actually ask.
             </h1>
-            <p className="text-sm sm:text-base text-[var(--text-secondary)] mt-1.5 max-w-4xl leading-relaxed">
-              Target the organization you are preparing for. Explore real-world technical interview problems reported across {initialCompanies.length} tech companies with recency windows and frequency rankings.
+            <p className="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+              Practice company-specific LeetCode problems organized by frequency, difficulty, recency, and DSA pattern. Tell LeetCamp your target company and timeline, and get your personalized daily mission path.
             </p>
+
+            {/* Quick Action CTAs */}
+            <div className="flex flex-wrap items-center gap-3 pt-3">
+              <Link
+                href="/prepare"
+                className="btn-primary py-2 px-5 text-sm font-semibold shadow-md bg-[var(--accent-green)] text-[#0e0f12] hover:bg-[var(--accent-green)]/90 flex items-center gap-2"
+              >
+                <Target size={16} />
+                <span>Build My Preparation Plan</span>
+                <ArrowRight size={14} />
+              </Link>
+              <Link
+                href="/practice"
+                className="btn-primary py-2 px-4 text-sm text-[var(--text-primary)] flex items-center gap-1.5"
+              >
+                <Zap size={15} className="text-[#f59e0b]" />
+                <span>Smart Practice</span>
+              </Link>
+              <Link
+                href="/compare"
+                className="btn-primary py-2 px-4 text-sm text-[var(--text-primary)] flex items-center gap-1.5"
+              >
+                <Scale size={15} className="text-[#3b82f6]" />
+                <span>Compare Overlaps</span>
+              </Link>
+            </div>
           </div>
 
-          {/* Quick Hub Navigation */}
-          <div className="flex items-center gap-2 shrink-0">
-            <Link
-              href="/patterns"
-              className="btn-primary py-2 px-3.5 text-xs sm:text-sm"
-            >
-              <Layers size={16} className="text-[var(--accent-green)]" />
-              <span>Explore 48 DSA Patterns</span>
-              <ArrowRight size={14} className="text-[var(--text-muted)]" />
-            </Link>
+          {/* Quick Popular Company Picks */}
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-4 rounded-[var(--radius-md)] space-y-2.5 shrink-0 lg:w-80">
+            <span className="label-caps block text-[var(--text-muted)]">Popular Quick Picks</span>
+            <div className="flex flex-wrap gap-1.5">
+              {['Google', 'Amazon', 'Meta', 'Microsoft', 'Apple', 'TCS', 'Infosys', 'Bloomberg'].map((comp) => (
+                <Link
+                  key={comp}
+                  href={`/company/${encodeURIComponent(comp)}`}
+                  className="px-2.5 py-1 text-xs rounded bg-[var(--bg-base)] border border-[var(--border-subtle)] hover:border-[var(--accent-green)] hover:text-white transition-colors"
+                >
+                  {comp}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
+        {/* 3 Core Value Cards — LeetCamp v3 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+          <Link
+            href="/prepare"
+            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-green)] transition-all flex flex-col justify-between gap-3 group"
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <Target size={18} className="text-[var(--accent-green)]" />
+                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
+                  🎯 COMPANY PREP
+                </h3>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)]">
+                Target a specific company and prepare strategically with a customized 7 to 90-day daily mission plan.
+              </p>
+            </div>
+            <span className="text-xs text-[var(--accent-green)] font-semibold inline-flex items-center gap-1">
+              <span>Start Plan</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Link>
+
+          <Link
+            href="/patterns"
+            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#3b82f6] transition-all flex flex-col justify-between gap-3 group"
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <Layers size={18} className="text-[#3b82f6]" />
+                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
+                  🧠 DSA ROADMAP
+                </h3>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)]">
+                Master 48 patterns in the right order from Core Data Structures to Dynamic Programming and Graphs.
+              </p>
+            </div>
+            <span className="text-xs text-[#3b82f6] font-semibold inline-flex items-center gap-1">
+              <span>Explore Patterns</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Link>
+
+          <Link
+            href="/practice"
+            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#f59e0b] transition-all flex flex-col justify-between gap-3 group"
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <Zap size={18} className="text-[#f59e0b]" />
+                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
+                  ⚡ QUICK PRACTICE & MOCK
+                </h3>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)]">
+                Get problems matched to your available time (10m–90m) or simulate a 45-minute timed technical mock interview.
+              </p>
+            </div>
+            <span className="text-xs text-[#f59e0b] font-semibold inline-flex items-center gap-1">
+              <span>Practice Now</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Link>
+        </div>
+
         {/* Global Statistics Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-2 border-t border-[var(--border-subtle)]">
           <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Companies</span>
             <span className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mono">
