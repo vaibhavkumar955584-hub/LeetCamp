@@ -138,69 +138,121 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           </div>
         </div>
 
-        {/* 3 Core Value Cards — LeetCamp v3 */}
+        {/* 3 Bento Feature Cards — LeetCamp v3 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+          {/* Card 1: Personalized Planner */}
           <Link
             href="/prepare"
-            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-green)] transition-all flex flex-col justify-between gap-3 group"
+            className="p-5 rounded-[var(--radius-lg)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-green)] transition-all flex flex-col justify-between gap-4 group relative overflow-hidden"
           >
-            <div>
-              <div className="flex items-center gap-2 mb-1.5">
-                <Target size={16} className="text-[var(--accent-green)]" />
-                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  Company Preparation Path
-                </h3>
+            <div className="space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30">
+                  PLANNER ENGINE
+                </span>
+                <span className="text-[10px] font-mono text-[var(--text-muted)]">7 to 90 Days</span>
               </div>
-              <p className="text-xs text-[var(--text-secondary)]">
-                Target a specific company and prepare strategically with a customized 7 to 90-day daily mission plan.
-              </p>
+              <div>
+                <h3 className="text-base font-bold text-[var(--text-primary)] group-hover:text-white transition-colors">
+                  Company Preparation Roadmap
+                </h3>
+                <p className="text-xs text-[var(--text-secondary)] mt-1 leading-relaxed">
+                  Tailored daily mission assignments calibrated to your target company, interview timeline, and difficulty level.
+                </p>
+              </div>
+
+              {/* Micro Visual Track */}
+              <div className="p-2.5 rounded bg-[var(--bg-base)] border border-[var(--border-subtle)] space-y-1.5 font-mono text-[10px]">
+                <div className="flex justify-between text-[var(--text-muted)]">
+                  <span>Day 1 • 3 Problems</span>
+                  <span className="text-[var(--accent-green)]">Balanced Mix</span>
+                </div>
+                <div className="w-full h-1.5 rounded-full bg-[var(--bg-surface)] overflow-hidden flex">
+                  <div className="w-1/3 bg-[var(--diff-easy)]" />
+                  <div className="w-1/2 bg-[var(--diff-medium)]" />
+                  <div className="w-1/6 bg-[var(--diff-hard)]" />
+                </div>
+              </div>
             </div>
-            <span className="text-xs text-[var(--accent-green)] font-semibold inline-flex items-center gap-1">
-              <span>Start Plan</span>
-              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
-            </span>
+
+            <div className="flex items-center justify-between text-xs text-[var(--accent-green)] font-semibold pt-1 border-t border-[var(--border-subtle)]/60">
+              <span>Launch Plan Builder</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1.5 transition-transform" />
+            </div>
           </Link>
 
+          {/* Card 2: Pattern Taxonomy */}
           <Link
             href="/patterns"
-            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#3b82f6] transition-all flex flex-col justify-between gap-3 group"
+            className="p-5 rounded-[var(--radius-lg)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#3b82f6] transition-all flex flex-col justify-between gap-4 group relative overflow-hidden"
           >
-            <div>
-              <div className="flex items-center gap-2 mb-1.5">
-                <Layers size={16} className="text-[#3b82f6]" />
-                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  DSA Pattern Roadmap
-                </h3>
+            <div className="space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-[#3b82f6]/10 text-[#60a5fa] border border-[#3b82f6]/30">
+                  TAXONOMY
+                </span>
+                <span className="text-[10px] font-mono text-[var(--text-muted)]">48 Patterns • 6 Pillars</span>
               </div>
-              <p className="text-xs text-[var(--text-secondary)]">
-                Master 48 patterns in the right order from Core Data Structures to Dynamic Programming and Graphs.
-              </p>
+              <div>
+                <h3 className="text-base font-bold text-[var(--text-primary)] group-hover:text-white transition-colors">
+                  DSA Pattern Hierarchy
+                </h3>
+                <p className="text-xs text-[var(--text-secondary)] mt-1 leading-relaxed">
+                  Master core algorithmic patterns in optimal learning progression from Two Pointers to Dynamic Programming.
+                </p>
+              </div>
+
+              {/* Micro Visual Badges */}
+              <div className="p-2.5 rounded bg-[var(--bg-base)] border border-[var(--border-subtle)] flex flex-wrap gap-1">
+                {['Core Structures', 'Trees', 'Graphs', 'DP', 'Window', 'Greedy'].map((pill, i) => (
+                  <span key={i} className="px-1.5 py-0.5 rounded bg-[var(--bg-surface)] text-[9px] font-mono text-[var(--text-muted)] border border-[var(--border-subtle)]">
+                    {pill}
+                  </span>
+                ))}
+              </div>
             </div>
-            <span className="text-xs text-[#3b82f6] font-semibold inline-flex items-center gap-1">
-              <span>Explore Patterns</span>
-              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
-            </span>
+
+            <div className="flex items-center justify-between text-xs text-[#60a5fa] font-semibold pt-1 border-t border-[var(--border-subtle)]/60">
+              <span>Explore 48 Categories</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1.5 transition-transform" />
+            </div>
           </Link>
 
+          {/* Card 3: Simulation Lab */}
           <Link
             href="/practice"
-            className="p-4 rounded-[var(--radius-md)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#f59e0b] transition-all flex flex-col justify-between gap-3 group"
+            className="p-5 rounded-[var(--radius-lg)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[#f59e0b] transition-all flex flex-col justify-between gap-4 group relative overflow-hidden"
           >
-            <div>
-              <div className="flex items-center gap-2 mb-1.5">
-                <Zap size={16} className="text-[#f59e0b]" />
-                <h3 className="text-sm font-bold text-[var(--text-primary)] group-hover:text-white">
-                  Quick Practice & Mock
-                </h3>
+            <div className="space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-[#f59e0b]/10 text-[#fbbf24] border border-[#f59e0b]/30">
+                  SIMULATION LAB
+                </span>
+                <span className="text-[10px] font-mono text-[var(--text-muted)]">Timed Assessment</span>
               </div>
-              <p className="text-xs text-[var(--text-secondary)]">
-                Get problems matched to your available time (10m–90m) or simulate a 45-minute timed technical mock interview.
-              </p>
+              <div>
+                <h3 className="text-base font-bold text-[var(--text-primary)] group-hover:text-white transition-colors">
+                  Mock Interview & Practice
+                </h3>
+                <p className="text-xs text-[var(--text-secondary)] mt-1 leading-relaxed">
+                  Solve problems filtered by your available time budget (10m–90m) or simulate a live 45-minute technical coding round.
+                </p>
+              </div>
+
+              {/* Micro Visual Widget */}
+              <div className="p-2.5 rounded bg-[var(--bg-base)] border border-[var(--border-subtle)] flex items-center justify-between font-mono text-[10px]">
+                <div className="flex items-center gap-1.5 text-[var(--diff-hard)] font-bold">
+                  <span className="w-2 h-2 rounded-full bg-[var(--diff-hard)] animate-pulse" />
+                  <span>45:00 Timer</span>
+                </div>
+                <span className="text-[var(--text-muted)]">2 Coding Questions</span>
+              </div>
             </div>
-            <span className="text-xs text-[#f59e0b] font-semibold inline-flex items-center gap-1">
-              <span>Practice Now</span>
-              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
-            </span>
+
+            <div className="flex items-center justify-between text-xs text-[#fbbf24] font-semibold pt-1 border-t border-[var(--border-subtle)]/60">
+              <span>Start Practice Session</span>
+              <ArrowRight size={13} className="group-hover:translate-x-1.5 transition-transform" />
+            </div>
           </Link>
         </div>
 
