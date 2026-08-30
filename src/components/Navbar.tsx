@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
-import { Search, X, Layers, Building2 } from 'lucide-react';
+import { Search, X, Layers, Building2, Terminal } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 
 interface AutocompleteCompany {
@@ -44,7 +44,7 @@ export function Navbar() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Fetch search suggestions (companies + patterns)
+  // Fetch search suggestions
   useEffect(() => {
     if (!query.trim()) {
       setCompanyResults([]);
@@ -115,44 +115,32 @@ export function Navbar() {
   const isCompaniesActive = !isPatternsActive;
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#233823] bg-[#111611]/95 backdrop-blur-md font-mono text-xs text-[#4ade80]">
-      <div className="max-w-[1920px] mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-3 sm:gap-6">
-        {/* Masthead */}
+    <header className="sticky top-0 z-40 w-full border-b border-[var(--border-subtle)] bg-[var(--bg-base)]/90 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+        {/* Logo / Brand */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div className="relative w-8 h-8 rounded bg-[#151c15] border border-[#233823] group-hover:border-[#4ade80] flex items-center justify-center transition-all shadow-[0_0_8px_rgba(74,222,128,0.15)] group-hover:shadow-[0_0_12px_rgba(74,222,128,0.4)] overflow-hidden">
-            <div className="absolute inset-0 opacity-20 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_2px]" />
-            <svg
-              viewBox="0 0 24 24"
-              className="w-5 h-5 text-[#4ade80] group-hover:scale-110 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="4 7 10 12 4 17" />
-              <line x1="13" y1="17" x2="20" y2="17" strokeWidth="3" />
-            </svg>
+          <div className="w-8 h-8 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] group-hover:border-[var(--accent-green)] flex items-center justify-center transition-all shadow-sm">
+            <Terminal size={17} className="text-[var(--accent-green)] group-hover:scale-110 transition-transform" />
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="font-arcade text-[11px] sm:text-xs text-[#4ade80] tracking-wider group-hover:text-white transition-colors crt-glow">
-                LEETCAMP.SYS
+              <span className="text-sm font-bold tracking-tight text-[var(--text-primary)] group-hover:text-white transition-colors">
+                LeetCamp
               </span>
-              <span className="text-[10px] text-[#111611] bg-[#4ade80] px-1 py-0.2 font-mono font-bold leading-none">
+              <span className="text-[10px] mono font-semibold bg-[var(--bg-surface-raised)] text-[var(--accent-green)] border border-[var(--border-subtle)] px-1.5 py-0.2 rounded">
                 v2.0
               </span>
             </div>
-            <span className="text-[10px] text-[#86a789] tracking-tight font-mono">
-              INTERVIEW_ARCHIVE // 48_PATTERNS
+            <span className="text-[11px] text-[var(--text-muted)] leading-tight">
+              429 Companies · 48 Patterns
             </span>
           </div>
         </Link>
 
-        {/* Global Terminal Search */}
-        <div ref={searchRef} className="relative flex-1 max-w-sm md:max-w-xl">
-          <div className="relative flex items-center bg-[#151c15] border border-[#233823] focus-within:border-[#4ade80] px-2.5 py-1.5 transition-colors rounded-sm">
-            <span className="text-[#4ade80] select-none font-bold mr-1.5">&gt;</span>
+        {/* Global Search Bar */}
+        <div ref={searchRef} className="relative flex-1 max-w-md hidden sm:block">
+          <div className="relative flex items-center bg-[var(--bg-surface)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3 py-1.5 rounded-[var(--radius-sm)] transition-colors">
+            <Search size={15} className="text-[var(--text-muted)] mr-2 shrink-0" />
             <input
               ref={inputRef}
               type="text"
@@ -160,8 +148,8 @@ export function Navbar() {
               onChange={(e) => setQuery(e.target.value)}
               onFocus={() => query.trim() && setIsOpen(true)}
               onKeyDown={handleKeyDown}
-              placeholder="SEARCH_TERMINAL (Company or Pattern): _"
-              className="w-full bg-transparent text-[#4ade80] placeholder-[#5e7e61] text-xs sm:text-sm focus:outline-none font-mono"
+              placeholder="Search companies or DSA patterns..."
+              className="w-full bg-transparent text-[var(--text-primary)] placeholder-[var(--text-muted)] text-xs sm:text-sm focus:outline-none"
             />
             {query ? (
               <button
@@ -169,12 +157,12 @@ export function Navbar() {
                   setQuery('');
                   setIsOpen(false);
                 }}
-                className="text-[#86a789] hover:text-[#4ade80] p-0.5 ml-1"
+                className="text-[var(--text-muted)] hover:text-[var(--text-primary)] p-0.5 ml-1"
               >
-                <X className="w-4 h-4" />
+                <X size={14} />
               </button>
             ) : (
-              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-xs text-[#86a789] border border-[#233823] bg-[#111611] select-none font-bold rounded-sm">
+              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] text-[var(--text-muted)] border border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] select-none font-mono rounded">
                 /
               </kbd>
             )}
@@ -182,31 +170,31 @@ export function Navbar() {
 
           {/* Autocomplete Dropdown */}
           {isOpen && (patternResults.length > 0 || companyResults.length > 0) && (
-            <div className="absolute top-full left-0 right-0 mt-1.5 bg-[#151c15] border border-[#4ade80] shadow-2xl z-50 overflow-hidden font-mono text-xs max-h-96 overflow-y-auto rounded-sm">
+            <div className="absolute top-full left-0 right-0 mt-1.5 bg-[var(--bg-surface)] border border-[var(--border-strong)] shadow-xl z-50 overflow-hidden text-xs max-h-96 overflow-y-auto rounded-[var(--radius-md)]">
               {/* Pattern Suggestions */}
               {patternResults.length > 0 && (
                 <div>
-                  <div className="px-3 py-1.5 text-[11px] uppercase tracking-wider text-[#111611] bg-[#4ade80] font-bold flex items-center justify-between">
-                    <span>MATCHING DSA PATTERNS [{patternResults.length}]</span>
-                    <span>[ROADMAP]</span>
+                  <div className="px-3 py-1.5 label-caps bg-[var(--bg-surface-raised)] border-b border-[var(--border-subtle)] flex items-center justify-between">
+                    <span>DSA Patterns</span>
+                    <span className="mono">{patternResults.length} matches</span>
                   </div>
-                  <div className="divide-y divide-[#233823]">
+                  <div className="divide-y divide-[var(--border-subtle)]">
                     {patternResults.map((p) => (
                       <button
                         key={p.slug}
                         onClick={() => handleSelectPattern(p.slug)}
-                        className="w-full text-left px-3 py-2.5 flex items-center justify-between hover:bg-[#4ade80] hover:text-[#111611] transition-colors group"
+                        className="w-full text-left px-3.5 py-2.5 flex items-center justify-between hover:bg-[var(--bg-hover)] transition-colors group"
                       >
-                        <div className="flex items-center gap-2">
-                          <span className="font-bold text-sm">
-                            {p.category.toUpperCase()}
+                        <div>
+                          <span className="font-medium text-sm text-[var(--text-primary)] group-hover:text-white">
+                            {p.category}
                           </span>
-                          <span className="text-[10px] text-[#86a789] group-hover:text-[#111611]">
+                          <span className="text-xs text-[var(--text-muted)] ml-2">
                             ({p.group})
                           </span>
                         </div>
-                        <span className="text-xs text-[#fbbf24] group-hover:text-[#111611] font-bold bg-[#111611]/40 px-1.5 py-0.5 rounded-sm">
-                          [{p.count} PROBLEMS]
+                        <span className="chip chip-basic">
+                          {p.count} Qs
                         </span>
                       </button>
                     ))}
@@ -217,22 +205,22 @@ export function Navbar() {
               {/* Company Suggestions */}
               {companyResults.length > 0 && (
                 <div>
-                  <div className="px-3 py-1.5 text-[11px] uppercase tracking-wider text-[#4ade80] bg-[#1b261b] border-t border-b border-[#233823] font-bold flex items-center justify-between">
-                    <span>MATCHING COMPANIES [{companyResults.length}]</span>
-                    <span>[COMPANY ARCHIVE]</span>
+                  <div className="px-3 py-1.5 label-caps bg-[var(--bg-surface-raised)] border-t border-b border-[var(--border-subtle)] flex items-center justify-between">
+                    <span>Companies</span>
+                    <span className="mono">{companyResults.length} matches</span>
                   </div>
-                  <div className="divide-y divide-[#233823]">
+                  <div className="divide-y divide-[var(--border-subtle)]">
                     {companyResults.map((c) => (
                       <button
                         key={c.company}
                         onClick={() => handleSelectCompany(c.company)}
-                        className="w-full text-left px-3 py-2.5 flex items-center justify-between hover:bg-[#4ade80] hover:text-[#111611] transition-colors group"
+                        className="w-full text-left px-3.5 py-2.5 flex items-center justify-between hover:bg-[var(--bg-hover)] transition-colors group"
                       >
-                        <span className="font-bold text-sm">
-                          {c.company.toUpperCase()}
+                        <span className="font-medium text-sm text-[var(--text-primary)] group-hover:text-white">
+                          {c.company}
                         </span>
-                        <span className="text-xs text-[#fbbf24] group-hover:text-[#111611] font-bold bg-[#111611]/40 px-1.5 py-0.5 rounded-sm">
-                          [{c.count} QUESTIONS]
+                        <span className="chip chip-medium">
+                          {c.count} Qs
                         </span>
                       </button>
                     ))}
@@ -243,27 +231,27 @@ export function Navbar() {
           )}
         </div>
 
-        {/* Right Navigation & Theme Switcher */}
+        {/* Navigation Tabs & Theme Toggle */}
         <div className="flex items-center gap-2 shrink-0">
           <Link
             href="/"
-            className={`px-2.5 py-1 text-xs border transition-colors font-bold rounded-sm ${
+            className={`px-3 py-1.5 text-xs font-medium rounded-[var(--radius-sm)] transition-all ${
               isCompaniesActive && pathname === '/'
-                ? 'bg-[#4ade80] text-[#111611] border-[#4ade80]'
-                : 'text-[#4ade80] border-[#233823] hover:border-[#4ade80] hover:bg-[#1b261b]'
+                ? 'bg-[var(--bg-surface-raised)] text-[var(--text-primary)] border border-[var(--border-strong)] shadow-sm'
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-hover)]'
             }`}
           >
-            [COMPANIES]
+            Companies
           </Link>
           <Link
             href="/patterns"
-            className={`px-2.5 py-1 text-xs border transition-colors font-bold rounded-sm ${
+            className={`px-3 py-1.5 text-xs font-medium rounded-[var(--radius-sm)] transition-all ${
               isPatternsActive
-                ? 'bg-[#4ade80] text-[#111611] border-[#4ade80]'
-                : 'text-[#4ade80] border-[#233823] hover:border-[#4ade80] hover:bg-[#1b261b]'
+                ? 'bg-[var(--bg-surface-raised)] text-[var(--text-primary)] border border-[var(--border-strong)] shadow-sm'
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-hover)]'
             }`}
           >
-            [DSA PATTERNS]
+            DSA Patterns
           </Link>
 
           {/* Eye Comfort Theme Switcher */}
