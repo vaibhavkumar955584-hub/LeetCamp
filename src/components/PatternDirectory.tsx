@@ -85,9 +85,9 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
   };
 
   return (
-    <div className="space-y-8 w-full max-w-7xl mx-auto">
+    <div className="space-y-8 w-full mx-auto">
       {/* Hero Header Section */}
-      <div className="data-surface p-6 sm:p-8 space-y-6">
+      <div className="data-surface p-5 sm:p-7 lg:p-8 space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[var(--border-subtle)] pb-5">
           <div>
             <div className="flex items-center gap-2 mb-2">
@@ -98,10 +98,10 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
                 48 Patterns · {totalQuestions.toLocaleString()} Curated Questions
               </span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[var(--text-primary)]">
               48 DSA Patterns & Algorithmic Roadmaps
             </h1>
-            <p className="text-sm text-[var(--text-secondary)] mt-1.5 max-w-3xl leading-relaxed">
+            <p className="text-sm sm:text-base text-[var(--text-secondary)] mt-1.5 max-w-4xl leading-relaxed">
               Master data structures and algorithms by underlying patterns rather than random lists. Curated question banks across 6 roadmap pillars: Core Data Structures, Trees, Graphs, Algorithmic Techniques, Dynamic Programming, and Math.
             </p>
           </div>
@@ -109,37 +109,37 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
           <div className="flex items-center gap-2 shrink-0">
             <Link
               href="/"
-              className="btn-primary"
+              className="btn-primary py-2 px-3.5 text-xs sm:text-sm"
             >
-              <ArrowLeft size={14} className="text-[var(--text-muted)]" />
+              <ArrowLeft size={15} className="text-[var(--text-muted)]" />
               <span>Back to Company Explorer</span>
             </Link>
           </div>
         </div>
 
         {/* Global Statistics Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Patterns</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--text-primary)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mono">
               {initialPatterns.length}
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Curated Questions</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--diff-medium)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--diff-medium)] mono">
               {totalQuestions.toLocaleString()}
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Roadmap Pillars</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--accent-green)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--accent-green)] mono">
               6 Tracks
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Difficulty Tiers</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--diff-basic)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--diff-basic)] mono">
               4 Tiers (B/E/M/H)
             </span>
           </div>
@@ -149,7 +149,7 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
       {/* Search & Pillar Toolbar */}
       <div className="data-surface p-4 space-y-3.5 sticky top-16 z-20 backdrop-blur-md bg-[var(--bg-surface)]/95 shadow-md">
         <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
-          <div className="relative flex-1 flex items-center bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3 py-2 rounded-[var(--radius-sm)] transition-colors">
+          <div className="relative flex-1 flex items-center bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3.5 py-2 rounded-[var(--radius-sm)] transition-colors">
             <Search size={16} className="text-[var(--text-muted)] mr-2 shrink-0" />
             <input
               type="text"
@@ -223,7 +223,7 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
               <div key={groupName} className="space-y-4">
                 <div className="flex items-center justify-between border-b border-[var(--border-subtle)] pb-2">
                   <div className="flex items-center gap-2">
-                    <h2 className="text-base font-semibold text-[var(--text-primary)]">
+                    <h2 className="text-base sm:text-lg font-semibold text-[var(--text-primary)]">
                       {groupName}
                     </h2>
                     <span className="text-xs text-[var(--text-muted)] mono">
@@ -232,7 +232,7 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-3.5 sm:gap-4">
                   {patterns.map((pattern) => (
                     <PatternCard
                       key={pattern.slug}
@@ -270,7 +270,7 @@ export function PatternDirectory({ initialPatterns }: PatternDirectoryProps) {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-3.5 sm:gap-4">
               {filteredPatterns.map((pattern) => (
                 <PatternCard
                   key={pattern.slug}

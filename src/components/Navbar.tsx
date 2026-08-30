@@ -116,7 +116,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[var(--border-subtle)] bg-[var(--bg-base)]/90 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div className="max-w-[1840px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 h-16 flex items-center justify-between gap-4">
         {/* Logo / Brand */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">
           <div className="w-8 h-8 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] group-hover:border-[var(--accent-green)] flex items-center justify-center transition-all shadow-sm">
@@ -137,8 +137,8 @@ export function Navbar() {
           </div>
         </Link>
 
-        {/* Global Search Bar */}
-        <div ref={searchRef} className="relative flex-1 max-w-md hidden sm:block">
+        {/* Global Search Bar — Fluid Max Width */}
+        <div ref={searchRef} className="relative flex-1 max-w-md lg:max-w-xl xl:max-w-2xl hidden sm:block">
           <div className="relative flex items-center bg-[var(--bg-surface)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3 py-1.5 rounded-[var(--radius-sm)] transition-colors">
             <Search size={15} className="text-[var(--text-muted)] mr-2 shrink-0" />
             <input

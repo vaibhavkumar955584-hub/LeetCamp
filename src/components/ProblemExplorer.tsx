@@ -236,7 +236,7 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
   };
 
   return (
-    <div className="space-y-6 w-full max-w-7xl mx-auto">
+    <div className="space-y-6 w-full mx-auto">
       {/* Header & Breadcrumb Surface */}
       <div className="data-surface p-6 sm:p-7 space-y-4">
         <div className="flex items-center justify-between text-xs text-[var(--text-secondary)] border-b border-[var(--border-subtle)] pb-3">

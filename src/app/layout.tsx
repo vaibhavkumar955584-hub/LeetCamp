@@ -39,14 +39,14 @@ export default function RootLayout({
         {/* Global Navigation Bar */}
         <Navbar />
         
-        {/* Main Content Viewport */}
-        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative z-10">
+        {/* Main Fluid Responsive Content Viewport */}
+        <main className="flex-1 w-full max-w-[1840px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-4 sm:py-6 lg:py-8 relative z-10">
           {children}
         </main>
 
-        {/* Modern Footer */}
+        {/* Modern Full-Screen Adaptive Footer */}
         <footer className="border-t border-[var(--border-subtle)] bg-[var(--bg-base)] py-8 text-center text-xs text-[var(--text-muted)] relative z-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+          <div className="max-w-[1840px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 space-y-3">
             <div className="flex items-center justify-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[var(--accent-green)] inline-block" />
               <p className="text-sm font-semibold text-[var(--text-primary)]">

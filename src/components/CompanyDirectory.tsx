@@ -74,9 +74,9 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
   };
 
   return (
-    <div className="space-y-8 w-full max-w-7xl mx-auto">
+    <div className="space-y-8 w-full mx-auto">
       {/* Hero Header Section */}
-      <div className="data-surface p-6 sm:p-8 space-y-6">
+      <div className="data-surface p-5 sm:p-7 lg:p-8 space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[var(--border-subtle)] pb-5">
           <div>
             <div className="flex items-center gap-2 mb-2">
@@ -87,10 +87,10 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
                 {initialCompanies.length} Organizations · 48 Patterns
               </span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[var(--text-primary)]">
               Company-wise LeetCode Explorer
             </h1>
-            <p className="text-sm text-[var(--text-secondary)] mt-1.5 max-w-3xl leading-relaxed">
+            <p className="text-sm sm:text-base text-[var(--text-secondary)] mt-1.5 max-w-4xl leading-relaxed">
               Target the organization you are preparing for. Explore real-world technical interview problems reported across {initialCompanies.length} tech companies with recency windows and frequency rankings.
             </p>
           </div>
@@ -99,9 +99,9 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           <div className="flex items-center gap-2 shrink-0">
             <Link
               href="/patterns"
-              className="btn-primary"
+              className="btn-primary py-2 px-3.5 text-xs sm:text-sm"
             >
-              <Layers size={15} className="text-[var(--accent-green)]" />
+              <Layers size={16} className="text-[var(--accent-green)]" />
               <span>Explore 48 DSA Patterns</span>
               <ArrowRight size={14} className="text-[var(--text-muted)]" />
             </Link>
@@ -109,28 +109,28 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
         </div>
 
         {/* Global Statistics Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Companies</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--text-primary)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mono">
               {initialCompanies.length}
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Company Questions</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--diff-medium)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--diff-medium)] mono">
               {totalCompanyQuestions.toLocaleString()}
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">Unique Catalog</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--accent-green)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--accent-green)] mono">
               3,392
             </span>
           </div>
-          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 rounded-[var(--radius-md)]">
+          <div className="bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] p-3.5 sm:p-4 rounded-[var(--radius-md)]">
             <span className="label-caps block">DSA Patterns Hub</span>
-            <span className="text-lg sm:text-xl font-bold text-[var(--diff-basic)] mono">
+            <span className="text-xl sm:text-2xl font-bold text-[var(--diff-basic)] mono">
               48 Topics
             </span>
           </div>
@@ -141,8 +141,8 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Flame size={16} className="text-[var(--diff-medium)]" />
-            <h2 className="text-base font-semibold text-[var(--text-primary)]">
+            <Flame size={18} className="text-[var(--diff-medium)]" />
+            <h2 className="text-base sm:text-lg font-semibold text-[var(--text-primary)]">
               Top Tracked Companies
             </h2>
             <span className="text-xs text-[var(--text-muted)] mono hidden sm:inline">
@@ -151,7 +151,7 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3.5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8 gap-3 sm:gap-3.5">
           {featuredList.map((comp) => (
             <CompanyCard
               key={comp.company}
@@ -169,7 +169,7 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
       <div className="data-surface p-4 space-y-3.5 sticky top-16 z-20 backdrop-blur-md bg-[var(--bg-surface)]/95 shadow-md">
         <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
           {/* Search Box */}
-          <div className="relative flex-1 flex items-center bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3 py-2 rounded-[var(--radius-sm)] transition-colors">
+          <div className="relative flex-1 flex items-center bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus-within:border-[var(--accent-green)] px-3.5 py-2 rounded-[var(--radius-sm)] transition-colors">
             <Search size={16} className="text-[var(--text-muted)] mr-2 shrink-0" />
             <input
               type="text"
@@ -259,7 +259,7 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3.5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8 gap-3 sm:gap-3.5">
             {filteredCompanies.map((comp) => (
               <CompanyCard
                 key={comp.company}
