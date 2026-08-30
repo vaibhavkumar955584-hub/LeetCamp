@@ -4,22 +4,44 @@ import fs from 'fs';
 
 let dbInstance: Database.Database | null = null;
 
+function findDbPath(): string {
+  if (process.env.SQLITE_DB_PATH && fs.existsSync(process.env.SQLITE_DB_PATH)) {
+    return process.env.SQLITE_DB_PATH;
+  }
+  
+  const possiblePaths = [
+    path.join(process.cwd(), 'data', 'problems.db'),
+    path.resolve(process.cwd(), 'data', 'problems.db'),
+    path.join(__dirname, '..', '..', '..', 'data', 'problems.db'),
+    path.join(__dirname, '..', '..', 'data', 'problems.db'),
+    path.join(process.cwd(), 'problems.db'),
+  ];
+  
+  for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+      return p;
+    }
+  }
+  
+  return path.join(process.cwd(), 'data', 'problems.db');
+}
+
 export function getDatabase(): Database.Database {
   if (!dbInstance) {
-    const defaultPath = path.resolve(process.cwd(), 'data', 'problems.db');
-    const dbPath = process.env.SQLITE_DB_PATH ? path.resolve(process.env.SQLITE_DB_PATH) : defaultPath;
-    
-    if (!fs.existsSync(dbPath)) {
-      fs.mkdirSync(path.dirname(dbPath), { recursive: true });
-    }
-    
+    const dbPath = findDbPath();
+
     try {
-      dbInstance = new Database(dbPath, { readonly: false });
-      dbInstance.pragma('journal_mode = WAL');
-      dbInstance.pragma('synchronous = NORMAL');
+      // In serverless / read-only production environment (e.g. Vercel), open directly with readonly: true
+      dbInstance = new Database(dbPath, { readonly: true, fileMustExist: false });
     } catch {
-      // Fallback to readonly if directory permissions prevent WAL creation
-      dbInstance = new Database(dbPath, { readonly: true });
+      try {
+        dbInstance = new Database(dbPath, { readonly: false });
+        dbInstance.pragma('journal_mode = WAL');
+        dbInstance.pragma('synchronous = NORMAL');
+      } catch (err: any) {
+        console.error('Critical database initialization error:', err.message);
+        throw err;
+      }
     }
   }
   return dbInstance;
@@ -154,27 +176,32 @@ export function getPatternGroup(category: string): PatternRoadmapGroup {
 // -------------------------------------------------------------
 
 export function getAllCompanies(search?: string): CompanySummary[] {
-  const db = getDatabase();
-  let query = `
-    SELECT 
-      company, 
-      COUNT(DISTINCT slug) as count,
-      COUNT(DISTINCT CASE WHEN difficulty = 'Easy' THEN slug END) as easy_count,
-      COUNT(DISTINCT CASE WHEN difficulty = 'Medium' THEN slug END) as medium_count,
-      COUNT(DISTINCT CASE WHEN difficulty = 'Hard' THEN slug END) as hard_count
-    FROM problems
-  `;
+  try {
+    const db = getDatabase();
+    let query = `
+      SELECT 
+        company, 
+        COUNT(DISTINCT slug) as count,
+        COUNT(DISTINCT CASE WHEN difficulty = 'Easy' THEN slug END) as easy_count,
+        COUNT(DISTINCT CASE WHEN difficulty = 'Medium' THEN slug END) as medium_count,
+        COUNT(DISTINCT CASE WHEN difficulty = 'Hard' THEN slug END) as hard_count
+      FROM problems
+    `;
 
-  const params: any[] = [];
-  if (search && search.trim()) {
-    query += ` WHERE company LIKE ?`;
-    params.push(`%${search.trim()}%`);
+    const params: any[] = [];
+    if (search && search.trim()) {
+      query += ` WHERE company LIKE ?`;
+      params.push(`%${search.trim()}%`);
+    }
+
+    query += ` GROUP BY company ORDER BY company COLLATE NOCASE ASC`;
+
+    const stmt = db.prepare(query);
+    return stmt.all(...params) as CompanySummary[];
+  } catch (err: any) {
+    console.error('Error in getAllCompanies:', err);
+    return [];
   }
-
-  query += ` GROUP BY company ORDER BY company COLLATE NOCASE ASC`;
-
-  const stmt = db.prepare(query);
-  return stmt.all(...params) as CompanySummary[];
 }
 
 export function checkCompanyExists(companyName: string): boolean {
@@ -402,42 +429,47 @@ export function getCompanyOverview(company: string) {
 // -------------------------------------------------------------
 
 export function getAllPatterns(search?: string): PatternSummary[] {
-  const db = getDatabase();
-  let query = `
-    SELECT 
-      category,
-      category_slug as slug,
-      COUNT(*) as count,
-      COUNT(CASE WHEN difficulty = 'Basic' THEN 1 END) as basic_count,
-      COUNT(CASE WHEN difficulty = 'Easy' THEN 1 END) as easy_count,
-      COUNT(CASE WHEN difficulty = 'Medium' THEN 1 END) as medium_count,
-      COUNT(CASE WHEN difficulty = 'Hard' THEN 1 END) as hard_count,
-      ROUND(AVG(accuracy), 1) as avg_accuracy
-    FROM pattern_problems
-  `;
+  try {
+    const db = getDatabase();
+    let query = `
+      SELECT 
+        category,
+        category_slug as slug,
+        COUNT(*) as count,
+        COUNT(CASE WHEN difficulty = 'Basic' THEN 1 END) as basic_count,
+        COUNT(CASE WHEN difficulty = 'Easy' THEN 1 END) as easy_count,
+        COUNT(CASE WHEN difficulty = 'Medium' THEN 1 END) as medium_count,
+        COUNT(CASE WHEN difficulty = 'Hard' THEN 1 END) as hard_count,
+        ROUND(AVG(accuracy), 1) as avg_accuracy
+      FROM pattern_problems
+    `;
 
-  const params: any[] = [];
-  if (search && search.trim()) {
-    query += ` WHERE category LIKE ?`;
-    params.push(`%${search.trim()}%`);
+    const params: any[] = [];
+    if (search && search.trim()) {
+      query += ` WHERE category LIKE ?`;
+      params.push(`%${search.trim()}%`);
+    }
+
+    query += ` GROUP BY category, category_slug ORDER BY count DESC, category ASC`;
+
+    const stmt = db.prepare(query);
+    const rows = stmt.all(...params) as any[];
+
+    return rows.map((r) => ({
+      category: r.category,
+      slug: r.slug,
+      group: getPatternGroup(r.category),
+      count: r.count,
+      basic_count: r.basic_count || 0,
+      easy_count: r.easy_count || 0,
+      medium_count: r.medium_count || 0,
+      hard_count: r.hard_count || 0,
+      avg_accuracy: r.avg_accuracy || undefined,
+    }));
+  } catch (err: any) {
+    console.error('Error in getAllPatterns:', err);
+    return [];
   }
-
-  query += ` GROUP BY category, category_slug ORDER BY count DESC, category ASC`;
-
-  const stmt = db.prepare(query);
-  const rows = stmt.all(...params) as any[];
-
-  return rows.map((r) => ({
-    category: r.category,
-    slug: r.slug,
-    group: getPatternGroup(r.category),
-    count: r.count,
-    basic_count: r.basic_count || 0,
-    easy_count: r.easy_count || 0,
-    medium_count: r.medium_count || 0,
-    hard_count: r.hard_count || 0,
-    avg_accuracy: r.avg_accuracy || undefined,
-  }));
 }
 
 export function getExactPatternCategory(slug: string): { category: string; slug: string } | null {

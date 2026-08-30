@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   serverExternalPackages: ['better-sqlite3'],
+  outputFileTracingIncludes: {
+    '/**': ['./data/problems.db'],
+  },
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
