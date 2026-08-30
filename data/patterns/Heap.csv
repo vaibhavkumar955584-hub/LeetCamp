@@ -1,0 +1,37 @@
+category,difficulty,title,company_tags,accuracy,url
+Heap,Basic,Height of Heap,,57.74%,https://www.geeksforgeeks.org/problems/height-of-heap5025/1
+Heap,Easy,Sum between k1'th and k2'th smallest,,32.02%,https://www.geeksforgeeks.org/problems/sum-of-elements-between-k1th-and-k2th-smallest-elements3133/1
+Heap,Easy,Maximum Diamonds,,50.40%,https://www.geeksforgeeks.org/problems/chinky-and-diamonds3340/1
+Heap,Easy,Repeated Replacement of Min 2 with Sum,,28.15%,https://www.geeksforgeeks.org/problems/adding-array-element4756/1
+Heap,Easy,Min Heap implementation,Amazon,67.55%,https://www.geeksforgeeks.org/problems/min-heap-implementation/1
+Heap,Easy,Operations on PriorityQueue,,75.01%,https://www.geeksforgeeks.org/problems/operations-on-priorityqueue/1
+Heap,Easy,Implementation of Priority Queue using Binary Heap,,67.41%,https://www.geeksforgeeks.org/problems/implementation-of-priority-queue-using-binary-heap/1
+Heap,Easy,Max Heap implementation,,53.73%,https://www.geeksforgeeks.org/problems/max-heap-implementation/1
+Heap,Medium,Min Cost to Connect Ropes,"Amazon, Goldman Sachs, Microsoft, +1",42.73%,https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1
+Heap,Medium,k Largest Elements,"Amazon, Google, Microsoft, +2",53.56%,https://www.geeksforgeeks.org/problems/k-largest-elements4206/1
+Heap,Medium,Find Median in a Stream,"Adobe, Amazon, Apple, +13",30.34%,https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1
+Heap,Medium,Is Binary Tree Heap,Hike,34.41%,https://www.geeksforgeeks.org/problems/is-binary-tree-heap/1
+Heap,Medium,Heap Sort,"24*7 Innovation Labs, Amazon, Belzabar, +6",53.06%,https://www.geeksforgeeks.org/problems/heap-sort/1
+Heap,Medium,Merge k Sorted Arrays,"Amazon, Citrix, Flipkart, +2",67.25%,https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays/1
+Heap,Medium,Merge K Sorted Linked Lists,"Amazon, Microsoft, NPCI, +2",57.01%,https://www.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
+Heap,Medium,Maximum Sum Combination,,49.69%,https://www.geeksforgeeks.org/problems/maximum-sum-combination/1
+Heap,Medium,Binary Heap Operations,"Amazon, Microsoft, Ola Cabs, +3",22.30%,https://www.geeksforgeeks.org/problems/operations-on-binary-min-heap/1
+Heap,Medium,Kth Largest in a Stream,"Adobe, Amazon, Cisco, +5",31.59%,https://www.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1
+Heap,Medium,Kth smallest element in a Matrix,"Accolite, Amazon, Samsung",61.42%,https://www.geeksforgeeks.org/problems/kth-element-in-matrix/1
+Heap,Medium,Game with String,Amazon,53.96%,https://www.geeksforgeeks.org/problems/game-with-string4100/1
+Heap,Medium,Rearrange To Make Adjacent Different,"Amazon, Microsoft",37.31%,https://www.geeksforgeeks.org/problems/rearrange-characters4649/1
+Heap,Medium,Kth Largest,,64.92%,https://www.geeksforgeeks.org/problems/kth-largest-element5034/1
+Heap,Medium,K Closest Points to Origin,"Amazon, Google",62.40%,https://www.geeksforgeeks.org/problems/k-closest-points-to-origin--172242/1
+Heap,Medium,BST to Special Max Heap,DE Shaw,67.16%,https://www.geeksforgeeks.org/problems/bst-to-max-heap/1
+Heap,Medium,Longest Subarray With Limited Pairwise Difference,,58.27%,https://www.geeksforgeeks.org/problems/longest-bounded-difference-subarray/1
+Heap,Medium,Max Amount by Selling K Tickets,"BankBazaar, Linkedin",49.96%,https://www.geeksforgeeks.org/problems/ticket-sellers3241/1
+Heap,Medium,Maxmimum and Distinct from Two Arrays,Microsoft,41.08%,https://www.geeksforgeeks.org/problems/maximize-the-array3340/1
+Heap,Medium,Split Array Subsequences,"Amazon, Google",51.52%,https://www.geeksforgeeks.org/problems/split-array-subsequences/1
+Heap,Medium,Find K Smallest Sum Pairs,,53.56%,https://www.geeksforgeeks.org/problems/find-k-smallest-sum-pairs/1
+Heap,Medium,Shortest Path in Hierarchical Arrangement,PlaySimple,65.86%,https://www.geeksforgeeks.org/problems/shortest-path-between-cities/1
+Heap,Medium,Maximum distinct after removing K,,47.21%,https://www.geeksforgeeks.org/problems/maximum-distinct-elements-after-removing-k-elements5906/1
+Heap,Medium,Design Twitter,,64.13%,https://www.geeksforgeeks.org/problems/design-twitter/1
+Heap,Medium,Optimal File Merge,Amazon,81.58%,https://www.geeksforgeeks.org/problems/optimal-file-merge/1
+Heap,Hard,Huffman Encoding,"Amazon, Microsoft, Morgan Stanley, +2",32.40%,https://www.geeksforgeeks.org/problems/huffman-encoding3345/1
+Heap,Hard,Smallest Range in K Lists,"Amazon, Flipkart",43.21%,https://www.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1
+Heap,Hard,Meeting Rooms III,,58.03%,https://www.geeksforgeeks.org/problems/meeting-rooms-iii/1

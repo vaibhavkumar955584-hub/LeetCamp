@@ -1,0 +1,16 @@
+category,difficulty,title,company_tags,accuracy,url
+Priority Queue,Easy,Minimize the sum,Swiggy,56.29%,https://www.geeksforgeeks.org/problems/minimize-the-sum--170645/1
+Priority Queue,Easy,Minimize Array Sum with n Subtractions,,16.79%,https://www.geeksforgeeks.org/problems/cereals-box0644/1
+Priority Queue,Medium,K Closest in a Sorted Array,"Amazon, OYO Rooms",15.96%,https://www.geeksforgeeks.org/problems/k-closest-elements3619/1
+Priority Queue,Medium,Nearly sorted,Google,75.25%,https://www.geeksforgeeks.org/problems/nearly-sorted-1587115620/1
+Priority Queue,Medium,Top k Frequent in Stream,"Accolite, Amazon, Media.net",49.10%,https://www.geeksforgeeks.org/problems/top-k-numbers3425/1
+Priority Queue,Medium,K-th Largest Sum Contiguous Subarray,,54.33%,https://www.geeksforgeeks.org/problems/k-th-largest-sum-contiguous-subarray/1
+Priority Queue,Medium,K Closest Points to Origin,"Amazon, Google",62.40%,https://www.geeksforgeeks.org/problems/k-closest-points-to-origin--172242/1
+Priority Queue,Medium,Minimum Cost to Connect Houses,"Amazon, Directi, Flipkart, +4",64.58%,https://www.geeksforgeeks.org/problems/minimum-cost-to-connect-all-houses-in-a-city/1
+Priority Queue,Medium,Complete Binary Tree Traversal with Array Input,,46.62%,https://www.geeksforgeeks.org/problems/print-binary-tree-levels-in-sorted-order3241/1
+Priority Queue,Medium,Max Amount by Selling K Tickets,"BankBazaar, Linkedin",49.96%,https://www.geeksforgeeks.org/problems/ticket-sellers3241/1
+Priority Queue,Medium,Split Array Subsequences,"Amazon, Google",51.52%,https://www.geeksforgeeks.org/problems/split-array-subsequences/1
+Priority Queue,Medium,Find K Smallest Sum Pairs,,53.56%,https://www.geeksforgeeks.org/problems/find-k-smallest-sum-pairs/1
+Priority Queue,Medium,Minimum Operations to Make Array Sorted,Amazon,43.81%,https://www.geeksforgeeks.org/problems/minimum-incrementdecrement-to-make-array-non-increasing--170637/1
+Priority Queue,Hard,Huffman Encoding,"Amazon, Microsoft, Morgan Stanley, +2",32.40%,https://www.geeksforgeeks.org/problems/huffman-encoding3345/1
+Priority Queue,Hard,Meeting Rooms III,,58.03%,https://www.geeksforgeeks.org/problems/meeting-rooms-iii/1

@@ -1,0 +1,145 @@
+category,difficulty,title,company_tags,accuracy,url
+Tree,Basic,Preorder Traversal,"Amazon, Flipkart, Microsoft, +1",62.73%,https://www.geeksforgeeks.org/problems/preorder-traversal/1
+Tree,Basic,Count Leaves in Binary Tree,"Ola Cabs, Samsung",76.44%,https://www.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1
+Tree,Basic,Size of Binary Tree,,82.91%,https://www.geeksforgeeks.org/problems/size-of-binary-tree/1
+Tree,Basic,Sum of Binary Tree,FactSet,77.27%,https://www.geeksforgeeks.org/problems/sum-of-binary-tree/1
+Tree,Basic,Count Internal Nodes in Tree,,56.79%,https://www.geeksforgeeks.org/problems/count-non-leaf-nodes-in-tree/1
+Tree,Easy,Left View of Binary Tree,"Accolite, Adobe, Amazon, +12",33.74%,https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+Tree,Easy,Balanced Tree Check,"Amazon, Microsoft, Walmart",43.15%,https://www.geeksforgeeks.org/problems/check-for-balanced-tree/1
+Tree,Easy,Height of Binary Tree,"Amazon, Cadence India, CouponDunia, +11",78.58%,https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
+Tree,Easy,Identical Trees,"Amazon, Flipkart, Microsoft",50.01%,https://www.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
+Tree,Easy,Mirror Tree,"Accolite, Adobe, Amazon, +15",72.67%,https://www.geeksforgeeks.org/problems/mirror-tree/1
+Tree,Easy,Inorder Traversal,"Adobe, Amazon, Snapdeal",67.15%,https://www.geeksforgeeks.org/problems/inorder-traversal/1
+Tree,Easy,Right View of Binary Tree,"Accolite, Adobe, Amazon, +2",65.18%,https://www.geeksforgeeks.org/problems/right-view-of-binary-tree/1
+Tree,Easy,Symmetric Tree,"Amazon, Microsoft",44.96%,https://www.geeksforgeeks.org/problems/symmetric-tree/1
+Tree,Easy,Nodes Without Sibling,"Amazon, D-E-Shaw",18.01%,https://www.geeksforgeeks.org/problems/print-all-nodes-that-dont-have-sibling/1
+Tree,Easy,Postorder Traversal,"Morgan Stanley, Snapdeal, Walmart",74.96%,https://www.geeksforgeeks.org/problems/postorder-traversal/1
+Tree,Easy,Reverse Level Order Traversal,"Flipkart, Amazon, Microsoft, +3",62.26%,https://www.geeksforgeeks.org/problems/reverse-level-order-traversal/1
+Tree,Easy,Root to Leaf Path Sum,"Accolite, Amazon, Microsoft, +8",40.79%,https://www.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
+Tree,Easy,Leaves at Same Level or Not,Amazon,39.47%,https://www.geeksforgeeks.org/problems/leaf-at-same-level/1
+Tree,Easy,Transform to Sum Tree,"Amazon, Microsoft, Samsung, +2",70.50%,https://www.geeksforgeeks.org/problems/transform-to-sum-tree/1
+Tree,Easy,Nodes at K Distance from Root,"Amazon, Microsoft, Samsung, +1",52.18%,https://www.geeksforgeeks.org/problems/k-distance-from-root/1
+Tree,Easy,Maximum Width of Tree,"VMWare, Flipkart, Amazon",63.27%,https://www.geeksforgeeks.org/problems/maximum-width-of-tree/1
+Tree,Easy,Level Order Line by Line,"Morgan Stanley, Amazon, Microsoft, +2",53.78%,https://www.geeksforgeeks.org/problems/level-order-traversal-line-by-line/1
+Tree,Easy,Minimum Depth of a Binary Tree,"Amazon, Microsoft, Facebook",42.09%,https://www.geeksforgeeks.org/problems/minimum-depth-of-a-binary-tree/1
+Tree,Easy,Introduction to Trees,,82.66%,https://www.geeksforgeeks.org/problems/introduction-to-trees/1
+Tree,Easy,Max and Min in Binary Tree,,60.57%,https://www.geeksforgeeks.org/problems/max-and-min-element-in-binary-tree/1
+Tree,Easy,Visit Leaves with Budget,Oracle,50.05%,https://www.geeksforgeeks.org/problems/leaf-under-budget/1
+Tree,Easy,Largest Value of Every Level,Amazon,68.05%,https://www.geeksforgeeks.org/problems/largest-value-in-each-level/1
+Tree,Easy,Remove Half Nodes,Amazon,59.67%,https://www.geeksforgeeks.org/problems/remove-half-nodes/1
+Tree,Easy,Two Mirror Trees,"Amazon, D-E-Shaw, Hike",57.36%,https://www.geeksforgeeks.org/problems/two-mirror-trees/1
+Tree,Easy,Binary Tree Representation,,75.76%,https://www.geeksforgeeks.org/problems/binary-tree-representation/1
+Tree,Easy,Sum of Leaf Nodes,,70.24%,https://www.geeksforgeeks.org/problems/sum-of-leaf-nodes/1
+Tree,Easy,Maximum Depth Of Binary Tree,"Amazon, Microsoft, Facebook",77.83%,https://www.geeksforgeeks.org/problems/maximum-depth-of-binary-tree/1
+Tree,Easy,Max Level Sum in Binary Tree,"VMWare, Flipkart, Amazon",54.67%,https://www.geeksforgeeks.org/problems/max-level-sum-in-binary-tree/1
+Tree,Easy,Sum of Left Leaf Nodes,Amazon,45.47%,https://www.geeksforgeeks.org/problems/sum-of-left-leaf-nodes/1
+Tree,Easy,Odd even level difference,Amazon,70.86%,https://www.geeksforgeeks.org/problems/odd-even-level-difference/1
+Tree,Easy,Level of a Node in Binary Tree,Amazon,52.09%,https://www.geeksforgeeks.org/problems/level-of-a-node-in-binary-tree/1
+Tree,Easy,BBT counter,,38.47%,https://www.geeksforgeeks.org/problems/bbt-counter4914/1
+Tree,Easy,Next Right Node,,47.98%,https://www.geeksforgeeks.org/problems/next-right-node/1
+Tree,Easy,Maximum Node Level,"VMWare, Amazon",53.63%,https://www.geeksforgeeks.org/problems/maximum-node-level/1
+Tree,Easy,Deletion in a Binary Tree,,22.28%,https://www.geeksforgeeks.org/problems/deletion-in-a-binary-tree/1
+Tree,Easy,Parent of Siblings with Maximum GCD,Samsung,52.29%,https://www.geeksforgeeks.org/problems/find-the-node-with-maximum-gcd-of-the-siblings-of-a-binary-tree/1
+Tree,Easy,Perfect Binary Tree,FactSet,45.43%,https://www.geeksforgeeks.org/problems/perfect-binary-tree/1
+Tree,Easy,Nodes at Odd Levels,"Flipkart, Accolite",27.63%,https://www.geeksforgeeks.org/problems/nodes-at-odd-levels/1
+Tree,Easy,Sum of Leaf Nodes at Min Level,Microsoft,46.19%,https://www.geeksforgeeks.org/problems/sum-of-leaf-nodes-at-min-level/1
+Tree,Easy,Sum of Right Leaf Nodes,,54.26%,https://www.geeksforgeeks.org/problems/sum-of-right-leaf-nodes/1
+Tree,Easy,Binary Tree K Level Sum,Samsung,37.66%,https://www.geeksforgeeks.org/problems/binary-tree-k-level-sum3857/1
+Tree,Easy,Height of Spiral Tree,Amazon,51.91%,https://www.geeksforgeeks.org/problems/height-of-spiral-tree/1
+Tree,Easy,Tilt of Binary Tree,,51.70%,https://www.geeksforgeeks.org/problems/tilt-of-binary-tree/1
+Tree,Easy,Count Leaves in a Perfect n-ary Tree,,45.36%,https://www.geeksforgeeks.org/problems/k-ary-tree1235/1
+Tree,Easy,Depth of Deepest Odd Level Node,,45.05%,https://www.geeksforgeeks.org/problems/depth-of-node/1
+Tree,Easy,Pairwise Swap Leaf Nodes,,37.10%,https://www.geeksforgeeks.org/problems/exchange-the-leaf-nodes/1
+Tree,Easy,Postorder from Inorder and Preorder,Payu,56.13%,https://www.geeksforgeeks.org/problems/postorder-traversal-from-given-inorder-and-preorder-traversals/1
+Tree,Medium,Tree Boundary Traversal,"Accolite, Amazon, FactSet, +9",23.33%,https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
+Tree,Medium,Top View of Binary Tree,"NPCI, Ola Cabs, Paytm, +1",38.43%,https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+Tree,Medium,Zig-Zag Tree Traversal,"Amazon, Cisco, FactSet, +5",54.05%,https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1
+Tree,Medium,Diameter of a Binary Tree,"Amazon, Microsoft, NPCI, +1",47.37%,https://www.geeksforgeeks.org/problems/diameter-of-binary-tree/1
+Tree,Medium,Bottom View of Binary Tree,"Accolite, Amazon, CouponDunia, +4",54.18%,https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+Tree,Medium,Sum Tree,"Adobe, Amazon, D-E-Shaw, +2",37.17%,https://www.geeksforgeeks.org/problems/sum-tree/1
+Tree,Medium,Level Order Traversal,"Accolite, Adobe, Amazon, +9",70.31%,https://www.geeksforgeeks.org/problems/level-order-traversal/1
+Tree,Medium,Children Sum in a Binary Tree,Intuit,51.58%,https://www.geeksforgeeks.org/problems/children-sum-parent/1
+Tree,Medium,Vertical Tree Traversal,"Accolite, Amazon, BrowserStack, +7",32.87%,https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
+Tree,Medium,LCA in Binary Tree,"Accolite, Amazon, American Express, +13",52.85%,https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+Tree,Medium,Construct Tree from Inorder & Preorder,"Accolite, Amazon, Microsoft",34.59%,https://www.geeksforgeeks.org/problems/construct-tree-1/1
+Tree,Medium,Check Subtree,"Morgan Stanley, Amazon, Microsoft, +5",24.34%,https://www.geeksforgeeks.org/problems/check-if-subtree/1
+Tree,Medium,K Sum Paths,"Flipkart, Amazon, Walmart, +1",44.73%,https://www.geeksforgeeks.org/problems/k-sum-paths/1
+Tree,Medium,Kth Ancestor in a Tree,"Google, Facebook, Amazon",35.06%,https://www.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
+Tree,Medium,Sum of nodes on the longest path,,52.39%,https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1
+Tree,Medium,Maximum Path Sum,"Flipkart, Google, Facebook, +1",42.92%,https://www.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1
+Tree,Medium,Isomorphic Trees,"Amazon, Microsoft",49.11%,https://www.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1
+Tree,Medium,Duplicate Subtree Check,Google,34.23%,https://www.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1
+Tree,Medium,Connect Nodes of Levels,"Flipkart, Accolite, Amazon, +8",55.78%,https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level/1
+Tree,Medium,Maximum Non-Adjacent Nodes Sum,"Flipkart, Amazon, Google, +1",55.35%,https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
+Tree,Medium,Diagonal Tree Traversal,"Amazon, Microsoft",60.63%,https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
+Tree,Medium,Node and Ancestor Max Diff,Amazon,34.95%,https://www.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1
+Tree,Medium,Binary Tree from Inorder and Postorder,"Amazon, Microsoft, Hike, +1",64.78%,https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1
+Tree,Medium,Count Nodes at Distance K From Leaf,"Flipkart, Microsoft",34.27%,https://www.geeksforgeeks.org/problems/node-at-distance/1
+Tree,Medium,Vertical Width of a Binary Tree,,43.48%,https://www.geeksforgeeks.org/problems/vertical-width-of-a-binary-tree/1
+Tree,Medium,Ancestors in Binary Tree,Amazon,40.34%,https://www.geeksforgeeks.org/problems/ancestors-in-binary-tree/1
+Tree,Medium,All Duplicate Subtrees,,23.98%,https://www.geeksforgeeks.org/problems/duplicate-subtrees/1
+Tree,Medium,Linked List to Binary Tree,Amazon,65.65%,https://www.geeksforgeeks.org/problems/make-binary-tree/1
+Tree,Medium,Construct Binary Tree from Parent Array,"Amazon, Microsoft, Snapdeal",47.34%,https://www.geeksforgeeks.org/problems/construct-binary-tree-from-parent-array/1
+Tree,Medium,Check if two Nodes are Cousins,"Amazon, D-E-Shaw",25.99%,https://www.geeksforgeeks.org/problems/check-if-two-nodes-are-cousins/1
+Tree,Medium,Vertical Sum,Amazon,64.76%,https://www.geeksforgeeks.org/problems/vertical-sum/1
+Tree,Medium,Populate Inorder Successors,,51.20%,https://www.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1
+Tree,Medium,Binary Tree to Circular DLL,"Amazon, SAP Labs",71.66%,https://www.geeksforgeeks.org/problems/binary-tree-to-cdll/1
+Tree,Medium,Corner Nodes in Binary Tree,Amazon,52.58%,https://www.geeksforgeeks.org/problems/leftmost-and-rightmost-nodes-of-binary-tree/1
+Tree,Medium,Count Greater on Right Queries,,56.74%,https://www.geeksforgeeks.org/problems/number-of-nges-to-the-right/1
+Tree,Medium,Iterative Postorder,Microsoft,80.67%,https://www.geeksforgeeks.org/problems/postorder-traversal-iterative/1
+Tree,Medium,Flatten Binary Tree to Linked List,Microsoft,75.82%,https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
+Tree,Medium,Count SubTrees with Sum,Microsoft,56.90%,https://www.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1
+Tree,Medium,Root to Leaf Paths Sum,"Amazon, Microsoft, OYO Rooms, +1",58.40%,https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1
+Tree,Medium,Foldable Binary Tree,Expedia,60.54%,https://www.geeksforgeeks.org/problems/foldable-binary-tree/1
+Tree,Medium,Diagonal Sum in Binary Tree,"Accolite, Amazon",61.89%,https://www.geeksforgeeks.org/problems/diagonal-sum-in-binary-tree/1
+Tree,Medium,Iterative Preorder Traversal,"Microsoft, NPCI",81.12%,https://www.geeksforgeeks.org/problems/preorder-traversal-iterative/1
+Tree,Medium,Iterative Inorder,Microsoft,80.50%,https://www.geeksforgeeks.org/problems/inorder-traversal-iterative/1
+Tree,Medium,Paths from Root with Sum,Microsoft,55.00%,https://www.geeksforgeeks.org/problems/paths-from-root-with-a-specified-sum/1
+Tree,Medium,Check Mirror in N-ary tree,"Amazon, D-E-Shaw, Hike, +1",52.21%,https://www.geeksforgeeks.org/problems/check-mirror-in-n-ary-tree1528/1
+Tree,Medium,Kth Common Ancestor in BST,,58.93%,https://www.geeksforgeeks.org/problems/kth-common-ancestor-in-bst/1
+Tree,Medium,Construct a Full Binary Tree,,74.63%,https://www.geeksforgeeks.org/problems/construct-a-full-binary-tree--170648/1
+Tree,Medium,Sum of nodes within k distance from target,,62.90%,https://www.geeksforgeeks.org/problems/sum-of-nodes-within-k-distance-from-target--170637/1
+Tree,Medium,Check Complete Binary Tree,,42.94%,https://www.geeksforgeeks.org/problems/complete-binary-tree/1
+Tree,Medium,Largest Subtree Sum,,54.83%,https://www.geeksforgeeks.org/problems/largest-subtree-sum-in-a-tree/1
+Tree,Medium,Binary Tree from Bracket String,,59.15%,https://www.geeksforgeeks.org/problems/construct-binary-tree-from-string-with-bracket-representation/1
+Tree,Medium,Leaves to DLL,"Amazon, Linkedin",49.21%,https://www.geeksforgeeks.org/problems/leaves-to-dll/1
+Tree,Medium,Tree Transformation,,54.63%,https://www.geeksforgeeks.org/problems/tree-transformation--170648/1
+Tree,Medium,Check Level Anagrams in Binary Trees,,56.88%,https://www.geeksforgeeks.org/problems/check-if-all-levels-of-two-trees-are-anagrams-or-not/1
+Tree,Medium,Clone a Binary Tree,"Amazon, Synopsys",67.71%,https://www.geeksforgeeks.org/problems/clone-a-binary-tree/1
+Tree,Medium,Complete Binary Tree Traversal with Array Input,,46.62%,https://www.geeksforgeeks.org/problems/print-binary-tree-levels-in-sorted-order3241/1
+Tree,Medium,Construct Tree from Preorder Traversal,"Amazon, Hike",56.59%,https://www.geeksforgeeks.org/problems/construct-tree-from-preorder-traversal/1
+Tree,Medium,Single Valued Subtrees Count,Media.net,58.70%,https://www.geeksforgeeks.org/problems/single-valued-subtree/1
+Tree,Medium,Connect Nodes at Same Level,"Flipkart, Accolite, Amazon, +8",71.19%,https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level--170647/1
+Tree,Medium,Max GCD of Siblings,Samsung,49.62%,https://www.geeksforgeeks.org/problems/maximum-gcd-of-siblings-of-a-binary-tree/1
+Tree,Medium,Extreme Nodes in Alternate Order,Amazon,53.71%,https://www.geeksforgeeks.org/problems/extreme-nodes-in-alternate-order/1
+Tree,Medium,Duplicate Subtrees in an N-ary Tree,,77.56%,https://www.geeksforgeeks.org/problems/subtree-in-n-ary-tree--170647/1
+Tree,Medium,Size of a Complete Binary Tree,,71.60%,https://www.geeksforgeeks.org/problems/count-number-of-nodes-in-a-binary-tree/1
+Tree,Medium,Reverse Alternate Levels of Binary Tree,"Amazon, Hike",43.23%,https://www.geeksforgeeks.org/problems/reverse-alternate-levels-of-a-perfect-binary-tree/1
+Tree,Medium,Max Alternating Sum Path to a Leaf,,64.05%,https://www.geeksforgeeks.org/problems/best-node--170647/1
+Tree,Medium,Print Nodes having K leaves,Amazon,36.21%,https://www.geeksforgeeks.org/problems/print-nodes-having-k-leaves/1
+Tree,Medium,Cousins of a Node,Microsoft,49.75%,https://www.geeksforgeeks.org/problems/cousins-of-a-given-node/1
+Tree,Medium,Count Full Binary Trees,,53.61%,https://www.geeksforgeeks.org/problems/count-the-number-of-full-binary-trees2525/1
+Tree,Medium,Construct Tree from Preorder & Postorder,,76.66%,https://www.geeksforgeeks.org/problems/construct-tree-from-preorder-postorder/1
+Tree,Medium,Root to Leaf Paths and Lenghts,,50.69%,https://www.geeksforgeeks.org/problems/number-of-root-to-leaf-paths/1
+Tree,Medium,Construct Expression Tree,,60.64%,https://www.geeksforgeeks.org/problems/construct-an-expression-tree/1
+Tree,Medium,Tree from Inorder and Level Order,,60.84%,https://www.geeksforgeeks.org/problems/construct-tree-from-inorder-and-levelorder/1
+Tree,Medium,Height Using Parent Array,,64.29%,https://www.geeksforgeeks.org/problems/height-using-parent-array4103/1
+Tree,Medium,Mirror of Node,,31.06%,https://www.geeksforgeeks.org/problems/mirror-of-a-given-node/1
+Tree,Medium,Party in Town,,66.03%,https://www.geeksforgeeks.org/problems/party-in-town3951/1
+Tree,Medium,Minimum Edge Deletions to Make a Star Tree,,41.71%,https://www.geeksforgeeks.org/problems/tree-transformation--170645/1
+Tree,Medium,Node in subtree or not,,59.28%,https://www.geeksforgeeks.org/problems/find-alice/1
+Tree,Hard,Max Path Sum Between Two Leaves,"Accolite, Amazon, Directi, +4",18.39%,https://www.geeksforgeeks.org/problems/maximum-path-sum/1
+Tree,Hard,Binary Tree to DLL,"Accolite, Amazon, Goldman Sachs, +4",53.36%,https://www.geeksforgeeks.org/problems/binary-tree-to-dll/1
+Tree,Hard,Burning Tree,"Adobe, Amazon, Flipkart, +2",53.53%,https://www.geeksforgeeks.org/problems/burning-tree/1
+Tree,Hard,Min Distance Between Two in Binary Tree,"Amazon, Linkedin, MakeMyTrip, +3",39.13%,https://www.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1
+Tree,Hard,Serialize and Deserialize a Binary Tree,"Accolite, Adobe, Amazon, +9",51.67%,https://www.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1
+Tree,Hard,Nodes at Distance in Binary Tree,"Accolite, Amazon, Flipkart, +6",32.36%,https://www.geeksforgeeks.org/problems/nodes-at-given-distance-in-binary-tree/1
+Tree,Hard,Distribute Candies,Microsoft,63.24%,https://www.geeksforgeeks.org/problems/distribute-candies-in-a-binary-tree/1
+Tree,Hard,AVL Tree Deletion,"Amazon, MakeMyTrip, Morgan Stanley, +3",47.98%,https://www.geeksforgeeks.org/problems/avl-tree-deletion/1
+Tree,Hard,Number of Turns in Binary Tree,"Amazon, Samsung",42.63%,https://www.geeksforgeeks.org/problems/number-of-turns-in-binary-tree/1
+Tree,Hard,Possible Paths in a Tree,,71.75%,https://www.geeksforgeeks.org/problems/possible-paths--141628/1
+Tree,Hard,Scrambled String,Nutanix,59.40%,https://www.geeksforgeeks.org/problems/scrambled-string/1
+Tree,Hard,Check Tree Traversal,,38.10%,https://www.geeksforgeeks.org/problems/check-tree-traversal--141628/1
+Tree,Hard,Corona Vaccine,,60.23%,https://www.geeksforgeeks.org/problems/corona-vaccine--141631/1
+Tree,Hard,Minimum Darkness,,25.80%,https://www.geeksforgeeks.org/problems/minimum-darkness/1
+Tree,Hard,Ancestor Queries on a Tree,,62.50%,https://www.geeksforgeeks.org/problems/ancestor-queries-on-a-tree/1

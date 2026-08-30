@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ingest": "tsx scripts/ingest.ts data/leetcode-company-wise-problems"
+    "ingest": "tsx scripts/ingest.ts data/leetcode-company-wise-problems data/patterns"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",

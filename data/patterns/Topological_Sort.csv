@@ -1,0 +1,7 @@
+category,difficulty,title,company_tags,accuracy,url
+Topological Sort,Medium,Topological Sort,"Accolite, Amazon, D-E-Shaw, +7",56.52%,https://www.geeksforgeeks.org/problems/topological-sort/1
+Topological Sort,Medium,Course Schedule I,"Amazon, Bloomberg, Google, +5",67.59%,https://www.geeksforgeeks.org/problems/course-schedule-i/1
+Topological Sort,Medium,Minimum height roots,"Adobe, Amazon, Bloomberg, +2",64.16%,https://www.geeksforgeeks.org/problems/minimum-height-roots/1
+Topological Sort,Medium,Max DAG Edges,,65.66%,https://www.geeksforgeeks.org/problems/max-dag-edges/1
+Topological Sort,Medium,Earliest Completion Time of Jobs,,62.92%,https://www.geeksforgeeks.org/problems/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/1
+Topological Sort,Medium,Ancestor Nodes in DAG,,45.98%,https://www.geeksforgeeks.org/problems/ancestor-nodes-in-dag/1

@@ -1,0 +1,46 @@
+category,difficulty,title,company_tags,accuracy,url
+Number Theory,Basic,Sum of fifth powers of the first n natural numbers,,43.89%,https://www.geeksforgeeks.org/problems/sum-of-fifth-powers-of-the-first-n-natural-numbers3415/1
+Number Theory,Basic,Sum of Divisors,,54.22%,https://www.geeksforgeeks.org/problems/sum-of-divisors3601/1
+Number Theory,Basic,Common Divisors,,58.25%,https://www.geeksforgeeks.org/problems/common-divisors4712/1
+Number Theory,Basic,Corner Digits Sum,,36.75%,https://www.geeksforgeeks.org/problems/corner-digits1317/1
+Number Theory,Basic,Narcissistic Number,,49.55%,https://www.geeksforgeeks.org/problems/narcissistic-number4852/1
+Number Theory,Basic,Sophie Germain Primes,,51.52%,https://www.geeksforgeeks.org/problems/sophie-germain-prime2014/1
+Number Theory,Basic,Check for three consecutive numbers,,46.69%,https://www.geeksforgeeks.org/problems/check-for-three-consecutive-numbers5729/1
+Number Theory,Basic,Nth Multiple in Fibonacci,,29.57%,https://www.geeksforgeeks.org/problems/nth-multiple/1
+Number Theory,Basic,Count Unique Rectangles from n Unit Squares,,24.96%,https://www.geeksforgeeks.org/problems/number-of-unique-rectangles1849/1
+Number Theory,Easy,Sum Of Digits,Drishti-Soft,67.08%,https://www.geeksforgeeks.org/problems/sum-of-digits1742/1
+Number Theory,Easy,Summed Matrix,,46.76%,https://www.geeksforgeeks.org/problems/summed-matrix5834/1
+Number Theory,Easy,Squares in N*N Chessboard,"Goldman Sachs, MAQ Software",66.14%,https://www.geeksforgeeks.org/problems/squares-in-nn-chessboard1801/1
+Number Theory,Easy,Compare two fractions,,54.74%,https://www.geeksforgeeks.org/problems/compare-two-fractions4438/1
+Number Theory,Easy,Minimum Number,,53.41%,https://www.geeksforgeeks.org/problems/minimum-number--170647/1
+Number Theory,Easy,Ways to Break into 3 Numbers,,50.81%,https://www.geeksforgeeks.org/problems/break-a-number5913/1
+Number Theory,Easy,Rectangles in N*N Board,"Goldman Sachs, VMWare",24.10%,https://www.geeksforgeeks.org/problems/rectangles-in-nn-board5930/1
+Number Theory,Easy,Excel Column Number from Name,,58.66%,https://www.geeksforgeeks.org/problems/excel-sheet-part-21138/1
+Number Theory,Easy,Count Numbers Not Divisible by 2–10,,32.48%,https://www.geeksforgeeks.org/problems/number-that-are-not-divisible4541/1
+Number Theory,Easy,Floor and Ceil of Integer Division,,50.33%,https://www.geeksforgeeks.org/problems/floor-and-ceil-of-integer-division/1
+Number Theory,Easy,Numbers with Same Corner Digits,Amazon,37.62%,https://www.geeksforgeeks.org/problems/numbers-with-same-first-and-last-digit4228/1
+Number Theory,Easy,Common Divisor,,44.66%,https://www.geeksforgeeks.org/problems/common-divisor0847/1
+Number Theory,Easy,Primorial of a Number,,38.51%,https://www.geeksforgeeks.org/problems/primorial-of-a-number3830/1
+Number Theory,Easy,Sixy Primes,,20.60%,https://www.geeksforgeeks.org/problems/sexy-primes3341/1
+Number Theory,Easy,Sphenic Number,,37.94%,https://www.geeksforgeeks.org/problems/sphenic-number5922/1
+Number Theory,Easy,Remainder of Array Product Division,,27.50%,https://www.geeksforgeeks.org/problems/remainder-of-array-multiplication0140/1
+Number Theory,Easy,Sum of K Primes,,41.35%,https://www.geeksforgeeks.org/problems/sum-of-k-primes0056/1
+Number Theory,Easy,Mighty Divisor,,19.40%,https://www.geeksforgeeks.org/problems/the-mighty-divisible-number22312231/1
+Number Theory,Easy,Unit Digit in a Product,,20.45%,https://www.geeksforgeeks.org/problems/find-unit-digit-in-a-product2059/1
+Number Theory,Easy,Longest Divisible Sequence Ending at N,,31.80%,https://www.geeksforgeeks.org/problems/beautiful-sequence4203/1
+Number Theory,Easy,Minimal Summing Up,,34.37%,https://www.geeksforgeeks.org/problems/minimal-summing-up4253/1
+Number Theory,Medium,Factorials of large numbers,"Adobe, BrowserStack, MakeMyTrip, +5",36.57%,https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1
+Number Theory,Medium,Modular Exponentiation,"Google, MakeMyTrip",52.56%,https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1
+Number Theory,Medium,Sum of 2 Primes,"Yahoo, Zoho",27.67%,https://www.geeksforgeeks.org/problems/sum-of-prime4751/1
+Number Theory,Medium,Rank The Permutations,"Amazon, FactSet, Microsoft",49.84%,https://www.geeksforgeeks.org/problems/rank-the-permutations2229/1
+Number Theory,Medium,Power of k in factorial of n,,51.20%,https://www.geeksforgeeks.org/problems/power-of-k-in-n-where-k-may-be-non-prime4206/1
+Number Theory,Medium,Occurences of 2 as a Digit,Amazon,62.18%,https://www.geeksforgeeks.org/problems/occurences-of-2-as-a-digit/1
+Number Theory,Medium,Probability of Knight,"Amazon, Directi",43.21%,https://www.geeksforgeeks.org/problems/probability-of-knight5529/1
+Number Theory,Medium,Range GCD Queries,,68.95%,https://www.geeksforgeeks.org/problems/range-gcd-queries3654/1
+Number Theory,Medium,All Prime Factors in Any Order,,40.25%,https://www.geeksforgeeks.org/problems/prime-factor-of-a-number/1
+Number Theory,Medium,Count Divisors of 1 to n,,34.79%,https://www.geeksforgeeks.org/problems/james-bond-and-divisors5539/1
+Number Theory,Medium,Recurrence Matrix,,13.82%,https://www.geeksforgeeks.org/problems/recurrence-matrix2315/1
+Number Theory,Medium,Count Divisors of Factorial,,22.09%,https://www.geeksforgeeks.org/problems/count-divisors-of-factorial4508/1
+Number Theory,Medium,Count Ways of Money Distribution,,25.79%,https://www.geeksforgeeks.org/problems/money-distributions5924/1
+Number Theory,Hard,Count the Coprimes,,49.35%,https://www.geeksforgeeks.org/problems/count-the-coprimes/1
+Number Theory,Hard,Minimum Base Representation,HackWithInfy,18.40%,https://www.geeksforgeeks.org/problems/minimum-base-representation/1

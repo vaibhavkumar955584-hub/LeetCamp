@@ -1,0 +1,32 @@
+category,difficulty,title,company_tags,accuracy,url
+Sliding Window,Easy,Smallest Subarray Sum Greater Than x,"Accolite, Amazon, Facebook, +2",37.07%,https://www.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1
+Sliding Window,Easy,Largest subarray of 0's and 1's,"Amazon, MakeMyTrip, Morgan Stanley, +1",32.96%,https://www.geeksforgeeks.org/problems/largest-subarray-of-0s-and-1s/1
+Sliding Window,Easy,"Smallest window containing 0, 1 and 2",Paytm,49.73%,https://www.geeksforgeeks.org/problems/smallest-window-containing-0-1-and-2--170637/1
+Sliding Window,Easy,Two Smallests in Every Subarray,,52.63%,https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/1
+Sliding Window,Easy,Nth Geeky Number,,53.86%,https://www.geeksforgeeks.org/problems/is-it-fibonacci--170647/1
+Sliding Window,Easy,Count Increasing Subarrays,,53.02%,https://www.geeksforgeeks.org/problems/count-increasing-subarrays5301/1
+Sliding Window,Easy,Max Subarray Sum Limited by X,,43.78%,https://www.geeksforgeeks.org/problems/maximum-sum-of-subarray-less-than-or-equal-to-x4033/1
+Sliding Window,Easy,Maximum Packages Delivered Within Total Time,Facebook,28.15%,https://www.geeksforgeeks.org/problems/bird-and-maximum-fruit-gathering0509/1
+Sliding Window,Easy,Check if Permutation is Substring,,42.22%,https://www.geeksforgeeks.org/problems/check-if-permutation-is-substring/1
+Sliding Window,Medium,Zero Sum Subarray,"Paytm, Adobe",39.79%,https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1
+Sliding Window,Medium,Longest Substring with Distinct Characters,"Amazon, Microsoft, Housing.com, +4",31.32%,https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1
+Sliding Window,Medium,Count Distinct Elements in Every Window,"Accolite, Amazon, Microsoft, +1",41.83%,https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/1
+Sliding Window,Medium,Longest subarray with Atmost two distinct integers,,47.98%,https://www.geeksforgeeks.org/problems/longest-subarray-with-atmost-two-distinct-integers/1
+Sliding Window,Medium,Smallest distinct window,"Amazon, Dailyhunt",31.85%,https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1
+Sliding Window,Medium,Subarrays Product Less than K,"Goldman Sachs, Facebook, Walmart, +5",21.00%,https://www.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1
+Sliding Window,Medium,Count Occurences of Anagrams,"Flipkart, Amazon, Microsoft, +1",48.09%,https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1
+Sliding Window,Medium,Max Consecutive 1's with K Flips,"Accolite, Amazon, Microsoft, +2",39.46%,https://www.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
+Sliding Window,Medium,Substrings of length k with k-1 distinct elements,Amazon,57.85%,https://www.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1
+Sliding Window,Medium,Subarrays with Max in Range,,52.50%,https://www.geeksforgeeks.org/problems/number-of-subarrays-with-maximum-values-in-given-range5949/1
+Sliding Window,Medium,Max Xor Subarray of size K,,55.63%,https://www.geeksforgeeks.org/problems/max-xor-subarray-of-size-k/1
+Sliding Window,Medium,Subarrays With At Most K Distinct,NPCI,62.09%,https://www.geeksforgeeks.org/problems/subarrays-with-at-most-k-distinct-integers/1
+Sliding Window,Medium,Subarrays with K Distinct Integers,,50.00%,https://www.geeksforgeeks.org/problems/subarrays-with-k-different-integers/1
+Sliding Window,Medium,Binary subarray sum,,50.41%,https://www.geeksforgeeks.org/problems/binary-subarray-with-sum/1
+Sliding Window,Medium,Maximum point you can obtain from cards,,51.04%,https://www.geeksforgeeks.org/problems/maximum-point-you-can-obtain-from-cards/1
+Sliding Window,Medium,Subarrays Covering All Distinct,,54.44%,https://www.geeksforgeeks.org/problems/equivalent-sub-arrays3731/1
+Sliding Window,Medium,Three Sum,,50.60%,https://www.geeksforgeeks.org/problems/three-sum/1
+Sliding Window,Medium,Minimum Removals for Target Sum,NPCI,31.62%,https://www.geeksforgeeks.org/problems/minimum-removals-for-target-sum/1
+Sliding Window,Medium,Maximum Frequency with K Increments,,43.88%,https://www.geeksforgeeks.org/problems/maximum-frequency-1662528911/1
+Sliding Window,Medium,Shortest substring containing all vowels,,63.14%,https://www.geeksforgeeks.org/problems/shortest-substring-containing-all-vowels/1
+Sliding Window,Medium,Minimum Swaps to Group 1s in Circular,,12.78%,https://www.geeksforgeeks.org/problems/minimum-swaps-required-to-group-all-1s-together-ii/1
+Sliding Window,Hard,Subarrays with Sum in Range,,48.76%,https://www.geeksforgeeks.org/problems/count-the-number-of-subarrays/1

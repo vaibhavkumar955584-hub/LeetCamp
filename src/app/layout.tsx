@@ -5,8 +5,8 @@ import { BootSequence } from '@/components/BootSequence';
 import { getDatasetMetadata } from '@/lib/db';
 
 export const metadata: Metadata = {
-  title: 'LEETCAMP // TERMINAL.SYS — Interview Question Archive',
-  description: 'CRT Green-Phosphor Terminal Archive of LeetCode technical interview questions across 429+ companies.',
+  title: 'LEETCAMP // TERMINAL.SYS — Technical Interview & DSA Patterns Archive',
+  description: 'CRT Green-Phosphor Terminal Archive of LeetCode technical interview questions across 470+ companies and 48 curated DSA topic patterns.',
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
@@ -51,14 +51,14 @@ export default function RootLayout({
         <footer className="border-t border-[#1a2e1a] bg-[#0b0f0a] py-6 text-center text-xs text-[#4d7a52] relative z-10 font-mono">
           <div className="max-w-[1920px] mx-auto px-3 sm:px-6 lg:px-8 space-y-2">
             <p className="text-[#33ff66]">
-              ★ LEETCAMP.SYS // INTERVIEW QUESTION DIRECTORY v1.0 ★
+              ★ LEETCAMP.SYS // INTERVIEW ARCHIVE & 48 DSA PATTERNS v2.0 ★
             </p>
             <p className="text-[#4d7a52] max-w-3xl mx-auto text-[11px]">
-              <strong className="text-[#33ff66]">NOTICE:</strong> DIRECT LINKS POINT DIRECTLY TO LEETCODE.COM. PROPRIETARY PROBLEM STATEMENTS ARE NOT HOSTED OR REPRODUCED.
+              <strong className="text-[#33ff66]">NOTICE:</strong> DIRECT LINKS POINT DIRECTLY TO LEETCODE.COM & PROBLEM SOURCES. PROPRIETARY STATEMENTS ARE NOT HOSTED.
             </p>
             {formattedDate && (
               <p className="text-[10px] text-[#4d7a52] pt-1">
-                SQLITE_SNAPSHOT: {formattedDate} // {metadata.totalRows?.toLocaleString()} RECORDS // {metadata.totalCompanies} ORGANIZATIONS [ONLINE]
+                SQLITE_SNAPSHOT: {formattedDate} // {metadata.totalCompanyProblems?.toLocaleString()} COMPANY PROBLEMS // {metadata.totalCompanies} ORGANIZATIONS // {metadata.totalPatterns} DSA PATTERNS ({metadata.totalPatternProblems?.toLocaleString()} QUESTIONS) [ONLINE]
               </p>
             )}
           </div>

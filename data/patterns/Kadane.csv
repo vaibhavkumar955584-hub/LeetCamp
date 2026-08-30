@@ -1,0 +1,7 @@
+category,difficulty,title,company_tags,accuracy,url
+Kadane,Medium,Substring with Max Zero-One Diff,,53.05%,https://www.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1
+Kadane,Medium,Maximum ASCII Sum Substring,,59.25%,https://www.geeksforgeeks.org/problems/save-your-life4601/1
+Kadane,Medium,Max Absolute Diff of Two Subarrays,Google,50.44%,https://www.geeksforgeeks.org/problems/max-absolute-difference4114/1
+Kadane,Medium,Largest Sum Subarray Range Queries,,51.45%,https://www.geeksforgeeks.org/problems/largest-sum-contiguous-subarray-in-range-1587115620/1
+Kadane,Hard,Max Circular Subarray Sum,"Amazon, Microsoft",29.37%,https://www.geeksforgeeks.org/problems/max-circular-subarray-sum-1587115620/1
+Kadane,Hard,Maximum Sum Submatrix,"Accolite, Amazon, D-E-Shaw, +4",49.78%,https://www.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1

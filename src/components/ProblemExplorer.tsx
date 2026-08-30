@@ -62,23 +62,35 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
   const [totalPages, setTotalPages] = useState(initialData?.pagination?.totalPages || 1);
 
   const [availableTopics, setAvailableTopics] = useState<string[]>(['ALL']);
+  const [companyPatterns, setCompanyPatterns] = useState<any[]>([]);
 
-  // Fetch full company topics list on mount
+  // Fetch full company topics list & pattern questions on mount
   useEffect(() => {
-    async function loadTopics() {
+    async function loadTopicsAndPatterns() {
       try {
-        const res = await fetch(`/api/companies/${encodeURIComponent(company)}/topics`);
-        if (res.ok) {
-          const data = await res.json();
+        const [topRes, patRes] = await Promise.all([
+          fetch(`/api/companies/${encodeURIComponent(company)}/topics`),
+          fetch(`/api/companies/${encodeURIComponent(company)}/patterns`),
+        ]);
+
+        if (topRes.ok) {
+          const data = await topRes.json();
           if (Array.isArray(data.topics)) {
             setAvailableTopics(['ALL', ...data.topics]);
           }
         }
+
+        if (patRes.ok) {
+          const patData = await patRes.json();
+          if (Array.isArray(patData.problems)) {
+            setCompanyPatterns(patData.problems);
+          }
+        }
       } catch (err) {
-        console.error('Failed to load company topics:', err);
+        console.error('Failed to load company topics/patterns:', err);
       }
     }
-    loadTopics();
+    loadTopicsAndPatterns();
   }, [company]);
 
   // Sync state changes into URL query string shallowly
@@ -275,6 +287,29 @@ export function ProblemExplorer({ company, initialData }: ProblemExplorerProps) 
             SYS_MODE: [INSPECT]
           </div>
         </div>
+
+        {/* DSA Pattern Cross-link Banner if company questions exist */}
+        {companyPatterns.length > 0 && (
+          <div className="pt-2 border-t border-[#1a2e1a] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs bg-[#0f170e] p-2.5 border border-[#2d4f2d]">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-[#ffb000] font-arcade text-[10px]">
+                ★ [DSA PATTERNS]
+              </span>
+              <span className="text-[#33ff66] font-bold">
+                {companyPatterns.length} CURATED QUESTIONS TAGGED FOR {company.toUpperCase()}
+              </span>
+              <span className="text-[#62ad6a] hidden md:inline">
+                ({Array.from(new Set(companyPatterns.map((p: any) => p.category))).slice(0, 3).join(', ')}...)
+              </span>
+            </div>
+            <Link
+              href={`/patterns`}
+              className="px-2.5 py-1 bg-[#33ff66] text-[#0b0f0a] font-bold hover:bg-white transition-colors shrink-0 text-center"
+            >
+              [BROWSE DSA PATTERNS →]
+            </Link>
+          </div>
+        )}
       </div>
 
       {/* Filter Control Terminal */}

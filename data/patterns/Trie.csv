@@ -1,0 +1,26 @@
+category,difficulty,title,company_tags,accuracy,url
+Trie,Easy,Unique Rows in Boolean Matrix,"Amazon, Zoho",48.36%,https://www.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1
+Trie,Easy,Search Query for Strings,,56.48%,https://www.geeksforgeeks.org/problems/search-query-for-strings5049/1
+Trie,Medium,Word Boggle,"Amazon, Directi, Facebook, +5",15.85%,https://www.geeksforgeeks.org/problems/word-boggle4143/1
+Trie,Medium,Implement Trie,"Accolite, Amazon, D-E-Shaw, +2",65.68%,https://www.geeksforgeeks.org/problems/trie-insert-and-search0651/1
+Trie,Medium,Count Distinct Substrings,,40.21%,https://www.geeksforgeeks.org/problems/count-of-distinct-substrings/1
+Trie,Medium,PascalCase Pattern Matching,Ola Cabs,16.18%,https://www.geeksforgeeks.org/problems/camelcase-pattern-matching2259/1
+Trie,Medium,K Length Prefix Matches,Samsung,53.02%,https://www.geeksforgeeks.org/problems/prefix-match-with-other-strings/1
+Trie,Medium,Find the longest string,Flipkart,56.04%,https://www.geeksforgeeks.org/problems/find-the-longest-string--170645/1
+Trie,Medium,Duplicate rows in a binary matrix,Microsoft,60.19%,https://www.geeksforgeeks.org/problems/find-duplicate-rows-in-a-binary-matrix/1
+Trie,Medium,Prefix Suffix Strings,,54.18%,https://www.geeksforgeeks.org/problems/prefix-suffix-string--170647/1
+Trie,Medium,Count Strings with Given Prefix,,58.11%,https://www.geeksforgeeks.org/problems/count-strings-with-given-prefix/1
+Trie,Medium,Longest Valid Word with All Prefixes,,52.20%,https://www.geeksforgeeks.org/problems/longest-valid-word-with-all-prefixes/1
+Trie,Medium,Assign Short Codes in Stream of Words,,50.31%,https://www.geeksforgeeks.org/problems/renaming-cities28581833/1
+Trie,Medium,Trie Delete,Microsoft,51.33%,https://www.geeksforgeeks.org/problems/trie-delete/1
+Trie,Medium,XOR Pairs less than K,,53.16%,https://www.geeksforgeeks.org/problems/count-pairs-having-bitwise-xor-less-than-k/1
+Trie,Medium,Minimum XOR Value Pair,Microsoft,59.54%,https://www.geeksforgeeks.org/problems/minimum-xor-value-pair/1
+Trie,Medium,Count Words in Trie,,80.70%,https://www.geeksforgeeks.org/problems/count-words-in-a-trie/1
+Trie,Medium,Design Add and Search Words Data Structure,,67.12%,https://www.geeksforgeeks.org/problems/design-add-and-search-words-data-structure--154618/1
+Trie,Hard,Phone Directory,"Amazon, Microsoft, Snapdeal",25.68%,https://www.geeksforgeeks.org/problems/phone-directory4628/1
+Trie,Hard,Palindrome Pairs,"Amazon, Flipkart",31.71%,https://www.geeksforgeeks.org/problems/palindrome-pairs/1
+Trie,Hard,Maximum XOR Subarray,Microsoft,11.03%,https://www.geeksforgeeks.org/problems/maximum-xor-subarray--141631/1
+Trie,Hard,Shortest Unique Prefix for Every Word,"Google, Microsoft",50.02%,https://www.geeksforgeeks.org/problems/shortest-unique-prefix-for-every-word/1
+Trie,Hard,Search Query Auto Complete,"Amazon, Cisco, Facebook, +3",43.24%,https://www.geeksforgeeks.org/problems/search-query-auto-complete/1
+Trie,Hard,Word Search II,"Amazon, Directi, Facebook, +5",40.77%,https://www.geeksforgeeks.org/problems/word-search-ii/1
+Trie,Hard,Maximum XOR With an Element From Array,,49.73%,https://www.geeksforgeeks.org/problems/maximum-xor-with-an-element-from-array/1

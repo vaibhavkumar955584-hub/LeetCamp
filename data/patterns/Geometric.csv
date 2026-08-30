@@ -1,0 +1,22 @@
+category,difficulty,title,company_tags,accuracy,url
+Geometric,Basic,Distance between 2 points,Zoho,49.98%,https://www.geeksforgeeks.org/problems/distance-between-2-points3200/1
+Geometric,Basic,Count Unique Rectangles from n Unit Squares,,24.88%,https://www.geeksforgeeks.org/problems/number-of-unique-rectangles1849/1
+Geometric,Basic,Line Passing Through 2 Points,,34.11%,https://www.geeksforgeeks.org/problems/line-passing-through-2-points5031/1
+Geometric,Easy,Overlapping rectangles,"Amazon, Expedia, Goldman Sachs, +3",26.60%,https://www.geeksforgeeks.org/problems/overlapping-rectangles1924/1
+Geometric,Easy,Maximum Volume of Cuboid,,53.16%,https://www.geeksforgeeks.org/problems/magical-box5306/1
+Geometric,Easy,Adjacent 3 and Triangle,,79.83%,https://www.geeksforgeeks.org/problems/can-make-triangle--170637/1
+Geometric,Easy,Circle and Lattice Points,,46.10%,https://www.geeksforgeeks.org/problems/circle-and-lattice-points4257/1
+Geometric,Easy,Area of intersection of two circles,,28.48%,https://www.geeksforgeeks.org/problems/area-of-intersection-of-two-circles0653/1
+Geometric,Easy,Perimeter of Shapes in Binary Matrix,,56.55%,https://www.geeksforgeeks.org/problems/find-perimeter-of-shapes/1
+Geometric,Easy,Minimum Distance between Two Points,,17.49%,https://www.geeksforgeeks.org/problems/minimum-distance-between-two-points/1
+Geometric,Easy,Corners of a Rectangle,,25.71%,https://www.geeksforgeeks.org/problems/corners-of-a-rectangle1848/1
+Geometric,Medium,Check If two Line segments Intersect,"Adobe, Snapdeal, Zomato",24.51%,https://www.geeksforgeeks.org/problems/check-if-two-line-segments-intersect0017/1
+Geometric,Medium,K Closest Points to Origin,"Amazon, Google",62.40%,https://www.geeksforgeeks.org/problems/k-closest-points-to-origin--172242/1
+Geometric,Medium,Maximum Intersecting Lines,Swiggy,53.99%,https://www.geeksforgeeks.org/problems/maximum-intersecting-lines--170647/1
+Geometric,Medium,Different Sized Rectangles in a Circle,,60.22%,https://www.geeksforgeeks.org/problems/rectangles-in-a-circle0457/1
+Geometric,Medium,Integral Points Inside Triangle,,65.94%,https://www.geeksforgeeks.org/problems/integral-points-in-triangle5026/1
+Geometric,Medium,Minimum Iterations to Fill a Grid from One Cell,Oracle,63.43%,https://www.geeksforgeeks.org/problems/fill-the-matrix--170647/1
+Geometric,Medium,Missing Point of a Parallelogram,,28.30%,https://www.geeksforgeeks.org/problems/missing-point-of-a-parallelogram0146/1
+Geometric,Hard,Convex Hull,"Adobe, Goldman Sachs, Morgan Stanley, +2",16.97%,https://www.geeksforgeeks.org/problems/convex-hull2138/1
+Geometric,Hard,Location To Minimize Total Distance,,52.53%,https://www.geeksforgeeks.org/problems/optimum-location-of-point-to-minimize-total-distance/1
+Geometric,Hard,Point Inside Polygon,Flipkart,68.32%,https://www.geeksforgeeks.org/problems/a-point-and-a-polygon/1

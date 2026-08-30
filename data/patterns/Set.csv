@@ -1,0 +1,11 @@
+category,difficulty,title,company_tags,accuracy,url
+Set,Basic,Set Operations,,57.93%,https://www.geeksforgeeks.org/problems/set-operations/1
+Set,Easy,Unique Rows in Boolean Matrix,"Amazon, Zoho",48.36%,https://www.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1
+Set,Easy,Distinct Frequencies Check,"Adobe, Amazon, Apple, +3",57.68%,https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1
+Set,Easy,Multiset Operations,,63.45%,https://www.geeksforgeeks.org/problems/multiset-operations/1
+Set,Medium,Largest Smaller on Left,,22.61%,https://www.geeksforgeeks.org/problems/smaller-on-left20360700/1
+Set,Medium,Distinct Difference,,64.70%,https://www.geeksforgeeks.org/problems/distinct-difference--170647/1
+Set,Medium,Max Product Sorted Subsequence of Size 3,,35.08%,https://www.geeksforgeeks.org/problems/maximum-product-of-increasing-subsequence-of-size-32027/1
+Set,Hard,Sum of Mode,,54.20%,https://www.geeksforgeeks.org/problems/sum-of-mode/1
+Set,Hard,Maximum subarray sum 2,NPCI,53.83%,https://www.geeksforgeeks.org/problems/maximum-subarray-sum--110820/1
+Set,Hard,First Greater Element,,63.55%,https://www.geeksforgeeks.org/problems/first-greater-height/1

@@ -1,0 +1,17 @@
+category,difficulty,title,company_tags,accuracy,url
+Segment Tree,Easy,Max Prefix Sum For Range,,50.10%,https://www.geeksforgeeks.org/problems/maximum-prefix-sum-for-a-given-range0227/1
+Segment Tree,Medium,Kth Largest and Update Queries on Substrings,,53.05%,https://www.geeksforgeeks.org/problems/easy-task--170647/1
+Segment Tree,Medium,Range LCM Queries,,52.98%,https://www.geeksforgeeks.org/problems/range-lcm-queries3348/1
+Segment Tree,Medium,Range Minimum Query,,56.27%,https://www.geeksforgeeks.org/problems/range-minimum-query/1
+Segment Tree,Medium,Range Min Max Queries,,50.13%,https://www.geeksforgeeks.org/problems/range-min-max-queries4557/1
+Segment Tree,Medium,Range Sum Queries with Update,,53.34%,https://www.geeksforgeeks.org/problems/range-sum-queries2353/1
+Segment Tree,Medium,Longest Correct Bracket Subsequence,,54.86%,https://www.geeksforgeeks.org/problems/range-queries-for-longest-correct-bracket-subsequence4719/1
+Segment Tree,Medium,Largest Sum Subarray Range Queries,,51.45%,https://www.geeksforgeeks.org/problems/largest-sum-contiguous-subarray-in-range-1587115620/1
+Segment Tree,Medium,Range GCD Queries,,68.95%,https://www.geeksforgeeks.org/problems/range-gcd-queries3654/1
+Segment Tree,Medium,Smallest Subarray GCD,,24.44%,https://www.geeksforgeeks.org/problems/smallest-sub-array4107/1
+Segment Tree,Medium,Array Queries with OR and XOR,,23.11%,https://www.geeksforgeeks.org/problems/element-left-after-performing-alternate-or-xor-operation5106/1
+Segment Tree,Medium,Kth Smallest in Subarray Queries,,19.85%,https://www.geeksforgeeks.org/problems/easy-query3301/1
+Segment Tree,Hard,Count Reverse Pairs,"Adobe, Amazon, Bloomberg, +3",50.00%,https://www.geeksforgeeks.org/problems/count-reverse-pairs/1
+Segment Tree,Hard,Array Partition,,46.48%,https://www.geeksforgeeks.org/problems/array-partition/1
+Segment Tree,Hard,Queries forType of Subarray and Update,,39.45%,https://www.geeksforgeeks.org/problems/akku-and-arrays4452/1
+Segment Tree,Hard,Greater on Left and Smaller on Right,MakeMyTrip,38.00%,https://www.geeksforgeeks.org/problems/greater-or-less--170646/1

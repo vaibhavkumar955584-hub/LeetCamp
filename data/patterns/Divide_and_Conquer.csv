@@ -1,0 +1,30 @@
+category,difficulty,title,company_tags,accuracy,url
+Divide and Conquer,Basic,Median of an Array,"Accolite, Amazon, FactSet, +1",44.57%,https://www.geeksforgeeks.org/problems/find-the-median0527/1
+Divide and Conquer,Easy,First Occurrence in Sorted,"Accenture, Cognizant, Infosys, +5",44.32%,https://www.geeksforgeeks.org/problems/binary-search-1587115620/1
+Divide and Conquer,Easy,Nth Fibonnaci Last Digit,MAQ Software,35.32%,https://www.geeksforgeeks.org/problems/the-nth-fibonnaci3150/1
+Divide and Conquer,Medium,Count Inversions,"Adobe, Amazon, BankBazaar, +4",16.93%,https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1
+Divide and Conquer,Medium,Allocate Minimum Pages,"Amazon, Codenation, Google, +4",35.51%,https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+Divide and Conquer,Medium,K-th element of two Arrays,"Flipkart, Microsoft, NPCI",37.40%,https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1
+Divide and Conquer,Medium,Raise to Power of Its Own Reverse,"MakeMyTrip, Walmart",20.22%,https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1
+Divide and Conquer,Medium,Search in Rotated Sorted Array,"Adobe, Amazon, BankBazaar, +12",37.64%,https://www.geeksforgeeks.org/problems/search-in-a-rotated-array4618/1
+Divide and Conquer,Medium,Quick Sort,"Adobe, Amazon, Goldman Sachs, +10",55.23%,https://www.geeksforgeeks.org/problems/quick-sort/1
+Divide and Conquer,Medium,Merge Sort,"Amazon, Boomerang Commerce, Goldman Sachs, +9",54.10%,https://www.geeksforgeeks.org/problems/merge-sort/1
+Divide and Conquer,Medium,Maximum Sub Array,"Amazon, Intuit, Microsoft",15.84%,https://www.geeksforgeeks.org/problems/maximum-sub-array5443/1
+Divide and Conquer,Medium,Single Among Doubles in a Sorted,"Amazon, D-E-Shaw, Ola Cabs",55.54%,https://www.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array0624/1
+Divide and Conquer,Medium,Sum of Middle of two sorted arrays,"Amazon, D-E-Shaw",47.98%,https://www.geeksforgeeks.org/problems/sum-of-middle-elements-of-two-sorted-arrays2305/1
+Divide and Conquer,Medium,Kth Character After Binary String Transformations,Amazon,24.56%,https://www.geeksforgeeks.org/problems/find-k-th-character-in-string3841/1
+Divide and Conquer,Medium,Ternary Search,"Paytm, Microsoft",50.20%,https://www.geeksforgeeks.org/problems/searching-an-element-in-a-sorted-array-ternary-search--141631/1
+Divide and Conquer,Medium,K Closest Points to Origin,"Amazon, Google",62.40%,https://www.geeksforgeeks.org/problems/k-closest-points-to-origin--172242/1
+Divide and Conquer,Medium,Count Walks with Exactly K Edges,,18.33%,https://www.geeksforgeeks.org/problems/possible-paths3834/1
+Divide and Conquer,Medium,Largest Odd Squares with Limited 1s,Directi,49.41%,https://www.geeksforgeeks.org/problems/largest-square-in-a-binary-matrix-with-at-most-k-1s-for-multiple-queries/1
+Divide and Conquer,Medium,Modular Exponentiation,"Google, MakeMyTrip",52.56%,https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1
+Divide and Conquer,Medium,Implement Pow,,52.79%,https://www.geeksforgeeks.org/problems/powx-n/1
+Divide and Conquer,Medium,Sequence of Sequence,,61.45%,https://www.geeksforgeeks.org/problems/sequence-of-sequence1155/1
+Divide and Conquer,Medium,Maximum Number of People Defeated,,48.32%,https://www.geeksforgeeks.org/problems/killing-spree3020/1
+Divide and Conquer,Hard,Histogram Max Rectangular Area,"Google, Microsoft, NPCI",32.12%,https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1
+Divide and Conquer,Hard,The Painter's Partition Problem-II,"Codenation, Google, Microsoft",27.52%,https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1
+Divide and Conquer,Hard,Minimum Candy Distribution,NPCI,55.27%,https://www.geeksforgeeks.org/problems/candy/1
+Divide and Conquer,Hard,Count Reverse Pairs,"Adobe, Amazon, Bloomberg, +3",50.00%,https://www.geeksforgeeks.org/problems/count-reverse-pairs/1
+Divide and Conquer,Hard,Scrambled String,Nutanix,59.40%,https://www.geeksforgeeks.org/problems/scrambled-string/1
+Divide and Conquer,Hard,Convex Hull,"Adobe, Goldman Sachs, Morgan Stanley, +2",16.97%,https://www.geeksforgeeks.org/problems/convex-hull2138/1
+Divide and Conquer,Hard,Tiling Problem,,68.03%,https://www.geeksforgeeks.org/problems/tiling-problem/1

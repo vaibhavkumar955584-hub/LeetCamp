@@ -1,0 +1,106 @@
+category,difficulty,title,company_tags,accuracy,url
+Sorting,Basic,At least Two Greater,Amazon,58.49%,https://www.geeksforgeeks.org/problems/at-least-two-greater-elements4625/1
+Sorting,Basic,Triplet Family,Arcesium,50.00%,https://www.geeksforgeeks.org/problems/triplet-family/1
+Sorting,Basic,Sort a String,,64.43%,https://www.geeksforgeeks.org/problems/sort-a-string2943/1
+Sorting,Basic,Alternative Sorting,Zoho,50.20%,https://www.geeksforgeeks.org/problems/alternative-sorting1311/1
+Sorting,Basic,Minimum Product of k Elements,,20.06%,https://www.geeksforgeeks.org/problems/minimum-product-of-k-integers2553/1
+Sorting,Basic,Min Diff Pair,Amazon,57.34%,https://www.geeksforgeeks.org/problems/minimum-difference-pair5444/1
+Sorting,Basic,Two Arrays with Same Elements,,50.36%,https://www.geeksforgeeks.org/problems/the-problem-of-identical-arrays3229/1
+Sorting,Basic,Merge and Sort,,48.84%,https://www.geeksforgeeks.org/problems/merge-and-sort5821/1
+Sorting,Basic,Min Pair Product Sum Rearrangement,,51.36%,https://www.geeksforgeeks.org/problems/minimize-sum-of-alternate-product2033/1
+Sorting,Basic,Maximum Perimeter of Triangle from Array,,49.98%,https://www.geeksforgeeks.org/problems/maximum-perimeter-of-triangle-from-array4322/1
+Sorting,Basic,Stable Sort and Position,,53.17%,https://www.geeksforgeeks.org/problems/stable-sort-and-position1359/1
+Sorting,Easy,Floor in a Sorted Array,Amazon,33.75%,https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1
+Sorting,Easy,Anagram,"Adobe, Directi, Flipkart, +3",44.93%,https://www.geeksforgeeks.org/problems/anagram-1587115620/1
+Sorting,Easy,Check Sorted Array,,39.37%,https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1
+Sorting,Easy,Bubble Sort,"Accenture, Cisco, Huawei, +5",59.33%,https://www.geeksforgeeks.org/problems/bubble-sort/1
+Sorting,Easy,Pair With Difference,"Amazon, Visa",27.25%,https://www.geeksforgeeks.org/problems/find-pair-given-difference1559/1
+Sorting,Easy,Max Value Permutation,SAP Labs,18.93%,https://www.geeksforgeeks.org/problems/maximize-arrii-of-an-array0026/1
+Sorting,Easy,Insertion Sort,"Accenture, Cisco, Dell, +5",66.61%,https://www.geeksforgeeks.org/problems/insertion-sort/1
+Sorting,Easy,Chocolate Distribution Problem,Flipkart,49.91%,https://www.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1
+Sorting,Easy,Selection Sort,"Medlife, Microsoft",64.33%,https://www.geeksforgeeks.org/problems/selection-sort/1
+Sorting,Easy,Three way partitioning,Yahoo,41.58%,https://www.geeksforgeeks.org/problems/three-way-partitioning/1
+Sorting,Easy,Sort Array,Cisco,41.02%,https://www.geeksforgeeks.org/problems/sort-the-array0055/1
+Sorting,Easy,Replace Elements by Ranks,,54.74%,https://www.geeksforgeeks.org/problems/convert-an-array-to-reduced-form1101/1
+Sorting,Easy,Intersection of Two Sorted Arrays,,42.53%,https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1
+Sorting,Easy,Sort by Set Bit Count,,36.70%,https://www.geeksforgeeks.org/problems/sort-by-set-bit-count1153/1
+Sorting,Easy,Ceil in a Sorted Array,Amazon,50.13%,https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1
+Sorting,Easy,Counting Sort,"Microsoft, Goldman Sachs, Cisco",60.53%,https://www.geeksforgeeks.org/problems/counting-sort/1
+Sorting,Easy,Minimum Distance between Two Words,"Amazon, Linkedin",27.12%,https://www.geeksforgeeks.org/problems/closest-strings0611/1
+Sorting,Easy,Distinct Frequencies Check,"PayPal, Bloomberg, Adobe, +3",57.68%,https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1
+Sorting,Easy,Last Remaining After Alternate Max-Min Removal,,46.94%,https://www.geeksforgeeks.org/problems/print-the-left-element2009/1
+Sorting,Easy,Permute Arrays for Sum Threshold,,60.70%,https://www.geeksforgeeks.org/problems/permutations-in-array1747/1
+Sorting,Easy,Bus Conductor,,75.30%,https://www.geeksforgeeks.org/problems/bus-conductor--170647/1
+Sorting,Easy,Fitting an Array into Another,,65.91%,https://www.geeksforgeeks.org/problems/fitting-the-array1514/1
+Sorting,Easy,Smallest Greater in Whole Array,Zoho,39.00%,https://www.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array2751/1
+Sorting,Easy,Count Pairs with Zero XOR,,60.97%,https://www.geeksforgeeks.org/problems/counts-zeros-xor-pairs0349/1
+Sorting,Easy,Intersection of Two Sorted Arrays,,47.82%,https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-arrays-with-duplicate-elements/1
+Sorting,Easy,Tywin's War Strategy,NPCI,50.00%,https://www.geeksforgeeks.org/problems/tywins-war-strategy0527/1
+Sorting,Easy,Minimize the sum,Swiggy,56.29%,https://www.geeksforgeeks.org/problems/minimize-the-sum--170645/1
+Sorting,Easy,Assign Cookies,,50.22%,https://www.geeksforgeeks.org/problems/assign-cookies/1
+Sorting,Easy,Minimize Difference in Task Priorities,Amazon,48.09%,https://www.geeksforgeeks.org/problems/minimum-difference-among-k5805/1
+Sorting,Easy,Minimum Difference in an Array,,69.91%,https://www.geeksforgeeks.org/problems/minimum-difference-in-an-array/1
+Sorting,Easy,Merge two Unsorted Arrays,"Flipkart, Amazon, Amdocs",51.32%,https://www.geeksforgeeks.org/problems/merging-two-unsorted-arrays-in-sorted-order1020/1
+Sorting,Easy,Even Greater than Odd,,49.91%,https://www.geeksforgeeks.org/problems/rearrange-array-such-that-even-positioned-are-greater-than-odd4804/1
+Sorting,Easy,Min Subsets with Consecutive Numbers,,52.29%,https://www.geeksforgeeks.org/problems/min-subsets-with-consecutive-numbers0601/1
+Sorting,Easy,Sorting Two Arrays Together,Oracle,49.85%,https://www.geeksforgeeks.org/problems/sorting-employees5907/1
+Sorting,Easy,Distinct Absolutes in Array,,53.44%,https://www.geeksforgeeks.org/problems/distinct-absolute-array-elements4529/1
+Sorting,Easy,Indexes of Top K,D-E-Shaw,39.66%,https://www.geeksforgeeks.org/problems/toppers-of-class3826/1
+Sorting,Easy,Max Sum of Products from Two Arrays,"Accolite, Amazon",52.46%,https://www.geeksforgeeks.org/problems/maximum-possible-sum-of-products3637/1
+Sorting,Easy,Sort a Subarray,,21.06%,https://www.geeksforgeeks.org/problems/part-sort2851/1
+Sorting,Easy,Bitonic Generator Sort,Zoho,49.48%,https://www.geeksforgeeks.org/problems/bitonic-generator-sort3343/1
+Sorting,Easy,Sorting All Except One,,47.26%,https://www.geeksforgeeks.org/problems/sorting-all-array-elements-except-one4653/1
+Sorting,Easy,Next Greater Even Number,"Zoho, Amazon, FactSet, +2",38.80%,https://www.geeksforgeeks.org/problems/next-greater-even-number0828/1
+Sorting,Easy,Rearrange for Largest Even Number,Snapdeal,34.94%,https://www.geeksforgeeks.org/problems/largest-even-number3821/1
+Sorting,Easy,Rope Cutting,,53.89%,https://www.geeksforgeeks.org/problems/rope-cutting3334/1
+Sorting,Easy,Good Pairs,,44.05%,https://www.geeksforgeeks.org/problems/good-pairs4519/1
+Sorting,Easy,Overlapping Intervals,,41.84%,https://www.geeksforgeeks.org/problems/overlapping-intervals--174556/1
+Sorting,Easy,Unusual String Sort,,49.33%,https://www.geeksforgeeks.org/problems/unusual-string-sort0405/1
+Sorting,Easy,Maximum Partitions to Make a Permutation Sorted,,55.03%,https://www.geeksforgeeks.org/problems/maximum-number-of-partitions-that-can-be-sorted-individually-to-make-sorted2926/1
+Sorting,Easy,Minimum Add/Subtract to Equalize Array,,34.96%,https://www.geeksforgeeks.org/problems/equalize-an-array3405/1
+Sorting,Easy,Count Uncovered Positions,,21.08%,https://www.geeksforgeeks.org/problems/race-in-fooland4522/1
+Sorting,Easy,Sort an Array of 1 to n,,68.08%,https://www.geeksforgeeks.org/problems/sort-an-array-which-contains-1-to-n-values-using-mathematical-formula/1
+Sorting,Easy,"Smallest Rearrangement with No ""cba"" Subsequence",,61.47%,https://www.geeksforgeeks.org/problems/cba-subsequence--170645/1
+Sorting,Easy,Largest Gap in Intervals,Flipkart,79.83%,https://www.geeksforgeeks.org/problems/largest-gap/1
+Sorting,Easy,Chocolate Distribution Problem,,75.54%,https://www.geeksforgeeks.org/problems/chocolate-distribution-problem-1607582550--183828/1
+Sorting,Medium,"Sort 0s, 1s and 2s","Adobe, Amazon, Flipkart, +14",50.58%,https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
+Sorting,Medium,Kth Smallest,"ABCO, Accolite, Adobe, +7",35.17%,https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1
+Sorting,Medium,Count Inversions,"Adobe, Amazon, BankBazaar, +4",16.93%,https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1
+Sorting,Medium,Quick Sort,"Adobe, Amazon, Goldman Sachs, +10",55.23%,https://www.geeksforgeeks.org/problems/quick-sort/1
+Sorting,Medium,Wave Array,"Amazon, FactSet, Flipkart, +4",63.69%,https://www.geeksforgeeks.org/problems/wave-array-1587115621/1
+Sorting,Medium,Merge Sort,"Amazon, Boomerang Commerce, Goldman Sachs, +9",54.10%,https://www.geeksforgeeks.org/problems/merge-sort/1
+Sorting,Medium,Min Sum Pair using Digits,Google,17.14%,https://www.geeksforgeeks.org/problems/minimum-sum4058/1
+Sorting,Medium,Form the Largest Number,"Amazon, MakeMyTrip, Microsoft, +2",37.82%,https://www.geeksforgeeks.org/problems/largest-number-formed-from-an-array1117/1
+Sorting,Medium,Count the Number of Possible Triangles,"Amazon, Microsoft",28.53%,https://www.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1
+Sorting,Medium,Count Power Pairs from Two Arrays,FactSet,7.42%,https://www.geeksforgeeks.org/problems/number-of-pairs3422/1
+Sorting,Medium,Nearly sorted,Google,75.25%,https://www.geeksforgeeks.org/problems/nearly-sorted-1587115620/1
+Sorting,Medium,Max Profit from Two Machines,"Amazon, TCS",16.39%,https://www.geeksforgeeks.org/problems/max-profit-from-two-machines/1
+Sorting,Medium,Case-specific Sorting of Strings,,69.88%,https://www.geeksforgeeks.org/problems/case-specific-sorting-of-strings4845/1
+Sorting,Medium,Find H-Index,NPCI,53.40%,https://www.geeksforgeeks.org/problems/find-h-index--165609/1
+Sorting,Medium,Sort by Absolute Difference,NPCI,27.77%,https://www.geeksforgeeks.org/problems/sort-by-absolute-difference-1587115621/1
+Sorting,Medium,Sort in specific order,"Zoho, Microsoft",52.55%,https://www.geeksforgeeks.org/problems/sort-in-specific-order2422/1
+Sorting,Medium,Triplets with Sum in Range,Microsoft,30.77%,https://www.geeksforgeeks.org/problems/triplets-with-sum-with-given-range/1
+Sorting,Medium,Sort the given array after applying the given equation,Adobe,36.21%,https://www.geeksforgeeks.org/problems/sort-the-given-array-after-applying-the-given-equation0304/1
+Sorting,Medium,Search in an almost Sorted Array,,55.44%,https://www.geeksforgeeks.org/problems/search-in-an-almost-sorted-array/1
+Sorting,Medium,Equalize All Prefix Sums,,69.73%,https://www.geeksforgeeks.org/problems/equalize-all-prefix-sums/1
+Sorting,Medium,Merge three sorted arrays,,65.94%,https://www.geeksforgeeks.org/problems/merge-three-sorted-arrays-1587115620/1
+Sorting,Medium,Maximum Intersecting Lines,Swiggy,53.99%,https://www.geeksforgeeks.org/problems/maximum-intersecting-lines--170647/1
+Sorting,Medium,Closer to sort,,53.98%,https://www.geeksforgeeks.org/problems/closer-to-sort-1587115620/1
+Sorting,Medium,Maximum Intervals Overlap,"Flipkart, Accolite, Amazon, +2",48.73%,https://www.geeksforgeeks.org/problems/maximum-intervals-overlap5708/1
+Sorting,Medium,Largest Array Formation with Same Parity Swaps,,57.01%,https://www.geeksforgeeks.org/problems/even-swap/1
+Sorting,Medium,Happiest Triplet,,53.91%,https://www.geeksforgeeks.org/problems/happiest-triplet2921/1
+Sorting,Medium,C++ Generic sort,,65.12%,https://www.geeksforgeeks.org/problems/c-generic-sort/1
+Sorting,Medium,Max Gold Coins from Limited Plates,,45.05%,https://www.geeksforgeeks.org/problems/help-a-thief5938/1
+Sorting,Medium,Difference Check,,56.74%,https://www.geeksforgeeks.org/problems/difference-check/1
+Sorting,Medium,Rearrange to Maximize Alternate Addition Subtraction,,46.16%,https://www.geeksforgeeks.org/problems/reaching-the-heights1921/1
+Sorting,Medium,Maximize the minimum difference between k elements,NPCI,61.58%,https://www.geeksforgeeks.org/problems/maximize-the-minimum-difference-between-k-elements/1
+Sorting,Medium,Sort Matrix Diagonally,Microsoft,56.86%,https://www.geeksforgeeks.org/problems/diagonal-morning-assembly0028/1
+Sorting,Medium,Radix Sort,,71.86%,https://www.geeksforgeeks.org/problems/radix-sort/1
+Sorting,Medium,Sort Numbers in Limited Range,,59.78%,https://www.geeksforgeeks.org/problems/efficiently-sorting-number-from-0-to-n2-15444/1
+Sorting,Medium,Max Non Overlapping Intervals,,69.64%,https://www.geeksforgeeks.org/problems/maximum-selections--170637/1
+Sorting,Medium,Sort by Frequency,,69.09%,https://www.geeksforgeeks.org/problems/sort-string-according-to-increasing-frequency/1
+Sorting,Medium,Sort an array of strings according to string lengths,,50.46%,https://www.geeksforgeeks.org/problems/sort-an-array-of-strings-according-to-string-lengths/1
+Sorting,Medium,Sort a Prefix Sorted Array,Microsoft,66.20%,https://www.geeksforgeeks.org/problems/sort-last-m-elements--155156/1
+Sorting,Medium,Count the number of possible triangles,"Amazon, Microsoft",72.52%,https://www.geeksforgeeks.org/problems/count-possible-triangles-1587115620--094125/1
+Sorting,Hard,Count Smaller on Right,"Codenation, Google",38.16%,https://www.geeksforgeeks.org/problems/count-smaller-elements2214/1
+Sorting,Hard,Count Subarrays with Given Median,Sprinklr,57.99%,https://www.geeksforgeeks.org/problems/median-of-the-subarrays--170647/1

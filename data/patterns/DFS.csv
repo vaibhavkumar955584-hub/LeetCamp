@@ -1,0 +1,61 @@
+category,difficulty,title,company_tags,accuracy,url
+DFS,Easy,DFS of Graph,"Accolite, Amazon, Intuit, +1",63.07%,https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+DFS,Easy,Path Exists,NPCI,62.52%,https://www.geeksforgeeks.org/problems/path-exists/1
+DFS,Easy,Minimum number of edges between two vertices,NPCI,29.49%,https://www.geeksforgeeks.org/problems/minimum-number-of-edges-between-two-vertices/1
+DFS,Medium,Undirected Graph Cycle,"Adobe, Amazon, Flipkart, +4",30.13%,https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+DFS,Medium,Count Islands,"Amazon, Citrix, D-E-Shaw, +18",42.12%,https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1
+DFS,Medium,Bipartite Graph,"Flipkart, Microsoft, Samsung",31.25%,https://www.geeksforgeeks.org/problems/bipartite-graph/1
+DFS,Medium,Number of Connected Components,"Amazon, Google, Microsoft",54.29%,https://www.geeksforgeeks.org/problems/number-of-provinces/1
+DFS,Medium,Flood fill Algorithm,"Google, Microsoft, NPCI",41.11%,https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1
+DFS,Medium,Number of Distinct Islands,,62.29%,https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1
+DFS,Medium,Check for Path in a 2D Grid with Obstacles,"Adobe, Amazon, Microsoft, +2",45.09%,https://www.geeksforgeeks.org/problems/find-whether-path-exist5238/1
+DFS,Medium,1s Surrounded by 0s,Google,50.93%,https://www.geeksforgeeks.org/problems/1s-surrounded-by-0s/1
+DFS,Medium,Course Schedule II,Google,51.77%,https://www.geeksforgeeks.org/problems/course-schedule/1
+DFS,Medium,Mother Vertex,,47.64%,https://www.geeksforgeeks.org/problems/mother-vertex/1
+DFS,Medium,Word in Grid - All Occurrences,"Zoho, Flipkart, Amazon, +3",22.88%,https://www.geeksforgeeks.org/problems/find-the-string-in-grid0111/1
+DFS,Medium,Towers Reaching Both Stations,,60.27%,https://www.geeksforgeeks.org/problems/geeks-island--170646/1
+DFS,Medium,Check if two Nodes are Cousins,"Amazon, D-E-Shaw",25.99%,https://www.geeksforgeeks.org/problems/check-if-two-nodes-are-cousins/1
+DFS,Medium,Max Alternating Sum Path to a Leaf,,64.05%,https://www.geeksforgeeks.org/problems/best-node--170647/1
+DFS,Medium,Party in Town,,66.03%,https://www.geeksforgeeks.org/problems/party-in-town3951/1
+DFS,Medium,BST Maximum Difference,,52.54%,https://www.geeksforgeeks.org/problems/bst-maximum-difference--170647/1
+DFS,Medium,Sum of Vertically Below Descendants,,53.27%,https://www.geeksforgeeks.org/problems/bst-downward-traversal--170646/1
+DFS,Medium,Safe States,Bloomberg,55.52%,https://www.geeksforgeeks.org/problems/eventual-safe-states/1
+DFS,Medium,Largest Region of 1's in a Binary Matrix,"Flipkart, Amazon, Microsoft, +4",50.83%,https://www.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1
+DFS,Medium,Path With Minimum Effort,"Bloomberg, Amazon, Microsoft, +1",53.13%,https://www.geeksforgeeks.org/problems/path-with-minimum-effort/1
+DFS,Medium,Connected Groups of 1s,"Amazon, Google",65.94%,https://www.geeksforgeeks.org/problems/x-total-shapes3617/1
+DFS,Medium,Number of Good Components,,60.81%,https://www.geeksforgeeks.org/problems/number-of-good-components--170647/1
+DFS,Medium,Graph is Tree or Not,,54.18%,https://www.geeksforgeeks.org/problems/is-it-a-tree/1
+DFS,Medium,Connected Components in an Undirected Graph,NPCI,48.50%,https://www.geeksforgeeks.org/problems/connected-components-in-an-undirected-graph/1
+DFS,Medium,Clone an Undirected Graph,Google,67.49%,https://www.geeksforgeeks.org/problems/clone-graph/1
+DFS,Medium,Shortest Safe Route in Grid,,50.58%,https://www.geeksforgeeks.org/problems/find-shortest-safe-route-in-a-matrix/1
+DFS,Medium,Count Paths Between Two Vertices,,56.57%,https://www.geeksforgeeks.org/problems/possible-paths-between-2-vertices-1587115620/1
+DFS,Medium,Count Walks with Exactly K Edges,,18.33%,https://www.geeksforgeeks.org/problems/possible-paths3834/1
+DFS,Medium,Max Edge Removals for Even Sized Trees,,68.80%,https://www.geeksforgeeks.org/problems/divisibility-tree1902/1
+DFS,Medium,Course Schedule I,"Bloomberg, Visa, Uber, +5",67.59%,https://www.geeksforgeeks.org/problems/course-schedule-i/1
+DFS,Medium,Graph Diameter,NPCI,63.28%,https://www.geeksforgeeks.org/problems/diameter-of-a-graph/1
+DFS,Medium,Signal Boost Network,,44.04%,https://www.geeksforgeeks.org/problems/fill-the-tank3026/1
+DFS,Medium,Minimum Colors Required in a DAG,,51.43%,https://www.geeksforgeeks.org/problems/villain-con0511/1
+DFS,Medium,Minimum Time to Finish Project,,49.37%,https://www.geeksforgeeks.org/problems/project-manager--141631/1
+DFS,Medium,Pattern Based Binary Palindrome Construction,,49.68%,https://www.geeksforgeeks.org/problems/construct-binary-palindrome-by-repeated-appending-and-trimming1005/1
+DFS,Medium,Ancestor Nodes in DAG,,45.98%,https://www.geeksforgeeks.org/problems/ancestor-nodes-in-dag/1
+DFS,Medium,Word Search,"Amazon, Microsoft, Intuit, +2",32.69%,https://www.geeksforgeeks.org/problems/word-search/1
+DFS,Medium,Hamiltonian Path,Amazon,40.80%,https://www.geeksforgeeks.org/problems/hamiltonian-path2522/1
+DFS,Medium,Snake and Ladder Problem,"Zoho, Flipkart, Amazon, +6",34.65%,https://www.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1
+DFS,Medium,Count Paths in DAG,,42.71%,https://www.geeksforgeeks.org/problems/count-the-paths4332/1
+DFS,Medium,Odd Equals Even Path,,48.27%,https://www.geeksforgeeks.org/problems/odd-equals-even-path-i--151405/1
+DFS,Medium,Word Boggle,"Amazon, Microsoft, MakeMyTrip, +5",15.85%,https://www.geeksforgeeks.org/problems/word-boggle4143/1
+DFS,Medium,Longest Consecutive Path in Binary tree,,30.58%,https://www.geeksforgeeks.org/problems/longest-consecutive-sequence-in-binary-tree/1
+DFS,Medium,Subtrees with Limited Distinct Nodes,,69.20%,https://www.geeksforgeeks.org/problems/good-subtrees--170647/1
+DFS,Hard,Articulation Point,,55.15%,https://www.geeksforgeeks.org/problems/articulation-point2616/1
+DFS,Hard,Maximum Connected with One Change,Intuit,49.48%,https://www.geeksforgeeks.org/problems/maximum-connected-group/1
+DFS,Hard,Account Merge,,53.56%,https://www.geeksforgeeks.org/problems/account-merge/1
+DFS,Hard,Count Groups of 1's Surrounded by 0's,Google,61.43%,https://www.geeksforgeeks.org/problems/find-number-of-closed-islands/1
+DFS,Hard,Minimum BST Sum Subtree,,60.49%,https://www.geeksforgeeks.org/problems/minimum-bst-sum-subtree--170647/1
+DFS,Hard,Water Connection Problem,,37.83%,https://www.geeksforgeeks.org/problems/water-connection-problem5822/1
+DFS,Hard,Select Nodes,Flipkart,63.66%,https://www.geeksforgeeks.org/problems/select-nodes--170645/1
+DFS,Hard,Length of Longest Cycle in a Graph,"Amazon, Google, JUSPAY",60.34%,https://www.geeksforgeeks.org/problems/length-of-longest-cycle-in-a-graph/1
+DFS,Hard,Minimum Rearrangement for Identity Permutation,Flipkart,55.77%,https://www.geeksforgeeks.org/problems/rearrange-the-array-1639032648/1
+DFS,Hard,Shortest Cycle,,63.96%,https://www.geeksforgeeks.org/problems/shortest-cycle/1
+DFS,Hard,Kill Captain America,,39.87%,https://www.geeksforgeeks.org/problems/kill-captain-america0228/1
+DFS,Hard,Minimum cost to visit favorite Colonies,,67.39%,https://www.geeksforgeeks.org/problems/minimum-cost-to-visit-favorite-cities--132208/1
+DFS,Hard,Word Search II,"Facebook, Directi, Google, +5",40.77%,https://www.geeksforgeeks.org/problems/word-search-ii/1

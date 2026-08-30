@@ -1,0 +1,107 @@
+category,difficulty,title,company_tags,accuracy,url
+Greedy,Basic,Last Coin in a Game of Alternates,,68.75%,https://www.geeksforgeeks.org/problems/last-coin-in-a-game-of-alternates/1
+Greedy,Basic,Max Product Pair,"Amazon, Samsung",48.92%,https://www.geeksforgeeks.org/problems/maximum-product-of-two-numbers2730/1
+Greedy,Basic,Good or Bad string,"Adobe, Amazon",27.94%,https://www.geeksforgeeks.org/problems/good-or-bad-string1417/1
+Greedy,Basic,Message Spreading,,51.24%,https://www.geeksforgeeks.org/problems/message-spreading4258/1
+Greedy,Basic,The Spider Steps,,45.96%,https://www.geeksforgeeks.org/problems/the-spider-steps3600/1
+Greedy,Easy,Fractional Knapsack,Microsoft,32.46%,https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
+Greedy,Easy,Stock Buy and Sell – Max one Transaction Allowed,"Accenture, Adobe, Amazon, +20",49.33%,https://www.geeksforgeeks.org/problems/buy-stock-2/1
+Greedy,Easy,Maximum with n Digits and s Digit Sum,Accolite,20.26%,https://www.geeksforgeeks.org/problems/largest-number-possible5028/1
+Greedy,Easy,Shop in Candy Store,,45.43%,https://www.geeksforgeeks.org/problems/shop-in-candy-store1145/1
+Greedy,Easy,Minimize the sum of product,,56.91%,https://www.geeksforgeeks.org/problems/minimize-the-sum-of-product1525/1
+Greedy,Easy,Check for Subsequence,"Accolite, Amazon, Tesco, +1",51.68%,https://www.geeksforgeeks.org/problems/given-two-strings-find-if-first-string-is-a-subsequence-of-second/1
+Greedy,Easy,Maximum Count with Sum Limited to K,Microsoft,50.42%,https://www.geeksforgeeks.org/problems/maximize-toys0331/1
+Greedy,Easy,Check for Survival on Island,,24.78%,https://www.geeksforgeeks.org/problems/check-if-it-is-possible-to-survive-on-island4922/1
+Greedy,Easy,Seating Arrangement,,49.85%,https://www.geeksforgeeks.org/problems/seating-arrangement--170647/1
+Greedy,Easy,Double the First and Make Second Zero,"Microsoft, Zoho",29.50%,https://www.geeksforgeeks.org/problems/ease-the-array0633/1
+Greedy,Easy,Page Faults in LRU,,25.51%,https://www.geeksforgeeks.org/problems/page-faults-in-lru5603/1
+Greedy,Easy,Bus Ticket Change,,52.02%,https://www.geeksforgeeks.org/problems/bus-ticket-change/1
+Greedy,Easy,Largest n Digit Number with Given Digit Sum,Microsoft,44.25%,https://www.geeksforgeeks.org/problems/largest-number-with-given-sum-1587115620/1
+Greedy,Easy,Maximize Adjacent Diff Sum in Circular,,64.35%,https://www.geeksforgeeks.org/problems/swap-and-maximize5859/1
+Greedy,Easy,Smallest Subset with Greater Sum,,37.19%,https://www.geeksforgeeks.org/problems/smallest-subset-with-greater-sum/1
+Greedy,Easy,Meeting Rooms,NPCI,65.12%,https://www.geeksforgeeks.org/problems/attend-all-meetings/1
+Greedy,Easy,Minimum Sum of Absolute Differences of Pairs,,77.05%,https://www.geeksforgeeks.org/problems/minimum-sum-of-absolute-differences-of-pairs/1
+Greedy,Easy,Largest Number with One Swap,NPCI,48.67%,https://www.geeksforgeeks.org/problems/largest-number-in-one-swap1520/1
+Greedy,Easy,Last Person After Repeated K Removals from Ends,,55.31%,https://www.geeksforgeeks.org/problems/ticket-counter-2731/1
+Greedy,Easy,Assign Mice Holes,,55.93%,https://www.geeksforgeeks.org/problems/assign-mice-holes3053/1
+Greedy,Easy,Bit Magic,,53.02%,https://www.geeksforgeeks.org/problems/bit-magic--170648/1
+Greedy,Easy,Taxi Booking,,75.48%,https://www.geeksforgeeks.org/problems/taxi-booking--170647/1
+Greedy,Easy,Encrypt the string - 2,,42.25%,https://www.geeksforgeeks.org/problems/encrypt-the-string-21117/1
+Greedy,Easy,Maximize partitions in a String,,66.12%,https://www.geeksforgeeks.org/problems/maximize-partitions-in-a-string/1
+Greedy,Easy,Smallest with digit sum n and divisible by 10^n,,63.80%,https://www.geeksforgeeks.org/problems/smallest-number-with-sum-of-digits-as-n-and-divisible-by-10n4032/1
+Greedy,Easy,Rotate Array Clockwise,NPCI,50.13%,https://www.geeksforgeeks.org/problems/rotate-array-clockwise/1
+Greedy,Easy,Largest three distinct elements,,45.87%,https://www.geeksforgeeks.org/problems/largest-three-distinct-elements/1
+Greedy,Easy,Maximum Sum Increasing From n Arrays,,50.74%,https://www.geeksforgeeks.org/problems/maximum-sum-of-increasing-order-elements-from-n-arrays4848/1
+Greedy,Easy,Hungry Pizza Lovers,,55.57%,https://www.geeksforgeeks.org/problems/hungry-pizza-lovers3148/1
+Greedy,Easy,Minimum Front Moves to Sort,BankBazaar,32.39%,https://www.geeksforgeeks.org/problems/sort-the-pile-of-cards3733/1
+Greedy,Easy,Min Cost to Make Size 1,,74.19%,https://www.geeksforgeeks.org/problems/min-cost-to-make-size-1/1
+Greedy,Easy,Max Missing Count with Sum Limited to K,,45.45%,https://www.geeksforgeeks.org/problems/raju-and-coins1932/1
+Greedy,Easy,Largest Permutation with k Swaps,,34.64%,https://www.geeksforgeeks.org/problems/largest-permutation1351/1
+Greedy,Easy,Generate a matrix with each row and column of given sum,,82.70%,https://www.geeksforgeeks.org/problems/generate-a-matrix-with-each-row-and-column-of-given-sum/1
+Greedy,Easy,Minimum number of swaps,Google,43.66%,https://www.geeksforgeeks.org/problems/minimum-number-of-swaps--164524/1
+Greedy,Easy,Minimum Subtraction to Make All 0,,75.70%,https://www.geeksforgeeks.org/problems/make-array-zero-by-subtracting-equal-amounts/1
+Greedy,Easy,Largest palindrome by changing at most K-digits,,24.60%,https://www.geeksforgeeks.org/problems/largest-palindrome-by-changing-at-most-k-digits/1
+Greedy,Medium,Minimum Jumps,"Adobe, Amazon, Flipkart, +6",11.91%,https://www.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1
+Greedy,Medium,Majority Element,"Accolite, Amazon, Atlassian, +5",27.82%,https://www.geeksforgeeks.org/problems/majority-element-1587115620/1
+Greedy,Medium,Minimize the Heights II,"Adobe, Microsoft",15.06%,https://www.geeksforgeeks.org/problems/minimize-the-heights3351/1
+Greedy,Medium,Minimum Platforms,"Adobe, Amazon, Atlassian, +10",26.84%,https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
+Greedy,Medium,Activity Selection,"Amazon, Cisco, Facebook, +5",36.21%,https://www.geeksforgeeks.org/problems/activity-selection-1587115620/1
+Greedy,Medium,Job Sequencing Problem,"Accolite, Flipkart, Microsoft, +1",34.51%,https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
+Greedy,Medium,Gas Station,"Amazon, FactSet, Flipkart, +4",34.79%,https://www.geeksforgeeks.org/problems/circular-tour-1587115620/1
+Greedy,Medium,Minimum Spanning Tree,"Amazon, Cisco, Flipkart, +2",47.82%,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
+Greedy,Medium,Minimize the Heights I,Adobe,26.16%,https://www.geeksforgeeks.org/problems/minimize-the-heights-i/1
+Greedy,Medium,Remove K Digits,"Microsoft, NPCI",26.80%,https://www.geeksforgeeks.org/problems/remove-k-digits/1
+Greedy,Medium,Maximum Meetings in One Room,,33.57%,https://www.geeksforgeeks.org/problems/maximum-meetings-in-one-room/1
+Greedy,Medium,Choose and Swap,,22.67%,https://www.geeksforgeeks.org/problems/choose-and-swap0531/1
+Greedy,Medium,Smallest with d Dgitis and s Sum,"OYO Rooms, MAQ Software",38.74%,https://www.geeksforgeeks.org/problems/smallest-number5829/1
+Greedy,Medium,Set Matrix Zeros,"Expedia, Amazon, Yahoo, +5",52.54%,https://www.geeksforgeeks.org/problems/set-matrix-zeroes/1
+Greedy,Medium,Insert Interval,NPCI,50.61%,https://www.geeksforgeeks.org/problems/insert-interval-1666733333/1
+Greedy,Medium,Police and Thieves,Microsoft,34.03%,https://www.geeksforgeeks.org/problems/police-and-thieves--141631/1
+Greedy,Medium,Shortest Job first,,68.79%,https://www.geeksforgeeks.org/problems/shortest-job-first/1
+Greedy,Medium,Max Equal Sum in 3 Stacks,,48.71%,https://www.geeksforgeeks.org/problems/find-maximum-equal-sum-of-three-stacks/1
+Greedy,Medium,Non-Overlapping Intervals,,51.92%,https://www.geeksforgeeks.org/problems/non-overlapping-intervals/1
+Greedy,Medium,Coin Piles,Microsoft,20.51%,https://www.geeksforgeeks.org/problems/coin-piles5152/1
+Greedy,Medium,Meeting Rooms II,,48.01%,https://www.geeksforgeeks.org/problems/attend-all-meetings-ii/1
+Greedy,Medium,Minimum Swaps for Bracket Balancing,,37.36%,https://www.geeksforgeeks.org/problems/minimum-swaps-for-bracket-balancing2704/1
+Greedy,Medium,Minimum Workers to Cover All Hours,Microsoft,55.22%,https://www.geeksforgeeks.org/problems/water-the-plants--170646/1
+Greedy,Medium,Valid Compressed String,Facebook,50.00%,https://www.geeksforgeeks.org/problems/valid-compressed-string--170647/1
+Greedy,Medium,Max Profit by Removing pr or rp,Google,50.08%,https://www.geeksforgeeks.org/problems/string-rp-or-pr--170647/1
+Greedy,Medium,Task Scheduler,,58.08%,https://www.geeksforgeeks.org/problems/task-scheduler/1
+Greedy,Medium,kth Smallest in Ranges,,50.29%,https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-given-n-ranges/1
+Greedy,Medium,Minimum Cost to cut a board into squares,NPCI,60.83%,https://www.geeksforgeeks.org/problems/minimum-cost-to-cut-a-board-into-squares/1
+Greedy,Medium,Subset Sum on Generated Sequence,,37.44%,https://www.geeksforgeeks.org/problems/tricky-subset-problem1557/1
+Greedy,Medium,Minimum Spanning Tree - Kruskal's Algorithm,"Cisco, Amazon, Microsoft, +2",53.20%,https://www.geeksforgeeks.org/problems/minimum-spanning-tree-kruskals-algorithm/1
+Greedy,Medium,Second Smallest with Sum and Count of Digits,VMWare,50.86%,https://www.geeksforgeeks.org/problems/second-smallest-number--170647/1
+Greedy,Medium,Divide into Consecutive Groups,,57.58%,https://www.geeksforgeeks.org/problems/hands-of-straights/1
+Greedy,Medium,Largest Unblocked Submatrix,,52.99%,https://www.geeksforgeeks.org/problems/largest-unblocked-submatrix/1
+Greedy,Medium,Last Moment Before All Ants Fall Out,Google,62.20%,https://www.geeksforgeeks.org/problems/last-moment-before-all-ants-fall-out-of-a-plank/1
+Greedy,Medium,Minimum Steps Required,,59.74%,https://www.geeksforgeeks.org/problems/minimum-steps-required--170647/1
+Greedy,Medium,Group Balls by Sequence,,48.46%,https://www.geeksforgeeks.org/problems/group-balls-by-sequence/1
+Greedy,Medium,Pairs with Positive Sum,,29.94%,https://www.geeksforgeeks.org/problems/valid-pair-sum--141631/1
+Greedy,Medium,Sum of Largests Elements Removed,,55.96%,https://www.geeksforgeeks.org/problems/maximize-the-sum-of-selected-numbers-from-an-array-to-make-it-empty0836/1
+Greedy,Medium,Binary Searchable Count,Microsoft,50.00%,https://www.geeksforgeeks.org/problems/binary-searchable-elements/1
+Greedy,Medium,Wine Buying and Selling,,62.43%,https://www.geeksforgeeks.org/problems/wine-buying-and-selling/1
+Greedy,Medium,Lexicographically Largest After K Deletions,,53.68%,https://www.geeksforgeeks.org/problems/lexicographically-largest-string-after-deleting-k-characters/1
+Greedy,Medium,Maximum Events to be Attended,Adobe,31.89%,https://www.geeksforgeeks.org/problems/maximum-number-of-events-that-can-be-attended--170636/1
+Greedy,Medium,Sum of Factorials of Digits,,53.47%,https://www.geeksforgeeks.org/problems/fact-digit-sum4125/1
+Greedy,Medium,Minimum Steps to Halve Sum,NPCI,55.59%,https://www.geeksforgeeks.org/problems/minimum-steps-to-halve-sum/1
+Greedy,Medium,Minimum Number of Workers,NPCI,55.15%,https://www.geeksforgeeks.org/problems/minimum-sprinklers/1
+Greedy,Medium,Pair with Close Values and Indexes,Microsoft,36.42%,https://www.geeksforgeeks.org/problems/water-the-plants--141631/1
+Greedy,Medium,Stable Marriage Problem,,67.16%,https://www.geeksforgeeks.org/problems/stable-marriage-problem/1
+Greedy,Medium,Maximum trains for which stoppage can be provided,,35.20%,https://www.geeksforgeeks.org/problems/maximum-trains-for-which-stoppage-can-be-provided/1
+Greedy,Medium,Min Changes For Bitwise AND Greater Than x,,60.14%,https://www.geeksforgeeks.org/problems/bitwise-and-of-the-array--170633/1
+Greedy,Medium,7 Segment Display,,50.09%,https://www.geeksforgeeks.org/problems/7-segment-display0752/1
+Greedy,Medium,Minimize Cash Flow,,35.97%,https://www.geeksforgeeks.org/problems/minimize-cash-flow/1
+Greedy,Medium,Calculate the average Waiting Time and Turnaround Time using...,,20.16%,https://www.geeksforgeeks.org/problems/calculate-the-average-waiting-time-and-turnaround-time-using-shortest-job-first/1
+Greedy,Medium,Maximum Length Chain of Pairs,,58.04%,https://www.geeksforgeeks.org/problems/maximum-length-chain-of-pairs/1
+Greedy,Medium,Minimum Operation To Make Equal,,59.32%,https://www.geeksforgeeks.org/problems/minimum-operation-to-make-equal/1
+Greedy,Medium,Maximal Disjoint Intervals,,54.19%,https://www.geeksforgeeks.org/problems/maximal-disjoint-intervals/1
+Greedy,Medium,Count Strings Formed by One Swap,,60.19%,https://www.geeksforgeeks.org/problems/valid-string-permutations/1
+Greedy,Medium,Geeks Party,,48.57%,https://www.geeksforgeeks.org/problems/geeks-party/1
+Greedy,Hard,Minimum Candy Distribution,NPCI,55.27%,https://www.geeksforgeeks.org/problems/candy/1
+Greedy,Hard,Closest Palindrome,Amazon,9.67%,https://www.geeksforgeeks.org/problems/closest-palindrome4519/1
+Greedy,Hard,Water Connection Problem,,37.83%,https://www.geeksforgeeks.org/problems/water-connection-problem5822/1
+Greedy,Hard,Huffman Decoding,,60.74%,https://www.geeksforgeeks.org/problems/huffman-decoding/1
+Greedy,Hard,Sum of Mode,,54.20%,https://www.geeksforgeeks.org/problems/sum-of-mode/1
+Greedy,Hard,Maximum subarray sum 2,NPCI,53.83%,https://www.geeksforgeeks.org/problems/maximum-subarray-sum--110820/1
+Greedy,Hard,Thieves in the Shadows,,11.34%,https://www.geeksforgeeks.org/problems/thieves-in-the-shadows/1

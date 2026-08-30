@@ -1,0 +1,106 @@
+category,difficulty,title,company_tags,accuracy,url
+Linked List,Basic,Linked List End Insertion,"Hike, TCS, Wipro",43.96%,https://www.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1
+Linked List,Basic,Length of Linked List,,85.99%,https://www.geeksforgeeks.org/problems/count-nodes-of-linked-list/1
+Linked List,Basic,Identical Linked Lists,,47.49%,https://www.geeksforgeeks.org/problems/identical-linked-lists/1
+Linked List,Basic,Print Linked List,,60.71%,https://www.geeksforgeeks.org/problems/print-linked-list-elements/1
+Linked List,Basic,Insert at Middle of Linked List,,43.20%,https://www.geeksforgeeks.org/problems/insert-in-middle-of-linked-list/1
+Linked List,Basic,Is Linked List Length Even,,71.58%,https://www.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1
+Linked List,Basic,Modular Node in Linked List,,37.21%,https://www.geeksforgeeks.org/problems/modular-node/1
+Linked List,Basic,Doubly Linked List Traversal,,68.92%,https://www.geeksforgeeks.org/problems/display-doubly-linked-list--154650/1
+Linked List,Basic,Length of Circular Linked List,,85.77%,https://www.geeksforgeeks.org/problems/length-of-circular-linked-list/1
+Linked List,Easy,Kth from End of Linked List,"Accolite, Adobe, Amazon, +12",41.18%,https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
+Linked List,Easy,Middle of a Linked List,"Adobe, Amazon, Flipkart, +17",57.93%,https://www.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1
+Linked List,Easy,Reverse a Linked List,"Accolite, Adobe, Amazon, +19",73.11%,https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1
+Linked List,Easy,Remove Duplicates from a Sorted Linked List,"Adobe, Microsoft, Myntra, +3",49.37%,https://www.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1
+Linked List,Easy,Remove Duplicates from Linked List,"Amazon, Intuit",45.95%,https://www.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1
+Linked List,Easy,Linked List Delete at Position,"Adobe, Samsung",39.85%,https://www.geeksforgeeks.org/problems/delete-a-node-in-single-linked-list/1
+Linked List,Easy,Check If Circular Linked List,"MAQ Software, Microsoft, SAP Labs",54.26%,https://www.geeksforgeeks.org/problems/circular-linked-list/1
+Linked List,Easy,Search in Linked List,,65.40%,https://www.geeksforgeeks.org/problems/search-in-linked-list-1664434326/1
+Linked List,Easy,Delete Nodes with Greater on Right,Amazon,35.51%,https://www.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
+Linked List,Easy,Pairwise Swap in Linked List,"Amazon, Intuit, Microsoft, +1",52.06%,https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1
+Linked List,Easy,Delete Middle of Linked List,"Flipkart, Amazon, Microsoft",54.52%,https://www.geeksforgeeks.org/problems/delete-middle-of-linked-list/1
+Linked List,Easy,Insert in a Sorted List,"Amazon, Wipro, SAP Labs",31.37%,https://www.geeksforgeeks.org/problems/insert-in-a-sorted-list/1
+Linked List,Easy,Intersection Sorted Linked Lists,"Amazon, Microsoft, D-E-Shaw, +1",48.63%,https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1
+Linked List,Easy,Pair Sum Count in Two Linked Lists,Amazon,39.61%,https://www.geeksforgeeks.org/problems/count-pairs-whose-sum-is-equal-to-x/1
+Linked List,Easy,Node at Given Index,,65.11%,https://www.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1
+Linked List,Easy,Array to Linked List,,66.76%,https://www.geeksforgeeks.org/problems/introduction-to-linked-list/1
+Linked List,Easy,Remove Every k'th in Linked List,,29.88%,https://www.geeksforgeeks.org/problems/remove-every-kth-node/1
+Linked List,Easy,Multiply Two Linked Lists,Amazon,46.33%,https://www.geeksforgeeks.org/problems/multiply-two-linked-lists/1
+Linked List,Easy,Remove duplicates from a sorted DLL,,50.36%,https://www.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1
+Linked List,Easy,Delete Alternate Nodes,Morgan Stanley,56.09%,https://www.geeksforgeeks.org/problems/delete-alternate-nodes/1
+Linked List,Easy,Frequency in a Linked List,,80.07%,https://www.geeksforgeeks.org/problems/occurence-of-an-integer-in-a-linked-list/1
+Linked List,Easy,Decimal Equivalent of Binary Linked List,Juniper Networks,21.23%,https://www.geeksforgeeks.org/problems/decimal-equivalent-of-binary-linked-list/1
+Linked List,Easy,Intersection of Two Linked Lists,"VMWare, Flipkart, Accolite, +7",35.30%,https://www.geeksforgeeks.org/problems/intersection-of-two-linked-list/1
+Linked List,Easy,Split a Linked List Into Halves,Yahoo,61.63%,https://www.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1
+Linked List,Easy,Sum of Last n Nodes of a Linked List,,61.47%,https://www.geeksforgeeks.org/problems/find-the-sum-of-last-n-nodes-of-the-linked-list/1
+Linked List,Easy,Delete N After Every M in a Linked List,"Amazon, Microsoft",32.83%,https://www.geeksforgeeks.org/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/1
+Linked List,Easy,Find n/k th in Linked list,"Hike, SAP Labs",39.46%,https://www.geeksforgeeks.org/problems/find-nk-th-node-in-linked-list/1
+Linked List,Easy,Check Linked list of Words a Palindrome,,58.60%,https://www.geeksforgeeks.org/problems/linked-list-of-strings-forms-a-palindrome/1
+Linked List,Easy,Move Last to Front of a Linked List,,69.09%,https://www.geeksforgeeks.org/problems/move-last-element-to-front-of-a-linked-list/1
+Linked List,Easy,Is Linked List Sorted,,37.09%,https://www.geeksforgeeks.org/problems/is-linked-list-sorted/1
+Linked List,Easy,Split Linked List Alternatingly,,42.46%,https://www.geeksforgeeks.org/problems/split-singly-linked-list-alternatingly/1
+Linked List,Easy,Linked List Representation of a Matrix,FactSet,67.33%,https://www.geeksforgeeks.org/problems/linked-list-matrix/1
+Linked List,Easy,Rotate Doubly Linked List,,74.54%,https://www.geeksforgeeks.org/problems/rotate-doubly-linked-list-by-p-nodes/1
+Linked List,Easy,Linked List Insertion At Beginning,,67.99%,https://www.geeksforgeeks.org/problems/linked-list-insertion-at-beginning/1
+Linked List,Easy,Compare two linked lists,,54.29%,https://www.geeksforgeeks.org/problems/compare-two-linked-lists/1
+Linked List,Easy,Delete Head of Linked List,,70.33%,https://www.geeksforgeeks.org/problems/delete-head-of-linked-list/1
+Linked List,Easy,Separate Chaining in Hashing,,64.96%,https://www.geeksforgeeks.org/problems/separate-chaining-in-hashing-1587115621/1
+Linked List,Easy,Reverse Two Parts of Linked List,,75.69%,https://www.geeksforgeeks.org/problems/reverse-both-parts--170647/1
+Linked List,Easy,Insert in a Singly Linked List,,49.92%,https://www.geeksforgeeks.org/problems/insertion-at-a-given-position-in-a-linked-list/1
+Linked List,Easy,Move all zeros to the front of the linked list,,53.55%,https://www.geeksforgeeks.org/problems/move-all-zeros-to-the-front-of-the-linked-list/1
+Linked List,Easy,Deletion at the end of a Linked List,,51.25%,https://www.geeksforgeeks.org/problems/deletion-at-the-end-of-a-linked-list/1
+Linked List,Easy,Join Two Linked Lists,,65.42%,https://www.geeksforgeeks.org/problems/join-two-linked-lists/1
+Linked List,Easy,Merge Lists Alternatingly,Amazon,37.62%,https://www.geeksforgeeks.org/problems/merge-list-alternatingly/1
+Linked List,Easy,Size of Doubly Linked List,,94.13%,https://www.geeksforgeeks.org/problems/size-of-doubly-linked-list--114556/1
+Linked List,Easy,Insertion at Position in Circular Linked List,,35.94%,https://www.geeksforgeeks.org/problems/insertion-at-specific-position-in-circular-linked-list/1
+Linked List,Easy,Insertion in an empty circular linked list,,89.77%,https://www.geeksforgeeks.org/problems/insertion-in-an-empty-circular-linked-list/1
+Linked List,Medium,Remove Cycle in Linked List,"Adobe, Amazon, Goldman Sachs, +10",27.66%,https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
+Linked List,Medium,Detect Loop in linked list,"Accolite, Adobe, Amazon, +15",43.49%,https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1
+Linked List,Medium,Palindrome Linked List,"Accolite, Adobe, Amazon, +7",41.48%,https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
+Linked List,Medium,Add Number Linked Lists,"Accolite, Amazon, Flipkart, +5",34.52%,https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
+Linked List,Medium,Add 1 to a Linked List Number,Amazon,31.91%,https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1
+Linked List,Medium,Intersection in Y Shaped Lists,"Accolite, Adobe, Amazon, +11",44.67%,https://www.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1
+Linked List,Medium,Cycle Length in Linked List,"Adobe, Amazon, Qualcomm",44.26%,https://www.geeksforgeeks.org/problems/find-length-of-loop/1
+Linked List,Medium,Rotate a Linked List,"Accolite, Amazon, MakeMyTrip, +1",39.95%,https://www.geeksforgeeks.org/problems/rotate-a-linked-list/1
+Linked List,Medium,"Sort a linked list of 0s, 1s and 2s","Amazon, MakeMyTrip, Microsoft, +1",60.75%,https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
+Linked List,Medium,Flattening a Linked List,"24*7 Innovation Labs, Amazon, Drishti-Soft, +8",51.53%,https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1
+Linked List,Medium,Delete Node Without Linked List Head,"Amazon, Microsoft, Samsung, +3",78.57%,https://www.geeksforgeeks.org/problems/delete-without-head-pointer/1
+Linked List,Medium,Merge two sorted linked lists,"Zoho, Flipkart, Accolite, +11",62.91%,https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
+Linked List,Medium,Insert in Sorted Circular Linked List,"Zoho, Amazon, Microsoft",25.56%,https://www.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1
+Linked List,Medium,First Node of Loop in Linked List,,55.49%,https://www.geeksforgeeks.org/problems/find-the-first-node-of-loop-in-linked-list--170645/1
+Linked List,Medium,Segregate Evens and Odds in a Linked List,,49.80%,https://www.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1
+Linked List,Medium,Merge Sort for Linked List,"Paytm, Accolite, Amazon, +5",74.76%,https://www.geeksforgeeks.org/problems/sort-a-linked-list/1
+Linked List,Medium,Swap Kth nodes from ends,"Morgan Stanley, Amazon, NPCI",35.50%,https://www.geeksforgeeks.org/problems/swap-kth-node-from-beginning-and-kth-node-from-end-in-a-singly-linked-list/1
+Linked List,Medium,Sorted Insert in DLL,,28.25%,https://www.geeksforgeeks.org/problems/insert-in-sorted-way-in-a-sorted-dll/1
+Linked List,Medium,Union of Two Linked Lists,"Flipkart, Amazon, Microsoft, +3",58.65%,https://www.geeksforgeeks.org/problems/union-of-two-linked-list/1
+Linked List,Medium,Merge 2 Sorted Linked Lists in Reverse Order,Microsoft,62.29%,https://www.geeksforgeeks.org/problems/merge-2-sorted-linked-list-in-reverse-order/1
+Linked List,Medium,Sort Alternate Sorted Linked List,Amazon,33.67%,https://www.geeksforgeeks.org/problems/linked-list-that-is-sorted-alternatingly/1
+Linked List,Medium,Reverse Alternate in Link List,"Amazon, Walmart",48.48%,https://www.geeksforgeeks.org/problems/given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end/1
+Linked List,Medium,Rearrange a linked list,"Amazon, Microsoft",44.26%,https://www.geeksforgeeks.org/problems/rearrange-a-linked-list/1
+Linked List,Medium,Prime List,,53.68%,https://www.geeksforgeeks.org/problems/prime-list--170646/1
+Linked List,Medium,Remove All Duplicates in a Linked List,Microsoft,49.82%,https://www.geeksforgeeks.org/problems/remove-all-occurences-of-duplicates-in-a-linked-list/1
+Linked List,Medium,Quick Sort on Linked List,Paytm,71.80%,https://www.geeksforgeeks.org/problems/quick-sort-on-linked-list/1
+Linked List,Medium,Separate Consonants and Vowels in Linked List,Amazon,49.98%,https://www.geeksforgeeks.org/problems/arrange-consonants-and-vowels/1
+Linked List,Medium,Sort Singly Linked List,Microsoft,69.66%,https://www.geeksforgeeks.org/problems/insertion-sort-for-singly-linked-list/1
+Linked List,Medium,Absolute List Sorting,"Amazon, OYO Rooms",62.03%,https://www.geeksforgeeks.org/problems/absolute-list-sorting/1
+Linked List,Medium,Delete All Occurrences in a Linked list,,48.44%,https://www.geeksforgeeks.org/problems/delete-keys-in-a-linked-list/1
+Linked List,Medium,Intersection Point in Y Shaped Linked Lists,"VMWare, Flipkart, Accolite, +11",55.77%,https://www.geeksforgeeks.org/problems/intersection-point-in-y-shaped-linked-lists--170645/1
+Linked List,Medium,Reverse Alternate K in Linked List,,58.15%,https://www.geeksforgeeks.org/problems/xor-linked-list/1
+Linked List,Medium,Polynomial Addition,Amazon,55.38%,https://www.geeksforgeeks.org/problems/polynomial-addition/1
+Linked List,Medium,Sort k Sorted DLL,,55.57%,https://www.geeksforgeeks.org/problems/sort-a-k-sorted-doubly-linked-list/1
+Linked List,Medium,Modify Linked List-1,Amazon,72.39%,https://www.geeksforgeeks.org/problems/modify-linked-list-1-0546/1
+Linked List,Medium,Linked List in Zig-Zag fashion,"Amazon, OYO Rooms",52.34%,https://www.geeksforgeeks.org/problems/linked-list-in-zig-zag-fashion/1
+Linked List,Medium,Partition a Linked List around a given value,Microsoft,52.41%,https://www.geeksforgeeks.org/problems/partition-a-linked-list-around-a-given-value/1
+Linked List,Medium,Longest Palindrome in Linked List,"Accolite, Microsoft",52.13%,https://www.geeksforgeeks.org/problems/length-of-longest-palindrome-in-linked-list/1
+Linked List,Medium,Anagrams in Linked List,,63.42%,https://www.geeksforgeeks.org/problems/find-anagrams-in-linked-list--170647/1
+Linked List,Medium,QuickSort on Doubly Linked List,HSBC,71.11%,https://www.geeksforgeeks.org/problems/quicksort-on-doubly-linked-list/1
+Linked List,Medium,Triplets in Sorted Linked List,,50.61%,https://www.geeksforgeeks.org/problems/count-triplets--141631/1
+Linked List,Medium,Rearrange linked list in-place,,56.44%,https://www.geeksforgeeks.org/problems/rearrange-linked-list-in-place/1
+Linked List,Medium,Insertion at the beginning of Circular Linked List,,90.69%,https://www.geeksforgeeks.org/problems/insertion-at-the-beginning-of-circular-linked-list/1
+Linked List,Medium,Insertion Sort Linked List,Google,86.75%,https://www.geeksforgeeks.org/problems/insertion-sort-list/1
+Linked List,Hard,Linked List Group Reverse,"Accolite, Adobe, Amazon, +9",57.08%,https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
+Linked List,Hard,Clone List with Next and Random,"Adobe, Amazon, BankBazaar, +9",64.80%,https://www.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1
+Linked List,Hard,Subtraction in Linked List,Amazon,12.94%,https://www.geeksforgeeks.org/problems/subtraction-in-linked-list/1
+Linked List,Hard,Reorder List,"Amazon, Intuit, Microsoft, +1",47.90%,https://www.geeksforgeeks.org/problems/reorder-list/1
+Linked List,Hard,Merge Sort on Doubly Linked List,,68.49%,https://www.geeksforgeeks.org/problems/merge-sort-on-doubly-linked-list/1
+Linked List,Hard,Reverse a sublist of a linked list,Microsoft,62.68%,https://www.geeksforgeeks.org/problems/reverse-a-sublist-of-a-linked-list/1

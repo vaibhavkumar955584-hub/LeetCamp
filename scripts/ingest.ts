@@ -27,24 +27,26 @@ function getTimeframeFromFilename(filename: string): string | null {
 // Normalize difficulty
 function normalizeDifficulty(raw: string): string {
   const clean = (raw || '').trim().toLowerCase();
+  if (clean === 'basic' || clean === 'school') return 'Basic';
   if (clean === 'easy') return 'Easy';
   if (clean === 'medium') return 'Medium';
   if (clean === 'hard') return 'Hard';
   return raw.trim() || 'Medium';
 }
 
-// Slugify fallback
-function slugify(text: string): string {
+// Slugify helper
+export function slugify(text: string): string {
   return text
     .toString()
     .toLowerCase()
     .trim()
+    .replace(/_/g, '-')
     .replace(/\s+/g, '-')
     .replace(/[^\w\-]+/g, '')
     .replace(/\-\-+/g, '-');
 }
 
-// Extract slug and URL
+// Extract slug and URL for LeetCode problems
 function deriveSlugAndUrl(linkRaw: string | undefined, title: string): { slug: string; url: string; fallback: boolean } {
   const link = (linkRaw || '').trim();
   if (link && link.includes('leetcode.com/problems/')) {
@@ -64,20 +66,21 @@ function deriveSlugAndUrl(linkRaw: string | undefined, title: string): { slug: s
   const slug = slugify(title);
   return {
     slug,
-    url: `https://leetcode.com/problems/${slug}/`,
-    fallback: true,
+    url: link || `https://leetcode.com/problems/${slug}/`,
+    fallback: !link,
   };
 }
 
-export function runIngestion(datasetPath: string, dbPath: string = 'data/problems.db') {
+export function runIngestion(
+  datasetPath: string = 'data/leetcode-company-wise-problems',
+  patternsPath: string = 'data/patterns',
+  dbPath: string = 'data/problems.db'
+) {
   const resolvedDatasetPath = path.resolve(datasetPath);
-  if (!fs.existsSync(resolvedDatasetPath)) {
-    console.error(`Error: Dataset directory not found at: ${resolvedDatasetPath}`);
-    process.exit(1);
-  }
-
+  const resolvedPatternsPath = path.resolve(patternsPath);
   const resolvedDbPath = path.resolve(dbPath);
   const dbDir = path.dirname(resolvedDbPath);
+
   if (!fs.existsSync(dbDir)) {
     fs.mkdirSync(dbDir, { recursive: true });
   }
@@ -86,7 +89,7 @@ export function runIngestion(datasetPath: string, dbPath: string = 'data/problem
   if (fs.existsSync(resolvedDbPath)) {
     try {
       fs.unlinkSync(resolvedDbPath);
-    } catch (e) {
+    } catch {
       console.log('Notice: overwriting existing database');
     }
   }
@@ -99,6 +102,7 @@ export function runIngestion(datasetPath: string, dbPath: string = 'data/problem
   // Ensure clean table recreation for idempotent ingestion
   db.exec(`
     DROP TABLE IF EXISTS problems;
+    DROP TABLE IF EXISTS pattern_problems;
     DROP TABLE IF EXISTS _metadata;
 
     CREATE TABLE problems (
@@ -114,6 +118,17 @@ export function runIngestion(datasetPath: string, dbPath: string = 'data/problem
       topics TEXT
     );
 
+    CREATE TABLE pattern_problems (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      category TEXT NOT NULL,
+      category_slug TEXT NOT NULL,
+      difficulty TEXT NOT NULL,
+      title TEXT NOT NULL,
+      company_tags TEXT,
+      accuracy REAL,
+      url TEXT NOT NULL
+    );
+
     CREATE TABLE _metadata (
       key TEXT PRIMARY KEY,
       value TEXT NOT NULL
@@ -123,43 +138,137 @@ export function runIngestion(datasetPath: string, dbPath: string = 'data/problem
     CREATE INDEX IF NOT EXISTS idx_problems_company_difficulty ON problems(company, difficulty);
     CREATE INDEX IF NOT EXISTS idx_problems_company_timeframe ON problems(company, timeframe);
     CREATE INDEX IF NOT EXISTS idx_problems_company_title ON problems(company, title);
+
+    CREATE INDEX IF NOT EXISTS idx_pattern_problems_category ON pattern_problems(category_slug);
+    CREATE INDEX IF NOT EXISTS idx_pattern_problems_category_raw ON pattern_problems(category);
+    CREATE INDEX IF NOT EXISTS idx_pattern_problems_diff ON pattern_problems(category_slug, difficulty);
+    CREATE INDEX IF NOT EXISTS idx_pattern_problems_title ON pattern_problems(title);
+    CREATE INDEX IF NOT EXISTS idx_pattern_problems_company_tags ON pattern_problems(company_tags);
   `);
 
-  const insertStmt = db.prepare(`
-    INSERT INTO problems (company, title, slug, leetcode_url, difficulty, timeframe, frequency, acceptance, topics)
-    VALUES (@company, @title, @slug, @leetcode_url, @difficulty, @timeframe, @frequency, @acceptance, @topics)
-  `);
+  let totalCompanyRows = 0;
+  let totalCompanyDirs = 0;
 
-  const insertMany = db.transaction((rows: any[]) => {
-    for (const row of rows) {
-      insertStmt.run(row);
-    }
-  });
+  // 1. Ingest Company-Wise Problems
+  if (fs.existsSync(resolvedDatasetPath)) {
+    console.log(`Ingesting company problems from: ${resolvedDatasetPath}`);
+    const insertProblemStmt = db.prepare(`
+      INSERT INTO problems (company, title, slug, leetcode_url, difficulty, timeframe, frequency, acceptance, topics)
+      VALUES (@company, @title, @slug, @leetcode_url, @difficulty, @timeframe, @frequency, @acceptance, @topics)
+    `);
 
-  const entries = fs.readdirSync(resolvedDatasetPath, { withFileTypes: true });
-  const companyDirs = entries.filter((e) => e.isDirectory() && e.name !== '.git').sort((a, b) => a.name.localeCompare(b.name));
+    const insertManyProblems = db.transaction((rows: any[]) => {
+      for (const row of rows) {
+        insertProblemStmt.run(row);
+      }
+    });
 
-  console.log(`Found ${companyDirs.length} company folders to process...`);
+    const entries = fs.readdirSync(resolvedDatasetPath, { withFileTypes: true });
+    const companyDirs = entries.filter((e) => e.isDirectory() && e.name !== '.git').sort((a, b) => a.name.localeCompare(b.name));
+    totalCompanyDirs = companyDirs.length;
 
-  const companyStats: { company: string; count: number }[] = [];
-  let totalRowsIngested = 0;
-  let fallbackCount = 0;
+    console.log(`Found ${companyDirs.length} company folders to process...`);
+    const companyStats: { company: string; count: number }[] = [];
 
-  for (const dir of companyDirs) {
-    const company = dir.name;
-    const companyPath = path.join(resolvedDatasetPath, company);
-    const files = fs.readdirSync(companyPath).filter((f) => f.endsWith('.csv')).sort();
+    for (const dir of companyDirs) {
+      const company = dir.name;
+      const companyPath = path.join(resolvedDatasetPath, company);
+      const files = fs.readdirSync(companyPath).filter((f) => f.endsWith('.csv')).sort();
 
-    const companyRows: any[] = [];
+      const companyRows: any[] = [];
 
-    for (const file of files) {
-      const timeframe = getTimeframeFromFilename(file);
-      if (!timeframe) {
-        console.warn(`[WARNING] Unrecognized timeframe file '${file}' in company '${company}', skipping.`);
-        continue;
+      for (const file of files) {
+        const timeframe = getTimeframeFromFilename(file);
+        if (!timeframe) continue;
+
+        const filePath = path.join(companyPath, file);
+        const content = fs.readFileSync(filePath, 'utf-8');
+        if (!content.trim()) continue;
+
+        let records: Record<string, string>[] = [];
+        try {
+          records = parse(content, {
+            columns: true,
+            skip_empty_lines: true,
+            trim: true,
+            relax_column_count: true,
+          });
+        } catch {
+          continue;
+        }
+
+        for (const record of records) {
+          const keys = Object.keys(record);
+          const findKey = (name: string) => keys.find((k) => k.toLowerCase().replace(/[^a-z]/g, '') === name.toLowerCase().replace(/[^a-z]/g, ''));
+
+          const diffKey = findKey('difficulty');
+          const titleKey = findKey('title');
+          const freqKey = findKey('frequency');
+          const acceptKey = findKey('acceptancerate') || findKey('acceptance');
+          const linkKey = findKey('link') || findKey('url') || findKey('leetcodeurl');
+          const topicsKey = findKey('topics') || findKey('topictags') || findKey('tags');
+
+          const title = (titleKey && record[titleKey]) ? record[titleKey].trim() : '';
+          if (!title) continue;
+
+          const rawDifficulty = diffKey && record[diffKey] ? record[diffKey] : 'Medium';
+          const difficulty = normalizeDifficulty(rawDifficulty);
+
+          const rawFreq = freqKey && record[freqKey] ? parseFloat(record[freqKey]) : null;
+          const frequency = isNaN(rawFreq as number) ? null : rawFreq;
+
+          const rawAccept = acceptKey && record[acceptKey] ? parseFloat(record[acceptKey]) : null;
+          const acceptance = isNaN(rawAccept as number) ? null : rawAccept;
+
+          const rawLink = linkKey && record[linkKey] ? record[linkKey] : '';
+          const { slug, url } = deriveSlugAndUrl(rawLink, title);
+
+          const topics = topicsKey && record[topicsKey] ? record[topicsKey].trim() : null;
+
+          companyRows.push({
+            company,
+            title,
+            slug,
+            leetcode_url: url,
+            difficulty,
+            timeframe,
+            frequency,
+            acceptance,
+            topics,
+          });
+        }
       }
 
-      const filePath = path.join(companyPath, file);
+      if (companyRows.length > 0) {
+        insertManyProblems(companyRows);
+        totalCompanyRows += companyRows.length;
+        companyStats.push({ company, count: companyRows.length });
+      }
+    }
+  }
+
+  // 2. Ingest DSA Pattern Problems
+  let totalPatternProblems = 0;
+  let totalPatternCategories = 0;
+
+  if (fs.existsSync(resolvedPatternsPath)) {
+    console.log(`Ingesting DSA patterns from: ${resolvedPatternsPath}`);
+    const insertPatternStmt = db.prepare(`
+      INSERT INTO pattern_problems (category, category_slug, difficulty, title, company_tags, accuracy, url)
+      VALUES (@category, @category_slug, @difficulty, @title, @company_tags, @accuracy, @url)
+    `);
+
+    const insertManyPatterns = db.transaction((rows: any[]) => {
+      for (const row of rows) {
+        insertPatternStmt.run(row);
+      }
+    });
+
+    const patternFiles = fs.readdirSync(resolvedPatternsPath).filter((f) => f.endsWith('.csv')).sort();
+    const patternCategoriesSet = new Set<string>();
+
+    for (const file of patternFiles) {
+      const filePath = path.join(resolvedPatternsPath, file);
       const content = fs.readFileSync(filePath, 'utf-8');
       if (!content.trim()) continue;
 
@@ -172,92 +281,84 @@ export function runIngestion(datasetPath: string, dbPath: string = 'data/problem
           relax_column_count: true,
         });
       } catch (err: any) {
-        console.error(`[ERROR] Failed to parse CSV: ${filePath} - ${err.message}`);
+        console.error(`Error parsing pattern CSV ${file}:`, err.message);
         continue;
       }
 
+      const patternRows: any[] = [];
+      const fallbackCategory = path.basename(file, '.csv').replace(/_/g, ' ');
+
       for (const record of records) {
-        // Defensive column lookup
-        const keys = Object.keys(record);
-        const findKey = (name: string) => keys.find((k) => k.toLowerCase().replace(/[^a-z]/g, '') === name.toLowerCase().replace(/[^a-z]/g, ''));
-
-        const diffKey = findKey('difficulty');
-        const titleKey = findKey('title');
-        const freqKey = findKey('frequency');
-        const acceptKey = findKey('acceptancerate') || findKey('acceptance');
-        const linkKey = findKey('link') || findKey('url') || findKey('leetcodeurl');
-        const topicsKey = findKey('topics') || findKey('topictags') || findKey('tags');
-
-        const title = (titleKey && record[titleKey]) ? record[titleKey].trim() : '';
+        const title = (record.title || '').trim();
         if (!title) continue;
 
-        const rawDifficulty = diffKey && record[diffKey] ? record[diffKey] : 'Medium';
-        const difficulty = normalizeDifficulty(rawDifficulty);
+        const category = (record.category || fallbackCategory).trim();
+        const categorySlug = slugify(category);
+        patternCategoriesSet.add(category);
 
-        const rawFreq = freqKey && record[freqKey] ? parseFloat(record[freqKey]) : null;
-        const frequency = isNaN(rawFreq as number) ? null : rawFreq;
-
-        const rawAccept = acceptKey && record[acceptKey] ? parseFloat(record[acceptKey]) : null;
-        const acceptance = isNaN(rawAccept as number) ? null : rawAccept;
-
-        const rawLink = linkKey && record[linkKey] ? record[linkKey] : '';
-        const { slug, url, fallback } = deriveSlugAndUrl(rawLink, title);
-        if (fallback) {
-          fallbackCount++;
-          console.warn(`[FALLBACK SLUG] Slugified '${title}' -> '${slug}' for company '${company}'`);
+        const difficulty = normalizeDifficulty(record.difficulty || 'Medium');
+        const companyTags = (record.company_tags || '').trim() || null;
+        
+        let accuracy: number | null = null;
+        if (record.accuracy) {
+          const cleanAcc = record.accuracy.replace('%', '').trim();
+          const parsedAcc = parseFloat(cleanAcc);
+          if (!isNaN(parsedAcc)) {
+            accuracy = parsedAcc;
+          }
         }
 
-        const topics = topicsKey && record[topicsKey] ? record[topicsKey].trim() : null;
+        const url = (record.url || '').trim() || `https://www.google.com/search?q=${encodeURIComponent(title + ' DSA problem')}`;
 
-        companyRows.push({
-          company,
-          title,
-          slug,
-          leetcode_url: url,
+        patternRows.push({
+          category,
+          category_slug: categorySlug,
           difficulty,
-          timeframe,
-          frequency,
-          acceptance,
-          topics,
+          title,
+          company_tags: companyTags,
+          accuracy,
+          url,
         });
+      }
+
+      if (patternRows.length > 0) {
+        insertManyPatterns(patternRows);
+        totalPatternProblems += patternRows.length;
       }
     }
 
-    if (companyRows.length > 0) {
-      insertMany(companyRows);
-      totalRowsIngested += companyRows.length;
-      companyStats.push({ company, count: companyRows.length });
-    } else {
-      companyStats.push({ company, count: 0 });
-    }
+    totalPatternCategories = patternCategoriesSet.size;
+    console.log(`Ingested ${totalPatternProblems} problems across ${totalPatternCategories} DSA patterns.`);
   }
 
   // Record ingestion metadata
   const insertMeta = db.prepare('INSERT OR REPLACE INTO _metadata (key, value) VALUES (?, ?)');
   insertMeta.run('last_ingested_at', new Date().toISOString());
-  insertMeta.run('total_rows', totalRowsIngested.toString());
-  insertMeta.run('total_companies', companyDirs.length.toString());
+  insertMeta.run('total_rows', totalCompanyRows.toString());
+  insertMeta.run('total_companies', totalCompanyDirs.toString());
+  insertMeta.run('total_pattern_problems', totalPatternProblems.toString());
+  insertMeta.run('total_patterns', totalPatternCategories.toString());
 
-  // Print Summary
-  console.log('\n================ PER-COMPANY ROW COUNTS ================');
-  for (const stat of companyStats) {
-    console.log(`${stat.company}: ${stat.count} rows`);
-  }
-  console.log('========================================================\n');
-  console.log(`Summary Statistics:`);
-  console.log(`- Total Companies Processed: ${companyDirs.length}`);
-  console.log(`- Total Active Companies with Questions: ${companyStats.filter(c => c.count > 0).length}`);
-  console.log(`- Total Problems Ingested: ${totalRowsIngested}`);
-  console.log(`- Total Fallback Slugs: ${fallbackCount}`);
+  console.log('\n================ INGESTION SUMMARY ================');
+  console.log(`- Total Companies Processed: ${totalCompanyDirs}`);
+  console.log(`- Total Company Problems: ${totalCompanyRows}`);
+  console.log(`- Total DSA Patterns: ${totalPatternCategories}`);
+  console.log(`- Total DSA Pattern Problems: ${totalPatternProblems}`);
   console.log(`- Database saved at: ${resolvedDbPath}\n`);
 
   db.close();
-  return { totalCompanies: companyDirs.length, totalRows: totalRowsIngested, companyStats };
+  return {
+    totalCompanies: totalCompanyDirs,
+    totalRows: totalCompanyRows,
+    totalPatterns: totalPatternCategories,
+    totalPatternProblems,
+  };
 }
 
 // CLI entry point
 if (require.main === module || process.argv[1]?.endsWith('ingest.ts') || process.argv[1]?.endsWith('ingest.js')) {
   const datasetPathArg = process.argv[2] || process.env.DATASET_PATH || 'data/leetcode-company-wise-problems';
-  console.log(`Starting ingestion from: ${datasetPathArg}`);
-  runIngestion(datasetPathArg);
+  const patternsPathArg = process.argv[3] || process.env.PATTERNS_PATH || 'data/patterns';
+  console.log(`Starting ingestion from: ${datasetPathArg} and ${patternsPathArg}`);
+  runIngestion(datasetPathArg, patternsPathArg);
 }

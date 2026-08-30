@@ -1,0 +1,80 @@
+category,difficulty,title,company_tags,accuracy,url
+Matrix,Basic,Sort a Matrix,"Amazon, FactSet",63.49%,https://www.geeksforgeeks.org/problems/sorted-matrix2333/1
+Matrix,Basic,Sum of Matrix,Zoho,74.50%,https://www.geeksforgeeks.org/problems/sum-of-elements-in-a-matrix2000/1
+Matrix,Basic,Diagonal Sum in Matrix,,52.31%,https://www.geeksforgeeks.org/problems/diagonal-sum0158/1
+Matrix,Basic,Multiply Two Matrices,Paytm,46.94%,https://www.geeksforgeeks.org/problems/multiply-matrices/1
+Matrix,Basic,Add of 2 Square Matrices,,61.66%,https://www.geeksforgeeks.org/problems/addition-of-two-square-matrices4916/1
+Matrix,Basic,Sums of i-th row and i-th column,,33.96%,https://www.geeksforgeeks.org/problems/sums-of-i-th-row-and-i-th-column3054/1
+Matrix,Basic,Check Identical Matrices,,51.34%,https://www.geeksforgeeks.org/problems/identical-matrices1042/1
+Matrix,Basic,Squares in a Matrix,Junglee Games,34.59%,https://www.geeksforgeeks.org/problems/squares-in-a-matrix5716/1
+Matrix,Basic,Count Sorted Rows,Samsung,46.80%,https://www.geeksforgeeks.org/problems/count-sorted-rows2702/1
+Matrix,Basic,Swapping Triangles in Matrix,,73.00%,https://www.geeksforgeeks.org/problems/swapping-triangles5209/1
+Matrix,Easy,Transpose of Matrix,"Bloomberg, InfoEdge, MakeMyTrip, +1",66.50%,https://www.geeksforgeeks.org/problems/transpose-of-matrix-1587115621/1
+Matrix,Easy,Matrix Boundary Traversal,,35.32%,https://www.geeksforgeeks.org/problems/boundary-traversal-of-matrix-1587115620/1
+Matrix,Easy,Matrix Snake Pattern,,68.08%,https://www.geeksforgeeks.org/problems/print-matrix-in-snake-pattern-1587115621/1
+Matrix,Easy,Row with Minimum 1s,Amazon,25.00%,https://www.geeksforgeeks.org/problems/row-with-minimum-number-of-1s5430/1
+Matrix,Easy,Print Diagonally,"Amazon, Microsoft",66.11%,https://www.geeksforgeeks.org/problems/print-diagonally4331/1
+Matrix,Easy,Column with Max 0s,,43.32%,https://www.geeksforgeeks.org/problems/predict-the-column/1
+Matrix,Easy,Sum of upper and lower triangles,,71.00%,https://www.geeksforgeeks.org/problems/sum-of-upper-and-lower-triangles-1587115621/1
+Matrix,Easy,Summed Matrix,,46.76%,https://www.geeksforgeeks.org/problems/summed-matrix5834/1
+Matrix,Easy,Toeplitz Matrix,,49.05%,https://www.geeksforgeeks.org/problems/toeplitz-matrix/1
+Matrix,Easy,Search in a row-wise sorted matrix,,51.77%,https://www.geeksforgeeks.org/problems/search-in-a-row-wise-sorted-matrix/1
+Matrix,Easy,Count 1s Surrounded by Even 0s,,54.02%,https://www.geeksforgeeks.org/problems/surround-the-1s2505/1
+Matrix,Easy,Coverage of all Zeros in a Binary Matrix,,55.68%,https://www.geeksforgeeks.org/problems/coverage-of-all-zeros-in-a-binary-matrix4024/1
+Matrix,Easy,Letters Collection,,64.76%,https://www.geeksforgeeks.org/problems/c-letters-collection4552/1
+Matrix,Easy,Trace Path,,50.66%,https://www.geeksforgeeks.org/problems/trace-path3840/1
+Matrix,Easy,Row or Column Palindrome,,55.18%,https://www.geeksforgeeks.org/problems/the-palindrome-pattern3900/1
+Matrix,Easy,Process Zeros and Neighbors in Grid,,43.14%,https://www.geeksforgeeks.org/problems/make-zeroes4042/1
+Matrix,Easy,Reversing the columns of a Matrix,,66.66%,https://www.geeksforgeeks.org/problems/reversing-the-columns-of-a-matrix-1587115621/1
+Matrix,Easy,Reverse Order of Rows of a Matrix,,67.16%,https://www.geeksforgeeks.org/problems/reversing-the-rows-of-a-matrix-1587115621/1
+Matrix,Easy,Min Swaps in a Grid to Make Adjacent Different,,48.42%,https://www.geeksforgeeks.org/problems/distributing-question-papers2513/1
+Matrix,Easy,Row Sum in a Matrix,,66.44%,https://www.geeksforgeeks.org/problems/row-sum-in-a-matrix/1
+Matrix,Easy,Column Sum in a Matrix,,52.71%,https://www.geeksforgeeks.org/problems/column-sum-in-a-matrix/1
+Matrix,Easy,Swap diagonals,,77.74%,https://www.geeksforgeeks.org/problems/swap-major-and-minor-diagonals-of-a-square-matrix/1
+Matrix,Easy,Minimum Moves to Type a String,Accolite,31.52%,https://www.geeksforgeeks.org/problems/primitive-typing5427/1
+Matrix,Easy,Middle swap,,88.13%,https://www.geeksforgeeks.org/problems/middle-swap/1
+Matrix,Easy,Perimeter of Shapes in Binary Matrix,,56.55%,https://www.geeksforgeeks.org/problems/find-perimeter-of-shapes/1
+Matrix,Easy,Create a 3D Array from a List of Lists,,21.60%,https://www.geeksforgeeks.org/problems/create-a-3d-array-from-a-list-of-lists/1
+Matrix,Easy,Kronecker Product,,54.93%,https://www.geeksforgeeks.org/problems/kronecker-product0918/1
+Matrix,Easy,Transpose of a Matrix,,78.58%,https://www.geeksforgeeks.org/problems/transpose-of-a-matrix/1
+Matrix,Easy,Diagonal in a 2D Numpy Array,,78.59%,https://www.geeksforgeeks.org/problems/find-diagonal-elements-in-a-2d-numpy-array/1
+Matrix,Easy,Matrix Multiplication,,72.89%,https://www.geeksforgeeks.org/problems/matrix-multiplication--132654/1
+Matrix,Medium,Row with Max 1s in Rowwise Sorted,Swiggy,33.09%,https://www.geeksforgeeks.org/problems/row-with-max-1s0023/1
+Matrix,Medium,Spirally Traversing a Matrix,"Adobe, BrowserStack, D-E-Shaw, +13",35.20%,https://www.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1
+Matrix,Medium,Rotate by 90 degree,"Adobe, Microsoft, NPCI, +2",56.88%,https://www.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1
+Matrix,Medium,Median in a Row-Wise Sorted Matrix,NPCI,55.05%,https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1
+Matrix,Medium,Boolean Matrix,Microsoft,40.05%,https://www.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1
+Matrix,Medium,Word in Grid - All Occurrences,"Amazon, FactSet, Flipkart, +3",22.88%,https://www.geeksforgeeks.org/problems/find-the-string-in-grid0111/1
+Matrix,Medium,Make Matrix Beautiful,NPCI,64.75%,https://www.geeksforgeeks.org/problems/make-matrix-beautiful-1587115620/1
+Matrix,Medium,Exit Point in a Matrix,Samsung,50.00%,https://www.geeksforgeeks.org/problems/exit-point-in-a-matrix0905/1
+Matrix,Medium,Kth of spiral matrix,"Amazon, Bloomberg, Facebook, +2",50.66%,https://www.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1
+Matrix,Medium,Determinant of a Matrix,,56.66%,https://www.geeksforgeeks.org/problems/determinant-of-a-matrix-1587115620/1
+Matrix,Medium,Rotate Each Row of Matrix K Times,Amazon,41.89%,https://www.geeksforgeeks.org/problems/left-rotate-matrix-k-times2351/1
+Matrix,Medium,Matrix Zig Zag Diagonal Traversal,Amazon,63.72%,https://www.geeksforgeeks.org/problems/print-matrix-in-diagonal-pattern/1
+Matrix,Medium,Power of a 2 x 2 Binary Matrix,,45.55%,https://www.geeksforgeeks.org/problems/rohans-love-for-matrix4723/1
+Matrix,Medium,Largest Subsquare Surrounded by X,D-E-Shaw,50.31%,https://www.geeksforgeeks.org/problems/largest-subsquare-surrounded-by-x0558/1
+Matrix,Medium,Maximum Hourglass Sum,,54.82%,https://www.geeksforgeeks.org/problems/maximum-sum-of-hour-glass3842/1
+Matrix,Medium,Towers Reaching Both Stations,,60.27%,https://www.geeksforgeeks.org/problems/geeks-island--170646/1
+Matrix,Medium,Is Sudoku Valid,"Amazon, Microsoft, Google",41.18%,https://www.geeksforgeeks.org/problems/is-sudoku-valid4820/1
+Matrix,Medium,Multiply 2 Matrices,,54.72%,https://www.geeksforgeeks.org/problems/multiply-2-matrices4144/1
+Matrix,Medium,Rectangle with Corners as 1 in Binary Matrix,Flipkart,56.75%,https://www.geeksforgeeks.org/problems/find-rectangle-with-corners-as-1--141631/1
+Matrix,Medium,Rotate a Matrix by 180 Counterclockwise,Samsung,52.99%,https://www.geeksforgeeks.org/problems/c-matrix-rotation-by-180-degree0745/1
+Matrix,Medium,Fill the Missing Cell to Balance,,50.00%,https://www.geeksforgeeks.org/problems/missing-number-in-matrix5316/1
+Matrix,Medium,Max Sum Square Sub-Matrix of Size k,Adobe,50.41%,https://www.geeksforgeeks.org/problems/coins-of-geekland--141631/1
+Matrix,Medium,Find the Peak Element in a 2D Matrix,,54.61%,https://www.geeksforgeeks.org/problems/find-the-peak-element-in-a-2d-matrix/1
+Matrix,Medium,Reverse Spiral Form of Matrix,,57.45%,https://www.geeksforgeeks.org/problems/reverse-spiral-form-of-matrix4033/1
+Matrix,Medium,Search in Fully Rotated Sorted 2D Matrix,,55.70%,https://www.geeksforgeeks.org/problems/search-in-fully-rotated-sorted-2d-matrix/1
+Matrix,Medium,Geek and Tiles,,31.90%,https://www.geeksforgeeks.org/problems/matrix-exponentiation2711/1
+Matrix,Medium,2D Hopscotch,,58.79%,https://www.geeksforgeeks.org/problems/hopscotch4857/1
+Matrix,Medium,Rotate Matrix Clockwise by One,Amazon,49.78%,https://www.geeksforgeeks.org/problems/rotate-matrix-elements-clockwise2336/1
+Matrix,Medium,Magic Square,,48.17%,https://www.geeksforgeeks.org/problems/magic-square/1
+Matrix,Medium,Palindromic Paths in a Matrix,Samsung,33.58%,https://www.geeksforgeeks.org/problems/number-of-palindromic-paths-in-a-matrix0819/1
+Matrix,Medium,Coils in a Matrix,Yahoo,81.11%,https://www.geeksforgeeks.org/problems/form-coils-in-a-matrix4726/1
+Matrix,Medium,Create a spiral matrix of N*M size from given array,,73.24%,https://www.geeksforgeeks.org/problems/create-a-spiral-matrix-of-nm-size-from-given-array/1
+Matrix,Medium,Count Occurrences in a Fully Sorted Matrix,,65.81%,https://www.geeksforgeeks.org/problems/count-occurrences-in-a-fully-sorted-matrix/1
+Matrix,Medium,Prefix Sum of Matrix (Or 2D Array),,75.15%,https://www.geeksforgeeks.org/problems/prefix-sum-of-matrix-or-2d-array/1
+Matrix,Medium,Matrix Row-Column Swaps,,52.98%,https://www.geeksforgeeks.org/problems/matrix-row-column-swaps/1
+Matrix,Medium,Conway's Game Of Life,,77.59%,https://www.geeksforgeeks.org/problems/game-of-life/1
+Matrix,Hard,Generalised Fibonacci Nnumbers,,46.51%,https://www.geeksforgeeks.org/problems/generalised-fibonacci-numbers1820/1
+Matrix,Hard,Shortest Path by Removing K walls,Google,50.40%,https://www.geeksforgeeks.org/problems/shortest-path-by-removing-k-walls/1
+Matrix,Hard,Largest Rectangle with Column Swaps,,55.77%,https://www.geeksforgeeks.org/problems/find-the-largest-rectangle-of-1s-with-swapping-of-columns-allowed0243/1

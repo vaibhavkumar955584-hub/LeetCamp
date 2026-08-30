@@ -1,0 +1,84 @@
+category,difficulty,title,company_tags,accuracy,url
+Bit Magic,Basic,Odd or Even,,60.60%,https://www.geeksforgeeks.org/problems/odd-or-even3618/1
+Bit Magic,Basic,Bit Difference,,75.23%,https://www.geeksforgeeks.org/problems/bit-difference-1587115620/1
+Bit Magic,Basic,Position of the Set Bit,Microsoft,49.62%,https://www.geeksforgeeks.org/problems/find-position-of-set-bit3706/1
+Bit Magic,Basic,Set the rightmost unset bit,,47.64%,https://www.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1
+Bit Magic,Basic,Sparse Number,,59.13%,https://www.geeksforgeeks.org/problems/number-is-sparse-or-not-1587115620/1
+Bit Magic,Basic,Set kth bit,"Cisco, Qualcomm",72.71%,https://www.geeksforgeeks.org/problems/set-kth-bit3724/1
+Bit Magic,Basic,Check if All Bits Set,Amazon,52.59%,https://www.geeksforgeeks.org/problems/check-set-bits5408/1
+Bit Magic,Basic,Binary To Gray Code Conversion,,81.04%,https://www.geeksforgeeks.org/problems/gray-code-1587115620/1
+Bit Magic,Basic,Binary Representation,Microsoft,51.35%,https://www.geeksforgeeks.org/problems/binary-representation5003/1
+Bit Magic,Basic,Repeated Integer Division by 2,Amazon,62.71%,https://www.geeksforgeeks.org/problems/geek-and-coffee-shop5721/1
+Bit Magic,Basic,Unset All Even Bits,"Samsung, Qualcomm",54.06%,https://www.geeksforgeeks.org/problems/change-all-even-bits-in-a-number-to-03253/1
+Bit Magic,Basic,Next Power of Two,,49.63%,https://www.geeksforgeeks.org/problems/smallest-power-of-2-greater-than-or-equal-to-n2630/1
+Bit Magic,Basic,One's Complement,,68.27%,https://www.geeksforgeeks.org/problems/ones-complement5928/1
+Bit Magic,Basic,XOR of All Elements Except Self,,61.02%,https://www.geeksforgeeks.org/problems/xor-of-all-elements0736/1
+Bit Magic,Basic,Parity of Set Bit Count,,64.79%,https://www.geeksforgeeks.org/problems/parity-of-unsigned-integer4247/1
+Bit Magic,Basic,Bitwise OR of a Binary Array,,56.77%,https://www.geeksforgeeks.org/problems/the-or-gate3122/1
+Bit Magic,Basic,Equal Sum and XOR,,70.92%,https://www.geeksforgeeks.org/problems/equal-sum-and-xor/1
+Bit Magic,Basic,2's Complement,Adobe,32.22%,https://www.geeksforgeeks.org/problems/2s-complement3124/1
+Bit Magic,Basic,The XOR Gate,,60.95%,https://www.geeksforgeeks.org/problems/the-xor-gate0918/1
+Bit Magic,Basic,Bitwise OR of Multiples,,64.90%,https://www.geeksforgeeks.org/problems/factor-or-multiple1128/1
+Bit Magic,Basic,Differ at One Bit,,30.83%,https://www.geeksforgeeks.org/problems/check-whether-two-numbers-differ-at-one-bit-position-only3415/1
+Bit Magic,Basic,Only LSB and MSB Set,,43.68%,https://www.geeksforgeeks.org/problems/first-and-last-bit2357/1
+Bit Magic,Basic,Check for Alternate Bits,,46.56%,https://www.geeksforgeeks.org/problems/product-of-digits4348/1
+Bit Magic,Basic,Set All Odd Bits,,51.81%,https://www.geeksforgeeks.org/problems/set-all-odd-bits1900/1
+Bit Magic,Basic,Binary Representation of Previous,,24.29%,https://www.geeksforgeeks.org/problems/binary-representation-of-previous-number0638/1
+Bit Magic,Basic,Numbers with Greater OR Value,,24.75%,https://www.geeksforgeeks.org/problems/maximize-or0509/1
+Bit Magic,Basic,Adjacent set bits,,43.11%,https://www.geeksforgeeks.org/problems/count-the-number-of-elements-in-array-1-for-each-element-of-the-array-22903/1
+Bit Magic,Easy,Power of 2,Adobe,32.58%,https://www.geeksforgeeks.org/problems/power-of-2-1587115620/1
+Bit Magic,Easy,Check K-th Bit,Microsoft,52.75%,https://www.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1
+Bit Magic,Easy,Count Set Bits,"Adobe, Amazon, Brocade, +6",76.50%,https://www.geeksforgeeks.org/problems/set-bits0143/1
+Bit Magic,Easy,First Set Bit,,46.89%,https://www.geeksforgeeks.org/problems/find-first-set-bit-1587115620/1
+Bit Magic,Easy,Unique Number I,"Amazon, Codenation, Microsoft, +3",61.81%,https://www.geeksforgeeks.org/problems/find-unique-number/1
+Bit Magic,Easy,Rightmost different bit,,61.61%,https://www.geeksforgeeks.org/problems/rightmost-different-bit-1587115621/1
+Bit Magic,Easy,Is Binary Number Multiple of 3,"Adobe, Amazon, Microsoft",32.89%,https://www.geeksforgeeks.org/problems/is-binary-number-multiple-of-30654/1
+Bit Magic,Easy,XOR of a Number Range,,50.00%,https://www.geeksforgeeks.org/problems/find-xor-of-numbers-from-l-to-r/1
+Bit Magic,Easy,Divisibility by 8,,22.22%,https://www.geeksforgeeks.org/problems/check-if-a-number-is-divisible-by-83957/1
+Bit Magic,Easy,Longest Consecutive 1's,Microsoft,69.74%,https://www.geeksforgeeks.org/problems/longest-consecutive-1s-1587115620/1
+Bit Magic,Easy,Decimal to binary,Adobe,55.75%,https://www.geeksforgeeks.org/problems/decimal-to-binary-1587115620/1
+Bit Magic,Easy,Swap Odd and Even Bits,,77.25%,https://www.geeksforgeeks.org/problems/swap-all-odd-and-even-bits-1587115621/1
+Bit Magic,Easy,Copy Set Bits in Range,"D-E-Shaw, Adobe",39.22%,https://www.geeksforgeeks.org/problems/copy-set-bits-in-range0623/1
+Bit Magic,Easy,Swap Two Nibbles,"Accolite, Samsung, Cisco, +1",66.11%,https://www.geeksforgeeks.org/problems/swap-two-nibbles-in-a-byte0446/1
+Bit Magic,Easy,Binary representation of next number,,50.00%,https://www.geeksforgeeks.org/problems/binary-representation-of-next-number3648/1
+Bit Magic,Easy,Binary Modulo,,50.34%,https://www.geeksforgeeks.org/problems/binary-modulo--170648/1
+Bit Magic,Easy,Sum of two numbers without using arithmetic operators,Microsoft,69.46%,https://www.geeksforgeeks.org/problems/sum-of-two-numbers-without-using-arithmetic-operators/1
+Bit Magic,Easy,Toggle bits in the given range,,65.19%,https://www.geeksforgeeks.org/problems/toggle-bits-given-range0952/1
+Bit Magic,Easy,Minimum AND Operations to Make Same,,57.82%,https://www.geeksforgeeks.org/problems/min-operations--170645/1
+Bit Magic,Easy,Change Bits,,72.13%,https://www.geeksforgeeks.org/problems/change-bits1538/1
+Bit Magic,Easy,Check Power of 8,,40.26%,https://www.geeksforgeeks.org/problems/check-if-a-integer-is-power-of-8-or-not2537/1
+Bit Magic,Easy,Swap n Consecutive Bits,,68.78%,https://www.geeksforgeeks.org/problems/swap-bits5726/1
+Bit Magic,Easy,Reverse Bits,,71.53%,https://www.geeksforgeeks.org/problems/reverse-bits-1611130171/1
+Bit Magic,Easy,Set Bits Between Given Positions,,69.80%,https://www.geeksforgeeks.org/problems/set-all-the-bits-in-given-range-of-a-number4538/1
+Bit Magic,Easy,Kth Bit Value,,39.89%,https://www.geeksforgeeks.org/problems/kth-lsb3427/1
+Bit Magic,Easy,Check Binary Divisible by 10,,25.26%,https://www.geeksforgeeks.org/problems/check-if-divisible-by-103743/1
+Bit Magic,Easy,Bitwise OR of Range,,19.82%,https://www.geeksforgeeks.org/problems/ishaans-curiosity0853/1
+Bit Magic,Easy,Perfect XOR,,21.91%,https://www.geeksforgeeks.org/problems/anands-maths-question3540/1
+Bit Magic,Easy,All Bitwise Subsets of a Number,,61.99%,https://www.geeksforgeeks.org/problems/print-all-bitwise-subsets-of-a-number-n3301/1
+Bit Magic,Easy,Maximize XOR,,29.23%,https://www.geeksforgeeks.org/problems/maximize-xor0829/1
+Bit Magic,Easy,Alternate Bits Numbers in Range 1 to n,,43.30%,https://www.geeksforgeeks.org/problems/numbers-having-alternate-bits-in-range-1-to-n2350/1
+Bit Magic,Easy,Maximize Reverse Power,,22.22%,https://www.geeksforgeeks.org/problems/arrange-the-array/1
+Bit Magic,Medium,Count Set Bits in 1 to n,,35.77%,https://www.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1
+Bit Magic,Medium,Unique Number II,"Accolite, Amazon, FactSet, +6",36.90%,https://www.geeksforgeeks.org/problems/finding-the-numbers0215/1
+Bit Magic,Medium,All Subsequences of a String,Snapdeal,43.30%,https://www.geeksforgeeks.org/problems/power-set4302/1
+Bit Magic,Medium,Two odd Occuring,,49.49%,https://www.geeksforgeeks.org/problems/two-numbers-with-odd-occurrences5846/1
+Bit Magic,Medium,Maximum AND Value,Microsoft,31.11%,https://www.geeksforgeeks.org/problems/maximum-and-value-1587115620/1
+Bit Magic,Medium,Bleak Numbers,SAP Labs,49.12%,https://www.geeksforgeeks.org/problems/bleak-numbers1552/1
+Bit Magic,Medium,Gray to Binary Conversion,,68.70%,https://www.geeksforgeeks.org/problems/gray-to-binary-equivalent-1587115620/1
+Bit Magic,Medium,Game of XOR,"Amazon, NPCI",50.77%,https://www.geeksforgeeks.org/problems/game-of-xor1541/1
+Bit Magic,Medium,Sum of Pairwise ANDs,,50.93%,https://www.geeksforgeeks.org/problems/sum-of-products5049/1
+Bit Magic,Medium,Modified Game of Nim,,57.13%,https://www.geeksforgeeks.org/problems/variation-in-nim-game4317/1
+Bit Magic,Medium,"Division without using multiplication, division and mod oper...",Microsoft,42.32%,https://www.geeksforgeeks.org/problems/division-without-using-multiplication-division-and-mod-operator/1
+Bit Magic,Medium,Maximum XOR of two numbers in an array,Flipkart,50.00%,https://www.geeksforgeeks.org/problems/maximum-xor-of-two-numbers-in-an-array/1
+Bit Magic,Medium,Generate Gray Codes,"Microsoft, Amazon",60.49%,https://www.geeksforgeeks.org/problems/gray-code-1611215248/1
+Bit Magic,Medium,Geek hates too many 1s,,58.04%,https://www.geeksforgeeks.org/problems/geek-hates-too-many-1s--170647/1
+Bit Magic,Medium,Numbers in a Range with 3 Set Bits,,50.00%,https://www.geeksforgeeks.org/problems/akku-and-binary-numbers0902/1
+Bit Magic,Medium,Power Of 2 and Subsequences,,51.72%,https://www.geeksforgeeks.org/problems/power-of-2-and-subsequences0759/1
+Bit Magic,Medium,AND In Range,,50.00%,https://www.geeksforgeeks.org/problems/and-operation5726/1
+Bit Magic,Medium,Smaller with Same Set Bit Count,,53.17%,https://www.geeksforgeeks.org/problems/smaller-with-same-set-bit-count/1
+Bit Magic,Medium,Base Equivalence,,58.55%,https://www.geeksforgeeks.org/problems/base-equivalence1022/1
+Bit Magic,Medium,All Subsets Xor Sum,"Adobe, Amazon, Apple, +2",56.33%,https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-possible-subsets/1
+Bit Magic,Medium,Lucky Alive Person in a Circle,,59.93%,https://www.geeksforgeeks.org/problems/lucky-alive-person-in-a-circle1229/1
+Bit Magic,Hard,Nth Number with At Most K Set Bits,,57.82%,https://www.geeksforgeeks.org/problems/geekina-hate-1s/1
+Bit Magic,Hard,Array with Given Sum and XOR,,39.17%,https://www.geeksforgeeks.org/problems/very-tough-problem2653/1
+Bit Magic,Hard,Maximum Score,,12.69%,https://www.geeksforgeeks.org/problems/maximum-score--173045/1

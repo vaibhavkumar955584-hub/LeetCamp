@@ -1,0 +1,113 @@
+category,difficulty,title,company_tags,accuracy,url
+Graph,Easy,BFS of graph,"Adobe, Amazon, Flipkart, +4",44.09%,https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
+Graph,Easy,DFS of Graph,"Accolite, Amazon, Intuit, +1",63.07%,https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+Graph,Easy,Graph Adjacency List Traversal,,43.42%,https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1
+Graph,Easy,Shortest Path From 1 To n,"Accolite, Cisco, Morgan Stanley, +2",37.62%,https://www.geeksforgeeks.org/problems/shortest-path-from-1-to-n0156/1
+Graph,Easy,Sum of Dependencies in Graph,Flipkart,66.93%,https://www.geeksforgeeks.org/problems/sum-of-dependencies-in-a-graph5311/1
+Graph,Easy,Count Graphs with n Vertices,,59.13%,https://www.geeksforgeeks.org/problems/graph-and-vertices/1
+Graph,Easy,Maximum Weight Node,JUSPAY,53.85%,https://www.geeksforgeeks.org/problems/maximum-weight-node--170645/1
+Graph,Easy,Path Exists,NPCI,62.53%,https://www.geeksforgeeks.org/problems/path-exists/1
+Graph,Easy,Convert Adjacency matrix to Adjacency list,,91.74%,https://www.geeksforgeeks.org/problems/convert-adjacency-matrix-to-adjacency-list/1
+Graph,Easy,Count number of edges in an undirected graph,,75.90%,https://www.geeksforgeeks.org/problems/count-number-of-edges-in-an-undirected-graph/1
+Graph,Easy,Convert Adjacency List to Adjacency Matrix,,80.29%,https://www.geeksforgeeks.org/problems/convert-adjacency-list-to-adjacency-matrix/1
+Graph,Easy,Degree For Each Vertex,,92.67%,https://www.geeksforgeeks.org/problems/degree-of-each-vertices-in-a-graph/1
+Graph,Easy,Minimum number of edges between two vertices,NPCI,29.54%,https://www.geeksforgeeks.org/problems/minimum-number-of-edges-between-two-vertices/1
+Graph,Easy,Check if there is a direct edge between two vertices,,85.58%,https://www.geeksforgeeks.org/problems/check-if-there-is-a-direct-edge-between-two-vertices/1
+Graph,Medium,Undirected Graph Cycle,"Adobe, Amazon, Flipkart, +4",30.13%,https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+Graph,Medium,Directed Graph Cycle,"Adobe, Amazon, BankBazaar, +8",27.88%,https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+Graph,Medium,Topological Sort,"Accolite, Amazon, D-E-Shaw, +7",56.52%,https://www.geeksforgeeks.org/problems/topological-sort/1
+Graph,Medium,Dijkstra Algorithm,"Flipkart, Microsoft",50.83%,https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
+Graph,Medium,Count Islands,"Amazon, Citrix, D-E-Shaw, +18",42.12%,https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1
+Graph,Medium,Shortest Path in Directed Acyclic Graph,,48.48%,https://www.geeksforgeeks.org/problems/shortest-path-in-directed-acyclic-graph/1
+Graph,Medium,Rotten Oranges,"Accolite, Amazon, Flipkart, +5",46.02%,https://www.geeksforgeeks.org/problems/rotten-oranges2536/1
+Graph,Medium,Minimum Multiplications to reach End,,48.94%,https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1
+Graph,Medium,Bipartite Graph,"Flipkart, Microsoft, Samsung",31.25%,https://www.geeksforgeeks.org/problems/bipartite-graph/1
+Graph,Medium,Shortest Path in Unweighted Graph,,49.98%,https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1
+Graph,Medium,Minimum Swaps to Sort,Microsoft,38.39%,https://www.geeksforgeeks.org/problems/minimum-swaps/1
+Graph,Medium,Number of Connected Components,"Amazon, Microsoft, Google",54.29%,https://www.geeksforgeeks.org/problems/number-of-provinces/1
+Graph,Medium,Shortest Distance in a Binary Maze,Samsung,58.22%,https://www.geeksforgeeks.org/problems/shortest-path-in-a-binary-maze-1655453161/1
+Graph,Medium,Flood fill Algorithm,"Microsoft, Google, NPCI",41.11%,https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1
+Graph,Medium,Replace O's with X's,"Google, NPCI",34.00%,https://www.geeksforgeeks.org/problems/replace-os-with-xs0052/1
+Graph,Medium,Count Strongly Connected,,50.61%,https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
+Graph,Medium,Number of Distinct Islands,,62.29%,https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1
+Graph,Medium,Min Steps by Knight,"Flipkart, Amazon, Microsoft, +5",37.32%,https://www.geeksforgeeks.org/problems/steps-by-knight5927/1
+Graph,Medium,Distance of nearest cell having 1,"Bloomberg, Amazon, Microsoft, +5",47.70%,https://www.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1
+Graph,Medium,Shortest Path in an Undirected Graph,,50.00%,https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1
+Graph,Medium,Euler Circuit and Path,,50.89%,https://www.geeksforgeeks.org/problems/euler-circuit-and-path/1
+Graph,Medium,Number of Ways to Arrive at Destination,"Bloomberg, Google, Microsoft, +1",61.13%,https://www.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1
+Graph,Medium,Check for Path in a 2D Grid with Obstacles,"Morgan Stanley, Amazon, Microsoft, +2",45.09%,https://www.geeksforgeeks.org/problems/find-whether-path-exist5238/1
+Graph,Medium,1s Surrounded by 0s,Google,50.93%,https://www.geeksforgeeks.org/problems/1s-surrounded-by-0s/1
+Graph,Medium,Course Schedule II,Google,51.77%,https://www.geeksforgeeks.org/problems/course-schedule/1
+Graph,Medium,Mother Vertex,,47.64%,https://www.geeksforgeeks.org/problems/mother-vertex/1
+Graph,Medium,Negative Weight Cycle,Cisco,41.90%,https://www.geeksforgeeks.org/problems/negative-weight-cycle3504/1
+Graph,Medium,Safe States,Bloomberg,55.52%,https://www.geeksforgeeks.org/problems/eventual-safe-states/1
+Graph,Medium,Prerequisite Tasks,"Amazon, Microsoft, Google, +3",37.81%,https://www.geeksforgeeks.org/problems/prerequisite-tasks/1
+Graph,Medium,Bridge Edge in a Graph,"Amazon, Microsoft, OYO Rooms",34.61%,https://www.geeksforgeeks.org/problems/bridge-edge-in-graph/1
+Graph,Medium,Largest Region of 1's in a Binary Matrix,"Flipkart, Amazon, Microsoft, +4",50.83%,https://www.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1
+Graph,Medium,Detect Cycle using DSU,,48.37%,https://www.geeksforgeeks.org/problems/detect-cycle-using-dsu/1
+Graph,Medium,Most Isolated City,,49.12%,https://www.geeksforgeeks.org/problems/city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/1
+Graph,Medium,Level of a Node,,50.95%,https://www.geeksforgeeks.org/problems/level-of-nodes-1587115620/1
+Graph,Medium,Path With Minimum Effort,"Bloomberg, Amazon, Microsoft, +1",53.13%,https://www.geeksforgeeks.org/problems/path-with-minimum-effort/1
+Graph,Medium,Transitive Closure of Graph,,29.10%,https://www.geeksforgeeks.org/problems/transitive-closure-of-a-graph0930/1
+Graph,Medium,Connected Groups of 1s,"Amazon, Google",65.94%,https://www.geeksforgeeks.org/problems/x-total-shapes3617/1
+Graph,Medium,Shortest Path with at most k Nodes,,49.99%,https://www.geeksforgeeks.org/problems/shortest-path-with-at-most-k-nodes/1
+Graph,Medium,Number of Good Components,,60.81%,https://www.geeksforgeeks.org/problems/number-of-good-components--170647/1
+Graph,Medium,Graph is Tree or Not,,54.18%,https://www.geeksforgeeks.org/problems/is-it-a-tree/1
+Graph,Medium,Connected Components in an Undirected Graph,NPCI,48.50%,https://www.geeksforgeeks.org/problems/connected-components-in-an-undirected-graph/1
+Graph,Medium,Clone an Undirected Graph,Google,67.49%,https://www.geeksforgeeks.org/problems/clone-graph/1
+Graph,Medium,Shortest Safe Route in Grid,,50.58%,https://www.geeksforgeeks.org/problems/find-shortest-safe-route-in-a-matrix/1
+Graph,Medium,Min Edge Movements to Connect a Graph,,52.79%,https://www.geeksforgeeks.org/problems/connecting-the-graph/1
+Graph,Medium,Count Paths Between Two Vertices,,56.57%,https://www.geeksforgeeks.org/problems/possible-paths-between-2-vertices-1587115620/1
+Graph,Medium,Maximum Stone Removal,,49.82%,https://www.geeksforgeeks.org/problems/maximum-stone-removal-1662179442/1
+Graph,Medium,Minimum Cost to Connect Houses,"Amazon, Microsoft, Directi, +4",64.58%,https://www.geeksforgeeks.org/problems/minimum-cost-to-connect-all-houses-in-a-city/1
+Graph,Medium,Geek's Village and Wells,,57.11%,https://www.geeksforgeeks.org/problems/geeks-village-and-wells--170647/1
+Graph,Medium,Count Walks with Exactly K Edges,,18.33%,https://www.geeksforgeeks.org/problems/possible-paths3834/1
+Graph,Medium,Max Edge Removals for Even Sized Trees,,68.80%,https://www.geeksforgeeks.org/problems/divisibility-tree1902/1
+Graph,Medium,Course Schedule I,"Bloomberg, Visa, Uber, +5",67.59%,https://www.geeksforgeeks.org/problems/course-schedule-i/1
+Graph,Medium,Maximum Bipartite Matching,,58.20%,https://www.geeksforgeeks.org/problems/maximum-bipartite-matching--170646/1
+Graph,Medium,Minimum Operations to Connect Hospitals,"Amazon, Microsoft, Intuit, +2",57.25%,https://www.geeksforgeeks.org/problems/minimize-connections/1
+Graph,Medium,Even Distant Pairs in an Acyclic Graph,,34.09%,https://www.geeksforgeeks.org/problems/nodes-at-even-distance0532/1
+Graph,Medium,Minimum height roots,"Bloomberg, Amazon, Microsoft, +2",64.16%,https://www.geeksforgeeks.org/problems/minimum-height-roots/1
+Graph,Medium,Path of Total Weight Greater Than or Equal to K,,48.03%,https://www.geeksforgeeks.org/problems/path-of-greater-than-equal-to-k-length1034/1
+Graph,Medium,Make Strings Equal,,53.56%,https://www.geeksforgeeks.org/problems/make-strings-equal--150209/1
+Graph,Medium,Second Best Minimum Spanning Tree,,51.75%,https://www.geeksforgeeks.org/problems/second-best-minimum-spanning-tree/1
+Graph,Medium,Graph Diameter,NPCI,63.34%,https://www.geeksforgeeks.org/problems/diameter-of-a-graph/1
+Graph,Medium,Max DAG Edges,,65.66%,https://www.geeksforgeeks.org/problems/max-dag-edges/1
+Graph,Medium,Signal Boost Network,,44.03%,https://www.geeksforgeeks.org/problems/fill-the-tank3026/1
+Graph,Medium,Biconnected Graph,,42.74%,https://www.geeksforgeeks.org/problems/biconnected-graph2528/1
+Graph,Medium,Minimum Colors Required in a DAG,,51.42%,https://www.geeksforgeeks.org/problems/villain-con0511/1
+Graph,Medium,Earliest Completion Time of Jobs,,62.92%,https://www.geeksforgeeks.org/problems/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/1
+Graph,Medium,Spidey Sense,,69.80%,https://www.geeksforgeeks.org/problems/spidey-sense5556/1
+Graph,Medium,Min Edge Reversals for Path,,37.22%,https://www.geeksforgeeks.org/problems/minimum-edges/1
+Graph,Medium,Minimum Time to Finish Project,,49.37%,https://www.geeksforgeeks.org/problems/project-manager--141631/1
+Graph,Medium,Pattern Based Binary Palindrome Construction,,49.68%,https://www.geeksforgeeks.org/problems/construct-binary-palindrome-by-repeated-appending-and-trimming1005/1
+Graph,Medium,Your Social Network,,55.34%,https://www.geeksforgeeks.org/problems/your-social-network0328/1
+Graph,Medium,Minimum Cost Edge Tour,,25.36%,https://www.geeksforgeeks.org/problems/chinese-postman/1
+Graph,Medium,Ancestor Nodes in DAG,,45.98%,https://www.geeksforgeeks.org/problems/ancestor-nodes-in-dag/1
+Graph,Medium,Not a Substring,"Google, Uber",70.17%,https://www.geeksforgeeks.org/problems/lexicographical-smallest-string/1
+Graph,Hard,Alien Dictionary,"Amazon, Flipkart, Google, +3",47.81%,https://www.geeksforgeeks.org/problems/alien-dictionary/1
+Graph,Hard,Articulation Point,,55.15%,https://www.geeksforgeeks.org/problems/articulation-point2616/1
+Graph,Hard,Circle of Strings,"Accolite, FactSet, Flipkart, +1",15.56%,https://www.geeksforgeeks.org/problems/circle-of-strings4530/1
+Graph,Hard,Maximum Connected with One Change,Intuit,49.48%,https://www.geeksforgeeks.org/problems/maximum-connected-group/1
+Graph,Hard,Shortest Transformation Length in a Word List,"Adobe, Amazon, Flipkart, +1",37.65%,https://www.geeksforgeeks.org/problems/word-ladder/1
+Graph,Hard,Account Merge,,53.56%,https://www.geeksforgeeks.org/problems/account-merge/1
+Graph,Hard,Shortest Transformation Sequences in a Word List,"Adobe, Amazon, Flipkart, +2",50.00%,https://www.geeksforgeeks.org/problems/word-ladder-ii/1
+Graph,Hard,Critical Connections in Graph,Amazon,50.25%,https://www.geeksforgeeks.org/problems/critical-connections/1
+Graph,Hard,Strongly Connected Component,Amazon,36.78%,https://www.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1
+Graph,Hard,Count Groups of 1's Surrounded by 0's,Google,61.43%,https://www.geeksforgeeks.org/problems/find-number-of-closed-islands/1
+Graph,Hard,Vertex Cover,,62.97%,https://www.geeksforgeeks.org/problems/vertex-cover/1
+Graph,Hard,Shortest Path Using Atmost One Curved Edge,Uber,59.43%,https://www.geeksforgeeks.org/problems/shortest-path-using-atmost-one-curved-edge--170647/1
+Graph,Hard,Geek in a Maze,,49.51%,https://www.geeksforgeeks.org/problems/geek-in-a-maze--170637/1
+Graph,Hard,Avoid Explosion,,60.04%,https://www.geeksforgeeks.org/problems/avoid-explosion--170647/1
+Graph,Hard,Longest Path in a Directed Acyclic Graph,,50.38%,https://www.geeksforgeeks.org/problems/longest-path-in-a-directed-acyclic-graph/1
+Graph,Hard,Minimum Weight Cycle,,57.00%,https://www.geeksforgeeks.org/problems/minimum-weight-cycle/1
+Graph,Hard,Length of Longest Cycle in a Graph,"Google, JUSPAY, Amazon",60.34%,https://www.geeksforgeeks.org/problems/length-of-longest-cycle-in-a-graph/1
+Graph,Hard,Shortest Path in 1-2 Graph,,56.27%,https://www.geeksforgeeks.org/problems/level-of-nodes1147/1
+Graph,Hard,Job Assignment Problem,Google,34.19%,https://www.geeksforgeeks.org/problems/assignment-problem3016/1
+Graph,Hard,Count Spanning Trees in a Graph,,61.75%,https://www.geeksforgeeks.org/problems/total-number-of-spanning-trees-in-a-graph/1
+Graph,Hard,Maximum Flow,,46.59%,https://www.geeksforgeeks.org/problems/find-the-maximum-flow2126/1
+Graph,Hard,Shortest Cycle,,63.96%,https://www.geeksforgeeks.org/problems/shortest-cycle/1
+Graph,Hard,Kill Captain America,,39.87%,https://www.geeksforgeeks.org/problems/kill-captain-america0228/1
+Graph,Hard,Minimum s-t Cut in a Flow Network,,29.24%,https://www.geeksforgeeks.org/problems/find-minimum-s-t-cut-in-a-flow-network2902/1
+Graph,Hard,Minimum Travel Time,,67.13%,https://www.geeksforgeeks.org/problems/minimum-travel-time/1
+Graph,Hard,Minimum cost to visit favorite Colonies,,67.39%,https://www.geeksforgeeks.org/problems/minimum-cost-to-visit-favorite-cities--132208/1

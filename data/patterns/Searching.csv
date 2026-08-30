@@ -1,0 +1,53 @@
+category,difficulty,title,company_tags,accuracy,url
+Searching,Basic,Array Search,,40.95%,https://www.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1
+Searching,Basic,Binary Search,Paytm,48.03%,https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
+Searching,Basic,Value equal to position,"Amazon, FactSet, Flipkart, +1",54.83%,https://www.geeksforgeeks.org/problems/value-equal-to-index-value1330/1
+Searching,Basic,Last index of One,InMobi,49.01%,https://www.geeksforgeeks.org/problems/last-index-of-15847/1
+Searching,Basic,Elements in the Range,Amazon,37.28%,https://www.geeksforgeeks.org/problems/elements-in-the-range2834/1
+Searching,Basic,First 1 in a Sorted Binary Array,"Amazon, MakeMyTrip",49.11%,https://www.geeksforgeeks.org/problems/index-of-first-1-in-a-sorted-array-of-0s-and-1s4048/1
+Searching,Basic,Remove Consonants,,22.63%,https://www.geeksforgeeks.org/problems/c-program-to-remove-consonants-from-a-string1945/1
+Searching,Basic,Count zeros in a sorted matrix,,75.99%,https://www.geeksforgeeks.org/problems/count-zeros-in-a-sorted-matrix/1
+Searching,Basic,Doubling the value,Flipkart,46.25%,https://www.geeksforgeeks.org/problems/doubling-the-value4859/1
+Searching,Basic,Repeated Removal of Kth,,56.88%,https://www.geeksforgeeks.org/problems/ishaans-internship4400/1
+Searching,Easy,Missing in Array,"Accolite, Adobe, Amazon, +12",29.59%,https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
+Searching,Easy,Second Largest,"Rockstand, SAP Labs",26.72%,https://www.geeksforgeeks.org/problems/second-largest3735/1
+Searching,Easy,First Occurrence in Sorted,"Accenture, Cognizant, Infosys, +5",44.32%,https://www.geeksforgeeks.org/problems/binary-search-1587115620/1
+Searching,Easy,Common in 3 Sorted Arrays,"MAQ Software, Microsoft, VMWare",22.16%,https://www.geeksforgeeks.org/problems/common-elements1132/1
+Searching,Easy,Number of Occurrence,"Amazon, MakeMyTrip, Zoho",59.34%,https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1
+Searching,Easy,Square Root,"Accolite, Amazon, Flipkart, +2",54.03%,https://www.geeksforgeeks.org/problems/square-root/1
+Searching,Easy,Find Kth Rotation,"ABCO, Amazon, Flipkart",23.16%,https://www.geeksforgeeks.org/problems/rotation4723/1
+Searching,Easy,Find Transition Point,Amazon,37.90%,https://www.geeksforgeeks.org/problems/find-transition-point-1587115620/1
+Searching,Easy,Bitonic Point,"Amazon, Flipkart, Microsoft",58.67%,https://www.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1
+Searching,Easy,Search in a Row-Column Sorted,"Accolite, Adobe, Amazon, +15",41.62%,https://www.geeksforgeeks.org/problems/search-in-a-matrix17201720/1
+Searching,Easy,Sorted and Rotated Minimum,"Morgan Stanley, Amazon, Microsoft, +4",40.57%,https://www.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1
+Searching,Easy,Extra in One of the Two Arrays,"Zoho, Amazon",41.77%,https://www.geeksforgeeks.org/problems/index-of-an-extra-element/1
+Searching,Easy,Count Frequent Elements,Amazon,58.35%,https://www.geeksforgeeks.org/problems/count-element-occurences/1
+Searching,Easy,Count Zeros in Sorted,"Amazon, Yahoo",68.08%,https://www.geeksforgeeks.org/problems/count-the-zeros2550/1
+Searching,Easy,Sorted Insert Position,Microsoft,38.99%,https://www.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1
+Searching,Easy,Roof Top,,40.48%,https://www.geeksforgeeks.org/problems/roof-top-1587115621/1
+Searching,Easy,Closest Sum Pair Across Two Arrays,,18.01%,https://www.geeksforgeeks.org/problems/find-the-closest-pair-from-two-arrays4215/1
+Searching,Easy,Count 1's in binary array,,49.30%,https://www.geeksforgeeks.org/problems/count-1s-in-binary-array-1587115620/1
+Searching,Easy,Search in a K-Step Array,,57.91%,https://www.geeksforgeeks.org/problems/searching-in-an-array-where-adjacent-differ-by-at-most-k0456/1
+Searching,Easy,Operating an array,,25.06%,https://www.geeksforgeeks.org/problems/operating-an-array/1
+Searching,Easy,Next greater number set digits,"Morgan Stanley, Amazon, Microsoft, +7",30.08%,https://www.geeksforgeeks.org/problems/next-greater-number-set-digits3503/1
+Searching,Easy,Search in a Matrix,,52.38%,https://www.geeksforgeeks.org/problems/search-in-a-matrix--021840/1
+Searching,Easy,Number and the Digit Sum,,36.58%,https://www.geeksforgeeks.org/problems/number-and-the-digit-sum4021/1
+Searching,Easy,Zeros Count in Sorted Binary,"Amazon, Yahoo",74.13%,https://www.geeksforgeeks.org/problems/count-the-zeros2550--141153/1
+Searching,Medium,Peak element,"Accolite, Adobe, Amazon, +2",38.86%,https://www.geeksforgeeks.org/problems/peak-element/1
+Searching,Medium,Smallest Positive Missing,"Accolite, Amazon, NPCI, +2",25.13%,https://www.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1
+Searching,Medium,Allocate Minimum Pages,"Amazon, Codenation, Google, +4",35.51%,https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+Searching,Medium,Search in Rotated Sorted Array,"Adobe, Amazon, BankBazaar, +12",37.64%,https://www.geeksforgeeks.org/problems/search-in-a-rotated-array4618/1
+Searching,Medium,Search in a sorted Matrix,"Accolite, Directi, Goldman Sachs, +10",56.27%,https://www.geeksforgeeks.org/problems/search-in-a-matrix-1587115621/1
+Searching,Medium,Two Repeated Elements,,28.95%,https://www.geeksforgeeks.org/problems/two-repeated-elements-1587115621/1
+Searching,Medium,Single Among Doubles in a Sorted,"Amazon, D-E-Shaw, Ola Cabs",55.54%,https://www.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array0624/1
+Searching,Medium,Counting elements in two arrays,Amazon,37.12%,https://www.geeksforgeeks.org/problems/counting-elements-in-two-arrays/1
+Searching,Medium,Minimum repeat to make substring,"Google, NPCI",51.22%,https://www.geeksforgeeks.org/problems/minimum-times-a-has-to-be-repeated-such-that-b-is-a-substring-of-it--170645/1
+Searching,Medium,Pair Sum Closest to 0,"Accolite, Amazon, Microsoft, +1",19.61%,https://www.geeksforgeeks.org/problems/two-numbers-with-sum-closest-to-zero1737/1
+Searching,Medium,Smallest number with at least n trailing zeroes in factorial,NPCI,38.79%,https://www.geeksforgeeks.org/problems/smallest-factorial-number5929/1
+Searching,Medium,Count Only Repeated,,46.52%,https://www.geeksforgeeks.org/problems/count-only-repeated2047/1
+Searching,Medium,Nine Divisors,,35.58%,https://www.geeksforgeeks.org/problems/nine-divisors3751/1
+Searching,Medium,Super Primes,,24.90%,https://www.geeksforgeeks.org/problems/super-primes2443/1
+Searching,Medium,Ternary Search,"Paytm, Microsoft",50.20%,https://www.geeksforgeeks.org/problems/searching-an-element-in-a-sorted-array-ternary-search--141631/1
+Searching,Medium,Equilibrium Points,D-E-Shaw,57.24%,https://www.geeksforgeeks.org/problems/magnet-array-problem3743/1
+Searching,Medium,Marks from Ranks,,18.69%,https://www.geeksforgeeks.org/problems/find-marks-from-ranks/1
+Searching,Medium,Maximum Teams of Size K,Google,11.35%,https://www.geeksforgeeks.org/problems/maximum-team-of-k-player/1

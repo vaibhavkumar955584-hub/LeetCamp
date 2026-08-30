@@ -1,0 +1,56 @@
+category,difficulty,title,company_tags,accuracy,url
+Binary Search Tree,Easy,Floor in BST,,36.98%,https://www.geeksforgeeks.org/problems/closest-neighbor-in-bst/1
+Binary Search Tree,Easy,Minimum in BST,"Microsoft, NPCI",70.95%,https://www.geeksforgeeks.org/problems/minimum-element-in-bst/1
+Binary Search Tree,Easy,BST Insert,"Accolite, Amazon, Microsoft, +2",47.15%,https://www.geeksforgeeks.org/problems/insert-a-node-in-a-bst/1
+Binary Search Tree,Easy,Kth Largest in BST,"Accolite, Amazon, Microsoft, +2",49.31%,https://www.geeksforgeeks.org/problems/kth-largest-element-in-bst/1
+Binary Search Tree,Easy,Inorder Successor in BST,"Amazon, Microsoft, Morgan Stanley",34.97%,https://www.geeksforgeeks.org/problems/inorder-successor-in-bst/1
+Binary Search Tree,Easy,Search a node in BST,Linkedin,68.46%,https://www.geeksforgeeks.org/problems/search-a-node-in-bst/1
+Binary Search Tree,Easy,Check if an Array is Max Heap,Cisco,30.97%,https://www.geeksforgeeks.org/problems/does-array-represent-heap4345/1
+Binary Search Tree,Easy,Inorder Traversal and BST,,44.45%,https://www.geeksforgeeks.org/problems/inorder-traversal-and-bst5855/1
+Binary Search Tree,Easy,Binary Tree to BST,"Adobe, Amazon",60.75%,https://www.geeksforgeeks.org/problems/binary-tree-to-bst/1
+Binary Search Tree,Easy,Sum Pairs Across Two BSTs,,53.04%,https://www.geeksforgeeks.org/problems/brothers-from-different-root/1
+Binary Search Tree,Easy,BST Keys in a Range,"Flipkart, Amazon, Microsoft",60.01%,https://www.geeksforgeeks.org/problems/print-bst-elements-in-given-range/1
+Binary Search Tree,Easy,Sum of k smallest in BST,Amazon,54.24%,https://www.geeksforgeeks.org/problems/sum-of-k-smallest-elements-in-bst3029/1
+Binary Search Tree,Easy,Construct BST from Postorder,"FactSet, SAP Labs",59.66%,https://www.geeksforgeeks.org/problems/construct-bst-from-post-order/1
+Binary Search Tree,Easy,Change of Key in BST,,31.73%,https://www.geeksforgeeks.org/problems/implement-change-key-in-bst/1
+Binary Search Tree,Easy,Sorted Elements Of BST,,89.77%,https://www.geeksforgeeks.org/problems/sorted-elements-of-bst/1
+Binary Search Tree,Medium,Check for BST,"Accolite, Adobe, Amazon, +19",25.37%,https://www.geeksforgeeks.org/problems/check-for-bst/1
+Binary Search Tree,Medium,Largest BST,"Amazon, D-E-Shaw, Flipkart, +2",29.73%,https://www.geeksforgeeks.org/problems/largest-bst/1
+Binary Search Tree,Medium,Predecessor and Successor,"NPCI, Ola Cabs",47.36%,https://www.geeksforgeeks.org/problems/predecessor-and-successor/1
+Binary Search Tree,Medium,Ceil in BST,Samsung,62.73%,https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1
+Binary Search Tree,Medium,Lowest Common Ancestor in a BST,"Accolite, Amazon, Flipkart, +5",65.20%,https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1
+Binary Search Tree,Medium,Root to Leaf Paths,"Amazon, Paytm",43.65%,https://www.geeksforgeeks.org/problems/root-to-leaf-paths/1
+Binary Search Tree,Medium,k-th Smallest in BST,"Accolite, Amazon, Google",43.53%,https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1
+Binary Search Tree,Medium,Delete a node from BST,"Accolite, Adobe, Amazon, +2",40.70%,https://www.geeksforgeeks.org/problems/delete-a-node-from-bst/1
+Binary Search Tree,Medium,Pair Sum in BST,"Amazon, Flipkart, Microsoft, +3",44.02%,https://www.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1
+Binary Search Tree,Medium,Merge two BST 's,,64.95%,https://www.geeksforgeeks.org/problems/merge-two-bst-s/1
+Binary Search Tree,Medium,Median of BST,Amazon,27.43%,https://www.geeksforgeeks.org/problems/median-of-bst/1
+Binary Search Tree,Medium,Count BST Nodes in a Range,"D-E-Shaw, Google",64.84%,https://www.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1
+Binary Search Tree,Medium,BST with Dead End,,35.99%,https://www.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1
+Binary Search Tree,Medium,Closest in BST,"Amazon, MAQ Software",47.51%,https://www.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1
+Binary Search Tree,Medium,Array to BST,"Snapdeal, Adobe, Cisco",46.02%,https://www.geeksforgeeks.org/problems/array-to-bst4443/1
+Binary Search Tree,Medium,Common Nodes in Two BSTs,Amazon,51.70%,https://www.geeksforgeeks.org/problems/print-common-nodes-in-bst/1
+Binary Search Tree,Medium,Preorder to BST,"Flipkart, Amazon, Linkedin",59.20%,https://www.geeksforgeeks.org/problems/preorder-to-postorder4423/1
+Binary Search Tree,Medium,Normal BST to Balanced BST,Paytm,66.08%,https://www.geeksforgeeks.org/problems/normal-bst-to-balanced-bst/1
+Binary Search Tree,Medium,Check Preorder of BST,"Morgan Stanley, Microsoft, Adobe",36.84%,https://www.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1
+Binary Search Tree,Medium,Print leaf nodes from preorder traversal of BST,Facebook,47.26%,https://www.geeksforgeeks.org/problems/print-leaf-nodes-from-preorder-traversal-of-bst2657/1
+Binary Search Tree,Medium,Flatten BST to Sorted List,"Adobe, Amazon, NPCI",68.49%,https://www.geeksforgeeks.org/problems/flatten-bst-to-sorted-list--111950/1
+Binary Search Tree,Medium,Add all Greater to Nodes in BST,Amazon,59.39%,https://www.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1
+Binary Search Tree,Medium,Minimum Absolute Difference In BST,,56.22%,https://www.geeksforgeeks.org/problems/minimum-absolute-difference-in-bst-1665139652/1
+Binary Search Tree,Medium,Count Pairs Violating BST Property,,56.99%,https://www.geeksforgeeks.org/problems/pairs-violating-bst-property--212515/1
+Binary Search Tree,Medium,Max Sum Leaf to Root Path,Morgan Stanley,70.16%,https://www.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1
+Binary Search Tree,Medium,BST to Greater Sum Tree,"Amazon, Microsoft",66.73%,https://www.geeksforgeeks.org/problems/bst-to-greater-sum-tree/1
+Binary Search Tree,Medium,Delete Nodes Greater than K,Microsoft,54.82%,https://www.geeksforgeeks.org/problems/delete-nodes-greater-than-k/1
+Binary Search Tree,Medium,Construct BST from Level Order,,71.16%,https://www.geeksforgeeks.org/problems/convert-level-order-traversal-to-bst/1
+Binary Search Tree,Medium,BST Maximum Difference,,52.54%,https://www.geeksforgeeks.org/problems/bst-maximum-difference--170647/1
+Binary Search Tree,Medium,Sum of Vertically Below Descendants,,53.27%,https://www.geeksforgeeks.org/problems/bst-downward-traversal--170646/1
+Binary Search Tree,Medium,Remove BST keys outside given range,"Microsoft, Samsung",59.43%,https://www.geeksforgeeks.org/problems/remove-bst-keys-outside-given-range/1
+Binary Search Tree,Medium,Sum of Nodes in BST Range,,81.28%,https://www.geeksforgeeks.org/problems/range-sum-of-bst/1
+Binary Search Tree,Medium,K-Closest Values,NPCI,73.12%,https://www.geeksforgeeks.org/problems/k-closest-values/1
+Binary Search Tree,Medium,Maximum Root-to-Leaf Product,Morgan Stanley,72.08%,https://www.geeksforgeeks.org/problems/maximum-winning-score--170637/1
+Binary Search Tree,Hard,Fixing Two Nodes of BST,"Amazon, BankBazaar, FactSet, +4",53.68%,https://www.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1
+Binary Search Tree,Hard,AVL Tree Insertion,"Amazon, Citicorp, Informatica, +5",37.01%,https://www.geeksforgeeks.org/problems/avl-tree-insertion/1
+Binary Search Tree,Hard,Sorted Linked List to BST,"Amazon, Flipkart, Google",53.24%,https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1
+Binary Search Tree,Hard,Minimum BST Sum Subtree,,60.49%,https://www.geeksforgeeks.org/problems/minimum-bst-sum-subtree--170647/1
+Binary Search Tree,Hard,Number of BST From Array,NPCI,67.23%,https://www.geeksforgeeks.org/problems/number-of-bst-from-array/1
+Binary Search Tree,Hard,Range Covering All Levels In BST,,60.84%,https://www.geeksforgeeks.org/problems/shortest-range-in-bst--141631/1

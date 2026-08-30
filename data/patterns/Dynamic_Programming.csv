@@ -1,0 +1,282 @@
+category,difficulty,title,company_tags,accuracy,url
+Dynamic Programming,Basic,First n Fibonacci using Recursion,"Accenture, Infosys, TCS, +1",29.92%,https://www.geeksforgeeks.org/problems/print-first-n-fibonacci-numbers1002/1
+Dynamic Programming,Basic,Sum Except First and Last,"Amazon, Microsoft",34.83%,https://www.geeksforgeeks.org/problems/max-length-chain/1
+Dynamic Programming,Easy,Nth Fibonacci Number,"Adobe, Amazon, Goldman Sachs, +5",22.30%,https://www.geeksforgeeks.org/problems/nth-fibonacci-number1335/1
+Dynamic Programming,Easy,Count ways with 3 moves,Amazon,43.93%,https://www.geeksforgeeks.org/problems/count-number-of-hops-1587115620/1
+Dynamic Programming,Easy,"Minimum Coins of 1, 2, 5 and 10",Visa,51.25%,https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1
+Dynamic Programming,Easy,Minimum Operations,,60.02%,https://www.geeksforgeeks.org/problems/find-optimum-operation4504/1
+Dynamic Programming,Easy,First n Fibonacci using DP,Bloomberg,51.00%,https://www.geeksforgeeks.org/problems/fibonacci-series-up-to-nth-term/1
+Dynamic Programming,Easy,"Count Ways with 3, 5 and 10",,79.23%,https://www.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1
+Dynamic Programming,Easy,Maximum Sum Problem,Morgan Stanley,57.09%,https://www.geeksforgeeks.org/problems/maximum-sum-problem2211/1
+Dynamic Programming,Easy,Padovan Sequence,,34.96%,https://www.geeksforgeeks.org/problems/padovan-sequence2855/1
+Dynamic Programming,Easy,Count Numbers with Digit 4,Drishti-Soft,37.85%,https://www.geeksforgeeks.org/problems/count-numbers-containing-43022/1
+Dynamic Programming,Easy,Max Sum Pairing with Diff Less than K,,63.41%,https://www.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1
+Dynamic Programming,Easy,Max Subarray Sum for Values Limited by k,Junglee Games,50.00%,https://www.geeksforgeeks.org/problems/you-and-your-books/1
+Dynamic Programming,Easy,Divisor Game,,70.69%,https://www.geeksforgeeks.org/problems/divisor-game-1664432414/1
+Dynamic Programming,Easy,Chicks in a Zoo,,49.73%,https://www.geeksforgeeks.org/problems/chicks-in-a-zoo1159/1
+Dynamic Programming,Easy,Minimum Deletions to Make Sorted,,49.53%,https://www.geeksforgeeks.org/problems/minimum-number-of-deletions-to-make-a-sorted-sequence3248/1
+Dynamic Programming,Easy,Largest Zigzag Sequence,Directi,50.00%,https://www.geeksforgeeks.org/problems/largest-zigzag-sequence5416/1
+Dynamic Programming,Easy,Minimum Steps to Make 1,,40.16%,https://www.geeksforgeeks.org/problems/minimum-steps-to-minimize-n-as-per-given-condition0618/1
+Dynamic Programming,Easy,Maximum Sum Bitonic Subsequence,,51.40%,https://www.geeksforgeeks.org/problems/maximum-sum-bitonic-subsequence1857/1
+Dynamic Programming,Easy,Max Sum in a Matrix without Adjacent,Epic Systems,47.66%,https://www.geeksforgeeks.org/problems/adjacents-are-not-allowed3528/1
+Dynamic Programming,Easy,Lucas Number,,46.89%,https://www.geeksforgeeks.org/problems/lucas-number4515/1
+Dynamic Programming,Easy,"Count ways to express N as the sum of 1,3 and 4",,33.75%,https://www.geeksforgeeks.org/problems/count-ways-to-express-n-as-the-sum-of-13-and-44024/1
+Dynamic Programming,Easy,Charul and vessels,,26.37%,https://www.geeksforgeeks.org/problems/charul-and-vessels0209/1
+Dynamic Programming,Easy,Minimum Moves to Sort Array,,30.08%,https://www.geeksforgeeks.org/problems/minimum-insertions-to-sort-an-array0535/1
+Dynamic Programming,Easy,Optimal Walk,,22.06%,https://www.geeksforgeeks.org/problems/optimal-walk3752/1
+Dynamic Programming,Easy,Sum of Digits from 1 to n,,33.95%,https://www.geeksforgeeks.org/problems/compute-sum-of-digits-in-all-numbers-from-1-to-n2855/1
+Dynamic Programming,Easy,Minimum Steps with p or q Moves,,21.08%,https://www.geeksforgeeks.org/problems/minimum-steps1159/1
+Dynamic Programming,Easy,Maximum of arr[j] – arr[i] + arr[l] – arr[k],,31.06%,https://www.geeksforgeeks.org/problems/maximum-value5946/1
+Dynamic Programming,Easy,Longest Collatz Sequence,,22.19%,https://www.geeksforgeeks.org/problems/maximum-collatz-sequence-length5849/1
+Dynamic Programming,Easy,Sum of Average of all Subsets,,25.38%,https://www.geeksforgeeks.org/problems/sum-of-average-of-all-subsets3209/1
+Dynamic Programming,Easy,Geeky Year,,18.94%,https://www.geeksforgeeks.org/problems/geeky-year4720/1
+Dynamic Programming,Easy,Minimum Adjustment Cost of an Array,,29.83%,https://www.geeksforgeeks.org/problems/find-minimum-adjustment-cost-of-an-array4628/1
+Dynamic Programming,Easy,"Max Profit with Money Exchange using n/2, n/3, and n/4",,13.46%,https://www.geeksforgeeks.org/problems/ritikas-money4334/1
+Dynamic Programming,Easy,Maximum weight transformation of a given string,,22.98%,https://www.geeksforgeeks.org/problems/maximum-weight-transformation-of-a-given-string3551/1
+Dynamic Programming,Easy,Maximum Height Disc Stack,,20.15%,https://www.geeksforgeeks.org/problems/stacking-up-discs1315/1
+Dynamic Programming,Medium,Kadane's Algorithm,"24*7 Innovation Labs, Accolite, Adobe, +21",36.28%,https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
+Dynamic Programming,Medium,Count Subsets with Sum,"Amazon, Microsoft, Tesco",20.58%,https://www.geeksforgeeks.org/problems/perfect-sum-problem5633/1
+Dynamic Programming,Medium,0 - 1 Knapsack Problem,"Amazon, Directi, Flipkart, +9",31.76%,https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
+Dynamic Programming,Medium,Maximum Product Subarray,"Amazon, D-E-Shaw, Google, +4",18.09%,https://www.geeksforgeeks.org/problems/maximum-product-subarray3604/1
+Dynamic Programming,Medium,Subset Sum Problem,"Amazon, Microsoft",32.00%,https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1
+Dynamic Programming,Medium,Stickler Thief,"Adobe, Amazon, FactSet, +8",37.98%,https://www.geeksforgeeks.org/problems/stickler-theif-1587115621/1
+Dynamic Programming,Medium,Ways to Reach the n'th Stair,"Accolite, Adobe, Amazon, +6",21.90%,https://www.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair-1587115620/1
+Dynamic Programming,Medium,Longest Increasing Subsequence,"Amazon, BankBazaar, Microsoft, +3",32.80%,https://www.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1
+Dynamic Programming,Medium,nCr,,14.82%,https://www.geeksforgeeks.org/problems/ncr1019/1
+Dynamic Programming,Medium,Longest Palindrome in a String,"Accolite, Amazon, Google, +8",23.20%,https://www.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1
+Dynamic Programming,Medium,Longest Common Subsequence,"Paytm, VMWare, Amazon, +3",41.68%,https://www.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1
+Dynamic Programming,Medium,Longest Common Substring,"Morgan Stanley, Amazon, Microsoft",42.69%,https://www.geeksforgeeks.org/problems/longest-common-substring1452/1
+Dynamic Programming,Medium,Coin Change (Count Ways),"Paytm, Flipkart, Morgan Stanley, +7",43.10%,https://www.geeksforgeeks.org/problems/coin-change2448/1
+Dynamic Programming,Medium,Coin Change (Minimum Coins),"Paytm, Morgan Stanley, Accolite, +8",26.74%,https://www.geeksforgeeks.org/problems/number-of-coins1824/1
+Dynamic Programming,Medium,Stock buy and sell,"Paytm, Flipkart, Accolite, +17",29.18%,https://www.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1
+Dynamic Programming,Medium,Bellman Ford,"Amazon, Microsoft",48.11%,https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1
+Dynamic Programming,Medium,Partition Equal Subset Sum,"Accolite, Amazon, Microsoft, +3",30.24%,https://www.geeksforgeeks.org/problems/subset-sum-problem2014/1
+Dynamic Programming,Medium,Floyd Warshall,Samsung,32.89%,https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1
+Dynamic Programming,Medium,Maximize The Cut Segments,"Amazon, Microsoft, OYO Rooms",24.29%,https://www.geeksforgeeks.org/problems/cutted-segments1642/1
+Dynamic Programming,Medium,Partitions with Given Difference,NPCI,36.76%,https://www.geeksforgeeks.org/problems/partitions-with-given-difference/1
+Dynamic Programming,Medium,Knapsack with Duplicate Items,"Amazon, Google",52.13%,https://www.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1
+Dynamic Programming,Medium,Rod Cutting,Google,60.66%,https://www.geeksforgeeks.org/problems/rod-cutting0840/1
+Dynamic Programming,Medium,Frog Jump,,49.55%,https://www.geeksforgeeks.org/problems/geek-jump/1
+Dynamic Programming,Medium,Max Sum Increasing Subsequence,"Morgan Stanley, Amazon, Microsoft",40.02%,https://www.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1
+Dynamic Programming,Medium,Substrings with K Distinct,D-E-Shaw,20.46%,https://www.geeksforgeeks.org/problems/count-number-of-substrings4528/1
+Dynamic Programming,Medium,Longest Bitonic Subsequence,"Microsoft, Cisco",47.34%,https://www.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1
+Dynamic Programming,Medium,Word Break,"Zoho, Flipkart, Amazon, +6",40.86%,https://www.geeksforgeeks.org/problems/word-break1352/1
+Dynamic Programming,Medium,Egg Dropping Puzzle,"VMWare, Amazon, Microsoft, +14",39.64%,https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1
+Dynamic Programming,Medium,Geek's Training,NPCI,49.98%,https://www.geeksforgeeks.org/problems/geeks-training/1
+Dynamic Programming,Medium,Count Paths from Top Left to Bottom Right,"Zoho, Amazon, Microsoft, +7",67.64%,https://www.geeksforgeeks.org/problems/number-of-paths0926/1
+Dynamic Programming,Medium,Total Decoding Messages,"Zoho, Flipkart, Morgan Stanley, +8",15.79%,https://www.geeksforgeeks.org/problems/total-decoding-messages1235/1
+Dynamic Programming,Medium,Count Palindromic Subsequences,,17.00%,https://www.geeksforgeeks.org/problems/count-palindromic-subsequences/1
+Dynamic Programming,Medium,Shortest Common Supersequence,Microsoft,55.62%,https://www.geeksforgeeks.org/problems/shortest-common-supersequence0322/1
+Dynamic Programming,Medium,Longest Repeating Subsequence,"Amazon, Google",48.54%,https://www.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1
+Dynamic Programming,Medium,Minimum Insertions for Palindrome,"Amazon, Microsoft, Google, +1",54.84%,https://www.geeksforgeeks.org/problems/form-a-palindrome2544/1
+Dynamic Programming,Medium,Consecutive 1's not allowed,"Flipkart, Morgan Stanley, Microsoft, +2",27.46%,https://www.geeksforgeeks.org/problems/consecutive-1s-not-allowed1912/1
+Dynamic Programming,Medium,Nth Catalan Number,Amazon,31.06%,https://www.geeksforgeeks.org/problems/nth-catalan-number0817/1
+Dynamic Programming,Medium,Gold Mine Problem,"Flipkart, Amazon, Samsung",29.73%,https://www.geeksforgeeks.org/problems/gold-mine-problem2608/1
+Dynamic Programming,Medium,Painting the Fence,,32.89%,https://www.geeksforgeeks.org/problems/painting-the-fence3727/1
+Dynamic Programming,Medium,Maximum path sum in matrix,"Flipkart, Amazon, Microsoft, +3",42.59%,https://www.geeksforgeeks.org/problems/path-in-matrix3805/1
+Dynamic Programming,Medium,Largest square formed in a matrix,"Amazon, Samsung, Google",36.98%,https://www.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1
+Dynamic Programming,Medium,Longest Palindromic Subsequence,"Amazon, Google",56.57%,https://www.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1
+Dynamic Programming,Medium,Interleaved Strings,"Paytm, Amazon, Microsoft, +4",24.33%,https://www.geeksforgeeks.org/problems/interleaved-strings/1
+Dynamic Programming,Medium,Optimal Strategy For A Game,Amazon,49.03%,https://www.geeksforgeeks.org/problems/optimal-strategy-for-a-game-1587115620/1
+Dynamic Programming,Medium,Minimal Cost of Jumps,,51.08%,https://www.geeksforgeeks.org/problems/minimal-cost/1
+Dynamic Programming,Medium,Wildcard Pattern Matching,"Zoho, Amazon, Microsoft, +5",31.13%,https://www.geeksforgeeks.org/problems/wildcard-pattern-matching/1
+Dynamic Programming,Medium,Subsequence with Sum K,,40.26%,https://www.geeksforgeeks.org/problems/check-if-there-exists-a-subsequence-with-sum-k/1
+Dynamic Programming,Medium,Introduction to DP,,46.10%,https://www.geeksforgeeks.org/problems/introduction-to-dp/1
+Dynamic Programming,Medium,Unique BST's,"Amazon, Microsoft, Samsung, +1",30.57%,https://www.geeksforgeeks.org/problems/unique-bsts-1587115621/1
+Dynamic Programming,Medium,Unique Paths in a Grid,"Uber, Amazon",50.47%,https://www.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1
+Dynamic Programming,Medium,LCS of Three Strings,DE Shaw,48.52%,https://www.geeksforgeeks.org/problems/lcs-of-three-strings0028/1
+Dynamic Programming,Medium,Minimum Cost to Fill Given Weight,,25.56%,https://www.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1
+Dynamic Programming,Medium,Jump Game,"Amazon, Microsoft, Google, +1",34.51%,https://www.geeksforgeeks.org/problems/jump-game/1
+Dynamic Programming,Medium,Transform using Minimum Insert and Delete,,65.29%,https://www.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions0209/1
+Dynamic Programming,Medium,Sum of all substrings of a number,,38.11%,https://www.geeksforgeeks.org/problems/sum-of-all-substrings-of-a-number-1587115621/1
+Dynamic Programming,Medium,Max Sum Subarray of Size at least K,"Facebook, Paytm, Myntra",37.64%,https://www.geeksforgeeks.org/problems/largest-sum-subarray-of-size-at-least-k3121/1
+Dynamic Programming,Medium,Minimum Deletions for Palindrome,Amazon,58.80%,https://www.geeksforgeeks.org/problems/minimum-deletitions1648/1
+Dynamic Programming,Medium,Count ways to N'th Stair(Order does not matter),"Accolite, Amazon",50.49%,https://www.geeksforgeeks.org/problems/count-ways-to-nth-stairorder-does-not-matter5639/1
+Dynamic Programming,Medium,Snake and Ladder Problem,"Zoho, Flipkart, Amazon, +6",34.65%,https://www.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1
+Dynamic Programming,Medium,Max Dot Product with 0 Insertions,Directi,13.27%,https://www.geeksforgeeks.org/problems/maximize-dot-product2649/1
+Dynamic Programming,Medium,Mobile numeric keypad,"Flipkart, Microsoft, MAQ Software, +1",32.60%,https://www.geeksforgeeks.org/problems/mobile-numeric-keypad5456/1
+Dynamic Programming,Medium,Print Longest Increasing Subsequence,,51.81%,https://www.geeksforgeeks.org/problems/printing-longest-increasing-subsequence/1
+Dynamic Programming,Medium,Number of paths in a matrix with k coins,"Amazon, NPCI",16.96%,https://www.geeksforgeeks.org/problems/number-of-paths-in-a-matrix-with-k-coins2728/1
+Dynamic Programming,Medium,Ways To Tile A Floor,"Amazon, NPCI",32.31%,https://www.geeksforgeeks.org/problems/ways-to-tile-a-floor5836/1
+Dynamic Programming,Medium,Special Keyboard,"Paytm, Flipkart, Amazon, +2",28.66%,https://www.geeksforgeeks.org/problems/special-keyboard3018/1
+Dynamic Programming,Medium,Dice throw,"Amazon, Microsoft",36.52%,https://www.geeksforgeeks.org/problems/dice-throw5349/1
+Dynamic Programming,Medium,Longest alternating subsequence,,38.32%,https://www.geeksforgeeks.org/problems/longest-alternating-subsequence5951/1
+Dynamic Programming,Medium,Count possible ways to construct buildings,Payu,38.53%,https://www.geeksforgeeks.org/problems/count-possible-ways-to-construct-buildings5007/1
+Dynamic Programming,Medium,Longest Palindromic Substring,"Zoho, Accolite, Amazon, +8",36.96%,https://www.geeksforgeeks.org/problems/longest-palindrome-in-a-string1956/1
+Dynamic Programming,Medium,Substring with Max Zero-One Diff,,53.05%,https://www.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1
+Dynamic Programming,Medium,Ways to Reach Origin,,53.93%,https://www.geeksforgeeks.org/problems/paths-to-reach-origin3850/1
+Dynamic Programming,Medium,K-Palindrome,"Amazon, Facebook",48.01%,https://www.geeksforgeeks.org/problems/find-if-string-is-k-palindrome-or-not1923/1
+Dynamic Programming,Medium,Get Minimum Squares,"Amazon, Microsoft, Wipro",45.22%,https://www.geeksforgeeks.org/problems/get-minimum-squares0538/1
+Dynamic Programming,Medium,Count Matching Subsequences,Accolite,57.65%,https://www.geeksforgeeks.org/problems/find-number-of-times-a-string-occurs-as-a-subsequence3020/1
+Dynamic Programming,Medium,Count Paths in DAG,,42.71%,https://www.geeksforgeeks.org/problems/count-the-paths4332/1
+Dynamic Programming,Medium,Target Sum,,31.52%,https://www.geeksforgeeks.org/problems/target-sum-1626326450/1
+Dynamic Programming,Medium,Grinding Geek,,50.00%,https://www.geeksforgeeks.org/problems/grinding-geek/1
+Dynamic Programming,Medium,Geek and Game of Coins,,42.49%,https://www.geeksforgeeks.org/problems/geek-and-its-game-of-coins4043/1
+Dynamic Programming,Medium,Trail of ones,Amazon,51.16%,https://www.geeksforgeeks.org/problems/trail-of-ones3242/1
+Dynamic Programming,Medium,Min Steps to Destination in Infinite Line,"Flipkart, Amazon, InMobi",31.77%,https://www.geeksforgeeks.org/problems/minimum-number-of-steps-to-reach-a-given-number5234/1
+Dynamic Programming,Medium,Longest Arithmetic Subsequence,"Amazon, Microsoft, Snapdeal, +1",23.82%,https://www.geeksforgeeks.org/problems/longest-arithmetic-progression1019/1
+Dynamic Programming,Medium,Min Cost Climbing Stairs,,50.04%,https://www.geeksforgeeks.org/problems/min-cost-climbing-stairs/1
+Dynamic Programming,Medium,Count Sorted Digit Groupings,,59.38%,https://www.geeksforgeeks.org/problems/count-digit-groupings-of-a-number1520/1
+Dynamic Programming,Medium,Cutting Binary String,"Flipkart, Walmart, Google",49.71%,https://www.geeksforgeeks.org/problems/cutting-binary-string1342/1
+Dynamic Programming,Medium,Max Subarray Sum by Removing At Most One,,32.53%,https://www.geeksforgeeks.org/problems/max-sum-subarray-by-removing-at-most-one-element/1
+Dynamic Programming,Medium,Minimum Sum Subarray,,72.37%,https://www.geeksforgeeks.org/problems/smallest-sum-contiguous-subarray/1
+Dynamic Programming,Medium,Check Subset sum divisible by k,,22.41%,https://www.geeksforgeeks.org/problems/subset-with-sum-divisible-by-m2546/1
+Dynamic Programming,Medium,Minimum Window Subsequence,,49.43%,https://www.geeksforgeeks.org/problems/minimum-window-subsequence/1
+Dynamic Programming,Medium,"Count subsequences of type a^i, b^j, c^k",Amazon,51.33%,https://www.geeksforgeeks.org/problems/count-subsequences-of-type-ai-bj-ck4425/1
+Dynamic Programming,Medium,Count of Subarrays,,48.53%,https://www.geeksforgeeks.org/problems/count-of-subarrays5922/1
+Dynamic Programming,Medium,Longest String Chain,,50.00%,https://www.geeksforgeeks.org/problems/longest-string-chain/1
+Dynamic Programming,Medium,Min Cost To Make Two Strings Identical,,52.29%,https://www.geeksforgeeks.org/problems/minimum-cost-to-make-two-strings-identical1107/1
+Dynamic Programming,Medium,All Palindromic Partitions,"Amazon, Microsoft, Facebook",61.47%,https://www.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/1
+Dynamic Programming,Medium,Express as Sum of Xth Ppower of Naturals,Adobe,45.35%,https://www.geeksforgeeks.org/problems/express-as-sum-of-power-of-natural-numbers5647/1
+Dynamic Programming,Medium,Largest Divisible Subset,"Bloomberg, Facebook, Adobe, +5",49.66%,https://www.geeksforgeeks.org/problems/largest-divisible-subset--170643/1
+Dynamic Programming,Medium,Minimum Deletions for Palindrome,,65.47%,https://www.geeksforgeeks.org/problems/minimum-deletitions1648/1
+Dynamic Programming,Medium,Paint N Houses,"Walmart, Google",51.33%,https://www.geeksforgeeks.org/problems/distinct-coloring--170645/1
+Dynamic Programming,Medium,Stickler Thief II,"Amazon, Microsoft, Linkedin, +5",52.99%,https://www.geeksforgeeks.org/problems/house-robber-ii/1
+Dynamic Programming,Medium,Max Sum with At Least 1 of Every Adjacent,Microsoft,52.09%,https://www.geeksforgeeks.org/problems/maximum-subset-sum--170648/1
+Dynamic Programming,Medium,Array Removals to Limit Max-Min Diff,,51.59%,https://www.geeksforgeeks.org/problems/array-removals/1
+Dynamic Programming,Medium,Count Subsets with Given XOR,,44.96%,https://www.geeksforgeeks.org/problems/subsets-with-xor-value2023/1
+Dynamic Programming,Medium,Number of ways,"Flipkart, Amazon",42.60%,https://www.geeksforgeeks.org/problems/number-of-ways2552/1
+Dynamic Programming,Medium,Numbers with Given Digit Sum,Amazon,26.33%,https://www.geeksforgeeks.org/problems/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum0733/1
+Dynamic Programming,Medium,Ways to Write n as Sum,,34.53%,https://www.geeksforgeeks.org/problems/ways-to-write-n-as-sum-1587115621/1
+Dynamic Programming,Medium,K Coins Change,,54.50%,https://www.geeksforgeeks.org/problems/another-coin-change-problem--170647/1
+Dynamic Programming,Medium,Longest Subarray Positive Product,,50.69%,https://www.geeksforgeeks.org/problems/length-of-the-longest-subarray-with-positive-product--170646/1
+Dynamic Programming,Medium,Water Overflow,"Amazon, D-E-Shaw",22.82%,https://www.geeksforgeeks.org/problems/champagne-overflow2636/1
+Dynamic Programming,Medium,Cut rope to maximise product,,40.16%,https://www.geeksforgeeks.org/problems/max-rope-cutting1312/1
+Dynamic Programming,Medium,Atmost Two Non-Overlapping Intervals,,52.73%,https://www.geeksforgeeks.org/problems/max-coins--170647/1
+Dynamic Programming,Medium,Maximum sum of elements not part of LIS,Flipkart,48.67%,https://www.geeksforgeeks.org/problems/maximum-sum-of-elements-not-part-of-lis/1
+Dynamic Programming,Medium,Ways to Tile the Floor,,39.12%,https://www.geeksforgeeks.org/problems/count-the-number-of-ways-to-tile-the-floor-of-size-n-x-m-using-1-x-m-size-tiles0509/1
+Dynamic Programming,Medium,Shortest XY distance in Grid,Google,54.35%,https://www.geeksforgeeks.org/problems/shortest-xy-distance-in-grid--170647/1
+Dynamic Programming,Medium,All Distinct Subset Sums,Flipkart,42.81%,https://www.geeksforgeeks.org/problems/find-all-distinct-subset-or-subsequence-sums4424/1
+Dynamic Programming,Medium,Count Cyclic Paths,OYO Rooms,52.24%,https://www.geeksforgeeks.org/problems/count-cyclic-paths--170647/1
+Dynamic Programming,Medium,Two water Jug problem,"MakeMyTrip, MAQ Software",48.78%,https://www.geeksforgeeks.org/problems/two-water-jug-problem3402/1
+Dynamic Programming,Medium,Longest Common Increasing Subsequence,,40.62%,https://www.geeksforgeeks.org/problems/longest-common-increasing-subsequence1437/1
+Dynamic Programming,Medium,Good Stones,,53.74%,https://www.geeksforgeeks.org/problems/good-stones--170647/1
+Dynamic Programming,Medium,Buy Stock with Transaction Fee,,57.41%,https://www.geeksforgeeks.org/problems/buy-stock-with-transaction-fee/1
+Dynamic Programming,Medium,Count Prefix-Balanced Binary Strings,,44.17%,https://www.geeksforgeeks.org/problems/geek-and-his-binary-strings1951/1
+Dynamic Programming,Medium,Largest Odd Squares with Limited 1s,Directi,49.41%,https://www.geeksforgeeks.org/problems/largest-square-in-a-binary-matrix-with-at-most-k-1s-for-multiple-queries/1
+Dynamic Programming,Medium,Stock Buy and Sell with Cooldown,,51.65%,https://www.geeksforgeeks.org/problems/buy-stock-with-cooldown/1
+Dynamic Programming,Medium,Walls Coloring,,61.74%,https://www.geeksforgeeks.org/problems/walls-coloring--170646/1
+Dynamic Programming,Medium,Longest Subarray with Max Diff as One,,50.16%,https://www.geeksforgeeks.org/problems/longest-subarray-with-max-diff-as-one/1
+Dynamic Programming,Medium,Knight in Geekland,,65.86%,https://www.geeksforgeeks.org/problems/knight-in-geekland--170647/1
+Dynamic Programming,Medium,High Effort vs Low Effort,,51.95%,https://www.geeksforgeeks.org/problems/high-effort-vs-low-effort0213/1
+Dynamic Programming,Medium,Max Absolute Diff of Two Subarrays,Google,50.44%,https://www.geeksforgeeks.org/problems/max-absolute-difference4114/1
+Dynamic Programming,Medium,Max Profit Non-Overlapping Intervals,,55.11%,https://www.geeksforgeeks.org/problems/maximum-profit-by-choosing-a-subset-of-intervals--170645/1
+Dynamic Programming,Medium,Filling Bucket Using 1 and 2,,52.11%,https://www.geeksforgeeks.org/problems/filling-bucket0529/1
+Dynamic Programming,Medium,Max Sum Without 3 Adjacent,,45.48%,https://www.geeksforgeeks.org/problems/max-sum-without-adjacents-2/1
+Dynamic Programming,Medium,Minimum Moves to Sort Permutation,,51.04%,https://www.geeksforgeeks.org/problems/morning-assembly3038/1
+Dynamic Programming,Medium,Triangle Path Sum,,54.11%,https://www.geeksforgeeks.org/problems/triangle-path-sum/1
+Dynamic Programming,Medium,Ways to Increase LCS by One,,52.03%,https://www.geeksforgeeks.org/problems/count-ways-to-increase-lcs-length-of-two-strings-by-one2236/1
+Dynamic Programming,Medium,Levels Of Game,,48.46%,https://www.geeksforgeeks.org/problems/levels-of-game/1
+Dynamic Programming,Medium,k Times Appearing Adjacent Two 1's,,54.99%,https://www.geeksforgeeks.org/problems/count-binary-strings1944/1
+Dynamic Programming,Medium,Number of Valid Parentheses,,59.41%,https://www.geeksforgeeks.org/problems/valid-number-of-parenthesis/1
+Dynamic Programming,Medium,Probability of Knight,"Amazon, Directi",43.21%,https://www.geeksforgeeks.org/problems/probability-of-knight5529/1
+Dynamic Programming,Medium,Minimum Cost Selection,,50.75%,https://www.geeksforgeeks.org/problems/buying-vegetables0016/1
+Dynamic Programming,Medium,Weighted Job Scheduling,,55.65%,https://www.geeksforgeeks.org/problems/weighted-job-scheduling/1
+Dynamic Programming,Medium,Sequences where Adjacent Divide,,63.57%,https://www.geeksforgeeks.org/problems/count-in-array2138/1
+Dynamic Programming,Medium,Shortest Uncommon Subsequence,,49.12%,https://www.geeksforgeeks.org/problems/shortest-uncommon-subsequence5746/1
+Dynamic Programming,Medium,Count Distinct K-Hook Connections,,47.47%,https://www.geeksforgeeks.org/problems/little-murph-and-knots0402/1
+Dynamic Programming,Medium,Assembly Line Scheduling,,43.81%,https://www.geeksforgeeks.org/problems/assembly-line-scheduling/1
+Dynamic Programming,Medium,Longest Subsequence as Substring of Other,,27.87%,https://www.geeksforgeeks.org/problems/substring-subsequence-problem1631/1
+Dynamic Programming,Medium,Number of Longest Increasing Subsequence,,59.20%,https://www.geeksforgeeks.org/problems/number-of-longest-increasing-subsequence/1
+Dynamic Programming,Medium,Temple Offerings,,53.16%,https://www.geeksforgeeks.org/problems/temple-offerings2831/1
+Dynamic Programming,Medium,Minimal Moves to Form a String,,49.31%,https://www.geeksforgeeks.org/problems/minimal-moves-to-form-a-string4331/1
+Dynamic Programming,Medium,Bell Numbers,,31.46%,https://www.geeksforgeeks.org/problems/bell-numbers2108/1
+Dynamic Programming,Medium,Max Sum Non-Decreasing Subsequence of Length k,Walmart,23.01%,https://www.geeksforgeeks.org/problems/maximum-sum-subsequence-of-length-k3053/1
+Dynamic Programming,Medium,Minimum 4 Sum Subsequence,,50.57%,https://www.geeksforgeeks.org/problems/minimum-four-sum-subsequence/1
+Dynamic Programming,Medium,Palindromic Substrings in Index Range,SAP Labs,30.93%,https://www.geeksforgeeks.org/problems/count-of-palindromic-substrings-in-an-index-range3752/1
+Dynamic Programming,Medium,Broken blocks,,47.74%,https://www.geeksforgeeks.org/problems/broken-blocks0022/1
+Dynamic Programming,Medium,Maximum Matching Pairs,,57.52%,https://www.geeksforgeeks.org/problems/escape-the-forbidden-forest--141631/1
+Dynamic Programming,Medium,String Conversion,,21.90%,https://www.geeksforgeeks.org/problems/string-conversion4603/1
+Dynamic Programming,Medium,Count Increasing Subsequences,,29.03%,https://www.geeksforgeeks.org/problems/count-increasing-subsequences3134/1
+Dynamic Programming,Medium,Geek's Art Collection,,16.24%,https://www.geeksforgeeks.org/problems/sisters-and-coins2253/1
+Dynamic Programming,Medium,Minimum Sum from Every Three Consecutive Elements,,29.66%,https://www.geeksforgeeks.org/problems/taking-1-out-of-3-consecutives4606/1
+Dynamic Programming,Medium,Partition Array for Maximum Sum,"HCL, Samsung",71.31%,https://www.geeksforgeeks.org/problems/partition-array-for-maximum-sum/1
+Dynamic Programming,Medium,Delete a String using Palindrome Substrings,,24.94%,https://www.geeksforgeeks.org/problems/minimum-steps-to-delete-a-string2956/1
+Dynamic Programming,Medium,Count Square Submatrices with All Ones,,73.91%,https://www.geeksforgeeks.org/problems/count-square-submatrices-with-all-ones/1
+Dynamic Programming,Medium,Count Subsequences Divisible by n,,18.15%,https://www.geeksforgeeks.org/problems/number-of-subsequences-in-a-string-divisible-by-n5947/1
+Dynamic Programming,Medium,Make Divisibile by M by Placing + Or -,,18.45%,https://www.geeksforgeeks.org/problems/check-if-any-valid-sequence-is-divisible-by-m1114/1
+Dynamic Programming,Medium,Count Palindromic Strings with Constraints,,29.10%,https://www.geeksforgeeks.org/problems/number-of-palindromic-strings2706/1
+Dynamic Programming,Medium,Minimum Cost for n Characters,,33.92%,https://www.geeksforgeeks.org/problems/minimum-time1238/1
+Dynamic Programming,Medium,Palindrome With K Insertions,,38.97%,https://www.geeksforgeeks.org/problems/palindromic-strings2555/1
+Dynamic Programming,Medium,Max Sum of Adjacent Diffs with Change to 1,,40.33%,https://www.geeksforgeeks.org/problems/modify-array-to-maximize-sum-of-adjacent-differences1729/1
+Dynamic Programming,Medium,Minimum Cost Pizza Selection,,45.61%,https://www.geeksforgeeks.org/problems/pizza-mania0155/1
+Dynamic Programming,Medium,Arrange Balls,,18.68%,https://www.geeksforgeeks.org/problems/arrange-balls0052/1
+Dynamic Programming,Medium,Pairwise Divisible Subsequence,,26.69%,https://www.geeksforgeeks.org/problems/beautiful-subsequence5222/1
+Dynamic Programming,Medium,Maximum Sum Increasing Subsequence,,25.44%,https://www.geeksforgeeks.org/problems/printing-maximum-sum-increasing-subsequence4903/1
+Dynamic Programming,Medium,Min Sum Non-decreasing Subsequence of Size k,,12.02%,https://www.geeksforgeeks.org/problems/non-decreasing-subsequence5737/1
+Dynamic Programming,Medium,Build Bit Count Array,"Bloomberg, Facebook, Adobe, +7",79.85%,https://www.geeksforgeeks.org/problems/bits-counting/1
+Dynamic Programming,Medium,Ugly Number II,,50.93%,https://www.geeksforgeeks.org/problems/ugly-number-ii/1
+Dynamic Programming,Medium,Count of AP Subsequences,,31.33%,https://www.geeksforgeeks.org/problems/count-of-ap-subsequences0016/1
+Dynamic Programming,Medium,Minimum Sum in a Falling Path,,57.77%,https://www.geeksforgeeks.org/problems/minimum-sum-in-a-falling-path/1
+Dynamic Programming,Medium,Number of permutation with K inversions,,22.47%,https://www.geeksforgeeks.org/problems/number-of-permutation-with-k-inversions5304/1
+Dynamic Programming,Medium,Non-Decreasing Digit Sequences of Length n,,39.49%,https://www.geeksforgeeks.org/problems/total-number-of-non-decreasing-numbers-with-n-digits5548/1
+Dynamic Programming,Medium,Max Score With At Most K Jumps,,41.89%,https://www.geeksforgeeks.org/problems/maximum-score-from-at-most-k-jumps/1
+Dynamic Programming,Medium,Pyramid Array with Reduce Operations,,29.18%,https://www.geeksforgeeks.org/problems/pyramid-form3044/1
+Dynamic Programming,Medium,Distributing Balls,,19.71%,https://www.geeksforgeeks.org/problems/distributing-balls1659/1
+Dynamic Programming,Medium,Substrings Divisible by 8 but not by 3,,16.72%,https://www.geeksforgeeks.org/problems/number-of-substrings-divisible-by-8-but-not-by-30002/1
+Dynamic Programming,Medium,Recurrence Matrix,,13.82%,https://www.geeksforgeeks.org/problems/recurrence-matrix2315/1
+Dynamic Programming,Medium,Involution Number,,31.10%,https://www.geeksforgeeks.org/problems/telephone-number-or-involution-number4412/1
+Dynamic Programming,Medium,Optimal Chapter Assignment in K Days,,28.28%,https://www.geeksforgeeks.org/problems/lots-of-work3233/1
+Dynamic Programming,Medium,Minimum cost to Destination,,67.58%,https://www.geeksforgeeks.org/problems/minimum-cost-to-destination/1
+Dynamic Programming,Medium,LIS in a circular way,,23.39%,https://www.geeksforgeeks.org/problems/lis-in-a-circular-way/1
+Dynamic Programming,Medium,Odd Equals Even Path,,48.27%,https://www.geeksforgeeks.org/problems/odd-equals-even-path-i--151405/1
+Dynamic Programming,Hard,Edit Distance,"Amazon, Goldman Sachs, Google, +1",35.14%,https://www.geeksforgeeks.org/problems/edit-distance3702/1
+Dynamic Programming,Hard,Smallest Window with All,"Amazon, Atlassian, Flipkart, +6",30.19%,https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1
+Dynamic Programming,Hard,Matrix Chain Multiplication,"FactSet, Flipkart, Microsoft",49.64%,https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1
+Dynamic Programming,Hard,Partition Into 2 Subsets with Min Sum Diff,"Amazon, Samsung",38.97%,https://www.geeksforgeeks.org/problems/minimum-sum-partition3317/1
+Dynamic Programming,Hard,The Painter's Partition Problem-II,"Codenation, Google, Microsoft",27.52%,https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1
+Dynamic Programming,Hard,Palindromic Partitioning,"Amazon, Google, Microsoft",27.82%,https://www.geeksforgeeks.org/problems/palindromic-patitioning4845/1
+Dynamic Programming,Hard,Longest Valid Parentheses Substring,"Amazon, Google, Microsoft",26.13%,https://www.geeksforgeeks.org/problems/longest-valid-parentheses5657/1
+Dynamic Programming,Hard,Boolean Parenthesization,"Amazon, Intuit, Linkedin, +1",20.15%,https://www.geeksforgeeks.org/problems/boolean-parenthesization5610/1
+Dynamic Programming,Hard,Minimum Cost Path,"Amazon, Goldman Sachs, MakeMyTrip, +2",26.99%,https://www.geeksforgeeks.org/problems/minimum-cost-path3833/1
+Dynamic Programming,Hard,Max Rectangle,"Amazon, Directi, Flipkart, +5",36.43%,https://www.geeksforgeeks.org/problems/max-rectangle/1
+Dynamic Programming,Hard,Strings with More Distinct Subsequences,,44.50%,https://www.geeksforgeeks.org/problems/better-string/1
+Dynamic Programming,Hard,Distinct occurrences,"Amazon, Google",27.37%,https://www.geeksforgeeks.org/problems/distinct-occurrences/1
+Dynamic Programming,Hard,Number of distinct subsequences,,30.43%,https://www.geeksforgeeks.org/problems/number-of-distinct-subsequences0909/1
+Dynamic Programming,Hard,All Longest Common Subsequences,,30.64%,https://www.geeksforgeeks.org/problems/print-all-lcs-sequences3413/1
+Dynamic Programming,Hard,Stock Buy and Sell – Max 2 Transactions Allowed,"Amazon, Facebook",50.13%,https://www.geeksforgeeks.org/problems/buy-and-sell-a-share-at-most-twice/1
+Dynamic Programming,Hard,Stock Buy and Sell – Max K Transactions Allowed,"Accolite, Amazon, Microsoft",48.35%,https://www.geeksforgeeks.org/problems/maximum-profit4657/1
+Dynamic Programming,Hard,Palindrome SubStrings Count,"Morgan Stanley, Amazon, Ola Cabs, +2",45.80%,https://www.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string0652/1
+Dynamic Programming,Hard,Chocolates Pickup,NPCI,50.36%,https://www.geeksforgeeks.org/problems/chocolates-pickup/1
+Dynamic Programming,Hard,Word Wrap,"Flipkart, Microsoft",29.74%,https://www.geeksforgeeks.org/problems/word-wrap1646/1
+Dynamic Programming,Hard,Make Strictly Increasing,Microsoft,36.05%,https://www.geeksforgeeks.org/problems/convert-to-strictly-increasing-array3351/1
+Dynamic Programming,Hard,Longest Repeating and Non-Overlapping Substring,"MakeMyTrip, Walmart",46.71%,https://www.geeksforgeeks.org/problems/longest-repeating-and-non-overlapping-substring3421/1
+Dynamic Programming,Hard,Partition into k Subsets with Equal Sum,Amazon,32.52%,https://www.geeksforgeeks.org/problems/partition-array-to-k-subsets/1
+Dynamic Programming,Hard,Travelling Salesman Problem,"Microsoft, Samsung, Google, +1",46.35%,https://www.geeksforgeeks.org/problems/travelling-salesman-problem2732/1
+Dynamic Programming,Hard,Minimum Points To Reach Destination,Microsoft,33.00%,https://www.geeksforgeeks.org/problems/minimum-points-to-reach-destination0540/1
+Dynamic Programming,Hard,Brackets in Matrix Chain Multiplication,Microsoft,59.66%,https://www.geeksforgeeks.org/problems/brackets-in-matrix-chain-multiplication1024/1
+Dynamic Programming,Hard,Largest 0 Sum Submatrix,,45.28%,https://www.geeksforgeeks.org/problems/largest-rectangular-sub-matrix-whose-sum-is-0/1
+Dynamic Programming,Hard,Word Break - 2,"Google, IBM",57.49%,https://www.geeksforgeeks.org/problems/word-break-part-23249/1
+Dynamic Programming,Hard,Max min Height,,62.86%,https://www.geeksforgeeks.org/problems/max-min-height--170647/1
+Dynamic Programming,Hard,Walls Coloring with K Colors,,50.15%,https://www.geeksforgeeks.org/problems/walls-coloring-ii--170647/1
+Dynamic Programming,Hard,Max Skills,MakeMyTrip,60.89%,https://www.geeksforgeeks.org/problems/max-skills/1
+Dynamic Programming,Hard,Box Stacking,"Amazon, Microsoft, Codenation",41.00%,https://www.geeksforgeeks.org/problems/box-stacking/1
+Dynamic Programming,Hard,Minimum Insert and Delete to Convert,"Google, Codenation",27.85%,https://www.geeksforgeeks.org/problems/minimum-insertions-to-make-two-arrays-equal/1
+Dynamic Programming,Hard,Subsets with Products of Distinct Primes,,66.87%,https://www.geeksforgeeks.org/problems/game-of-subsets/1
+Dynamic Programming,Hard,Adventure in a Maze,,39.96%,https://www.geeksforgeeks.org/problems/adventure-in-a-maze2051/1
+Dynamic Programming,Hard,Distinct palindromic substrings,"MakeMyTrip, Ola Cabs, SAP Labs, +1",39.92%,https://www.geeksforgeeks.org/problems/distinct-palindromic-substrings5141/1
+Dynamic Programming,Hard,Substrings with more 1's than 0's,,57.87%,https://www.geeksforgeeks.org/problems/count-the-substring--170645/1
+Dynamic Programming,Hard,Min Time,,56.75%,https://www.geeksforgeeks.org/problems/min-time--170648/1
+Dynamic Programming,Hard,Cut Matrix,Google,43.64%,https://www.geeksforgeeks.org/problems/cut-matrix/1
+Dynamic Programming,Hard,Optimal binary search tree,,50.02%,https://www.geeksforgeeks.org/problems/optimal-binary-search-tree2214/1
+Dynamic Programming,Hard,Word Search - Count Occurrences with 4 Directions,"Paytm, Google",63.65%,https://www.geeksforgeeks.org/problems/count-occurences-of-a-given-word-in-a-2-d-array/1
+Dynamic Programming,Hard,Numbers with Given Digits and Counts,Goldman Sachs,46.10%,https://www.geeksforgeeks.org/problems/number-formation3506/1
+Dynamic Programming,Hard,Select Nodes,Flipkart,63.66%,https://www.geeksforgeeks.org/problems/select-nodes--170645/1
+Dynamic Programming,Hard,Count Lucky Permutations,Intuit,59.66%,https://www.geeksforgeeks.org/problems/count-lucky-permutations--170645/1
+Dynamic Programming,Hard,Longest Path in a matrix,,50.11%,https://www.geeksforgeeks.org/problems/longest-path-in-a-matrix3019/1
+Dynamic Programming,Hard,Longest Zig-Zag Subsequence,Accolite,44.84%,https://www.geeksforgeeks.org/problems/longest-zig-zag-sub-sequence2656/1
+Dynamic Programming,Hard,Chocolate Pickup II,,58.23%,https://www.geeksforgeeks.org/problems/chocolate-pickup-ii/1
+Dynamic Programming,Hard,Minimum Cost to Cut a Stick of length N,,69.28%,https://www.geeksforgeeks.org/problems/minimum-cost-to-cut-a-stick-of-length-n/1
+Dynamic Programming,Hard,Minimum Cost to Merge Stones,,68.19%,https://www.geeksforgeeks.org/problems/minimum-cost-to-merge-stones/1
+Dynamic Programming,Hard,Longest Substring to Form a Palindrome,"Amazon, Samsung",45.10%,https://www.geeksforgeeks.org/problems/longest-substring-whose-character-rearranged-can-form-a-palindrome/1
+Dynamic Programming,Hard,Longest Increasing Path in a Matrix,D-E-Shaw,44.39%,https://www.geeksforgeeks.org/problems/longest-increasing-path-in-a-matrix/1
+Dynamic Programming,Hard,Count Words with At Most K Consecutive Vowels,Adobe,43.96%,https://www.geeksforgeeks.org/problems/number-of-distinct-words-with-k-maximum-contiguous-vowels--141631/1
+Dynamic Programming,Hard,Min Cut Square,Google,33.54%,https://www.geeksforgeeks.org/problems/min-cut-square3303/1
+Dynamic Programming,Hard,Count Pairs from Two Sets,,46.57%,https://www.geeksforgeeks.org/problems/number-of-pairs-1645358985/1
+Dynamic Programming,Hard,Max Diff with Below and Right in Grid,,48.28%,https://www.geeksforgeeks.org/problems/maximum-difference-between-pair-in-a-matrix/1
+Dynamic Programming,Hard,Minimum Number Of Sprinkler,,28.20%,https://www.geeksforgeeks.org/problems/minimum-number-of-sprinkler--170645/1
+Dynamic Programming,Hard,Minimum Elements Outside Subsequences,,40.88%,https://www.geeksforgeeks.org/problems/minimum-number-of-elements-which-are-not-part-of-increasing-or-decreasing-subsequence2617/1
+Dynamic Programming,Hard,Maximum Score Using Neighbor Products,,38.27%,https://www.geeksforgeeks.org/problems/maximum-triple-product/1
+Dynamic Programming,Hard,Partition into Two Halves with Minimum Sum Diff,,44.32%,https://www.geeksforgeeks.org/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum-set-2/1
+Dynamic Programming,Hard,Beautiful String,,12.70%,https://www.geeksforgeeks.org/problems/beautiful-string--164305/1
+Dynamic Programming,Hard,Longest Bit-Increasing Subsequence,,31.10%,https://www.geeksforgeeks.org/problems/longest-bit-increasing-subsequence--150311/1

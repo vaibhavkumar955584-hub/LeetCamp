@@ -1,0 +1,51 @@
+category,difficulty,title,company_tags,accuracy,url
+Two Pointers,Basic,Extract the integers,,48.37%,https://www.geeksforgeeks.org/problems/extract-the-integers4428/1
+Two Pointers,Basic,Reverse a string with spaces intact,Zoho,48.48%,https://www.geeksforgeeks.org/problems/reverse-a-string-with-spaces-intact5213/1
+Two Pointers,Basic,Sort the Two Parts Sorted,,50.00%,https://www.geeksforgeeks.org/problems/sort-the-half-sorted2157/1
+Two Pointers,Basic,Longest Subarray with GCD One,,34.54%,https://www.geeksforgeeks.org/problems/largest-subarray-with-gcd-one4535/1
+Two Pointers,Easy,Two sum -Pairs with 0 Sum,"Flipkart, Accolite, Amazon, +6",31.49%,https://www.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1
+Two Pointers,Easy,Palindrome String,"Paytm, Zoho, Morgan Stanley, +5",51.21%,https://www.geeksforgeeks.org/problems/palindrome-string0817/1
+Two Pointers,Easy,Remove Duplicates Sorted Array,"Zoho, Morgan Stanley, Microsoft, +4",38.18%,https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1
+Two Pointers,Easy,Intersection of Arrays with Distinct,"Accolite, Amazon, Microsoft, +2",32.83%,https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
+Two Pointers,Easy,Triplets Where One is Sum of Other Two,"Amazon, Arcesium",25.67%,https://www.geeksforgeeks.org/problems/count-the-triplets4615/1
+Two Pointers,Easy,Pair Sum in Sorted Doubly Linked List,,66.01%,https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1
+Two Pointers,Easy,Count Sum Pairs in Sorted,Adobe,26.04%,https://www.geeksforgeeks.org/problems/pair-with-given-sum-in-a-sorted-array4940/1
+Two Pointers,Easy,Closest Pair Sum,Ola Cabs,44.75%,https://www.geeksforgeeks.org/problems/pair-in-array-whose-sum-is-closest-to-x1124/1
+Two Pointers,Easy,Check for 4 Sum,"Amazon, OYO Rooms",22.55%,https://www.geeksforgeeks.org/problems/four-elements2452/1
+Two Pointers,Easy,Palindrome Sentence,Facebook,50.04%,https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1
+Two Pointers,Easy,Intersection of Two arrays with Duplicate Elements,,61.40%,https://www.geeksforgeeks.org/problems/intersection-of-two-arrays-with-duplicate-elements/1
+Two Pointers,Easy,Pairs with Sum Less Than Ttarget,,53.13%,https://www.geeksforgeeks.org/problems/count-pairs-whose-sum-is-less-than-target/1
+Two Pointers,Easy,Dominant Pairs,,50.57%,https://www.geeksforgeeks.org/problems/dominant-pairs/1
+Two Pointers,Easy,Largest Pair Sum,,60.24%,https://www.geeksforgeeks.org/problems/pair-sum--120604/1
+Two Pointers,Easy,Find Only Repetitive Element from 1 to n-1,NPCI,59.22%,https://www.geeksforgeeks.org/problems/find-repetitive-element-from-1-to-n-1/1
+Two Pointers,Easy,Special array reversal,Zoho,40.46%,https://www.geeksforgeeks.org/problems/special-array-reversal2328/1
+Two Pointers,Easy,Length of longest subarray,,50.87%,https://www.geeksforgeeks.org/problems/length-of-longest-subarray0440/1
+Two Pointers,Easy,Closing Bracket Index,,60.47%,https://www.geeksforgeeks.org/problems/closing-bracket-index5900/1
+Two Pointers,Easy,Two Sum in Sorted Array,,49.95%,https://www.geeksforgeeks.org/problems/two-sum-in-sorted-array/1
+Two Pointers,Easy,2 Sum - Find a pair with given sum,,48.58%,https://www.geeksforgeeks.org/problems/2-sum-find-a-pair-with-given-sum/1
+Two Pointers,Easy,Max of Index Diff and Min Value Product,,38.91%,https://www.geeksforgeeks.org/problems/find-maximum-value/1
+Two Pointers,Easy,Distinct Triplets with Given Sum,,47.33%,https://www.geeksforgeeks.org/problems/find-all-distinct-triplets-with-given-sum/1
+Two Pointers,Easy,Count Pairs in a sorted array whose sum is less than target,,60.01%,https://www.geeksforgeeks.org/problems/count-pairs-in-a-sorted-array-whose-sum-is-less-than-target/1
+Two Pointers,Easy,Closest Triplet from Three Arrays,,38.73%,https://www.geeksforgeeks.org/problems/closest-triplet3807/1
+Two Pointers,Medium,Union of 2 Sorted Arrays,Amazon,31.39%,https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+Two Pointers,Medium,Triplet Sum in Array,"Accolite, Amazon, Microsoft, +3",35.00%,https://www.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1
+Two Pointers,Medium,Maximum Index,"VMWare, Amazon, Microsoft, +3",24.50%,https://www.geeksforgeeks.org/problems/maximum-index-1587115620/1
+Two Pointers,Medium,Find triplets with zero sum,"Amazon, Google, Facebook",25.81%,https://www.geeksforgeeks.org/problems/find-triplets-with-zero-sum/1
+Two Pointers,Medium,Merge Without Extra Space,"Zoho, Microsoft, Snapdeal, +8",32.01%,https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1
+Two Pointers,Medium,Longest Substring with K Uniques,"Amazon, Google, SAP Labs",34.65%,https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
+Two Pointers,Medium,4 Sum - All Quadruples,"Amazon, Microsoft, OYO Rooms, +3",19.94%,https://www.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1
+Two Pointers,Medium,Binary Array Sorting,,53.94%,https://www.geeksforgeeks.org/problems/binary-array-sorting-1587115620/1
+Two Pointers,Medium,Triplets with Smaller Sum,"Amazon, SAP Labs",40.33%,https://www.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1
+Two Pointers,Medium,Container With Most Water,"Flipkart, Amazon, Google",53.84%,https://www.geeksforgeeks.org/problems/container-with-most-water0535/1
+Two Pointers,Medium,Closest Three Sum,"Amazon, Microsoft, Google, +1",17.65%,https://www.geeksforgeeks.org/problems/three-sum-closest/1
+Two Pointers,Medium,Count pairs with given sum,,50.11%,https://www.geeksforgeeks.org/problems/count-pairs-with-given-sum--150253/1
+Two Pointers,Medium,Count all triplets with given sum in sorted array,,48.57%,https://www.geeksforgeeks.org/problems/count-all-triplets-with-given-sum-in-sorted-array/1
+Two Pointers,Medium,Longest Repeating Character Replacement,Amazon,50.04%,https://www.geeksforgeeks.org/problems/longest-repeating-character-replacement/1
+Two Pointers,Medium,Remove and Reverse,,50.43%,https://www.geeksforgeeks.org/problems/remove-and-reverse--170634/1
+Two Pointers,Medium,3 Sum Closest,"Amazon, Microsoft, Adobe, +5",49.69%,https://www.geeksforgeeks.org/problems/three-sum-closest/1
+Two Pointers,Medium,Maximum Area Between Bars,,39.48%,https://www.geeksforgeeks.org/problems/maximum-area-between-bars/1
+Two Pointers,Medium,Pair Sum in a Sorted and Rotated Array,,45.14%,https://www.geeksforgeeks.org/problems/pair-sum-in-a-sorted-and-rotated-array/1
+Two Pointers,Medium,"Count Substrings with a, b and c",,51.61%,https://www.geeksforgeeks.org/problems/count-substring/1
+Two Pointers,Medium,Earliest Common Slot,"Amazon, Microsoft, PayPal, +2",45.07%,https://www.geeksforgeeks.org/problems/earliest-common-slot/1
+Two Pointers,Medium,Interval List Intersections,"Bloomberg, Amazon, Microsoft, +2",49.29%,https://www.geeksforgeeks.org/problems/interval-list-intersections/1
+Two Pointers,Hard,Partition Into 4 with Min Sum Diff,,62.86%,https://www.geeksforgeeks.org/problems/partition-the-array--170647/1

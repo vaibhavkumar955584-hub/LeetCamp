@@ -1,0 +1,25 @@
+category,difficulty,title,company_tags,accuracy,url
+Queue,Basic,Queue Using Array,"Amazon, Goldman Sachs",47.24%,https://www.geeksforgeeks.org/problems/implement-queue-using-array/1
+Queue,Basic,Queue using Linked List,,45.60%,https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1
+Queue,Basic,Deque Traversal,,44.42%,https://www.geeksforgeeks.org/problems/dequeue-traversal/1
+Queue,Basic,Operations on Queue,Amazon,58.39%,https://www.geeksforgeeks.org/problems/operations-on-queue/1
+Queue,Basic,Queue Push & Pop,,74.53%,https://www.geeksforgeeks.org/problems/queue-designer/1
+Queue,Basic,Insertion in deque,,80.33%,https://www.geeksforgeeks.org/problems/insertion-in-deque/1
+Queue,Basic,Operations on Queue,Amazon,73.87%,https://www.geeksforgeeks.org/problems/operations-on-queue--114617/1
+Queue,Basic,Queue Push & Pop,,59.00%,https://www.geeksforgeeks.org/problems/queue-designer--104629/1
+Queue,Easy,Reverse first K of a Queue,Amazon,81.28%,https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
+Queue,Easy,Queue Reversal,Amazon,77.98%,https://www.geeksforgeeks.org/problems/queue-reversal/1
+Queue,Easy,Generate Binary Numbers,"Amazon, NPCI, OYO Rooms",67.48%,https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1
+Queue,Easy,Deque Implementation,,61.01%,https://www.geeksforgeeks.org/problems/deque-implementations/1
+Queue,Easy,Frequency in Queue,,77.76%,https://www.geeksforgeeks.org/problems/queue-operations/1
+Queue,Easy,Queue using Stack,Microsoft,73.87%,https://www.geeksforgeeks.org/problems/queue-using-stack/1
+Queue,Easy,Deque Deletion,,50.86%,https://www.geeksforgeeks.org/problems/deque-deletion/1
+Queue,Medium,First Negative in Windows of Size K,Amazon,48.61%,https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
+Queue,Medium,Stream First Non-repeating,"Adobe, Amazon, FactSet, +4",31.65%,https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
+Queue,Medium,Stack using Queue,"Accolite, Adobe, Amazon, +9",51.40%,https://www.geeksforgeeks.org/problems/stack-using-queue/1
+Queue,Medium,Interleave the First Half of the Queue with Second Half,,62.41%,https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1
+Queue,Medium,Initial Arrangement of Cards,,70.16%,https://www.geeksforgeeks.org/problems/card-rotation5834/1
+Queue,Medium,Restricted Pacman,,59.57%,https://www.geeksforgeeks.org/problems/restricted-pacman--141631/1
+Queue,Medium,Minimum Distance on a Grid,,68.67%,https://www.geeksforgeeks.org/problems/minimum-distance-on-a-grid/1
+Queue,Hard,Minimum K Consecutive Bit Flips,"Amazon, Bloomberg, Facebook, +3",58.52%,https://www.geeksforgeeks.org/problems/minimum-number-of-k-consecutive-bit-flips--171650/1
+Queue,Hard,Implement k Queues in a Single Array,NPCI,60.15%,https://www.geeksforgeeks.org/problems/implement-k-queues-in-a-single-array/1

@@ -1,0 +1,25 @@
+category,difficulty,title,company_tags,accuracy,url
+Recursion,Basic,1 to n Without Loops,,47.21%,https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1
+Recursion,Basic,Print n to 1 Without Loop,,77.72%,https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1
+Recursion,Basic,Nth Fibonacci Using Recursion,,78.37%,https://www.geeksforgeeks.org/problems/fibonacci-using-recursion/1
+Recursion,Basic,Power Using Recursion,,75.78%,https://www.geeksforgeeks.org/problems/power-using-recursion/1
+Recursion,Basic,First n Terms of a Recursive Series,,20.77%,https://www.geeksforgeeks.org/problems/gf-series3535/1
+Recursion,Easy,Count Digits in a Number,,42.13%,https://www.geeksforgeeks.org/problems/count-total-digits-in-a-number/1
+Recursion,Easy,Digital Root,"Accolite, Adobe, Amazon, +3",56.33%,https://www.geeksforgeeks.org/problems/digital-root/1
+Recursion,Easy,Print Pattern,Microsoft,56.39%,https://www.geeksforgeeks.org/problems/print-pattern3549/1
+Recursion,Easy,Recursive Sequence,MAQ Software,49.57%,https://www.geeksforgeeks.org/problems/recursive-sequence1611/1
+Recursion,Easy,Juggler Sequence,,52.04%,https://www.geeksforgeeks.org/problems/juggler-sequence3930/1
+Recursion,Easy,Power Set Using Recursion,,47.78%,https://www.geeksforgeeks.org/problems/power-set-using-recursion/1
+Recursion,Easy,Recursively Sum n Numbers,,58.43%,https://www.geeksforgeeks.org/problems/recursively-sum-n-numbers/1
+Recursion,Easy,Generating All Subarrays,,59.81%,https://www.geeksforgeeks.org/problems/generating-all-subarrays/1
+Recursion,Medium,Raise to Power of Its Own Reverse,"MakeMyTrip, Walmart",20.22%,https://www.geeksforgeeks.org/problems/power-of-numbers-1587115620/1
+Recursion,Medium,Tower Of Hanoi,"Flipkart, MakeMyTrip, Microsoft",35.23%,https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1
+Recursion,Medium,Subset Sums,,72.55%,https://www.geeksforgeeks.org/problems/subset-sums2234/1
+Recursion,Medium,Friends Pairing Problem,,25.04%,https://www.geeksforgeeks.org/problems/friends-pairing-problem5425/1
+Recursion,Medium,Lucky Numbers,Microsoft,30.35%,https://www.geeksforgeeks.org/problems/lucky-numbers2911/1
+Recursion,Medium,Finding Profession,Oracle,30.30%,https://www.geeksforgeeks.org/problems/finding-profession3834/1
+Recursion,Medium,Count Subset With Target Sum II,,43.16%,https://www.geeksforgeeks.org/problems/count-the-subset-with-sum-equal-to-k/1
+Recursion,Medium,N-Digit Numbers with Increasing Digits,ABCO,49.66%,https://www.geeksforgeeks.org/problems/n-digit-numbers-with-digits-in-increasing-order5903/1
+Recursion,Medium,Non-Crossing Handshakes in Circle,Amazon,48.96%,https://www.geeksforgeeks.org/problems/handshakes1303/1
+Recursion,Hard,Josephus problem,"Amazon, Microsoft, Walmart",57.26%,https://www.geeksforgeeks.org/problems/josephus-problem/1
+Recursion,Hard,Next Happy Number,,53.97%,https://www.geeksforgeeks.org/problems/next-happy-number4538/1
