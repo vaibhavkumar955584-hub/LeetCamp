@@ -1,0 +1,24 @@
+category,difficulty,title,company_tags,accuracy,url
+Combinatorial,Basic,Spell a Number,,34.60%,https://www.geeksforgeeks.org/problems/different-ways-to-spell-a-number4014/1
+Combinatorial,Easy,Cutting Rectangles,Amdocs,52.88%,https://www.geeksforgeeks.org/problems/cutting-rectangles--170647/1
+Combinatorial,Easy,Subsets with Distinct and Even Numbers,,33.84%,https://www.geeksforgeeks.org/problems/count-subsets-having-distinct-even-numbers5726/1
+Combinatorial,Easy,Three Number Even Sum,,14.97%,https://www.geeksforgeeks.org/problems/three-number-even-sum2803/1
+Combinatorial,Medium,Factorials of large numbers,"Adobe, BrowserStack, MakeMyTrip, +5",36.57%,https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1
+Combinatorial,Medium,Count Derangements,,34.57%,https://www.geeksforgeeks.org/problems/dearrangement-of-balls0918/1
+Combinatorial,Medium,Count Unique Vowel Strings,,50.99%,https://www.geeksforgeeks.org/problems/count-unique-vowel-strings/1
+Combinatorial,Medium,Ways to Fill Buckets,,50.20%,https://www.geeksforgeeks.org/problems/fill-up-buckets3500/1
+Combinatorial,Medium,Brain Game,,38.07%,https://www.geeksforgeeks.org/problems/brain-game1742/1
+Combinatorial,Medium,Count Distinct K-Hook Connections,,47.47%,https://www.geeksforgeeks.org/problems/little-murph-and-knots0402/1
+Combinatorial,Medium,nCr Modulo Square-Free Number,,30.22%,https://www.geeksforgeeks.org/problems/ncr-mod-m-part-20611/1
+Combinatorial,Medium,Number of Positive Integral Solutions,,57.82%,https://www.geeksforgeeks.org/problems/number-of-positive-integral-solutions2115/1
+Combinatorial,Medium,Initial Arrangement of Cards,,70.16%,https://www.geeksforgeeks.org/problems/card-rotation5834/1
+Combinatorial,Medium,Count Ways of Money Distribution,,25.79%,https://www.geeksforgeeks.org/problems/money-distributions5924/1
+Combinatorial,Medium,Mapped String,,48.19%,https://www.geeksforgeeks.org/problems/mapped-string0501/1
+Combinatorial,Medium,Count Strings Formed by One Swap,,60.19%,https://www.geeksforgeeks.org/problems/valid-string-permutations/1
+Combinatorial,Medium,Count Palindromic Strings with Constraints,,29.10%,https://www.geeksforgeeks.org/problems/number-of-palindromic-strings2706/1
+Combinatorial,Medium,Distributing Balls,,19.71%,https://www.geeksforgeeks.org/problems/distributing-balls1659/1
+Combinatorial,Medium,Weighted Sum Queries,,28.02%,https://www.geeksforgeeks.org/problems/sum-of-query-i1920/1
+Combinatorial,Medium,k-th Smallest Permutation,,17.87%,https://www.geeksforgeeks.org/problems/get-the-kth-smallest-number-using-the-digits-of-the-given-number5440/1
+Combinatorial,Medium,Rahul and The Lift,,15.26%,https://www.geeksforgeeks.org/problems/rahul-and-the-lift1006/1
+Combinatorial,Hard,Numbers with Constraints on Digits and Digit Sum,,49.30%,https://www.geeksforgeeks.org/problems/special-digits--170647/1
+Combinatorial,Hard,nCr mod M,,29.53%,https://www.geeksforgeeks.org/problems/ncr-mod-m-part-10038/1

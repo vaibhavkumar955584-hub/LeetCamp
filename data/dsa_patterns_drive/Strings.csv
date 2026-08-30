@@ -1,0 +1,235 @@
+category,difficulty,title,company_tags,accuracy,url
+Strings,Basic,Reverse a String,,69.49%,https://www.geeksforgeeks.org/problems/reverse-a-string/1
+Strings,Basic,First Occurence,"Amazon, Facebook, Microsoft, +1",46.90%,https://www.geeksforgeeks.org/problems/implement-strstr/1
+Strings,Basic,Check for Binary String,,30.94%,https://www.geeksforgeeks.org/problems/check-for-binary/1
+Strings,Basic,Convert String to Lower Case,,75.27%,https://www.geeksforgeeks.org/problems/convert-string-to-lowercase/1
+Strings,Basic,Binary Substrings with Corners as 1,"Amazon, Flipkart",53.99%,https://www.geeksforgeeks.org/problems/binary-string-1587115620/1
+Strings,Basic,Remove Spaces,SAP Labs,49.21%,https://www.geeksforgeeks.org/problems/remove-spaces0128/1
+Strings,Basic,Remove Common and Concat,Microsoft,30.78%,https://www.geeksforgeeks.org/problems/remove-common-characters-and-concatenate-1587115621/1
+Strings,Basic,Longest Word,,66.29%,https://www.geeksforgeeks.org/problems/display-longest-name0853/1
+Strings,Basic,Make Anagram with Removals,Amazon,38.61%,https://www.geeksforgeeks.org/problems/anagram-of-string/1
+Strings,Basic,Maximum Number in a String,"Amazon, TCS",38.41%,https://www.geeksforgeeks.org/problems/extract-maximum2943/1
+Strings,Basic,Remove character,"Zoho, Amazon",59.60%,https://www.geeksforgeeks.org/problems/remove-character3815/1
+Strings,Basic,Remove Vowels,GE,41.92%,https://www.geeksforgeeks.org/problems/remove-vowels-from-string1446/1
+Strings,Basic,Reverse Vowels,"Zoho, Flipkart",40.16%,https://www.geeksforgeeks.org/problems/reversing-the-vowels5304/1
+Strings,Basic,Capitalize First Letter of Words,Nagarro,38.13%,https://www.geeksforgeeks.org/problems/upper-case-conversion5419/1
+Strings,Basic,First Letter of Every Word,Amazon,71.60%,https://www.geeksforgeeks.org/problems/print-first-letter-of-every-word-in-the-string3632/1
+Strings,Basic,Alternate Merge Two Strings,Goldman Sachs,47.43%,https://www.geeksforgeeks.org/problems/merge-two-strings2736/1
+Strings,Basic,Delete alternate characters,,68.99%,https://www.geeksforgeeks.org/problems/java-delete-alternate-characters4036/1
+Strings,Basic,Length of String,,82.01%,https://www.geeksforgeeks.org/problems/length-of-string/1
+Strings,Basic,Check String,,42.82%,https://www.geeksforgeeks.org/problems/check-string1818/1
+Strings,Basic,Keypad Typing,Amazon,61.49%,https://www.geeksforgeeks.org/problems/keypad-typing0119/1
+Strings,Basic,Concatenate and Reverse,,60.84%,https://www.geeksforgeeks.org/problems/java-strings-set-15112/1
+Strings,Basic,Lower case to upper case,,74.85%,https://www.geeksforgeeks.org/problems/lower-case-to-upper-case3410/1
+Strings,Basic,Change the Case based on First Character,Oracle,57.73%,https://www.geeksforgeeks.org/problems/change-the-string3541/1
+Strings,Basic,C++ Strings,,59.12%,https://www.geeksforgeeks.org/problems/c-strings4609/1
+Strings,Basic,String with Number at End,Codenation,34.51%,https://www.geeksforgeeks.org/problems/string-with-numbers-at-its-end5749/1
+Strings,Basic,Count of camel case characters,,71.16%,https://www.geeksforgeeks.org/problems/find-the-camel3348/1
+Strings,Basic,Count Words in String,,66.28%,https://www.geeksforgeeks.org/problems/count-number-of-words1500/1
+Strings,Basic,Count Types of Characters,"Amazon, MakeMyTrip",59.65%,https://www.geeksforgeeks.org/problems/count-type-of-characters3635/1
+Strings,Basic,Concatenate a List of Characters,,63.69%,https://www.geeksforgeeks.org/problems/convert-a-list-of-characters-into-a-string5142/1
+Strings,Basic,Red OR Green,,72.22%,https://www.geeksforgeeks.org/problems/red-or-green5711/1
+Strings,Basic,Remove All Except Alphabets,,46.16%,https://www.geeksforgeeks.org/problems/remove-all-characters-other-than-alphabets4923/1
+Strings,Basic,Front-Back Transformation of String,,53.85%,https://www.geeksforgeeks.org/problems/front-back-transformation1659/1
+Strings,Basic,C++ Basic Data types,,15.91%,https://www.geeksforgeeks.org/problems/c-basic-data-types3128/1
+Strings,Basic,Encrypt the string - 1,Amazon,36.55%,https://www.geeksforgeeks.org/problems/run-length-encoding/1
+Strings,Basic,Array Product Even or Odd,,36.94%,https://www.geeksforgeeks.org/problems/product-is-even-or-odd3020/1
+Strings,Basic,Remove Characters from Alphanumeric String,,53.13%,https://www.geeksforgeeks.org/problems/remove-characters-from-alphanumeric-string0648/1
+Strings,Basic,Longest Substring with All 1's,Microsoft,41.96%,https://www.geeksforgeeks.org/problems/longest-substring-containing-1/1
+Strings,Basic,Check if divisible by 4,,46.91%,https://www.geeksforgeeks.org/problems/check-if-divisible-by-43813/1
+Strings,Basic,Remove Repeated Digits,,37.53%,https://www.geeksforgeeks.org/problems/remove-repeated-digits-in-a-given-number4014/1
+Strings,Basic,Unset Kth Bit,Microsoft,48.37%,https://www.geeksforgeeks.org/problems/replace-the-bit3212/1
+Strings,Basic,Remainder with 7,,49.52%,https://www.geeksforgeeks.org/problems/remainder-with-7/1
+Strings,Basic,Odd to Largest Even with One Swap,Morgan Stanley,23.71%,https://www.geeksforgeeks.org/problems/odd-to-even0537/1
+Strings,Basic,Length of the Last Word,,46.75%,https://www.geeksforgeeks.org/problems/length-of-last-word5721/1
+Strings,Basic,Last index of a character,,38.55%,https://www.geeksforgeeks.org/problems/last-index-of-a-character-in-the-string4516/1
+Strings,Basic,Segregate Different Types of Characters,,52.61%,https://www.geeksforgeeks.org/problems/split-strings5211/1
+Strings,Basic,Successful Penalty Conversions,,60.14%,https://www.geeksforgeeks.org/problems/the-penalty-shootout3810/1
+Strings,Basic,Missing Characters in Panagram,,41.51%,https://www.geeksforgeeks.org/problems/missing-characters-in-panagram/1
+Strings,Basic,Minimum String Value After K Removals,"Amazon, Microsoft, FactSet",29.08%,https://www.geeksforgeeks.org/problems/minimize-string-value1010/1
+Strings,Basic,Numbers with Given Digit,,34.73%,https://www.geeksforgeeks.org/problems/find-the-number-which-contain-the-digit-d4144/1
+Strings,Basic,Remove Sandwiched Vowels,,45.94%,https://www.geeksforgeeks.org/problems/sandwiched-vowels5158/1
+Strings,Basic,Check if divisible by 11,,50.00%,https://www.geeksforgeeks.org/problems/check-if-divisible-by-114724/1
+Strings,Basic,Duck Number,,49.66%,https://www.geeksforgeeks.org/problems/zero-number2158/1
+Strings,Basic,Snake Case,,43.62%,https://www.geeksforgeeks.org/problems/snake-case0219/1
+Strings,Basic,Compare two Large Numbers,,43.53%,https://www.geeksforgeeks.org/problems/compare-two-large-numbers3413/1
+Strings,Basic,Good String,,49.03%,https://www.geeksforgeeks.org/problems/good-string5712/1
+Strings,Basic,Floating Point Number Even or Odd,,37.03%,https://www.geeksforgeeks.org/problems/floating-point-number-even-or-odd0146/1
+Strings,Basic,Shortest direction,Flipkart,52.11%,https://www.geeksforgeeks.org/problems/shortest-direction4201/1
+Strings,Basic,Same Frequency in Two Halves,,45.17%,https://www.geeksforgeeks.org/problems/riyas-test1450/1
+Strings,Basic,Count Distinct Vowels in String,,66.74%,https://www.geeksforgeeks.org/problems/count-distinct-vowels-in-string/1
+Strings,Basic,Maximum Integer Value,Facebook,41.75%,https://www.geeksforgeeks.org/problems/maximum-integer-value1434/1
+Strings,Basic,Time to Words,,34.27%,https://www.geeksforgeeks.org/problems/time-to-words3728/1
+Strings,Basic,Perfect Reversible String,,42.26%,https://www.geeksforgeeks.org/problems/perfect-reversible-string4828/1
+Strings,Basic,Alternate Lowercase and Uppercase,,40.19%,https://www.geeksforgeeks.org/problems/crazy-string1157/1
+Strings,Basic,Word Lengths,,59.26%,https://www.geeksforgeeks.org/problems/count-the-characters-in-each-word-in-a-given-sentence3451/1
+Strings,Basic,Check for 0 Between 1's in Binary String,,35.01%,https://www.geeksforgeeks.org/problems/check-binary-string0402/1
+Strings,Basic,All 0s Together in a Binary String,,32.59%,https://www.geeksforgeeks.org/problems/the-muskteers3519/1
+Strings,Basic,Any Common Word in Two Lists,,64.97%,https://www.geeksforgeeks.org/problems/sort-the-fest0016/1
+Strings,Basic,Just One Mismatch,,54.31%,https://www.geeksforgeeks.org/problems/just-one-mismatch1714/1
+Strings,Basic,Max-Min Conversion,,39.47%,https://www.geeksforgeeks.org/problems/max-min-conversion5257/1
+Strings,Basic,Replace a Substring with Spaces,,49.87%,https://www.geeksforgeeks.org/problems/extraction-of-secret-message0616/1
+Strings,Basic,Count Equal Pairs in String,,50.64%,https://www.geeksforgeeks.org/problems/count-number-of-equal-pairs-in-a-string0520/1
+Strings,Basic,Sum of All Digit Subsequences,,57.27%,https://www.geeksforgeeks.org/problems/sum-of-all-sub-sequences-of-a-number3437/1
+Strings,Basic,URLify a given string,,79.74%,https://www.geeksforgeeks.org/problems/urlify-a-given-string--141625/1
+Strings,Basic,Java Date and Day,,66.70%,https://www.geeksforgeeks.org/problems/java-date-and-day5024/1
+Strings,Basic,Binary Addition of 1,,35.04%,https://www.geeksforgeeks.org/problems/dr-stranges-powers3333/1
+Strings,Easy,Reverse Words,"Accolite, Adobe, Amazon, +8",56.08%,https://www.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1
+Strings,Easy,Longest Common Prefix of Strings,"Google, Microsoft, VMWare",29.52%,https://www.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1
+Strings,Easy,String Rotated by 2 Places,"Accolite, Amazon",32.70%,https://www.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/1
+Strings,Easy,String Duplicates Removal,"Adobe, Amazon, Microsoft",58.68%,https://www.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1
+Strings,Easy,Roman to Integer,"Amazon, Facebook, Microsoft, +4",43.31%,https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1
+Strings,Easy,Most Frequent Character,Flipkart,53.55%,https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1
+Strings,Easy,Replace Consecutive Two Same with One,,53.35%,https://www.geeksforgeeks.org/problems/consecutive-elements2306/1
+Strings,Easy,Panagram Checking,Snapdeal,61.34%,https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1
+Strings,Easy,Nearest Multiple of 10,Microsoft,19.32%,https://www.geeksforgeeks.org/problems/nearest-multiple-of-102437/1
+Strings,Easy,Rotate Bits,,20.80%,https://www.geeksforgeeks.org/problems/rotate-bits4524/1
+Strings,Easy,Sum Numbers in a String,,63.01%,https://www.geeksforgeeks.org/problems/sum-of-numbers-in-string-1587115621/1
+Strings,Easy,Run Length Encoding,"VMWare, Zoho, Amazon, +4",43.33%,https://www.geeksforgeeks.org/problems/run-length-encoding/1
+Strings,Easy,Remaining String,"Zoho, Oracle",17.06%,https://www.geeksforgeeks.org/problems/remaining-string3515/1
+Strings,Easy,Count Words in a String,Amazon,14.15%,https://www.geeksforgeeks.org/problems/count-number-of-words1500/1
+Strings,Easy,Min Number of Flips,Goldman Sachs,48.58%,https://www.geeksforgeeks.org/problems/min-number-of-flips3210/1
+Strings,Easy,Wifi Range,,51.63%,https://www.geeksforgeeks.org/problems/wifi-range--170647/1
+Strings,Easy,Count Strings,"Amazon, Google",53.46%,https://www.geeksforgeeks.org/problems/count-of-strings-that-can-be-formed-using-a-b-and-c-under-given-constraints1135/1
+Strings,Easy,Decimal to Roman,"Amazon, Microsoft, InfoEdge, +2",51.57%,https://www.geeksforgeeks.org/problems/convert-to-roman-no/1
+Strings,Easy,Equal Point in Brackets,Amazon,40.80%,https://www.geeksforgeeks.org/problems/find-equal-point-in-string-of-brackets2542/1
+Strings,Easy,Max Frequency Word,"Amazon, Adobe, Microsoft, +1",42.10%,https://www.geeksforgeeks.org/problems/word-with-maximum-frequency0120/1
+Strings,Easy,The Modified String,,49.86%,https://www.geeksforgeeks.org/problems/the-modified-string-1587115621/1
+Strings,Easy,Make Palindrome,,55.43%,https://www.geeksforgeeks.org/problems/make-palindrome--170647/1
+Strings,Easy,Repeating Character,Goldman Sachs,61.13%,https://www.geeksforgeeks.org/problems/repeating-character-first-appearance-leftmost/1
+Strings,Easy,Balanced Splits of a Binary String,,50.02%,https://www.geeksforgeeks.org/problems/split-the-binary-string-into-substrings-with-equal-number-of-0s-and-1s/1
+Strings,Easy,String Mirror,,51.38%,https://www.geeksforgeeks.org/problems/string-mirror--170647/1
+Strings,Easy,License Key Formatting,Google,42.72%,https://www.geeksforgeeks.org/problems/license-key-formatting/1
+Strings,Easy,Append Smaller at Both Ends,,59.65%,https://www.geeksforgeeks.org/problems/repeat-the-strings/1
+Strings,Easy,Divisible by 7,,49.98%,https://www.geeksforgeeks.org/problems/divisible-by-73224/1
+Strings,Easy,Remove b and ac from a given string,"Amazon, Google",49.82%,https://www.geeksforgeeks.org/problems/remove-b-and-ac-from-a-given-string4336/1
+Strings,Easy,Count Substrings with Same Lower and Upper,,65.83%,https://www.geeksforgeeks.org/problems/count-the-substrings--141634/1
+Strings,Easy,Type it!,,54.32%,https://www.geeksforgeeks.org/problems/type-it--170645/1
+Strings,Easy,Largest odd number in string,,50.00%,https://www.geeksforgeeks.org/problems/largest-odd-number-in-string/1
+Strings,Easy,Check if the number is balanced,,57.57%,https://www.geeksforgeeks.org/problems/check-if-the-number-is-balanced3014/1
+Strings,Easy,Sum of Digits in a String,Facebook,59.54%,https://www.geeksforgeeks.org/problems/rearrange-a-string4100/1
+Strings,Easy,1[0]1 Pattern Count,Samsung,32.05%,https://www.geeksforgeeks.org/problems/101-pattern-count1341/1
+Strings,Easy,Check if it is possible to convert one string into another w...,,49.91%,https://www.geeksforgeeks.org/problems/check-if-it-is-possible-to-convert-one-string-into-another-with-given-constraints4116/1
+Strings,Easy,Common Subsequence,Amazon,50.00%,https://www.geeksforgeeks.org/problems/common-subsequence4049/1
+Strings,Easy,Meta Strings,Google,49.58%,https://www.geeksforgeeks.org/problems/meta-strings5713/1
+Strings,Easy,Count Occurrences in Prefix of a Repeated String,,25.50%,https://www.geeksforgeeks.org/problems/aryas-long-string5840/1
+Strings,Easy,Longest Prefix as a Substring,,38.66%,https://www.geeksforgeeks.org/problems/minimum-shift-for-longest-common-prefix0759/1
+Strings,Easy,Rock Paper Scissors!,,52.24%,https://www.geeksforgeeks.org/problems/rock-paper-scissors2830/1
+Strings,Easy,Special String Comparison,Microsoft,26.03%,https://www.geeksforgeeks.org/problems/string-comparison5858/1
+Strings,Easy,Generate Binary Strings,Google,45.76%,https://www.geeksforgeeks.org/problems/generate-binary-string3642/1
+Strings,Easy,Same Characters and Same Order,,54.99%,https://www.geeksforgeeks.org/problems/c-corresponding-position-in-the-two-strings-that-hold-exactly-the-same-characters5013/1
+Strings,Easy,Make all Substrings Distinct,,62.63%,https://www.geeksforgeeks.org/problems/minimum-changes-to-make-all-substrings-distinct4722/1
+Strings,Easy,Convert CamelCase to Sentence,Adobe,47.12%,https://www.geeksforgeeks.org/problems/amend-the-sentence3235/1
+Strings,Easy,Difficulty of a Sentence,Microsoft,36.04%,https://www.geeksforgeeks.org/problems/difficulty-of-sentence5856/1
+Strings,Easy,Does Robot Move Circular,"Amazon, Visa",48.10%,https://www.geeksforgeeks.org/problems/does-robot-moves-circular0414/1
+Strings,Easy,Fizz Buzz,,55.80%,https://www.geeksforgeeks.org/problems/fizz-buzz/1
+Strings,Easy,Partition a number into two divisible parts,Oracle,49.89%,https://www.geeksforgeeks.org/problems/partition-a-number-into-two-divisible-parts3605/1
+Strings,Easy,Check for Rotation of a Palindrome,,40.89%,https://www.geeksforgeeks.org/problems/check-if-a-given-string-is-a-rotation-of-a-palindrome0317/1
+Strings,Easy,Multiply by 11,,21.10%,https://www.geeksforgeeks.org/problems/multiply-by-111820/1
+Strings,Easy,Smallest and Largest Words,,39.83%,https://www.geeksforgeeks.org/problems/smallest-and-largest/1
+Strings,Easy,Minimum Replacements to Make Anagram,"Flipkart, Yatra.com",47.60%,https://www.geeksforgeeks.org/problems/min-manipulations-to-make-strings-anagram1421/1
+Strings,Easy,String Concatenation,,36.92%,https://www.geeksforgeeks.org/problems/string-concatenation-1614157859/1
+Strings,Easy,Remove all occurrences of a character in a string,,59.01%,https://www.geeksforgeeks.org/problems/remove-all-occurrences-of-a-character-in-a-string/1
+Strings,Easy,Lexicographically Smallest and Largest,,63.48%,https://www.geeksforgeeks.org/problems/ordering-of-strings5527/1
+Strings,Easy,Toggle Case,,79.32%,https://www.geeksforgeeks.org/problems/toggle-case/1
+Strings,Easy,Replace Word,Adobe,61.84%,https://www.geeksforgeeks.org/problems/replace-a-word5553/1
+Strings,Easy,Check if two strings are same or not,,66.94%,https://www.geeksforgeeks.org/problems/check-if-two-strings-are-same-or-not--155406/1
+Strings,Easy,Divisibility by 5 for Binary,,28.74%,https://www.geeksforgeeks.org/problems/divisible-by-5-or-not-14509/1
+Strings,Easy,Colorful Strings,Directi,32.63%,https://www.geeksforgeeks.org/problems/geek-and-its-colored-strings1355/1
+Strings,Easy,Smallest Number In One Swap,,15.43%,https://www.geeksforgeeks.org/problems/smallest-number-in-one-swap0010/1
+Strings,Easy,Make All Even with Minimum Operations,,50.90%,https://www.geeksforgeeks.org/problems/the-even-array3825/1
+Strings,Easy,Count Even Substrings,,47.77%,https://www.geeksforgeeks.org/problems/count-even-substrings3857/1
+Strings,Easy,Kth Character in an Encoded String,"Amazon, National Instruments",35.84%,https://www.geeksforgeeks.org/problems/decode-it1646/1
+Strings,Easy,Large Number Division,,48.19%,https://www.geeksforgeeks.org/problems/large-number-division0207/1
+Strings,Easy,Non-Repetitive String,,44.49%,https://www.geeksforgeeks.org/problems/the-non-repetitive-string5955/1
+Strings,Easy,Split Into 4 Distinct Substrings,,41.59%,https://www.geeksforgeeks.org/problems/split-the-string2424/1
+Strings,Easy,Search a Character in a String,,80.34%,https://www.geeksforgeeks.org/problems/search-a-character-in-a-string/1
+Strings,Easy,Repeated Removal of 3 Consecutive Duplicates,,40.89%,https://www.geeksforgeeks.org/problems/three-consecutive-duplicates2434/1
+Strings,Easy,String Conversion,,47.56%,https://www.geeksforgeeks.org/problems/convert-the-string1022/1
+Strings,Easy,Divisibility by 999,,39.47%,https://www.geeksforgeeks.org/problems/divisibility-by-9990149/1
+Strings,Easy,String comparison,,59.81%,https://www.geeksforgeeks.org/problems/string-comparison--141631/1
+Strings,Easy,Make x times 0's and y times 1's,,37.54%,https://www.geeksforgeeks.org/problems/rearrange-string-as-alternate-x-and-y-occurences3835/1
+Strings,Easy,Lexicographically Previous Permutation,,41.80%,https://www.geeksforgeeks.org/problems/lexicographically-previous-permutation3620/1
+Strings,Easy,Remove Palindromic Subsequences to Make Empty,,56.13%,https://www.geeksforgeeks.org/problems/palindromic-subsequences1335/1
+Strings,Easy,Max Length Removal with 100,,22.35%,https://www.geeksforgeeks.org/problems/max-length-removal0452/1
+Strings,Easy,Remove a Character from a Given Position,,76.86%,https://www.geeksforgeeks.org/problems/remove-a-character-from-a-given-position/1
+Strings,Easy,Permutation Divisibility by 4,,18.72%,https://www.geeksforgeeks.org/problems/permutation-divisibility0447/1
+Strings,Easy,Count Sentences and Words,,44.66%,https://www.geeksforgeeks.org/problems/counting-number-of-sentences-and-words-in-text3226/1
+Strings,Easy,Ways to Split String with Distinct Partition Starts,,13.05%,https://www.geeksforgeeks.org/problems/ways-to-split-string-such-that-each-partition-starts-with-distinct-letter5723/1
+Strings,Easy,Palindrome Numbers in a Range,Flipkart,88.17%,https://www.geeksforgeeks.org/problems/print-all-palindromes-in-the-given-range/1
+Strings,Easy,Time Difference,,57.64%,https://www.geeksforgeeks.org/problems/time-difference5528/1
+Strings,Easy,Kth Boom Number,,32.59%,https://www.geeksforgeeks.org/problems/kth-boom-number5609/1
+Strings,Easy,Largest Permutation Smaller than Other Number,,13.95%,https://www.geeksforgeeks.org/problems/maximize-permutations2915/1
+Strings,Easy,Smallest Greater Date with Same Digits,,25.80%,https://www.geeksforgeeks.org/problems/the-wedding-date5302/1
+Strings,Easy,Make a String with Deletion and Rearrangement,,41.04%,https://www.geeksforgeeks.org/problems/make-a-string-from-another-string--141625/1
+Strings,Easy,Even Decimal Binary String,,40.12%,https://www.geeksforgeeks.org/problems/even-decimal-binary-string4748/1
+Strings,Easy,Overlapping Substrings,,22.64%,https://www.geeksforgeeks.org/problems/overlapping-substrings2654/1
+Strings,Easy,Patients with Hypertension,,49.06%,https://www.geeksforgeeks.org/problems/patients-with-hypertension/1
+Strings,Easy,Lexicographical maximum substring of String,,51.67%,https://www.geeksforgeeks.org/problems/lexicographical-maximum-substring/1
+Strings,Easy,Longest Balanced Substring,,57.77%,https://www.geeksforgeeks.org/problems/longest-even-length-substring--113837/1
+Strings,Medium,Strings Rotations of Each Other,"Adobe, NPCI, Oracle",43.83%,https://www.geeksforgeeks.org/problems/check-if-strings-are-rotations-of-each-other-or-not-1587115620/1
+Strings,Medium,Validate an IP Address,"Amazon, Microsoft, Qualcomm, +1",11.22%,https://www.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1
+Strings,Medium,Implement Atoi,"Adobe, Amazon, Code Brew, +3",32.58%,https://www.geeksforgeeks.org/problems/implement-atoi/1
+Strings,Medium,Multiply Two Strings,"Adobe, Amazon, Facebook, +5",20.06%,https://www.geeksforgeeks.org/problems/multiply-two-strings/1
+Strings,Medium,Recursively Remove All Adjacent Duplicates,"Paytm, Samsung",14.88%,https://www.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates0744/1
+Strings,Medium,Factorials of large numbers,"Adobe, BrowserStack, MakeMyTrip, +5",36.57%,https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1
+Strings,Medium,Sum Two Large Numbers,"Amazon, Microsoft, Zoho",22.58%,https://www.geeksforgeeks.org/problems/sum-of-numbers-or-number1219/1
+Strings,Medium,Add Binary Strings,"Amazon, Facebook, Microsoft",23.25%,https://www.geeksforgeeks.org/problems/add-binary-strings3805/1
+Strings,Medium,Excel Column Name from Number,"Amazon, Directi, Goldman Sachs, +3",32.41%,https://www.geeksforgeeks.org/problems/column-name-from-a-given-column-number4244/1
+Strings,Medium,Check Sum String,Nutanix,52.99%,https://www.geeksforgeeks.org/problems/additive-sequence/1
+Strings,Medium,N-th after Binary String Expansion,,19.13%,https://www.geeksforgeeks.org/problems/find-the-n-th-character5925/1
+Strings,Medium,Form Number using Pattern,"Amazon, Goldman Sachs, Google",55.44%,https://www.geeksforgeeks.org/problems/number-following-a-pattern3126/1
+Strings,Medium,Check Repeated Substring with K Replacements,,53.15%,https://www.geeksforgeeks.org/problems/check-if-a-string-is-repetition-of-its-substring-of-k-length3302/1
+Strings,Medium,Rank The Permutations,"Amazon, Microsoft, FactSet",49.84%,https://www.geeksforgeeks.org/problems/rank-the-permutations2229/1
+Strings,Medium,Binary Numbers with More 1s in All Prefixes,,56.08%,https://www.geeksforgeeks.org/problems/print-n-bit-binary-numbers-having-more-1s-than-0s0252/1
+Strings,Medium,Look and Say Pattern,"Zoho, Amazon, Microsoft, +1",62.54%,https://www.geeksforgeeks.org/problems/decode-the-pattern1138/1
+Strings,Medium,Cat and Hat,,56.52%,https://www.geeksforgeeks.org/problems/cat-and-hat-python/1
+Strings,Medium,Add Minimum Characters,Samsung,50.20%,https://www.geeksforgeeks.org/problems/add-minimum-characters--170648/1
+Strings,Medium,Exactly one swap,,48.42%,https://www.geeksforgeeks.org/problems/exactly-one-swap--170637/1
+Strings,Medium,Alternate Vowel and Consonant String,,48.70%,https://www.geeksforgeeks.org/problems/alternate-vowel-and-consonant-string2939/1
+Strings,Medium,String formation from substring,"Amazon, MakeMyTrip",33.49%,https://www.geeksforgeeks.org/problems/string-formation-from-substring2734/1
+Strings,Medium,Maximum Length,,55.93%,https://www.geeksforgeeks.org/problems/maximum-length--170647/1
+Strings,Medium,String stack,,46.69%,https://www.geeksforgeeks.org/problems/string-stack--165812/1
+Strings,Medium,Nth Number with Prime Digits,,59.07%,https://www.geeksforgeeks.org/problems/nth-number-made-of-prime-digits4319/1
+Strings,Medium,Maximum ASCII Sum Substring,,59.25%,https://www.geeksforgeeks.org/problems/save-your-life4601/1
+Strings,Medium,Sum of Beauty of All Substrings,,57.41%,https://www.geeksforgeeks.org/problems/sum-of-beauty-of-all-substrings-1662962118/1
+Strings,Medium,Longest Matching in Dictionary with Removals,"Walmart, Google",43.54%,https://www.geeksforgeeks.org/problems/find-largest-word-in-dictionary2430/1
+Strings,Medium,Minimum Days,,54.28%,https://www.geeksforgeeks.org/problems/minimum-days--170646/1
+Strings,Medium,Palindrome with Replacement,,60.42%,https://www.geeksforgeeks.org/problems/palindrome-with-minimum-sum--170648/1
+Strings,Medium,Kth Character After Binary String Transformations,Amazon,24.56%,https://www.geeksforgeeks.org/problems/find-k-th-character-in-string3841/1
+Strings,Medium,Numbers with Adjacent Digit Diff as 1,"Jabong, Amazon",27.74%,https://www.geeksforgeeks.org/problems/numbers-with-one-absolute-difference2416/1
+Strings,Medium,Maximum Reachable Index Difference,,48.14%,https://www.geeksforgeeks.org/problems/maximum-reachable-index-difference/1
+Strings,Medium,Count Unique Vowel Strings,,50.99%,https://www.geeksforgeeks.org/problems/count-unique-vowel-strings/1
+Strings,Medium,Next Palindromic with Same Digits,"Microsoft, Adobe",23.61%,https://www.geeksforgeeks.org/problems/next-higher-palindromic-number-using-the-same-set-of-digits5859/1
+Strings,Medium,Special Palindrome Substrings,MakeMyTrip,60.12%,https://www.geeksforgeeks.org/problems/special-palindrome-substrings--170647/1
+Strings,Medium,Concatenation of Zig-Zag String in n Rows,PayPal,32.92%,https://www.geeksforgeeks.org/problems/concatenation-of-zig-zag-string-in-n-rows0308/1
+Strings,Medium,Roll the characters of a String,Airtel,35.76%,https://www.geeksforgeeks.org/problems/roll-the-characters-of-a-string2127/1
+Strings,Medium,Rotate String Queries,,26.28%,https://www.geeksforgeeks.org/problems/lazy-pasha1646/1
+Strings,Medium,Previous Number in One Swap,,30.74%,https://www.geeksforgeeks.org/problems/previous-number-in-one-swap5707/1
+Strings,Medium,Leading Zeros in IP Address Style String,,48.03%,https://www.geeksforgeeks.org/problems/remove-leading-zeros-from-an-ip-address3530/1
+Strings,Medium,Find and Replace in String,Google,51.86%,https://www.geeksforgeeks.org/problems/find-an-replace-in-string/1
+Strings,Medium,Number of Positive Integral Solutions,,57.82%,https://www.geeksforgeeks.org/problems/number-of-positive-integral-solutions2115/1
+Strings,Medium,Concatenate Equal to Target,,49.23%,https://www.geeksforgeeks.org/problems/concatenate-equal-to-target/1
+Strings,Medium,Convert Sentence to Camel Case,,42.16%,https://www.geeksforgeeks.org/problems/convert-sentence-to-camel-case/1
+Strings,Medium,Encode and Decode Strings,,65.03%,https://www.geeksforgeeks.org/problems/encode-and-decode-strings/1
+Strings,Medium,Minimum Operations to Print 'A' N Times,,75.92%,https://www.geeksforgeeks.org/problems/special-keyboard-2/1
+Strings,Medium,Combine the strings,Walmart,18.19%,https://www.geeksforgeeks.org/problems/combine-the-strings3459/1
+Strings,Medium,Missing in String of Consecutive Numbers,Intuit,40.88%,https://www.geeksforgeeks.org/problems/find-the-missing-no-in-string/1
+Strings,Medium,Palindromic Permutations,,26.95%,https://www.geeksforgeeks.org/problems/pallindrome-patterns0809/1
+Strings,Medium,Next Greater with One Swap,,15.92%,https://www.geeksforgeeks.org/problems/next-higher-number-in-one-swap1703/1
+Strings,Medium,Comment Removal,BrowserStack,35.33%,https://www.geeksforgeeks.org/problems/comment-removal2017/1
+Strings,Medium,Count Special Palindromic Substrings,,22.96%,https://www.geeksforgeeks.org/problems/count-special-palindromic0421/1
+Strings,Medium,XOR Cipher,,20.40%,https://www.geeksforgeeks.org/problems/xor-cipher3009/1
+Strings,Medium,The Infinite String,National Instruments,14.72%,https://www.geeksforgeeks.org/problems/the-infinite-string1049/1
+Strings,Medium,Longest Arithmetic Progression in a String,,31.81%,https://www.geeksforgeeks.org/problems/archana-and-her-tricky-string2910/1
+Strings,Medium,Mapped String,,48.19%,https://www.geeksforgeeks.org/problems/mapped-string0501/1
+Strings,Medium,Justified Text,Google,82.10%,https://www.geeksforgeeks.org/problems/justified-text/1
+Strings,Medium,Case Insensitive Search,,56.74%,https://www.geeksforgeeks.org/problems/case-insensitive-search/1
+Strings,Hard,Search Pattern,"MAQ Software, Microsoft, Oracle, +1",45.04%,https://www.geeksforgeeks.org/problems/search-pattern0205/1
+Strings,Hard,Longest Prefix Suffix,"Accolite, Amazon, MakeMyTrip, +2",27.91%,https://www.geeksforgeeks.org/problems/longest-prefix-suffix2527/1
+Strings,Hard,Min Chars to Add for Palindrome,NPCI,46.79%,https://www.geeksforgeeks.org/problems/minimum-characters-to-be-added-at-front-to-make-string-palindrome/1
+Strings,Hard,Search Pattern (Rabin-Karp Algorithm),Microsoft,34.53%,https://www.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1
+Strings,Hard,All String Permutations in Sorted Order,"Accolite, Amazon, Cisco, +4",48.33%,https://www.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1
+Strings,Hard,RegEx matching,"Amazon, Microsoft",33.63%,https://www.geeksforgeeks.org/problems/-regex-matching1145/1
+Strings,Hard,Max Occurring Prefix Suffix Substring,,57.32%,https://www.geeksforgeeks.org/problems/elixir-of-life--141631/1
+Strings,Hard,Print kth Character,,12.28%,https://www.geeksforgeeks.org/problems/print-kth-character-in-sorted-concatenated-substrings-of-a-string0302/1

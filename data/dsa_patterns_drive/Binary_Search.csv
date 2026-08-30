@@ -1,0 +1,95 @@
+category,difficulty,title,company_tags,accuracy,url
+Binary Search,Basic,Binary Search,Paytm,48.03%,https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
+Binary Search,Basic,First 1 in a Sorted Binary Array,"Amazon, MakeMyTrip",49.11%,https://www.geeksforgeeks.org/problems/index-of-first-1-in-a-sorted-array-of-0s-and-1s4048/1
+Binary Search,Easy,Square Root,"Accolite, Amazon, Flipkart, +2",54.03%,https://www.geeksforgeeks.org/problems/square-root/1
+Binary Search,Easy,Pair With Difference,"Amazon, Visa",27.25%,https://www.geeksforgeeks.org/problems/find-pair-given-difference1559/1
+Binary Search,Easy,Bitonic Point,"Amazon, Flipkart, Microsoft",58.67%,https://www.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1
+Binary Search,Easy,Implement Lower Bound,,50.04%,https://www.geeksforgeeks.org/problems/implement-lower-bound/1
+Binary Search,Easy,Closest in Sorted Array,,27.10%,https://www.geeksforgeeks.org/problems/find-the-closest-number5513/1
+Binary Search,Easy,Implement Upper Bound,,52.54%,https://www.geeksforgeeks.org/problems/implement-upper-bound/1
+Binary Search,Easy,Ceil in a Sorted Array,Amazon,50.13%,https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1
+Binary Search,Easy,Search in a row-wise sorted matrix,,51.77%,https://www.geeksforgeeks.org/problems/search-in-a-row-wise-sorted-matrix/1
+Binary Search,Easy,Check k Sorted,,39.85%,https://www.geeksforgeeks.org/problems/k-sorted-array1610/1
+Binary Search,Easy,Magical Number,,40.35%,https://www.geeksforgeeks.org/problems/magical-number-1587115620/1
+Binary Search,Easy,Missing Number in Sorted Array of Natural Numbers,,60.13%,https://www.geeksforgeeks.org/problems/missing-number-in-sorted-array-of-natural-numbers/1
+Binary Search,Easy,Balanced Floor and Ceil Distance,,24.02%,https://www.geeksforgeeks.org/problems/balance-with-respect-to-an-array5443/1
+Binary Search,Easy,Equal Point in Sorted Array,,20.66%,https://www.geeksforgeeks.org/problems/equal-point-in-sorted-array0040/1
+Binary Search,Easy,Number and the Digit Sum,,36.58%,https://www.geeksforgeeks.org/problems/number-and-the-digit-sum4021/1
+Binary Search,Easy,Find the minimum time,Oracle,19.53%,https://www.geeksforgeeks.org/problems/find-the-minimum-time0253/1
+Binary Search,Easy,Empty The Tank,,37.04%,https://www.geeksforgeeks.org/problems/empty-the-tank3831/1
+Binary Search,Easy,Minimum in Decreasing Increasing Array,,67.81%,https://www.geeksforgeeks.org/problems/ternary-search/1
+Binary Search,Easy,Factorial Zero Count,,46.74%,https://www.geeksforgeeks.org/problems/factorial-zero-count/1
+Binary Search,Easy,Smallest Missing Number,,44.89%,https://www.geeksforgeeks.org/problems/smallest-missing-number/1
+Binary Search,Medium,Minimum Platforms,"Adobe, Amazon, Atlassian, +10",26.84%,https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
+Binary Search,Medium,Peak element,"Accolite, Adobe, Amazon, +2",38.86%,https://www.geeksforgeeks.org/problems/peak-element/1
+Binary Search,Medium,K-th element of two Arrays,"Flipkart, Microsoft, NPCI",37.40%,https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1
+Binary Search,Medium,Longest Increasing Subsequence,"Amazon, BankBazaar, Microsoft, +3",32.80%,https://www.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1
+Binary Search,Medium,First and Last in Sorted,"Amazon, Google, Microsoft",37.36%,https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
+Binary Search,Medium,Find nth root of m,"Accenture, Directi",25.06%,https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1
+Binary Search,Medium,Aggressive Cows,,59.57%,https://www.geeksforgeeks.org/problems/aggressive-cows/1
+Binary Search,Medium,Min Sum Pair using Digits,Google,17.14%,https://www.geeksforgeeks.org/problems/minimum-sum4058/1
+Binary Search,Medium,Median in a Row-Wise Sorted Matrix,NPCI,55.05%,https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1
+Binary Search,Medium,Max Consecutive 1's with K Flips,"Accolite, Amazon, MakeMyTrip, +2",39.46%,https://www.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
+Binary Search,Medium,Numbers in a Range with 3 Set Bits,,50.00%,https://www.geeksforgeeks.org/problems/akku-and-binary-numbers0902/1
+Binary Search,Medium,Base Equivalence,,58.55%,https://www.geeksforgeeks.org/problems/base-equivalence1022/1
+Binary Search,Medium,K Closest in a Sorted Array,"Amazon, OYO Rooms",15.96%,https://www.geeksforgeeks.org/problems/k-closest-elements3619/1
+Binary Search,Medium,Sum of Middle of two sorted arrays,"Amazon, D-E-Shaw",47.98%,https://www.geeksforgeeks.org/problems/sum-of-middle-elements-of-two-sorted-arrays2305/1
+Binary Search,Medium,Koko Eating Bananas,"Bloomberg, Amazon, Microsoft, +5",50.27%,https://www.geeksforgeeks.org/problems/koko-eating-bananas/1
+Binary Search,Medium,Kth Missing Positive Number in a Sorted Array,NPCI,53.02%,https://www.geeksforgeeks.org/problems/kth-missing-positive-number-in-a-sorted-array/1
+Binary Search,Medium,Search in Rotated Array 2,"Adobe, Bloomberg, Yahoo, +1",46.60%,https://www.geeksforgeeks.org/problems/search-in-rotated-array-2/1
+Binary Search,Medium,Minimum Days to Make m Bouquets,"Bloomberg, Amazon, Microsoft, +3",46.85%,https://www.geeksforgeeks.org/problems/minimum-days-to-make-m-bouquets/1
+Binary Search,Medium,Capacity To Ship Packages Within d Days,"Amazon, D-E-Shaw",50.14%,https://www.geeksforgeeks.org/problems/capacity-to-ship-packages-within-d-days/1
+Binary Search,Medium,Smallest Divisor,,50.74%,https://www.geeksforgeeks.org/problems/smallest-divisor/1
+Binary Search,Medium,Smaller Sum for All,,53.81%,https://www.geeksforgeeks.org/problems/smaller-sum--170647/1
+Binary Search,Medium,Equalize the Towers,,52.18%,https://www.geeksforgeeks.org/problems/equalize-the-towers2804/1
+Binary Search,Medium,Farthest Smaller Right,NPCI,50.08%,https://www.geeksforgeeks.org/problems/farthest-smaller-right/1
+Binary Search,Medium,Smallest Non-Zero Number,,48.41%,https://www.geeksforgeeks.org/problems/find-smallest-non-zero-number4510/1
+Binary Search,Medium,Count X in Range of a Sorted Array,,51.61%,https://www.geeksforgeeks.org/problems/count-x-in-range-of-a-sorted-array/1
+Binary Search,Medium,Count elements less than or equal to k in a sorted rotated a...,NPCI,55.56%,https://www.geeksforgeeks.org/problems/count-elements-less-than-or-equal-to-k-in-a-sorted-rotated-array/1
+Binary Search,Medium,Farthest number,Amazon,51.08%,https://www.geeksforgeeks.org/problems/farthest-number--170636/1
+Binary Search,Medium,Distribute n Candies Among k People,Microsoft,40.72%,https://www.geeksforgeeks.org/problems/distribute-n-candies/1
+Binary Search,Medium,Max Modulo Pair in an Array,,16.38%,https://www.geeksforgeeks.org/problems/mr-modulo-and-arrays2827/1
+Binary Search,Medium,Find the Peak Element in a 2D Matrix,,54.61%,https://www.geeksforgeeks.org/problems/find-the-peak-element-in-a-2d-matrix/1
+Binary Search,Medium,Search in Fully Rotated Sorted 2D Matrix,,55.70%,https://www.geeksforgeeks.org/problems/search-in-fully-rotated-sorted-2d-matrix/1
+Binary Search,Medium,Count Occurrences in a Fully Sorted Matrix,,65.81%,https://www.geeksforgeeks.org/problems/count-occurrences-in-a-fully-sorted-matrix/1
+Binary Search,Medium,Counting elements in two arrays,Amazon,37.12%,https://www.geeksforgeeks.org/problems/counting-elements-in-two-arrays/1
+Binary Search,Medium,Smallest number with at least n trailing zeroes in factorial,NPCI,38.79%,https://www.geeksforgeeks.org/problems/smallest-factorial-number5929/1
+Binary Search,Medium,Nine Divisors,,35.58%,https://www.geeksforgeeks.org/problems/nine-divisors3751/1
+Binary Search,Medium,Equilibrium Points,D-E-Shaw,57.24%,https://www.geeksforgeeks.org/problems/magnet-array-problem3743/1
+Binary Search,Medium,Maximum Teams of Size K,Google,11.35%,https://www.geeksforgeeks.org/problems/maximum-team-of-k-player/1
+Binary Search,Medium,Search in an almost Sorted Array,,55.44%,https://www.geeksforgeeks.org/problems/search-in-an-almost-sorted-array/1
+Binary Search,Medium,Closer to sort,,53.98%,https://www.geeksforgeeks.org/problems/closer-to-sort-1587115620/1
+Binary Search,Medium,Maximize the minimum difference between k elements,NPCI,61.58%,https://www.geeksforgeeks.org/problems/maximize-the-minimum-difference-between-k-elements/1
+Binary Search,Medium,Missing element of AP,,34.32%,https://www.geeksforgeeks.org/problems/missing-element-of-ap2228/1
+Binary Search,Medium,Kth smallest element in a Matrix,"Accolite, Amazon, Samsung",61.42%,https://www.geeksforgeeks.org/problems/kth-element-in-matrix/1
+Binary Search,Medium,Signal Boost Network,,44.04%,https://www.geeksforgeeks.org/problems/fill-the-tank3026/1
+Binary Search,Medium,Coin Piles,Microsoft,20.51%,https://www.geeksforgeeks.org/problems/coin-piles5152/1
+Binary Search,Medium,kth Smallest in Ranges,,50.29%,https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-given-n-ranges/1
+Binary Search,Medium,Largest Odd Squares with Limited 1s,Directi,49.41%,https://www.geeksforgeeks.org/problems/largest-square-in-a-binary-matrix-with-at-most-k-1s-for-multiple-queries/1
+Binary Search,Medium,Weighted Job Scheduling,,55.65%,https://www.geeksforgeeks.org/problems/weighted-job-scheduling/1
+Binary Search,Medium,Modular Exponentiation,"Google, MakeMyTrip",52.56%,https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1
+Binary Search,Medium,Maximum Number of People Defeated,,48.32%,https://www.geeksforgeeks.org/problems/killing-spree3020/1
+Binary Search,Medium,Count Chocolates Bought with k Coins,,51.24%,https://www.geeksforgeeks.org/problems/shy-geek--170647/1
+Binary Search,Medium,Maximize median after doing k addition operation,NPCI,44.57%,https://www.geeksforgeeks.org/problems/maximize-median-after-doing-k-addition-operation/1
+Binary Search,Medium,Subarray Frequency Count Queries,,57.81%,https://www.geeksforgeeks.org/problems/count-frequency-of-an-element-in-a-given-range/1
+Binary Search,Medium,"Elements in range [a, b]",,54.40%,https://www.geeksforgeeks.org/problems/find-number-of-elements-in-range-a-b-for-each-query/1
+Binary Search,Medium,Square root of number upto given precision,,35.63%,https://www.geeksforgeeks.org/problems/square-root-of-number-upto-given-precision/1
+Binary Search,Medium,Maximize Median After k Additions,,8.40%,https://www.geeksforgeeks.org/problems/maximize-median-after-k-additions/1
+Binary Search,Medium,Find H-Index for sorted citations,,59.02%,https://www.geeksforgeeks.org/problems/find-h-index/1
+Binary Search,Hard,Smallest Window with All,"Amazon, Atlassian, Flipkart, +6",30.19%,https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1
+Binary Search,Hard,The Painter's Partition Problem-II,"Codenation, Google, Microsoft",27.52%,https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1
+Binary Search,Hard,Median of 2 Sorted Arrays of Different Sizes,"Amazon, Google, Microsoft, +2",28.40%,https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-different-sizes/1
+Binary Search,Hard,Minimize Max Distance of Adjacent Gas Stations,,38.36%,https://www.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1
+Binary Search,Hard,Count Smaller on Right,"Codenation, Google",38.16%,https://www.geeksforgeeks.org/problems/count-smaller-elements2214/1
+Binary Search,Hard,Split Array Largest Sum,Google,58.90%,https://www.geeksforgeeks.org/problems/split-array-largest-sum--141634/1
+Binary Search,Hard,Max min Height,,62.86%,https://www.geeksforgeeks.org/problems/max-min-height--170647/1
+Binary Search,Hard,Count Reverse Pairs,"Adobe, Amazon, Bloomberg, +3",50.00%,https://www.geeksforgeeks.org/problems/count-reverse-pairs/1
+Binary Search,Hard,Nth Number with At Most K Set Bits,,57.82%,https://www.geeksforgeeks.org/problems/geekina-hate-1s/1
+Binary Search,Hard,Cake Distribution Problem,,64.62%,https://www.geeksforgeeks.org/problems/cake-distribution-problem--170647/1
+Binary Search,Hard,Median of 2 Sorted Arrays of Same Size,"Amazon, Microsoft, Samsung, +1",58.87%,https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1
+Binary Search,Hard,Partition Into 4 with Min Sum Diff,,62.86%,https://www.geeksforgeeks.org/problems/partition-the-array--170647/1
+Binary Search,Hard,Kth Smallest Number in Multiplication Table,"DE Shaw, Media.net, Uber, +1",50.15%,https://www.geeksforgeeks.org/problems/kth-smallest-number-in-multiplication-table/1
+Binary Search,Hard,All numbers with specific difference,,50.00%,https://www.geeksforgeeks.org/problems/all-numbers-with-specific-difference3558/1
+Binary Search,Hard,Minimum time to fulfil all orders,NPCI,63.04%,https://www.geeksforgeeks.org/problems/minimum-time-to-fulfil-all-orders/1
+Binary Search,Hard,Minimum Hour for Alarm,,50.15%,https://www.geeksforgeeks.org/problems/bike-racing0543/1
+Binary Search,Hard,Minimum Base Representation,HackWithInfy,18.40%,https://www.geeksforgeeks.org/problems/minimum-base-representation/1

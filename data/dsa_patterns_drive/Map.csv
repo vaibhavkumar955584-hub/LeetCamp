@@ -1,0 +1,36 @@
+category,difficulty,title,company_tags,accuracy,url
+Map,Basic,Map Operations,,53.31%,https://www.geeksforgeeks.org/problems/map-operations/1
+Map,Basic,Occurrences of Consecutive 3 Numbers,,45.40%,https://www.geeksforgeeks.org/problems/special-integers/1
+Map,Basic,Parties and seats,,39.39%,https://www.geeksforgeeks.org/problems/parties-and-seats--191330/1
+Map,Easy,Distinct Frequencies Check,"Adobe, Amazon, Apple, +3",57.68%,https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1
+Map,Easy,Twice Counter,Amazon,62.61%,https://www.geeksforgeeks.org/problems/twice-counter4236/1
+Map,Easy,Frequency Game,Google,62.74%,https://www.geeksforgeeks.org/problems/frequency-game/1
+Map,Easy,Max Frequency Word,"Adobe, Amazon, Citrix, +1",42.10%,https://www.geeksforgeeks.org/problems/word-with-maximum-frequency0120/1
+Map,Easy,Balloon Everywhere,,57.45%,https://www.geeksforgeeks.org/problems/balloon-everywhere--170646/1
+Map,Easy,"Sum of f(a[i], a[j]) over all pairs in an array of n integer...",,50.69%,https://www.geeksforgeeks.org/problems/sum-of-fai-aj-over-all-pairs-in-an-array-of-n-integers4057/1
+Map,Easy,Multimap Operations,,66.09%,https://www.geeksforgeeks.org/problems/multimap-operations/1
+Map,Easy,Distinct Substrings,Linkedin,58.92%,https://www.geeksforgeeks.org/problems/distinct-substrings2516/1
+Map,Easy,Maximum difference Indexes,,43.97%,https://www.geeksforgeeks.org/problems/maximum-difference-10429/1
+Map,Easy,Design HashMap,,83.50%,https://www.geeksforgeeks.org/problems/design-hashmap/1
+Map,Medium,Longest Subarray with Sum K,Amazon,24.64%,https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+Map,Medium,Longest Substring with K Uniques,"Amazon, Google, SAP Labs",34.65%,https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
+Map,Medium,Zero Sum Subarray,"Adobe, Paytm",39.79%,https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1
+Map,Medium,Sort Elements by Decreasing Frequency,"Oracle, Zycus",44.93%,https://www.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency-1587115621/1
+Map,Medium,Count Subarrays with given XOR,,58.86%,https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1
+Map,Medium,Largest Smaller on Left,,22.61%,https://www.geeksforgeeks.org/problems/smaller-on-left20360700/1
+Map,Medium,Transform String,Directi,29.76%,https://www.geeksforgeeks.org/problems/transform-string5648/1
+Map,Medium,Check Repeated Substring with K Replacements,,53.15%,https://www.geeksforgeeks.org/problems/check-if-a-string-is-repetition-of-its-substring-of-k-length3302/1
+Map,Medium,Powerful Integer,,51.91%,https://www.geeksforgeeks.org/problems/powerfull-integer--170647/1
+Map,Medium,Top k Frequent in Stream,"Accolite, Amazon, Media.net",49.10%,https://www.geeksforgeeks.org/problems/top-k-numbers3425/1
+Map,Medium,Distinct Difference,,64.70%,https://www.geeksforgeeks.org/problems/distinct-difference--170647/1
+Map,Medium,4 Sum – Count quadruplets with given sum,,27.72%,https://www.geeksforgeeks.org/problems/count-quadruplets-with-given-sum/1
+Map,Medium,Concatenate Equal to Target,,49.23%,https://www.geeksforgeeks.org/problems/concatenate-equal-to-target/1
+Map,Medium,Distinct Pairs with Diff K,"Amazon, Facebook",24.76%,https://www.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k1233/1
+Map,Medium,Sum of Largests Elements Removed,,55.96%,https://www.geeksforgeeks.org/problems/maximize-the-sum-of-selected-numbers-from-an-array-to-make-it-empty0836/1
+Map,Medium,Max Score With At Most K Jumps,,41.89%,https://www.geeksforgeeks.org/problems/maximum-score-from-at-most-k-jumps/1
+Map,Medium,Fraction Pairs with Sum 1,Microsoft,51.09%,https://www.geeksforgeeks.org/problems/fraction-pairs-with-sum-1/1
+Map,Medium,Subarray Frequency Count Queries,,57.81%,https://www.geeksforgeeks.org/problems/count-frequency-of-an-element-in-a-given-range/1
+Map,Medium,Numbers With No Consecutive 1's in Binary,,51.98%,https://www.geeksforgeeks.org/problems/numbers-with-alternative-1s4819/1
+Map,Hard,Phone Directory,"Amazon, Microsoft, Snapdeal",25.68%,https://www.geeksforgeeks.org/problems/phone-directory4628/1
+Map,Hard,Count Subarrays with Given Median,Sprinklr,57.99%,https://www.geeksforgeeks.org/problems/median-of-the-subarrays--170647/1
+Map,Hard,Range Queries for At Least K Frequent,,21.03%,https://www.geeksforgeeks.org/problems/interesting-queries4742/1

@@ -1,0 +1,308 @@
+category,difficulty,title,company_tags,accuracy,url
+Arrays,Basic,Largest in Array,"Infosys, Morgan Stanley, Oracle, +1",67.48%,https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1
+Arrays,Basic,Min and Max in Array,NPCI,68.55%,https://www.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
+Arrays,Basic,Rotate Array by One,,69.60%,https://www.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1
+Arrays,Basic,Sum of Array,,80.38%,https://www.geeksforgeeks.org/problems/sum-all-array-elements/1
+Arrays,Basic,Alternates in an Array,,52.74%,https://www.geeksforgeeks.org/problems/print-alternate-elements-of-an-array/1
+Arrays,Basic,Array with All Palindromes,,58.62%,https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1
+Arrays,Basic,Count Smaller in an Array,,54.54%,https://www.geeksforgeeks.org/problems/count-of-smaller-elements5947/1
+Arrays,Basic,Replace all 0's with 5,Amazon,75.55%,https://www.geeksforgeeks.org/problems/replace-all-0s-with-5/1
+Arrays,Basic,Count Odd and Even,,37.44%,https://www.geeksforgeeks.org/problems/count-odd-even/1
+Arrays,Basic,Array Insert at Index,,44.81%,https://www.geeksforgeeks.org/problems/array-insert-at-index/1
+Arrays,Basic,Who has the majority?,,44.36%,https://www.geeksforgeeks.org/problems/who-has-the-majority/1
+Arrays,Basic,Find element at a given Index,,70.56%,https://www.geeksforgeeks.org/problems/c-array-print-an-element-set-25933/1
+Arrays,Basic,Smaller and Larger in Sorted,,41.15%,https://www.geeksforgeeks.org/problems/smaller-and-larger4005/1
+Arrays,Basic,Palindrome Array,,43.54%,https://www.geeksforgeeks.org/problems/perfect-arrays4645/1
+Arrays,Basic,Swap kth elements,"Morgan Stanley, Rockstand",52.76%,https://www.geeksforgeeks.org/problems/swap-kth-elements5500/1
+Arrays,Basic,Array End Insert,,87.65%,https://www.geeksforgeeks.org/problems/array-insert-at-end/1
+Arrays,Basic,Find the fine,Microsoft,52.46%,https://www.geeksforgeeks.org/problems/find-the-fine4353/1
+Arrays,Basic,Adjacent XOR Transformation,,79.28%,https://www.geeksforgeeks.org/problems/game-with-nos3123/1
+Arrays,Basic,Multiply Left and Right Array Sums,,62.84%,https://www.geeksforgeeks.org/problems/multiply-left-and-right-array-sum1555/1
+Arrays,Basic,Strongest Neighbour,,57.04%,https://www.geeksforgeeks.org/problems/strongest-neighbour/1
+Arrays,Basic,Balanced Array,,68.17%,https://www.geeksforgeeks.org/problems/balanced-array07200720/1
+Arrays,Basic,Max and Min Product from 2 Arrays,Adobe,58.96%,https://www.geeksforgeeks.org/problems/product-of-maximum-in-first-array-and-minimum-in-second3943/1
+Arrays,Basic,Remove Duplicates from Unsorted,,42.10%,https://www.geeksforgeeks.org/problems/remove-duplicates-from-unsorted-array4141/1
+Arrays,Basic,Fighting the Darkness,Snapdeal,65.11%,https://www.geeksforgeeks.org/problems/fighting-the-darkness3949/1
+Arrays,Basic,Segregate Even and Odd numbers,"Paytm, Accolite, Amazon, +2",42.11%,https://www.geeksforgeeks.org/problems/segregate-even-and-odd-numbers4629/1
+Arrays,Basic,Reverse Subarray,Amazon,31.78%,https://www.geeksforgeeks.org/problems/reverse-sub-array5620/1
+Arrays,Basic,Type of array,Amazon,21.55%,https://www.geeksforgeeks.org/problems/type-of-array4605/1
+Arrays,Basic,Positive and negative elements,Amazon,42.85%,https://www.geeksforgeeks.org/problems/positive-and-negative-elements4613/1
+Arrays,Basic,C++ 2-D Arrays | Set-1,,38.57%,https://www.geeksforgeeks.org/problems/c-2-d-arrays0708/1
+Arrays,Basic,Sum of distinct elements,Oxigen Wallet,52.04%,https://www.geeksforgeeks.org/problems/sum-of-distinct-elements4801/1
+Arrays,Basic,Java 1-d and 2-d Array,,57.44%,https://www.geeksforgeeks.org/problems/java-1-d-and-2-d-array2952/1
+Arrays,Basic,Absolute Digit Diff 1 in Array,"Amazon, Jabong",24.14%,https://www.geeksforgeeks.org/problems/absolute-difference-11156/1
+Arrays,Basic,Make a Distinct Digit Array,"Zoho, Amazon, MakeMyTrip",49.37%,https://www.geeksforgeeks.org/problems/make-a-distinct-digit-array2007/1
+Arrays,Basic,Last Duplicate in a Sorted Array,,49.51%,https://www.geeksforgeeks.org/problems/last-duplicate-element-in-a-sorted-array5539/1
+Arrays,Basic,Sum Array Puzzle,,57.33%,https://www.geeksforgeeks.org/problems/sum-array-puzzle/1
+Arrays,Basic,Half Ascending and Half Descending Sort,,49.75%,https://www.geeksforgeeks.org/problems/sort-first-half-in-ascending-and-second-half-in-descending1714/1
+Arrays,Basic,Winner in Pairwise Army Battles,,49.96%,https://www.geeksforgeeks.org/problems/countries-at-war2936/1
+Arrays,Basic,Max Triplet Sum,,44.03%,https://www.geeksforgeeks.org/problems/maximum-triplet-sum-in-array0129/1
+Arrays,Basic,Missing in Another Shuffled Array,,51.24%,https://www.geeksforgeeks.org/problems/missing-number-in-shuffled-array0938/1
+Arrays,Basic,Minimum sum of two elements from two arrays,,38.06%,https://www.geeksforgeeks.org/problems/minimum-sum-of-two-elements-from-two-arrays0253/1
+Arrays,Basic,Max Product K Sized Subarray,,47.51%,https://www.geeksforgeeks.org/problems/largest-product/1
+Arrays,Basic,Average Count Array,,49.96%,https://www.geeksforgeeks.org/problems/average-count-array2215/1
+Arrays,Basic,Min Decrement by K Operations to Limit Array,,42.09%,https://www.geeksforgeeks.org/problems/reducing-walls4443/1
+Arrays,Basic,Even Occurring Elements,,48.88%,https://www.geeksforgeeks.org/problems/even-occurring-elements4332/1
+Arrays,Basic,Two Max Adjacent in an Array,,49.66%,https://www.geeksforgeeks.org/problems/why-is-melody-so-chocolaty0446/1
+Arrays,Basic,Shortest Unsorted Subarray,Oracle,49.64%,https://www.geeksforgeeks.org/problems/shortest-un-ordered-subarray3634/1
+Arrays,Basic,Different Adjacent Elements,,36.72%,https://www.geeksforgeeks.org/problems/distinct-adjacent-element2121/1
+Arrays,Basic,Count Prefix Maximums,,51.16%,https://www.geeksforgeeks.org/problems/elements-before-which-no-element-is-bigger0602/1
+Arrays,Basic,Check for Bitonic with Same Numbers,,46.72%,https://www.geeksforgeeks.org/problems/perfect-array2344/1
+Arrays,Basic,Minimum Time with Alternating Techniques,,57.67%,https://www.geeksforgeeks.org/problems/a-guy-with-a-mental-problem1604/1
+Arrays,Basic,Count Pairs Odd XOR,,41.29%,https://www.geeksforgeeks.org/problems/count-pairs-odd-xor0308/1
+Arrays,Basic,Max Odd Sum,,28.87%,https://www.geeksforgeeks.org/problems/max-odd-sum0651/1
+Arrays,Basic,Sum Triangle,,48.11%,https://www.geeksforgeeks.org/problems/sum-triangle-for-given-array1159/1
+Arrays,Basic,Make Co-prime Array,,50.07%,https://www.geeksforgeeks.org/problems/make-coprime-array3058/1
+Arrays,Basic,Occurrences of Consecutive 3 Numbers,,45.38%,https://www.geeksforgeeks.org/problems/special-integers/1
+Arrays,Easy,Array Leaders,"Adobe, Amazon, Payu",29.94%,https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
+Arrays,Easy,Duplicates in a Limited Range Array,"Amazon, D-E-Shaw, Flipkart, +3",18.95%,https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
+Arrays,Easy,Missing And Repeating,,24.83%,https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
+Arrays,Easy,Move All Zeroes to End,"Amazon, Bloomberg, Linkedin, +5",45.51%,https://www.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1
+Arrays,Easy,Reverse an Array,"Adobe, Amazon, Apple, +11",55.32%,https://www.geeksforgeeks.org/problems/reverse-an-array/1
+Arrays,Easy,Move all negative elements to end,,56.24%,https://www.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1
+Arrays,Easy,Minimum distance in an Array,"Amazon, Paytm",19.75%,https://www.geeksforgeeks.org/problems/minimum-distance-between-two-numbers/1
+Arrays,Easy,Alternate Positive Negative,"Amazon, Intuit, Microsoft, +2",33.86%,https://www.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1
+Arrays,Easy,Third Largest,"Amazon, MakeMyTrip, Microsoft",45.04%,https://www.geeksforgeeks.org/problems/third-largest-element/1
+Arrays,Easy,Floor and Ceil in Unsorted,,43.76%,https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1
+Arrays,Easy,First and Second Smallests,"Amazon, Goldman Sachs, NPCI",24.44%,https://www.geeksforgeeks.org/problems/find-the-smallest-and-second-smallest-element-in-an-array3226/1
+Arrays,Easy,Segregate 0s and 1s,"Paytm, Goldman Sachs, Fab.com",54.25%,https://www.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1
+Arrays,Easy,Convert To Zig-Zag,"Paytm, Amazon, Adobe",58.28%,https://www.geeksforgeeks.org/problems/convert-array-into-zig-zag-fashion1638/1
+Arrays,Easy,Left Smaller Right Greater,"Zoho, Amazon, OYO Rooms, +1",21.83%,https://www.geeksforgeeks.org/problems/unsorted-array4925/1
+Arrays,Easy,Product of Array,,28.78%,https://www.geeksforgeeks.org/problems/product-of-array-element/1
+Arrays,Easy,Buildings with Sunlight,"Amazon, Microsoft",40.46%,https://www.geeksforgeeks.org/problems/buildings-receiving-sunlight3032/1
+Arrays,Easy,Adding One to Array,"Google, Microsoft",41.59%,https://www.geeksforgeeks.org/problems/adding-one2529/1
+Arrays,Easy,Implement Lower Bound,,50.04%,https://www.geeksforgeeks.org/problems/implement-lower-bound/1
+Arrays,Easy,First and Last in Unosrted,,34.99%,https://www.geeksforgeeks.org/problems/find-index4752/1
+Arrays,Easy,Swap Adjacent in Array,,64.61%,https://www.geeksforgeeks.org/problems/need-some-change/1
+Arrays,Easy,Closest in Sorted Array,,27.10%,https://www.geeksforgeeks.org/problems/find-the-closest-number5513/1
+Arrays,Easy,Three Great Candidates,"Flipkart, Amazon, Snapdeal",16.92%,https://www.geeksforgeeks.org/problems/maximum-triplet-product--170647/1
+Arrays,Easy,Maximize Sum After k Negations,,24.75%,https://www.geeksforgeeks.org/problems/maximize-sum-after-k-negations1149/1
+Arrays,Easy,Form Divisible by 3 from Array,,63.96%,https://www.geeksforgeeks.org/problems/form-a-number-divisible-by-3-using-array-digits0717/1
+Arrays,Easy,Frogs and Jumps,PayPal,49.69%,https://www.geeksforgeeks.org/problems/frogs-and-jumps--170647/1
+Arrays,Easy,Replace with XOR of Adjacent,,75.80%,https://www.geeksforgeeks.org/problems/replace-with-xor-of-adjacent/1
+Arrays,Easy,Implement Upper Bound,,52.54%,https://www.geeksforgeeks.org/problems/implement-upper-bound/1
+Arrays,Easy,Minimum Integer,,47.05%,https://www.geeksforgeeks.org/problems/minimum-integer--170647/1
+Arrays,Easy,Java Arrays | Set 1,,29.17%,https://www.geeksforgeeks.org/problems/java-arrays-set-11354/1
+Arrays,Easy,All Pairs with Diff k,Adobe,22.41%,https://www.geeksforgeeks.org/problems/pairs-with-difference-k1713/1
+Arrays,Easy,Split Array Elements into Bounded Parts,Zoho,48.74%,https://www.geeksforgeeks.org/problems/total-count2415/1
+Arrays,Easy,Rearrange to Make arr[i] = i,,50.25%,https://www.geeksforgeeks.org/problems/rearrange-an-array-such-that-arri-i3618/1
+Arrays,Easy,Any Duplicate Within K Distance,Amazon,48.69%,https://www.geeksforgeeks.org/problems/kth-distance3757/1
+Arrays,Easy,Max Consecutive Bit,"Accenture, TCS, Oracle, +1",49.84%,https://www.geeksforgeeks.org/problems/max-consecutive-one/1
+Arrays,Easy,Greatest on Right Side,Amazon,58.34%,https://www.geeksforgeeks.org/problems/greater-on-right-side4305/1
+Arrays,Easy,Adding Ones,,48.06%,https://www.geeksforgeeks.org/problems/adding-ones3628/1
+Arrays,Easy,Sum of two numbers represented as arrays,"Zoho, Accolite, Amazon",23.89%,https://www.geeksforgeeks.org/problems/sum-of-two-numbers-represented-as-arrays3110/1
+Arrays,Easy,Maximum Pairwise Computed Value,Microsoft,73.84%,https://www.geeksforgeeks.org/problems/maximum-in-struct-array/1
+Arrays,Easy,Sorted in Two Swaps,,49.85%,https://www.geeksforgeeks.org/problems/two-swaps--155623/1
+Arrays,Easy,K-th Missing in Sorted,"Amazon, Facebook, Apple, +1",31.53%,https://www.geeksforgeeks.org/problems/k-th-missing-element3635/1
+Arrays,Easy,Check k Sorted,,39.85%,https://www.geeksforgeeks.org/problems/k-sorted-array1610/1
+Arrays,Easy,Minimum adjacent difference in a circular array,,68.68%,https://www.geeksforgeeks.org/problems/minimum-absloute-difference-between-adjacent-elements-in-a-circular-array-1587115620/1
+Arrays,Easy,Make Array Elements Equal,Expedia,50.65%,https://www.geeksforgeeks.org/problems/make-array-elements-equal--170647/1
+Arrays,Easy,Make Array 0 with Subarray Operations,,50.00%,https://www.geeksforgeeks.org/problems/array-operations--170648/1
+Arrays,Easy,Compete the skills,,55.81%,https://www.geeksforgeeks.org/problems/compete-the-skills5807/1
+Arrays,Easy,Count a Digit in Array,,63.19%,https://www.geeksforgeeks.org/problems/find-number-of-numbers/1
+Arrays,Easy,Array in Pendulum Arrangement,FactSet,41.39%,https://www.geeksforgeeks.org/problems/print-an-array-in-pendulum-arrangement4004/1
+Arrays,Easy,Play with an array,,65.81%,https://www.geeksforgeeks.org/problems/play-with-an-array/1
+Arrays,Easy,Sort Unsorted Subarray,"Flipkart, Microsoft, MakeMyTrip, +1",27.55%,https://www.geeksforgeeks.org/problems/length-unsorted-subarray3022/1
+Arrays,Easy,Maximum number of zeroes,Oracle,14.30%,https://www.geeksforgeeks.org/problems/maximum-number-of-zeroes4048/1
+Arrays,Easy,Check if all array elements are distinct,Amazon,37.94%,https://www.geeksforgeeks.org/problems/professor-and-parties2000/1
+Arrays,Easy,Minimum Number,,53.41%,https://www.geeksforgeeks.org/problems/minimum-number--170647/1
+Arrays,Easy,Count Distinct in an Array,,73.07%,https://www.geeksforgeeks.org/problems/find-distinct-elements--130928/1
+Arrays,Easy,Even at Even Index and Odd at Odd,"Paytm, Amazon, Microsoft",59.75%,https://www.geeksforgeeks.org/problems/even-and-odd/1
+Arrays,Easy,Union of Two Sorted with Distinct,,55.40%,https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-with-distinct-elements/1
+Arrays,Easy,Largest from Digits,Paytm,42.68%,https://www.geeksforgeeks.org/problems/form-largest-number-from-digits5430/1
+Arrays,Easy,Coount Subarrays with 0's Only,,56.17%,https://www.geeksforgeeks.org/problems/number-of-subarrays-of-0s--170647/1
+Arrays,Easy,Count the Specials,,30.81%,https://www.geeksforgeeks.org/problems/count-the-specials/1
+Arrays,Easy,Matrix Interchange,,52.99%,https://www.geeksforgeeks.org/problems/matrix-interchange/1
+Arrays,Easy,Matrix Interchange - Java,,65.87%,https://www.geeksforgeeks.org/problems/matrix-interchange/1
+Arrays,Easy,Minimum Steps for Product One,"Amazon, Microsoft",29.76%,https://www.geeksforgeeks.org/problems/minimum-steps-to-make-product-equal-to-one/1
+Arrays,Easy,Java ArrayList Operation,,74.41%,https://www.geeksforgeeks.org/problems/arraylist-operation/1
+Arrays,Easy,Magical Number,,40.35%,https://www.geeksforgeeks.org/problems/magical-number-1587115620/1
+Arrays,Easy,Pairs with Less Than K Diff,,50.00%,https://www.geeksforgeeks.org/problems/pairs-with-difference-less-than-k1348/1
+Arrays,Easy,Jumping Caterpillars,Myntra,22.73%,https://www.geeksforgeeks.org/problems/jumping-caterpillars4412/1
+Arrays,Easy,Maximum Average Subarray,Amazon,42.11%,https://www.geeksforgeeks.org/problems/maximum-average-subarray5859/1
+Arrays,Easy,Longest Increasing Subarray,Amazon,46.28%,https://www.geeksforgeeks.org/problems/longest-increasing-subarray3811/1
+Arrays,Easy,Need Some Change - Java,,25.97%,https://www.geeksforgeeks.org/problems/need-some-change-java/1
+Arrays,Easy,Majority in a Sorted Array,Yahoo,55.20%,https://www.geeksforgeeks.org/problems/find-duplicates-under-given-constraints0856/1
+Arrays,Easy,Maximum Gap,HunanAsset,28.99%,https://www.geeksforgeeks.org/problems/maximum-gap3845/1
+Arrays,Easy,Position According to Parity,Amazon,26.56%,https://www.geeksforgeeks.org/problems/even-and-odd-elements-at-even-and-odd-positions1342/1
+Arrays,Easy,Kth in Two Arrays Sums,Microsoft,47.79%,https://www.geeksforgeeks.org/problems/nth-item-through-sum3544/1
+Arrays,Easy,Max value,Amazon,38.59%,https://www.geeksforgeeks.org/problems/max-value1205/1
+Arrays,Easy,Sum of Submatrix Elements,Amazon,59.39%,https://www.geeksforgeeks.org/problems/addition-of-submatrix5835/1
+Arrays,Easy,Inverse Permutation,,58.33%,https://www.geeksforgeeks.org/problems/inverse-permutation0344/1
+Arrays,Easy,Missing Intervals in an Array,Google,40.17%,https://www.geeksforgeeks.org/problems/missing-ranges-of-numbers1019/1
+Arrays,Easy,Drive the car,,48.91%,https://www.geeksforgeeks.org/problems/drive-the-car2541/1
+Arrays,Easy,Sum of Lengths of Non-Overlapping SubArrays,Amazon,50.46%,https://www.geeksforgeeks.org/problems/sum-of-lengths-of-non-overlapping-subarrays2237/1
+Arrays,Easy,Construct an array from its pair-sum array,,51.59%,https://www.geeksforgeeks.org/problems/construct-an-array-from-its-pair-sum-array/1
+Arrays,Easy,Minimum Product Pair,,42.42%,https://www.geeksforgeeks.org/problems/minimum-product-pair3608/1
+Arrays,Easy,Digits in a Set,Morgan Stanley,47.84%,https://www.geeksforgeeks.org/problems/count-the-numbers2359/1
+Arrays,Easy,Minimum Initial Energy to Cross,Amazon,49.92%,https://www.geeksforgeeks.org/problems/minimum-energy1107/1
+Arrays,Easy,Max Product of other Two in an Array,Linkedin,20.70%,https://www.geeksforgeeks.org/problems/pair-with-greatest-product-in-array3342/1
+Arrays,Easy,Distinct Sum in Array of 1 to n,,50.74%,https://www.geeksforgeeks.org/problems/sum-of-distinct-elements-15115/1
+Arrays,Easy,Chocolate Station,Amazon,50.05%,https://www.geeksforgeeks.org/problems/chocolate-station2951/1
+Arrays,Easy,Consecutive Array Elements,,44.93%,https://www.geeksforgeeks.org/problems/consecutive-array-elements2711/1
+Arrays,Easy,Left Out Candies,Amazon,44.12%,https://www.geeksforgeeks.org/problems/left-out-candies5652/1
+Arrays,Easy,Find distinct elements,,61.72%,https://www.geeksforgeeks.org/problems/find-distinct-elements-1614078205/1
+Arrays,Easy,Maximum difference Indexes,,43.96%,https://www.geeksforgeeks.org/problems/maximum-difference-10429/1
+Arrays,Easy,Reading Books,,68.45%,https://www.geeksforgeeks.org/problems/reading-books3803/1
+Arrays,Easy,Missing Number in Sorted Array of Natural Numbers,,60.12%,https://www.geeksforgeeks.org/problems/missing-number-in-sorted-array-of-natural-numbers/1
+Arrays,Easy,K-th in a[] Missing from b[],,32.36%,https://www.geeksforgeeks.org/problems/find-k-th-missing-element2556/1
+Arrays,Easy,Partition Point in Array,,27.94%,https://www.geeksforgeeks.org/problems/partition-point-in-the-array0004/1
+Arrays,Easy,Equal Sum and Product Subarrays,,53.96%,https://www.geeksforgeeks.org/problems/equal-sum-and-product2057/1
+Arrays,Easy,Check for Specific Order Around Mid,,31.76%,https://www.geeksforgeeks.org/problems/tracks0436/1
+Arrays,Easy,The Inverting Factor,,50.25%,https://www.geeksforgeeks.org/problems/the-inverting-factor3932/1
+Arrays,Easy,Balanced Floor and Ceil Distance,,24.02%,https://www.geeksforgeeks.org/problems/balance-with-respect-to-an-array5443/1
+Arrays,Easy,Count Pairs With Maximum Sum,,31.73%,https://www.geeksforgeeks.org/problems/number-of-pairs-with-maximum-sum2924/1
+Arrays,Easy,Distance Travelled in a Permutation of 1 to n,,48.52%,https://www.geeksforgeeks.org/problems/total-distance-travelled-in-an-array3628/1
+Arrays,Easy,Maximum Difference by Choosing K Numbers,,24.93%,https://www.geeksforgeeks.org/problems/maximum-weight-difference5036/1
+Arrays,Easy,Distribution with i Allocated to arr[i],,41.44%,https://www.geeksforgeeks.org/problems/stuffs-division5735/1
+Arrays,Easy,Minimum Increment by k to Make Equal,,62.81%,https://www.geeksforgeeks.org/problems/minimum-increment-by-k-operations-to-make-all-equal/1
+Arrays,Easy,Minimum Right Flips to Turn On All Bulbs,,50.62%,https://www.geeksforgeeks.org/problems/faulty-wiring-and-bulbs2939/1
+Arrays,Easy,Unique Pair in Array,,32.43%,https://www.geeksforgeeks.org/problems/find-unique-pair-in-an-array-with-pairs-of-numbers2425/1
+Arrays,Easy,Minimize Max Pair Sum,,31.07%,https://www.geeksforgeeks.org/problems/pair-the-minimum5535/1
+Arrays,Easy,Max Sum Strictly Increasing Subarray,,45.01%,https://www.geeksforgeeks.org/problems/find-maximum-sum-strictly-increasing-subarray4443/1
+Arrays,Easy,Equal Point in Sorted Array,,20.66%,https://www.geeksforgeeks.org/problems/equal-point-in-sorted-array0040/1
+Arrays,Easy,Max Pair Sum Less Than K,,27.83%,https://www.geeksforgeeks.org/problems/pair-with-largest-sum-which-is-less-than-k-in-the-array/1
+Arrays,Easy,Positive Distinct Count,,50.43%,https://www.geeksforgeeks.org/problems/absolute-distinct-count5118/1
+Arrays,Easy,Check if Any Triplet can Form a Triangle,,32.94%,https://www.geeksforgeeks.org/problems/form-a-triangle5935/1
+Arrays,Easy,Equal Sum with Insertion,,28.19%,https://www.geeksforgeeks.org/problems/equal-sums4801/1
+Arrays,Easy,Almost Prime Numbers,,39.88%,https://www.geeksforgeeks.org/problems/almost-prime-numbers/1
+Arrays,Easy,Max Product Subsequence of Size K,,16.84%,https://www.geeksforgeeks.org/problems/maximum-product4633/1
+Arrays,Easy,Minimum Operations to Equalize Array,,44.89%,https://www.geeksforgeeks.org/problems/equalization-of-an-array1656/1
+Arrays,Easy,Count Digit Occurrences in Powers,,34.12%,https://www.geeksforgeeks.org/problems/powers-game3701/1
+Arrays,Easy,Count Pairs with Max Diff,,23.85%,https://www.geeksforgeeks.org/problems/count-the-pairs-with-maximum-difference4807/1
+Arrays,Easy,Search Pairs in a String,,53.12%,https://www.geeksforgeeks.org/problems/finding-pairs2835/1
+Arrays,Easy,Minimum N-th Power More Than Array Product,,13.18%,https://www.geeksforgeeks.org/problems/minimum-element-whose-n-th-power-is-greater-than-product-of-an-array4640/1
+Arrays,Easy,The Light Problem,,17.02%,https://www.geeksforgeeks.org/problems/the-light-problem4217/1
+Arrays,Easy,Count Consecutive Adjacent Pairs,,72.38%,https://www.geeksforgeeks.org/problems/pairs-of-adjacent-elements4814/1
+Arrays,Easy,Max Sum Submatrix Queries,Accolite,46.52%,https://www.geeksforgeeks.org/problems/max-sum-submatrix2725/1
+Arrays,Easy,Subsets with Distinct and Even Numbers,,33.84%,https://www.geeksforgeeks.org/problems/count-subsets-having-distinct-even-numbers5726/1
+Arrays,Easy,Maximum k with k Larger Elements,,32.41%,https://www.geeksforgeeks.org/problems/maximum-value-k2745/1
+Arrays,Easy,Left or Right Positioned Array,,41.37%,https://www.geeksforgeeks.org/problems/left-or-right-positioned-array5757/1
+Arrays,Easy,Make Decreasing Sequence with K Subtraction,,20.78%,https://www.geeksforgeeks.org/problems/decreasing-sequence2722/1
+Arrays,Easy,Subarrays with Same Min and Max,,26.86%,https://www.geeksforgeeks.org/problems/number-of-subarrays-whose-minimum-and-maximum-are-same5259/1
+Arrays,Easy,Sum of a Numpy Array,,58.09%,https://www.geeksforgeeks.org/problems/find-the-sum-of-all-elements-in-a-numpy-array/1
+Arrays,Easy,Replace with Adjacent Multiplication,,52.93%,https://www.geeksforgeeks.org/problems/replace-with-adjacent-multiplication/1
+Arrays,Easy,Gift Distribution According to Preference,,56.81%,https://www.geeksforgeeks.org/problems/gifts-gifts-gifts1524/1
+Arrays,Easy,Replace All with Min Value and Greater Product,,16.84%,https://www.geeksforgeeks.org/problems/minimum-value-product1814/1
+Arrays,Easy,Energy After Crossing All Hurdles,,36.68%,https://www.geeksforgeeks.org/problems/cross-the-hurdles-the-game4734/1
+Arrays,Easy,Count Values with Equal Array Remainders,,31.52%,https://www.geeksforgeeks.org/problems/k-modulus-array-element0255/1
+Arrays,Easy,Bird and Max Fruit Gathering,Facebook,24.76%,https://www.geeksforgeeks.org/problems/bird-and-maximum-fruit-gathering--170645/1
+Arrays,Easy,Union of Two Arrays with Distinct Elements,,78.09%,https://www.geeksforgeeks.org/problems/union-of-two-arrays-with-distinct-elements/1
+Arrays,Easy,Possible to Form a Regular Polygon,,12.84%,https://www.geeksforgeeks.org/problems/regular-polygon-12611/1
+Arrays,Easy,Number of matches,,30.26%,https://www.geeksforgeeks.org/problems/number-of-matches1120/1
+Arrays,Easy,Maximum Consecutives Subset with K Additions,,21.56%,https://www.geeksforgeeks.org/problems/maximum-size-of-consecutives3154/1
+Arrays,Easy,Flatten a 3D Array into a 1D Array,,80.60%,https://www.geeksforgeeks.org/problems/flatten-a-3d-array-into-a-1d-array/1
+Arrays,Easy,Linear Algebra - Solve Linear System,,82.30%,https://www.geeksforgeeks.org/problems/linear-algebra-solve-linear-system/1
+Arrays,Easy,Array Transformation with Repeated Steps and Modulo Operatio...,,17.92%,https://www.geeksforgeeks.org/problems/array-transformation-with-repeated-steps-and-modulo-operation/1
+Arrays,Medium,Rotate Array,"Amazon, Codenation, MAQ Software, +1",37.06%,https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
+Arrays,Medium,K-th element of two Arrays,"Flipkart, Microsoft, NPCI",37.40%,https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1
+Arrays,Medium,Reverse Array in Groups,Adobe,37.48%,https://www.geeksforgeeks.org/problems/reverse-array-in-groups0255/1
+Arrays,Medium,First and Last in Sorted,"Amazon, Google, Microsoft",37.36%,https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
+Arrays,Medium,Rearrange Array Alternately,Zoho,35.15%,https://www.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1
+Arrays,Medium,Pythagorean Triplet,"Adobe, Amazon",24.77%,https://www.geeksforgeeks.org/problems/pythagorean-triplet3018/1
+Arrays,Medium,Next Permutation,"Amazon, FactSet, Flipkart, +7",40.66%,https://www.geeksforgeeks.org/problems/next-permutation5226/1
+Arrays,Medium,Stock Buy and Sell – Multiple Transaction Allowed,"Accolite, Amazon, D-E-Shaw, +20",13.43%,https://www.geeksforgeeks.org/problems/stock-buy-and-sell2615/1
+Arrays,Medium,Maximum Sub Array,"Amazon, Intuit, Microsoft",15.84%,https://www.geeksforgeeks.org/problems/maximum-sub-array5443/1
+Arrays,Medium,Pascal Triangle,"Adobe, Amazon, Microsoft",23.68%,https://www.geeksforgeeks.org/problems/pascal-triangle0652/1
+Arrays,Medium,Transform Array In-Place,Amazon,56.34%,https://www.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1
+Arrays,Medium,Max sum in the configuration,Amazon,36.56%,https://www.geeksforgeeks.org/problems/max-sum-in-the-configuration/1
+Arrays,Medium,Max Product Subset,,17.21%,https://www.geeksforgeeks.org/problems/maximum-product-subset-of-an-array/1
+Arrays,Medium,Count Subarrays with given XOR,,58.86%,https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1
+Arrays,Medium,Product Pair,"Amazon, Visa",17.34%,https://www.geeksforgeeks.org/problems/equal-to-product3836/1
+Arrays,Medium,K Closest in a Sorted Array,"Amazon, OYO Rooms",15.96%,https://www.geeksforgeeks.org/problems/k-closest-elements3619/1
+Arrays,Medium,Max Occured in n Ranges,Amazon,32.93%,https://www.geeksforgeeks.org/problems/maximum-occured-integer4602/1
+Arrays,Medium,Sorted Subsequence of Size 3,"Amazon, FactSet, Walmart",25.95%,https://www.geeksforgeeks.org/problems/sorted-subsequence-of-size-3/1
+Arrays,Medium,Not a Subset Sum,Salesforce,45.92%,https://www.geeksforgeeks.org/problems/smallest-number-subset1220/1
+Arrays,Medium,Max Sum Path in Two Arrays,Amazon,30.90%,https://www.geeksforgeeks.org/problems/max-sum-path-in-two-arrays/1
+Arrays,Medium,Sum of Middle of two sorted arrays,"Amazon, D-E-Shaw",47.98%,https://www.geeksforgeeks.org/problems/sum-of-middle-elements-of-two-sorted-arrays2305/1
+Arrays,Medium,Flip to Maximize 1s,Amazon,23.15%,https://www.geeksforgeeks.org/problems/flip-bits0240/1
+Arrays,Medium,Sum of 2 Primes,"Zoho, Yahoo",27.67%,https://www.geeksforgeeks.org/problems/sum-of-prime4751/1
+Arrays,Medium,Sum of Pairwise Bit Differences,"Google, Microsoft",60.03%,https://www.geeksforgeeks.org/problems/sum-of-bit-differences2937/1
+Arrays,Medium,Unique Number III,"Google, NPCI",49.87%,https://www.geeksforgeeks.org/problems/find-element-occuring-once-when-all-other-are-present-thrice/1
+Arrays,Medium,Koko Eating Bananas,"Bloomberg, Amazon, Microsoft, +5",50.27%,https://www.geeksforgeeks.org/problems/koko-eating-bananas/1
+Arrays,Medium,Sum of XOR of all pairs,,45.14%,https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-pairs0723/1
+Arrays,Medium,Kth Missing Positive Number in a Sorted Array,NPCI,53.02%,https://www.geeksforgeeks.org/problems/kth-missing-positive-number-in-a-sorted-array/1
+Arrays,Medium,Rotate and delete,,20.63%,https://www.geeksforgeeks.org/problems/rotate-and-delete-1587115621/1
+Arrays,Medium,Longest Subsequence with Adjacent Diff as 1,Flipkart,29.43%,https://www.geeksforgeeks.org/problems/longest-sub-sequence-such-that-difference-between-adjacents-is-one2558/1
+Arrays,Medium,Shuffle Integers,"Amazon, OYO Rooms",36.88%,https://www.geeksforgeeks.org/problems/shuffle-integers2401/1
+Arrays,Medium,Sum of Subarrays,,23.85%,https://www.geeksforgeeks.org/problems/sum-of-subarrays2229/1
+Arrays,Medium,Min Value Insertion for Prime Array Sum,,42.44%,https://www.geeksforgeeks.org/problems/transform-to-prime4635/1
+Arrays,Medium,Construct List using XOR Queries,"Amazon, Google",50.86%,https://www.geeksforgeeks.org/problems/construct-list-using-given-q-xor-queries/1
+Arrays,Medium,Buy Maximum Stocks,,50.75%,https://www.geeksforgeeks.org/problems/buy-maximum-stocks-if-i-stocks-can-be-bought-on-i-th-day/1
+Arrays,Medium,Top k Frequent in Stream,"Accolite, Amazon, Media.net",49.10%,https://www.geeksforgeeks.org/problems/top-k-numbers3425/1
+Arrays,Medium,Array Elements Divisible by Any Others,"Intuit, NPCI",49.46%,https://www.geeksforgeeks.org/problems/count-special-numbers--170647/1
+Arrays,Medium,Equal Sum,,37.32%,https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+Arrays,Medium,K-th Largest Sum Contiguous Subarray,,54.33%,https://www.geeksforgeeks.org/problems/k-th-largest-sum-contiguous-subarray/1
+Arrays,Medium,Maximum Subset XOR,Microsoft,28.93%,https://www.geeksforgeeks.org/problems/maximum-subset-xor/1
+Arrays,Medium,Search in Rotated Array 2,"Adobe, Bloomberg, Yahoo, +1",46.60%,https://www.geeksforgeeks.org/problems/search-in-rotated-array-2/1
+Arrays,Medium,Longest Subarray of Evens and Odds,,59.21%,https://www.geeksforgeeks.org/problems/longest-subarray-of-evens-and-odds/1
+Arrays,Medium,Minimum Days to Make m Bouquets,"Bloomberg, Amazon, Microsoft, +3",46.85%,https://www.geeksforgeeks.org/problems/minimum-days-to-make-m-bouquets/1
+Arrays,Medium,Capacity To Ship Packages Within D Days,"Amazon, D-E-Shaw",50.14%,https://www.geeksforgeeks.org/problems/capacity-to-ship-packages-within-d-days/1
+Arrays,Medium,Factorial of Array under Modulo,,23.15%,https://www.geeksforgeeks.org/problems/large-factorial4721/1
+Arrays,Medium,Smallest Divisor,,50.74%,https://www.geeksforgeeks.org/problems/smallest-divisor/1
+Arrays,Medium,Min Swaps to Group 1s,Adobe,40.30%,https://www.geeksforgeeks.org/problems/minimum-swaps-required-to-group-all-1s-together2451/1
+Arrays,Medium,Maximum Triplet product,VMWare,54.93%,https://www.geeksforgeeks.org/problems/maximum-triplet-product--170647/1
+Arrays,Medium,Number to Words,"Zoho, Amazon, Microsoft, +1",22.40%,https://www.geeksforgeeks.org/problems/number-to-words0335/1
+Arrays,Medium,Smaller Sum for All,,53.81%,https://www.geeksforgeeks.org/problems/smaller-sum--170647/1
+Arrays,Medium,Composite and Prime Queries,,30.99%,https://www.geeksforgeeks.org/problems/composite-and-prime0359/1
+Arrays,Medium,Maximum Identical Bowls,,54.52%,https://www.geeksforgeeks.org/problems/maximum-identical-bowls--170647/1
+Arrays,Medium,Longest Bitonic Subarray,Microsoft,38.09%,https://www.geeksforgeeks.org/problems/maximum-length-bitonic-subarray5730/1
+Arrays,Medium,Minimum XOR with given set bits,"Adobe, IBM",56.06%,https://www.geeksforgeeks.org/problems/minimum-x-xor-a--170645/1
+Arrays,Medium,Equalize the Towers,,52.18%,https://www.geeksforgeeks.org/problems/equalize-the-towers2804/1
+Arrays,Medium,Count Sorted Subsequences of Size 3,D-E-Shaw,50.59%,https://www.geeksforgeeks.org/problems/magic-triplets4003/1
+Arrays,Medium,Max Diff Elements and Indexes,Microsoft,48.21%,https://www.geeksforgeeks.org/problems/maximum-value-of-difference-of-a-pair-of-elements-and-their-index/1
+Arrays,Medium,Ways to Split into 2 with Same XOR,,54.99%,https://www.geeksforgeeks.org/problems/split-the-array0238/1
+Arrays,Medium,Make Arrays Equal with Min Operations,,55.61%,https://www.geeksforgeeks.org/problems/unequal-arrays--170647/1
+Arrays,Medium,Mountain Subarray Queries,Amazon,46.22%,https://www.geeksforgeeks.org/problems/mountain-subarray-problem/1
+Arrays,Medium,Farthest Smaller Right,NPCI,50.08%,https://www.geeksforgeeks.org/problems/farthest-smaller-right/1
+Arrays,Medium,Distinct Difference,,64.70%,https://www.geeksforgeeks.org/problems/distinct-difference--170647/1
+Arrays,Medium,Update Queries,,52.15%,https://www.geeksforgeeks.org/problems/update-queries--170647/1
+Arrays,Medium,Minimum Increment or Double Operations to Convert,,49.53%,https://www.geeksforgeeks.org/problems/minimum-steps-to-get-desired-array5519/1
+Arrays,Medium,Tic Tac Toe,"Flipkart, Accolite, Amazon, +1",18.59%,https://www.geeksforgeeks.org/problems/tic-tac-toe2412/1
+Arrays,Medium,Smallest Non-Zero Number,,48.41%,https://www.geeksforgeeks.org/problems/find-smallest-non-zero-number4510/1
+Arrays,Medium,Min Product Subset,,50.00%,https://www.geeksforgeeks.org/problems/max-and-min-products3347/1
+Arrays,Medium,Kth Smallest Pairwise Difference,,29.83%,https://www.geeksforgeeks.org/problems/smallest-absolute-difference4320/1
+Arrays,Medium,Maximum GCD of K Partition Sums,,62.54%,https://www.geeksforgeeks.org/problems/gcd-array--170645/1
+Arrays,Medium,Count X in Range of a Sorted Array,,51.61%,https://www.geeksforgeeks.org/problems/count-x-in-range-of-a-sorted-array/1
+Arrays,Medium,Count elements less than or equal to k in a sorted rotated a...,NPCI,55.56%,https://www.geeksforgeeks.org/problems/count-elements-less-than-or-equal-to-k-in-a-sorted-rotated-array/1
+Arrays,Medium,Subsets Multiple of 3,Amazon,35.92%,https://www.geeksforgeeks.org/problems/possible-groups2013/1
+Arrays,Medium,Farthest number,Amazon,51.08%,https://www.geeksforgeeks.org/problems/farthest-number--170636/1
+Arrays,Medium,Min Removals to Make Max <= 2*Min,Amazon,31.68%,https://www.geeksforgeeks.org/problems/remove-minimum-elements4612/1
+Arrays,Medium,Subset with Pair Sums Not Divisible by K,,32.12%,https://www.geeksforgeeks.org/problems/subset-with-no-pair-sum-divisible-by-k1105/1
+Arrays,Medium,Fill 1's With Changes to Adjacent,Amazon,24.59%,https://www.geeksforgeeks.org/problems/fill-array-by-1s0920/1
+Arrays,Medium,Count Divisors of Array Product,,11.82%,https://www.geeksforgeeks.org/problems/count-divisors-of-product-of-array-elements0244/1
+Arrays,Medium,Minimum Picks for K Sock Pairs,Amazon,32.37%,https://www.geeksforgeeks.org/problems/number-of-minimum-picks-to-get-k-pairs-of-socks-from-a-drawer--141631/1
+Arrays,Medium,Max Product Sorted Subsequence of Size 3,,35.08%,https://www.geeksforgeeks.org/problems/maximum-product-of-increasing-subsequence-of-size-32027/1
+Arrays,Medium,Minimum Operations to Make Array Sorted,Amazon,43.81%,https://www.geeksforgeeks.org/problems/minimum-incrementdecrement-to-make-array-non-increasing--170637/1
+Arrays,Medium,Queries for Counts of Multiples,,10.13%,https://www.geeksforgeeks.org/problems/queries-for-counts-of-multiples-in-an-array4028/1
+Arrays,Medium,Subarrays Having Even Sum,,45.90%,https://www.geeksforgeeks.org/problems/find-the-number-of-sub-arrays-having-even-sum1533/1
+Arrays,Medium,Distribute n Candies Among k People,Microsoft,40.71%,https://www.geeksforgeeks.org/problems/distribute-n-candies/1
+Arrays,Medium,Pairs with Given Modulo Value,,38.20%,https://www.geeksforgeeks.org/problems/mr-modulo-and-pairs5610/1
+Arrays,Medium,Pairs with Sum Less Than Product,,36.43%,https://www.geeksforgeeks.org/problems/pair-array-product-sum4912/1
+Arrays,Medium,4 Sum – Count quadruplets with given sum,,27.70%,https://www.geeksforgeeks.org/problems/count-quadruplets-with-given-sum/1
+Arrays,Medium,Sum of Permutations of Distinct Digits,,31.29%,https://www.geeksforgeeks.org/problems/sum-of-permutations/1
+Arrays,Medium,Maximum Bitonic Subarray Sum,,23.16%,https://www.geeksforgeeks.org/problems/maximum-bitonic-subarray-sum5616/1
+Arrays,Medium,Smallest Number from Power Digits,,38.04%,https://www.geeksforgeeks.org/problems/the-tiny-miny2541/1
+Arrays,Medium,Leading Digit and Exponent of Factorial,,29.08%,https://www.geeksforgeeks.org/problems/large-factorials2539/1
+Arrays,Medium,Max Modulo Pair in an Array,,16.38%,https://www.geeksforgeeks.org/problems/mr-modulo-and-arrays2827/1
+Arrays,Medium,Index Element After Rotations,,28.52%,https://www.geeksforgeeks.org/problems/find-the-element-at-given-index4630/1
+Arrays,Medium,Local Min and Max Sequence Ordering,NPCI,35.49%,https://www.geeksforgeeks.org/problems/track-the-trail/1
+Arrays,Medium,Subsets with given Max Diff,,32.28%,https://www.geeksforgeeks.org/problems/count-number4832/1
+Arrays,Medium,Total Hamming Distance,"Microsoft, NPCI",61.07%,https://www.geeksforgeeks.org/problems/total-hamming-distance/1
+Arrays,Medium,Sum of subset differences,,52.32%,https://www.geeksforgeeks.org/problems/sum-of-subset-differences/1
+Arrays,Medium,Values Present in At Least K Ranges,,24.78%,https://www.geeksforgeeks.org/problems/sick-pasha0323/1
+Arrays,Medium,Longest Geometric Progression,,6.57%,https://www.geeksforgeeks.org/problems/longest-geometric-progression0131/1
+Arrays,Medium,Minimum Platforms 2,,26.72%,https://www.geeksforgeeks.org/problems/minimum-platforms-2--170647/1
+Arrays,Medium,Subarray Inversions,,39.93%,https://www.geeksforgeeks.org/problems/subarray-inversions0512/1
+Arrays,Medium,Pairs from Distict Element Subarrays,,33.10%,https://www.geeksforgeeks.org/problems/sub-array-pairs5530/1
+Arrays,Medium,Rubik's Cube,Ola Cabs,33.13%,https://www.geeksforgeeks.org/problems/rubiks-cube4626/1
+Arrays,Hard,Max Circular Subarray Sum,"Amazon, Microsoft",29.37%,https://www.geeksforgeeks.org/problems/max-circular-subarray-sum-1587115620/1
+Arrays,Hard,Median of 2 Sorted Arrays of Different Sizes,"Amazon, Google, Microsoft, +2",28.40%,https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-different-sizes/1
+Arrays,Hard,Minimize Max Distance of Adjacent Gas Stations,,38.36%,https://www.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1
+Arrays,Hard,Next Smallest Palindrome,"Adobe, Amazon, Flipkart, +3",19.63%,https://www.geeksforgeeks.org/problems/next-smallest-palindrome4740/1
+Arrays,Hard,Split Array Largest Sum,Google,58.90%,https://www.geeksforgeeks.org/problems/split-array-largest-sum--141634/1
+Arrays,Hard,Count Pairs in an Array,,48.25%,https://www.geeksforgeeks.org/problems/count-pairs-in-an-array4145/1
+Arrays,Hard,Count Subarrays with Equal Occurrences of Two,,57.74%,https://www.geeksforgeeks.org/problems/sub-arrays-with-equal-number-of-occurences3901/1
+Arrays,Hard,Cake Distribution Problem,,64.62%,https://www.geeksforgeeks.org/problems/cake-distribution-problem--170647/1
+Arrays,Hard,Number of subsets with product less than k,"Amazon, Morgan Stanley",41.26%,https://www.geeksforgeeks.org/problems/number-of-subsets-with-product-less-than-k/1
+Arrays,Hard,Median of 2 Sorted Arrays of Same Size,"Amazon, Google, Microsoft, +1",58.86%,https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1

@@ -1,0 +1,37 @@
+category,difficulty,title,company_tags,accuracy,url
+Backtracking,Easy,Grid Paths from Top to Bottom Corner,,64.94%,https://www.geeksforgeeks.org/problems/find-all-possible-paths-from-top-to-bottom/1
+Backtracking,Medium,Rat in a Maze,"Amazon, Microsoft",35.75%,https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+Backtracking,Medium,Distinct Permutations of a String,"Accolite, Amazon, Cisco, +8",34.65%,https://www.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1
+Backtracking,Medium,M-Coloring Problem,Amazon,34.42%,https://www.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1
+Backtracking,Medium,Target Sum Combinations,"Adobe, Amazon, Microsoft, +1",28.28%,https://www.geeksforgeeks.org/problems/combination-sum-1587115620/1
+Backtracking,Medium,Largest number in K swaps,"Amazon, Google, Intuit, +3",18.84%,https://www.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1
+Backtracking,Medium,Possible Words From Phone Digits,"Amazon, Flipkart, Microsoft, +1",52.79%,https://www.geeksforgeeks.org/problems/possible-words-from-phone-digits-1587115620/1
+Backtracking,Medium,Word Search,"Amazon, Apple, Intuit, +2",32.69%,https://www.geeksforgeeks.org/problems/word-search/1
+Backtracking,Medium,Decode the String,"Facebook, Microsoft",44.28%,https://www.geeksforgeeks.org/problems/decode-the-string2444/1
+Backtracking,Medium,Generate IP Addresses,Amazon,38.71%,https://www.geeksforgeeks.org/problems/generate-ip-addresses/1
+Backtracking,Medium,Combination Sum Without Repetition,NPCI,49.50%,https://www.geeksforgeeks.org/problems/combination-sum-ii-1664263832/1
+Backtracking,Medium,All Unique Permutations of an array,Google,52.85%,https://www.geeksforgeeks.org/problems/all-unique-permutations-of-an-array/1
+Backtracking,Medium,Generate all binary strings,NPCI,63.90%,https://www.geeksforgeeks.org/problems/generate-all-binary-strings/1
+Backtracking,Medium,Subsets,"Microsoft, NPCI",44.30%,https://www.geeksforgeeks.org/problems/subsets-1613027340/1
+Backtracking,Medium,Hamiltonian Path,Amazon,40.80%,https://www.geeksforgeeks.org/problems/hamiltonian-path2522/1
+Backtracking,Medium,Generate Parentheses,"Amazon, Microsoft, Walmart, +2",59.23%,https://www.geeksforgeeks.org/problems/generate-all-possible-parentheses/1
+Backtracking,Medium,Non-Attacking Black and White Knights,,51.20%,https://www.geeksforgeeks.org/problems/non-attacking-black-and-white-knights/1
+Backtracking,Medium,Rat Maze With Multiple Jumps,,38.46%,https://www.geeksforgeeks.org/problems/rat-maze-with-multiple-jumps3852/1
+Backtracking,Medium,Distinct Subsets,"Amazon, Microsoft, PayPal",50.00%,https://www.geeksforgeeks.org/problems/subset-sum-ii/1
+Backtracking,Medium,Permutation with Spaces,Amazon,57.68%,https://www.geeksforgeeks.org/problems/permutation-with-spaces3627/1
+Backtracking,Medium,Kth Permutation of First n Naturals,,63.45%,https://www.geeksforgeeks.org/problems/find-kth-permutation-0932/1
+Backtracking,Medium,Longest Possible Route in a Matrix with Hurdles,,50.00%,https://www.geeksforgeeks.org/problems/longest-possible-route-in-a-matrix-with-hurdles/1
+Backtracking,Medium,The Knight's tour problem,,53.19%,https://www.geeksforgeeks.org/problems/the-knights-tour-problem/1
+Backtracking,Medium,Unique Partitions of a Number,Amazon,63.11%,https://www.geeksforgeeks.org/problems/unique-partitions1041/1
+Backtracking,Medium,Unique K-Number Sum,"Bloomberg, Google, Amazon, +1",64.66%,https://www.geeksforgeeks.org/problems/combination-sum-iii--111703/1
+Backtracking,Medium,Generate Permutations of an array,NPCI,78.33%,https://www.geeksforgeeks.org/problems/generate-permutations-of-an-array/1
+Backtracking,Medium,Equal Partition,"Google, Goldman Sachs, Amazon",44.48%,https://www.geeksforgeeks.org/problems/tug-of-war--122234/1
+Backtracking,Hard,Solve the Sudoku,"Amazon, Directi, Flipkart, +9",37.98%,https://www.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1
+Backtracking,Hard,N-Queen Problem,"Accolite, Amazon, Amdocs, +6",35.43%,https://www.geeksforgeeks.org/problems/n-queen-problem0315/1
+Backtracking,Hard,Largest Sum Cycle,JUSPAY,51.93%,https://www.geeksforgeeks.org/problems/largest-sum-cycle--170645/1
+Backtracking,Hard,Expression Add Operators,,61.49%,https://www.geeksforgeeks.org/problems/expression-add-operators/1
+Backtracking,Hard,Smallest Superstring Covering All of Length n,Google,72.98%,https://www.geeksforgeeks.org/problems/find-the-string/1
+Backtracking,Hard,Remove Invalid Parentheses,,43.53%,https://www.geeksforgeeks.org/problems/remove-invalid-parentheses/1
+Backtracking,Hard,k Centers Problem,,59.99%,https://www.geeksforgeeks.org/problems/k-centers-problem/1
+Backtracking,Hard,Subset Sums in Range,,66.21%,https://www.geeksforgeeks.org/problems/subset-sums-between-the-given-range/1
+Backtracking,Hard,Next Optimal Move in Tic Tac Toe,Accolite,34.22%,https://www.geeksforgeeks.org/problems/next-optimal-move-in-tic-tac-toe2842/1

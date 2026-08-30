@@ -1,0 +1,42 @@
+category,difficulty,title,company_tags,accuracy,url
+Prefix Sum,Easy,Equilibrium Point,"Adobe, Amazon, Facebook, +3",28.13%,https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+Prefix Sum,Easy,Max Sum Subarray of size K,"NPCI, OYO Rooms",49.60%,https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
+Prefix Sum,Easy,Product array puzzle,"Accolite, Amazon, D-E-Shaw, +5",33.46%,https://www.geeksforgeeks.org/problems/product-array-puzzle4525/1
+Prefix Sum,Easy,Two Equal Sum Subarrays,Facebook,54.45%,https://www.geeksforgeeks.org/problems/split-an-array-into-two-equal-sum-subarrays/1
+Prefix Sum,Easy,Average of Prefixes,,49.93%,https://www.geeksforgeeks.org/problems/average4856/1
+Prefix Sum,Easy,Equal Left and Right Subarray Sum,"Adobe, Amazon",55.07%,https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+Prefix Sum,Easy,Total Cuts,,54.24%,https://www.geeksforgeeks.org/problems/total-cuts--170648/1
+Prefix Sum,Easy,Mean of Range in Array,,50.54%,https://www.geeksforgeeks.org/problems/mean-of-range-in-array2123/1
+Prefix Sum,Easy,1-D prefix sum,,75.75%,https://www.geeksforgeeks.org/problems/1-d-prefix-sum/1
+Prefix Sum,Medium,Indexes of Subarray Sum,"Amazon, Facebook, Google, +1",16.50%,https://www.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1
+Prefix Sum,Medium,Longest Subarray with Sum K,Amazon,24.64%,https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+Prefix Sum,Medium,Minimum Swaps to Group Elements <= K,,26.00%,https://www.geeksforgeeks.org/problems/minimum-swaps-required-to-bring-all-elements-less-than-or-equal-to-k-together4847/1
+Prefix Sum,Medium,Longest subarray with sum divisible by K,"Microsoft, Snapdeal",33.72%,https://www.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1
+Prefix Sum,Medium,Subarrays with equal 1s and 0s,,57.47%,https://www.geeksforgeeks.org/problems/count-subarrays-with-equal-number-of-1s-and-0s-1587115620/1
+Prefix Sum,Medium,Longest Span in two Binary Arrays,,48.22%,https://www.geeksforgeeks.org/problems/longest-span-with-same-sum-in-two-binary-arrays5142/1
+Prefix Sum,Medium,Longest Subarray with Majority Greater than K,NPCI,52.63%,https://www.geeksforgeeks.org/problems/longest-subarray-with-majority-greater-than-k/1
+Prefix Sum,Medium,Minimize the Max Min Diff with Subarray Removal,,54.13%,https://www.geeksforgeeks.org/problems/minimize-the-difference/1
+Prefix Sum,Medium,Split array in three equal sum subarrays,,52.90%,https://www.geeksforgeeks.org/problems/split-array-in-three-equal-sum-subarrays/1
+Prefix Sum,Medium,Count Subarray with k odds,,51.12%,https://www.geeksforgeeks.org/problems/count-subarray-with-k-odds/1
+Prefix Sum,Medium,Subarray Sum Divisible By K,"Paytm, Amazon",47.78%,https://www.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k2617/1
+Prefix Sum,Medium,Max After m Range Increments,FactSet,49.92%,https://www.geeksforgeeks.org/problems/max-value-after-m-range-operation4300/1
+Prefix Sum,Medium,Yet Another Query Problem,,63.05%,https://www.geeksforgeeks.org/problems/yet-another-query-problem--170647/1
+Prefix Sum,Medium,2D Difference Array,,57.22%,https://www.geeksforgeeks.org/problems/2-d-difference-array/1
+Prefix Sum,Medium,Prefix Sum Range Query,,76.97%,https://www.geeksforgeeks.org/problems/prefix-sum-range-query/1
+Prefix Sum,Medium,Array Sum Excluding Subarrays,,51.67%,https://www.geeksforgeeks.org/problems/nitika-and-her-queries4804/1
+Prefix Sum,Medium,Section Minimum Sum,,43.04%,https://www.geeksforgeeks.org/problems/footpath-construction/1
+Prefix Sum,Medium,Queries on a Matrix,,62.54%,https://www.geeksforgeeks.org/problems/queries-on-a-matrix0443/1
+Prefix Sum,Medium,Compute Before Matrix,Dunzo,76.61%,https://www.geeksforgeeks.org/problems/compute-before-matrix--170637/1
+Prefix Sum,Medium,Largest Square with Sum at Most K,,49.33%,https://www.geeksforgeeks.org/problems/largest-square-with-sum-at-most-k/1
+Prefix Sum,Medium,ASCII Range Sum,,52.59%,https://www.geeksforgeeks.org/problems/ascii-range-sum/1
+Prefix Sum,Medium,Balancing Consonants and Vowels Ratio,,52.97%,https://www.geeksforgeeks.org/problems/balancing-consonants-and-vowels-ratio/1
+Prefix Sum,Medium,Substring Distinct Character Queries,,56.07%,https://www.geeksforgeeks.org/problems/queries-on-strings5636/1
+Prefix Sum,Medium,Difference Array,,63.96%,https://www.geeksforgeeks.org/problems/difference-array/1
+Prefix Sum,Medium,Range Sum Query,Amazon,60.63%,https://www.geeksforgeeks.org/problems/sum-of-query-ii5310/1
+Prefix Sum,Medium,2D Submatrix Sum Queries,,58.03%,https://www.geeksforgeeks.org/problems/2d-submatrix-sum-queries/1
+Prefix Sum,Medium,Weighted Sum Queries,,28.02%,https://www.geeksforgeeks.org/problems/sum-of-query-i1920/1
+Prefix Sum,Medium,Max Sum Subarray Mod,,28.31%,https://www.geeksforgeeks.org/problems/max-sum-subarray-mod/1
+Prefix Sum,Hard,Maximum Sum Submatrix,"Accolite, Amazon, D-E-Shaw, +4",49.78%,https://www.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1
+Prefix Sum,Hard,Maximum Overlapping Intervals,,49.41%,https://www.geeksforgeeks.org/problems/intersecting-intervals/1
+Prefix Sum,Hard,Number of submatrix have sum X,,69.08%,https://www.geeksforgeeks.org/problems/number-of-submatrix-have-sum-k/1
+Prefix Sum,Hard,Longest Beautiful Substring,,45.87%,https://www.geeksforgeeks.org/problems/longest-beautiful-substring--131959/1

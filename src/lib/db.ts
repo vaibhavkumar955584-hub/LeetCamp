@@ -193,7 +193,7 @@ export interface PatternOverview {
 export function getPatternGroup(category: string): PatternRoadmapGroup {
   const cat = category.toLowerCase();
   
-  if (['tree', 'binary tree', 'binary search tree', 'avl tree', 'segment tree', 'binary indexed tree', 'trie'].includes(cat)) {
+  if (['tree', 'binary tree', 'binary search tree', 'avl tree', 'segment tree', 'binary indexed tree', 'trie', 'heap', 'priority queue'].includes(cat)) {
     return 'Trees & Hierarchies';
   }
   

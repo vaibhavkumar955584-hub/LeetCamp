@@ -1,0 +1,141 @@
+category,difficulty,title,company_tags,accuracy,url
+Hashing,Basic,Array Subset,"Accolite, Qualcomm, GE",44.05%,https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1
+Hashing,Basic,One Odd Occuring,"Amazon, Snapdeal",50.53%,https://www.geeksforgeeks.org/problems/find-the-odd-occurence4820/1
+Hashing,Basic,Uncommon characters,Amazon,38.13%,https://www.geeksforgeeks.org/problems/uncommon-characters4932/1
+Hashing,Basic,Repeated Character,Goldman Sachs,43.15%,https://www.geeksforgeeks.org/problems/repeated-character2058/1
+Hashing,Basic,Anagram Palindrome,"Amazon, Snapdeal, D-E-Shaw",44.28%,https://www.geeksforgeeks.org/problems/anagram-palindrome4720/1
+Hashing,Basic,Count Group Occurrences,"Zoho, Amazon",27.88%,https://www.geeksforgeeks.org/problems/count-the-characters1821/1
+Hashing,Basic,Find unique element,,43.89%,https://www.geeksforgeeks.org/problems/find-unique-element2632/1
+Hashing,Basic,Max Distance Between Two in Array,,44.82%,https://www.geeksforgeeks.org/problems/count-number-of-elements-between-two-given-elements-in-array4044/1
+Hashing,Basic,Sort String in Descending Order,,47.71%,https://www.geeksforgeeks.org/problems/sort-the-string-in-descending-order3542/1
+Hashing,Basic,Highest and Lowest Frequencies,,49.19%,https://www.geeksforgeeks.org/problems/difference-between-highest-and-lowest-occurrence4613/1
+Hashing,Basic,Check Arithmetic Progression,,50.24%,https://www.geeksforgeeks.org/problems/check-arithmetic-progression1842/1
+Hashing,Basic,Distinct-Digit Numbers in Range,Amazon,53.34%,https://www.geeksforgeeks.org/problems/unique-numbers3019/1
+Hashing,Basic,Smallest Repeating K Times,,50.00%,https://www.geeksforgeeks.org/problems/smallest-number-repeating-k-times3239/1
+Hashing,Basic,K-th Distinct in Order of Appearance,,41.93%,https://www.geeksforgeeks.org/problems/k-th-distinct-element4510/1
+Hashing,Basic,Distinct in a Stream with Insertions and Deletions,,30.79%,https://www.geeksforgeeks.org/problems/distinct-elements-in-a-stream1557/1
+Hashing,Easy,Two Sum - Pair with Given Sum,"Zoho, Flipkart, Morgan Stanley, +10",30.61%,https://www.geeksforgeeks.org/problems/key-pair5616/1
+Hashing,Easy,Union of Arrays with Duplicates,"Zoho, Rockstand",42.22%,https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+Hashing,Easy,Check Equal Arrays,Goldman Sachs,42.18%,https://www.geeksforgeeks.org/problems/check-if-two-arrays-are-equal-or-not3847/1
+Hashing,Easy,Frequencies in a Limited Array,"Paytm, VMWare, Zoho, +2",27.64%,https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1
+Hashing,Easy,Non Repeating Character,"Flipkart, Amazon, Microsoft, +10",40.43%,https://www.geeksforgeeks.org/problems/non-repeating-character-1587115620/1
+Hashing,Easy,First Repeating Element,"Amazon, Oracle",32.57%,https://www.geeksforgeeks.org/problems/first-repeating-element4018/1
+Hashing,Easy,Isomorphic Strings,Google,34.21%,https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1
+Hashing,Easy,At Least K Occurrences,,37.11%,https://www.geeksforgeeks.org/problems/first-element-to-occur-k-times5150/1
+Hashing,Easy,Find all pairs with a given sum,"Amazon, MakeMyTrip, Facebook, +1",23.94%,https://www.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x5808/1
+Hashing,Easy,Non-Repeating Element,"Snapdeal, Goldman Sachs, Adobe",39.31%,https://www.geeksforgeeks.org/problems/non-repeating-element3958/1
+Hashing,Easy,Minimum Indexed Character,Ola Cabs,54.06%,https://www.geeksforgeeks.org/problems/minimum-indexed-character-1587115620/1
+Hashing,Easy,Missing in Second Array,"Zoho, Accolite, Microsoft, +1",35.22%,https://www.geeksforgeeks.org/problems/in-first-but-second5423/1
+Hashing,Easy,Election Winner,"Adobe, Atlassian",53.75%,https://www.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names-1587115621/1
+Hashing,Easy,First Repeated Character,"Amazon, Adobe",41.97%,https://www.geeksforgeeks.org/problems/find-first-repeated-character4108/1
+Hashing,Easy,Pairs with Positive Negative values,Amazon,20.79%,https://www.geeksforgeeks.org/problems/pairs-with-positive-negative-values3719/1
+Hashing,Easy,Remove Duplicates from an array,Amazon,35.86%,https://www.geeksforgeeks.org/problems/remove-duplicates-in-small-prime-array/1
+Hashing,Easy,Second Most Frequent Word,"Amazon, Goldman Sachs",45.95%,https://www.geeksforgeeks.org/problems/second-most-repeated-string-in-a-sequence0534/1
+Hashing,Easy,Max distance between same elements,,46.67%,https://www.geeksforgeeks.org/problems/max-distance-between-same-elements/1
+Hashing,Easy,Check for Isogram String,,63.25%,https://www.geeksforgeeks.org/problems/check-if-a-string-is-isogram-or-not-1587115620/1
+Hashing,Easy,K-Pangrams,"Zoho, Snapdeal",20.91%,https://www.geeksforgeeks.org/problems/k-pangrams0909/1
+Hashing,Easy,"Numbers containing 1, 2 and 3",Goldman Sachs,27.37%,https://www.geeksforgeeks.org/problems/numbers-containing-1-2-and-32555/1
+Hashing,Easy,Linear Probing in Hashing,,25.49%,https://www.geeksforgeeks.org/problems/linear-probing-in-hashing-1587115620/1
+Hashing,Easy,Queries to Count Smaller or Equal in Other Array,"Amazon, Yatra.com",25.32%,https://www.geeksforgeeks.org/problems/count-the-elements1529/1
+Hashing,Easy,Twice Counter,Amazon,62.61%,https://www.geeksforgeeks.org/problems/twice-counter4236/1
+Hashing,Easy,Recaman Sequence,,51.31%,https://www.geeksforgeeks.org/problems/recamans-sequence4856/1
+Hashing,Easy,Check if Special Frequency Sum is Even,,50.00%,https://www.geeksforgeeks.org/problems/help-nobita0532/1
+Hashing,Easy,Convert a sentence into its equivalent mobile numeric keypad...,,45.52%,https://www.geeksforgeeks.org/problems/convert-a-sentence-into-its-equivalent-mobile-numeric-keypad-sequence0547/1
+Hashing,Easy,Fascinating Number,,31.53%,https://www.geeksforgeeks.org/problems/fascinating-number3751/1
+Hashing,Easy,Quadratic Probing in Hashing,,53.42%,https://www.geeksforgeeks.org/problems/quadratic-probing-in-hashing-1587115621/1
+Hashing,Easy,Count Non-Repeated Elements,,65.14%,https://www.geeksforgeeks.org/problems/count-distinct-elements-1587115620/1
+Hashing,Easy,Most Frequent in a Limited Range Array,"Accolite, Amazon",33.89%,https://www.geeksforgeeks.org/problems/maximum-repeating-number4858/1
+Hashing,Easy,Total Traversal Time,,50.00%,https://www.geeksforgeeks.org/problems/total-traversal-time/1
+Hashing,Easy,Substrings with same first and last characters,Amazon,50.00%,https://www.geeksforgeeks.org/problems/substrings-with-similar-first-and-last-characters3644/1
+Hashing,Easy,Count Pair Sum in 2 Arrays,,43.55%,https://www.geeksforgeeks.org/problems/count-pair-sum5956/1
+Hashing,Easy,Check if array contains contiguous integers,Amazon,46.26%,https://www.geeksforgeeks.org/problems/check-if-array-contains-contiguous-integers-with-duplicates-allowed2046/1
+Hashing,Easy,Most Frequent in an Array,,46.55%,https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1
+Hashing,Easy,Max Gap Between Two Same,Zoho,47.57%,https://www.geeksforgeeks.org/problems/maximum-number-of-characters-between-any-two-same-character4552/1
+Hashing,Easy,Check Pairs of Equal Sum,"Amazon, OYO Rooms",42.44%,https://www.geeksforgeeks.org/problems/sum-equals-to-sum4006/1
+Hashing,Easy,Match Pattern with One to One Mapping,"Amazon, Microsoft, MakeMyTrip",61.26%,https://www.geeksforgeeks.org/problems/match-specific-pattern/1
+Hashing,Easy,Subarrays with given sum,,31.71%,https://www.geeksforgeeks.org/problems/subarray-range-with-given-sum2804/1
+Hashing,Easy,Frequency of Elements,,57.13%,https://www.geeksforgeeks.org/problems/frequency-of-elements--111353/1
+Hashing,Easy,Largest Fibonacci Subsequence,Facebook,53.13%,https://www.geeksforgeeks.org/problems/largest-fibonacci-subsequence2206/1
+Hashing,Easy,"Sum of f(a[i], a[j]) over all pairs in an array of n integer...",,50.69%,https://www.geeksforgeeks.org/problems/sum-of-fai-aj-over-all-pairs-in-an-array-of-n-integers4057/1
+Hashing,Easy,Union of Two Sets,"Zoho, Rockstand",74.72%,https://www.geeksforgeeks.org/problems/union-of-two-arrays3538--171343/1
+Hashing,Easy,First with K Occurrences,,49.87%,https://www.geeksforgeeks.org/problems/first-come-first-serve1328/1
+Hashing,Easy,Split Array into Minimum Subsets,,76.62%,https://www.geeksforgeeks.org/problems/split-array-into-minimum-subsets/1
+Hashing,Easy,Count Paired Elements,,50.88%,https://www.geeksforgeeks.org/problems/love-for-the-twins2623/1
+Hashing,Easy,Minimum Distinct Ids,Morgan Stanley,40.57%,https://www.geeksforgeeks.org/problems/minimum-distinct-ids3251/1
+Hashing,Easy,K Smallests in the Original Order,,23.65%,https://www.geeksforgeeks.org/problems/print-k-smallest-elements-in-their-original-order5407/1
+Hashing,Easy,Lucky Number,Epic Systems,40.48%,https://www.geeksforgeeks.org/problems/lucky-number0707/1
+Hashing,Easy,Remove Minimum to Make Disjoint,,33.12%,https://www.geeksforgeeks.org/problems/remove-minimum-number-of-elements4032/1
+Hashing,Easy,Check if array contains duplicates,,66.21%,https://www.geeksforgeeks.org/problems/check-if-array-contains-duplicates/1
+Hashing,Easy,Distinct Substrings,Linkedin,58.92%,https://www.geeksforgeeks.org/problems/distinct-substrings2516/1
+Hashing,Easy,Number of Open Tabs,Oracle,34.08%,https://www.geeksforgeeks.org/problems/tiger-zinda-hai5531/1
+Hashing,Easy,Cumulative Frequencies in an Array,,41.67%,https://www.geeksforgeeks.org/problems/frequency-of-each-element-in-an-unsorted-array0759/1
+Hashing,Easy,Earliest Last Occurrence,,50.43%,https://www.geeksforgeeks.org/problems/last-seen-array-element1501/1
+Hashing,Easy,Sum of Distinct Element Subarray Lengths,,35.94%,https://www.geeksforgeeks.org/problems/sum-of-length3345/1
+Hashing,Easy,Incomplete Array,,33.91%,https://www.geeksforgeeks.org/problems/incomplete-array3859/1
+Hashing,Easy,Unoccupied Computers,,42.85%,https://www.geeksforgeeks.org/problems/unoccupied-computers-1646661078/1
+Hashing,Easy,Two Pairs with Same Product,,43.63%,https://www.geeksforgeeks.org/problems/find-pairs-with-given-relation1540/1
+Hashing,Easy,Prime Frequencies in Array,,34.08%,https://www.geeksforgeeks.org/problems/numbers-with-prime-frequencies-greater-than-or-equal-to-k5823/1
+Hashing,Easy,Check for Disjoint,,67.35%,https://www.geeksforgeeks.org/problems/check-for-disjoint-sets-or-arrays/1
+Hashing,Easy,Partition into k Groups with Frequency Limit,,41.56%,https://www.geeksforgeeks.org/problems/ana-and-sweets5331/1
+Hashing,Easy,Distinct Pairs with Sum,,36.54%,https://www.geeksforgeeks.org/problems/all-distinct-pairs-with-given-sum/1
+Hashing,Easy,Count Even Letters,,86.99%,https://www.geeksforgeeks.org/problems/count-even-letters/1
+Hashing,Easy,Count Indices with Complement in Third Array,,39.19%,https://www.geeksforgeeks.org/problems/sum-indexes5459/1
+Hashing,Easy,Hashing for pair - 1,,79.22%,https://www.geeksforgeeks.org/problems/hashing-for-pair-1--110939/1
+Hashing,Easy,All Triplets with Given Sum,,30.28%,https://www.geeksforgeeks.org/problems/find-all-triplets-with-given-sum/1
+Hashing,Easy,Hashing for pair - 2,,78.38%,https://www.geeksforgeeks.org/problems/hashing-for-pair-2--114603/1
+Hashing,Easy,Count Distinct Pairs with Sum,,35.66%,https://www.geeksforgeeks.org/problems/2-sum-count-distinct-pairs-with-given-sum/1
+Hashing,Easy,Design HashMap,,83.50%,https://www.geeksforgeeks.org/problems/design-hashmap/1
+Hashing,Easy,All Pairs With Given Sum,,60.11%,https://www.geeksforgeeks.org/problems/find-all-pairs-with-given-sum/1
+Hashing,Easy,Winner of an election,"Adobe, Atlassian",72.68%,https://www.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names-1587115621--162858/1
+Hashing,Medium,Largest subarray with 0 sum,"Amazon, Microsoft, MakeMyTrip, +1",41.84%,https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1
+Hashing,Medium,Longest Consecutive Subsequence,"Amazon, Microsoft, Walmart",33.00%,https://www.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1
+Hashing,Medium,Majority Element - More Than n/3,"Bloomberg, Salesforce, Accenture, +3",48.10%,https://www.geeksforgeeks.org/problems/majority-vote/1
+Hashing,Medium,Sort Elements by Decreasing Frequency,"Oracle, Zycus",44.93%,https://www.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency-1587115621/1
+Hashing,Medium,Zero Sum Subarrays,"Amazon, Microsoft, OYO Rooms",51.49%,https://www.geeksforgeeks.org/problems/zero-sum-subarrays1825/1
+Hashing,Medium,Same Character Frequencies with One Removal,Zoho,16.67%,https://www.geeksforgeeks.org/problems/check-frequencies4211/1
+Hashing,Medium,Overlapping Intervals,"Amazon, Microsoft, Google, +2",57.41%,https://www.geeksforgeeks.org/problems/overlapping-intervals--170633/1
+Hashing,Medium,Array Pair Sum Divisibility Problem,"Amazon, Microsoft, Goldman Sachs, +1",27.85%,https://www.geeksforgeeks.org/problems/array-pair-sum-divisibility-problem3257/1
+Hashing,Medium,Swap Pairs Make Sum Equal,Amazon,23.94%,https://www.geeksforgeeks.org/problems/swapping-pairs-make-sum-equal4142/1
+Hashing,Medium,Top K Frequent in Array,"Amazon, Microsoft",40.23%,https://www.geeksforgeeks.org/problems/top-k-frequent-elements-in-array/1
+Hashing,Medium,Sort according to an Array,"Amazon, Microsoft",42.39%,https://www.geeksforgeeks.org/problems/relative-sorting4323/1
+Hashing,Medium,Subarrays with Sum K,Microsoft,49.74%,https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1
+Hashing,Medium,Arrange Anagrams Together,"Morgan Stanley, Amazon, Microsoft, +3",65.78%,https://www.geeksforgeeks.org/problems/print-anagrams-together/1
+Hashing,Medium,Missing element of AP,,34.32%,https://www.geeksforgeeks.org/problems/missing-element-of-ap2228/1
+Hashing,Medium,All Triplets with Zero Sum,,50.36%,https://www.geeksforgeeks.org/problems/find-all-triplets-with-zero-sum/1
+Hashing,Medium,Nuts and Bolts Problem,"Amazon, Hike, MakeMyTrip, +2",59.03%,https://www.geeksforgeeks.org/problems/nuts-and-bolts-problem0431/1
+Hashing,Medium,k-Anagram,"Accolite, Amazon, Microsoft, +1",26.28%,https://www.geeksforgeeks.org/problems/check-if-two-strings-are-k-anagrams-or-not/1
+Hashing,Medium,Largest Smaller on Left,,22.61%,https://www.geeksforgeeks.org/problems/smaller-on-left20360700/1
+Hashing,Medium,Make array elements unique,Dunzo,51.43%,https://www.geeksforgeeks.org/problems/make-array-elements-unique--170645/1
+Hashing,Medium,Count Subarrays with Sum,,42.21%,https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1
+Hashing,Medium,Transform String,Directi,29.76%,https://www.geeksforgeeks.org/problems/transform-string5648/1
+Hashing,Medium,Count pairs Sum in matrices,FactSet,45.66%,https://www.geeksforgeeks.org/problems/count-pairs-sum-in-matrices4332/1
+Hashing,Medium,Count Pairs Divisible By K,PayPal,40.47%,https://www.geeksforgeeks.org/problems/count-pairs-in-array-divisible-by-k/1
+Hashing,Medium,Powerful Integer,,51.91%,https://www.geeksforgeeks.org/problems/powerfull-integer--170647/1
+Hashing,Medium,Fraction to Repeating Decimal,"Amazon, Microsoft",23.12%,https://www.geeksforgeeks.org/problems/a-simple-fraction0921/1
+Hashing,Medium,Distinct Pairs with Diff K,"Amazon, Facebook",24.76%,https://www.geeksforgeeks.org/problems/count-distinct-pairs-with-difference-k1233/1
+Hashing,Medium,Common in Rows of a Matrix,,32.53%,https://www.geeksforgeeks.org/problems/find-distinct-elements2054/1
+Hashing,Medium,Missing Element in Range,,55.45%,https://www.geeksforgeeks.org/problems/missing-element-in-range/1
+Hashing,Medium,Absolute Difference Divisible by K,Goldman Sachs,52.72%,https://www.geeksforgeeks.org/problems/absolute-difference-divisible-by-k/1
+Hashing,Medium,Count 0s After Setting Rows and Columns as 1,Intuit,53.72%,https://www.geeksforgeeks.org/problems/count-number-of-free-cell--170646/1
+Hashing,Medium,Transfiguration,,36.72%,https://www.geeksforgeeks.org/problems/transfiguration--141631/1
+Hashing,Medium,Design a tiny URL or URL shortener,"Microsoft, Hike",51.45%,https://www.geeksforgeeks.org/problems/design-a-tiny-url-or-url-shortener2031/1
+Hashing,Medium,Two Pairs with Same Sum,,50.31%,https://www.geeksforgeeks.org/problems/satisfy-the-equation5847/1
+Hashing,Medium,"Substring with Equal 0, 1 and 2",,49.75%,https://www.geeksforgeeks.org/problems/equal-0-1-and-23208/1
+Hashing,Medium,Surpasser Count,"Google, Yahoo",42.26%,https://www.geeksforgeeks.org/problems/surpasser-count0615/1
+Hashing,Medium,Count Indices to Balance Even and Odd Sums,,68.19%,https://www.geeksforgeeks.org/problems/count-indices-to-balance-even-and-odd-sums/1
+Hashing,Medium,Subsequences Start with Vowel and End with Consonant,Yatra.com,45.69%,https://www.geeksforgeeks.org/problems/string-subsequence-game5515/1
+Hashing,Medium,Pairs of Non Coinciding Points,,45.54%,https://www.geeksforgeeks.org/problems/pairs-of-non-coinciding-points4141/1
+Hashing,Medium,Maximum Pair Sum with Equal Digit Sum,,42.61%,https://www.geeksforgeeks.org/problems/ruling-pair--141631/1
+Hashing,Medium,Smallest Subarray with All of Most Frequent,,29.12%,https://www.geeksforgeeks.org/problems/smallest-subarray-with-all-occurrences-of-a-most-frequent-element2258/1
+Hashing,Medium,Repeated Pattern Removal,,45.17%,https://www.geeksforgeeks.org/problems/demonitisation0013/1
+Hashing,Medium,Count Substrings With K 1's,,40.89%,https://www.geeksforgeeks.org/problems/count-of-substrings-containing-k-ones2304/1
+Hashing,Medium,Group Shifted String,Google,63.96%,https://www.geeksforgeeks.org/problems/group-shifted-string/1
+Hashing,Medium,Maximum Sum Unique-Mapped Window,,38.29%,https://www.geeksforgeeks.org/problems/maximum-possible-sum4134/1
+Hashing,Medium,Longest Subsequence with Adjacent Diff 0 or 1,,38.67%,https://www.geeksforgeeks.org/problems/longest-subsequence-with-difference/1
+Hashing,Medium,Count pairs of strings with one mismatch,,68.10%,https://www.geeksforgeeks.org/problems/count-pairs-of-strings-with-one-mismatch/1
+Hashing,Medium,Frequency of a Substring in a String,,46.63%,https://www.geeksforgeeks.org/problems/frequency-of-a-substring-in-a-string/1
+Hashing,Hard,LRU Cache,"Adobe, Amazon, Flipkart, +15",18.44%,https://www.geeksforgeeks.org/problems/lru-cache/1
+Hashing,Hard,Maximum Non-Overlapping Odd Palindrome Sum,,47.23%,https://www.geeksforgeeks.org/problems/maximum-non-overlapping-odd-palindrome-sum/1
+Hashing,Hard,Longest Periodic Proper Prefix,,49.98%,https://www.geeksforgeeks.org/problems/longest-periodic-proper-prefix/1
+Hashing,Hard,LFU cache,,60.63%,https://www.geeksforgeeks.org/problems/lfu-cache-1665050355/1
+Hashing,Hard,Palindrome Substring Queries,NPCI,35.39%,https://www.geeksforgeeks.org/problems/palindrome-substring-queries/1

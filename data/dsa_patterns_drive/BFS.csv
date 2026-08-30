@@ -1,0 +1,50 @@
+category,difficulty,title,company_tags,accuracy,url
+BFS,Easy,BFS of graph,"Adobe, Amazon, Flipkart, +4",44.09%,https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
+BFS,Easy,Path Exists,NPCI,62.53%,https://www.geeksforgeeks.org/problems/path-exists/1
+BFS,Easy,Minimum number of edges between two vertices,NPCI,29.54%,https://www.geeksforgeeks.org/problems/minimum-number-of-edges-between-two-vertices/1
+BFS,Medium,Minimum Multiplications to reach End,,48.94%,https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1
+BFS,Medium,Bipartite Graph,"Flipkart, Microsoft, Samsung",31.25%,https://www.geeksforgeeks.org/problems/bipartite-graph/1
+BFS,Medium,Shortest Path in Unweighted Graph,,49.98%,https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1
+BFS,Medium,Shortest Distance in a Binary Maze,Samsung,58.22%,https://www.geeksforgeeks.org/problems/shortest-path-in-a-binary-maze-1655453161/1
+BFS,Medium,Replace O's with X's,"Google, NPCI",34.00%,https://www.geeksforgeeks.org/problems/replace-os-with-xs0052/1
+BFS,Medium,Number of Distinct Islands,,62.29%,https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1
+BFS,Medium,Min Steps by Knight,"Amazon, Flipkart, Goldman Sachs, +5",37.32%,https://www.geeksforgeeks.org/problems/steps-by-knight5927/1
+BFS,Medium,Distance of nearest cell having 1,"Accenture, Amazon, Bloomberg, +5",47.70%,https://www.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1
+BFS,Medium,Check for Path in a 2D Grid with Obstacles,"Adobe, Amazon, Microsoft, +2",45.09%,https://www.geeksforgeeks.org/problems/find-whether-path-exist5238/1
+BFS,Medium,1s Surrounded by 0s,Google,50.93%,https://www.geeksforgeeks.org/problems/1s-surrounded-by-0s/1
+BFS,Medium,Check if two Nodes are Cousins,"Amazon, D-E-Shaw",25.99%,https://www.geeksforgeeks.org/problems/check-if-two-nodes-are-cousins/1
+BFS,Medium,Check Complete Binary Tree,,42.94%,https://www.geeksforgeeks.org/problems/complete-binary-tree/1
+BFS,Medium,Course Schedule II,Google,51.77%,https://www.geeksforgeeks.org/problems/course-schedule/1
+BFS,Medium,Safe States,Bloomberg,55.52%,https://www.geeksforgeeks.org/problems/eventual-safe-states/1
+BFS,Medium,Largest Region of 1's in a Binary Matrix,"Flipkart, Amazon, Microsoft, +4",50.83%,https://www.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1
+BFS,Medium,Most Isolated City,,49.12%,https://www.geeksforgeeks.org/problems/city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/1
+BFS,Medium,Level of a Node,,50.95%,https://www.geeksforgeeks.org/problems/level-of-nodes-1587115620/1
+BFS,Medium,Path With Minimum Effort,"Bloomberg, Amazon, Microsoft, +1",53.13%,https://www.geeksforgeeks.org/problems/path-with-minimum-effort/1
+BFS,Medium,Shortest Path with at most k Nodes,,49.99%,https://www.geeksforgeeks.org/problems/shortest-path-with-at-most-k-nodes/1
+BFS,Medium,Connected Components in an Undirected Graph,NPCI,48.50%,https://www.geeksforgeeks.org/problems/connected-components-in-an-undirected-graph/1
+BFS,Medium,Clone an Undirected Graph,Google,67.49%,https://www.geeksforgeeks.org/problems/clone-graph/1
+BFS,Medium,Geek's Village and Wells,,57.11%,https://www.geeksforgeeks.org/problems/geeks-village-and-wells--170647/1
+BFS,Medium,Course Schedule I,"Bloomberg, Visa, Uber, +5",67.59%,https://www.geeksforgeeks.org/problems/course-schedule-i/1
+BFS,Medium,Minimum height roots,"Bloomberg, Amazon, Microsoft, +2",64.16%,https://www.geeksforgeeks.org/problems/minimum-height-roots/1
+BFS,Medium,Spidey Sense,,69.79%,https://www.geeksforgeeks.org/problems/spidey-sense5556/1
+BFS,Medium,Ancestor Nodes in DAG,,45.98%,https://www.geeksforgeeks.org/problems/ancestor-nodes-in-dag/1
+BFS,Medium,Not a Substring,"Google, Uber",70.17%,https://www.geeksforgeeks.org/problems/lexicographical-smallest-string/1
+BFS,Medium,Snake and Ladder Problem,"Zoho, Flipkart, Amazon, +6",34.65%,https://www.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1
+BFS,Medium,Shortest XY distance in Grid,Google,54.35%,https://www.geeksforgeeks.org/problems/shortest-xy-distance-in-grid--170647/1
+BFS,Medium,Knight in Geekland,,65.86%,https://www.geeksforgeeks.org/problems/knight-in-geekland--170647/1
+BFS,Medium,Find the longest string,Flipkart,56.04%,https://www.geeksforgeeks.org/problems/find-the-longest-string--170645/1
+BFS,Medium,Shortest Prime Path,Adobe,63.49%,https://www.geeksforgeeks.org/problems/shortest-prime-path--141631/1
+BFS,Medium,Minimum Steps to Reach Last Column from First,,58.66%,https://www.geeksforgeeks.org/problems/minimum-steps-to-reach-last-column-of-binary-matrix/1
+BFS,Hard,Burning Tree,"Adobe, Amazon, Flipkart, +2",53.53%,https://www.geeksforgeeks.org/problems/burning-tree/1
+BFS,Hard,Articulation Point,,55.15%,https://www.geeksforgeeks.org/problems/articulation-point2616/1
+BFS,Hard,Maximum Connected with One Change,Intuit,49.48%,https://www.geeksforgeeks.org/problems/maximum-connected-group/1
+BFS,Hard,Shortest Transformation Length in a Word List,"Adobe, Amazon, Flipkart, +1",37.65%,https://www.geeksforgeeks.org/problems/word-ladder/1
+BFS,Hard,Shortest Transformation Sequences in a Word List,"Adobe, Amazon, Flipkart, +2",50.00%,https://www.geeksforgeeks.org/problems/word-ladder-ii/1
+BFS,Hard,Count Groups of 1's Surrounded by 0's,Google,61.43%,https://www.geeksforgeeks.org/problems/find-number-of-closed-islands/1
+BFS,Hard,Shortest Path by Removing K walls,Google,50.40%,https://www.geeksforgeeks.org/problems/shortest-path-by-removing-k-walls/1
+BFS,Hard,Length of Longest Cycle in a Graph,"Amazon, Google, JUSPAY",60.34%,https://www.geeksforgeeks.org/problems/length-of-longest-cycle-in-a-graph/1
+BFS,Hard,Shortest Path in 1-2 Graph,,56.27%,https://www.geeksforgeeks.org/problems/level-of-nodes1147/1
+BFS,Hard,Shortest Cycle,,63.96%,https://www.geeksforgeeks.org/problems/shortest-cycle/1
+BFS,Hard,Ancestor Queries on a Tree,,62.50%,https://www.geeksforgeeks.org/problems/ancestor-queries-on-a-tree/1
+BFS,Hard,Kill Captain America,,39.87%,https://www.geeksforgeeks.org/problems/kill-captain-america0228/1
+BFS,Hard,Minimum cost to visit favorite Colonies,,67.39%,https://www.geeksforgeeks.org/problems/minimum-cost-to-visit-favorite-cities--132208/1

@@ -1,0 +1,78 @@
+category,difficulty,title,company_tags,accuracy,url
+Stack,Basic,Array to Stack,,72.42%,https://www.geeksforgeeks.org/problems/stack-designer/1
+Stack,Basic,Pairwise Consecutive Elements,,44.73%,https://www.geeksforgeeks.org/problems/pairwise-consecutive-elements/1
+Stack,Basic,Reverse Array Using Stack,,84.91%,https://www.geeksforgeeks.org/problems/reverse-array-using-stack--143151/1
+Stack,Easy,Parenthesis Checker,"Adobe, Amazon, Flipkart, +7",28.56%,https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1
+Stack,Easy,Stack using Linked List,"Codenation, FactSet, Microsoft, +2",53.98%,https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1
+Stack,Easy,Delete Mid of a Stack,Amazon,53.71%,https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1
+Stack,Easy,Reverse Using Stack,,76.17%,https://www.geeksforgeeks.org/problems/reverse-a-string-using-stack/1
+Stack,Easy,Make the array beautiful,,49.96%,https://www.geeksforgeeks.org/problems/make-the-array-beautiful--170647/1
+Stack,Easy,Get min at pop,,49.04%,https://www.geeksforgeeks.org/problems/get-min-at-pop/1
+Stack,Easy,Print Bracket Number,Flipkart,51.19%,https://www.geeksforgeeks.org/problems/print-bracket-number4058/1
+Stack,Easy,Insert at Bottom of Stack,,71.19%,https://www.geeksforgeeks.org/problems/insert-an-element-at-the-bottom-of-a-stack/1
+Stack,Easy,Reversing the equation,,58.61%,https://www.geeksforgeeks.org/problems/reversing-the-equation2205/1
+Stack,Easy,Stack Operations,,66.80%,https://www.geeksforgeeks.org/problems/stacks-operations/1
+Stack,Easy,Remove Two Consecutive Same,,42.82%,https://www.geeksforgeeks.org/problems/string-manipulation3706/1
+Stack,Easy,Compress String,,38.92%,https://www.geeksforgeeks.org/problems/easy-string2212/1
+Stack,Easy,Delete Smaller Than Next,,44.05%,https://www.geeksforgeeks.org/problems/delete-array-elements-which-are-smaller-than-next-or-become-smaller3115/1
+Stack,Easy,Outermost Parentheses of Primitives,,58.70%,https://www.geeksforgeeks.org/problems/outermost-parentheses/1
+Stack,Easy,Maximum Nesting Depth of the Parentheses,,78.24%,https://www.geeksforgeeks.org/problems/maximum-nesting-depth-of-the-parentheses/1
+Stack,Easy,Middle of Stack,,61.97%,https://www.geeksforgeeks.org/problems/middle-of-stack/1
+Stack,Medium,Next Greater Element,"Adobe, Amazon, Flipkart, +2",32.95%,https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+Stack,Medium,The Celebrity Problem,"Amazon, Fab.com, Flipkart, +6",38.33%,https://www.geeksforgeeks.org/problems/the-celebrity-problem/1
+Stack,Medium,Get Min from Stack,"Adobe, Amazon, D-E-Shaw, +16",22.59%,https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/1
+Stack,Medium,Implement stack using array,"FactSet, Goldman Sachs, Kritikal Solutions, +2",54.76%,https://www.geeksforgeeks.org/problems/implement-stack-using-array/1
+Stack,Medium,Stock Span Problem,"Accolite, Adobe, Amazon, +4",43.56%,https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1
+Stack,Medium,Next Smaller Element,"Amazon, Flipkart",36.26%,https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1
+Stack,Medium,Sort a stack,"Amazon, Goldman Sachs, IBM, +4",69.19%,https://www.geeksforgeeks.org/problems/sort-a-stack/1
+Stack,Medium,Infix to Postfix,"Microsoft, Paytm, VMWare",52.94%,https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1
+Stack,Medium,Two Stacks in an Array,"24*7 Innovation Labs, Microsoft, Samsung, +1",56.49%,https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1
+Stack,Medium,Postfix Evaluation,,63.04%,https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1
+Stack,Medium,Valid Substring,"Amazon, NPCI",23.37%,https://www.geeksforgeeks.org/problems/valid-substring0624/1
+Stack,Medium,Reverse a Stack,,80.50%,https://www.geeksforgeeks.org/problems/reverse-a-stack/1
+Stack,Medium,Max Sum of 2 Smallest Across Subarrays,,43.26%,https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/1
+Stack,Medium,Previous Smaller Element,,58.12%,https://www.geeksforgeeks.org/problems/previous-smaller-element/1
+Stack,Medium,Minimum Bracket Reversals to Balance,Amazon,51.88%,https://www.geeksforgeeks.org/problems/count-the-reversals0401/1
+Stack,Medium,Maximum Difference,,33.30%,https://www.geeksforgeeks.org/problems/maximum-difference-1587115620/1
+Stack,Medium,Next Greater Element in Circular Array,"Flipkart, Amazon, Microsoft",56.97%,https://www.geeksforgeeks.org/problems/next-greater-element/1
+Stack,Medium,Reverse each word in a given string,"Paytm, Zoho, Flipkart, +5",53.96%,https://www.geeksforgeeks.org/problems/reverse-each-word-in-a-given-string1001/1
+Stack,Medium,Opposite Sign Pair Reduction,,50.06%,https://www.geeksforgeeks.org/problems/opposite-sign-pair-reduction/1
+Stack,Medium,Postfix to Infix Conversion,,49.41%,https://www.geeksforgeeks.org/problems/postfix-to-infix-conversion/1
+Stack,Medium,Check Redundant Brackets,,48.71%,https://www.geeksforgeeks.org/problems/expression-contains-redundant-bracket-or-not/1
+Stack,Medium,Remove the balls,,58.66%,https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1
+Stack,Medium,Removing K Consecutive Identical,"Amazon, Microsoft",21.29%,https://www.geeksforgeeks.org/problems/restrictive-candy-crush--141631/1
+Stack,Medium,Sum of subarray minimums,NPCI,46.92%,https://www.geeksforgeeks.org/problems/sum-of-subarray-minimum/1
+Stack,Medium,Prefix to Infix Conversion,,69.51%,https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1
+Stack,Medium,Infix To Prefix,,37.46%,https://www.geeksforgeeks.org/problems/infix-to-prefix-notation/1
+Stack,Medium,Prefix to Postfix Conversion,,75.66%,https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1
+Stack,Medium,Postfix to Prefix Conversion,,76.83%,https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1
+Stack,Medium,Lexicographically smallest after removing k,,49.97%,https://www.geeksforgeeks.org/problems/lexicographically-smallest-after-removing-k/1
+Stack,Medium,Remove Consecutive Two Same,,53.91%,https://www.geeksforgeeks.org/problems/geeks-and-the-string--170645/1
+Stack,Medium,Next element with greater frequency,NPCI,60.40%,https://www.geeksforgeeks.org/problems/next-element-with-greater-frequency--170637/1
+Stack,Medium,Validate Stack Operations,NPCI,70.50%,https://www.geeksforgeeks.org/problems/stack-permutations/1
+Stack,Medium,Nearest Smaller Value,Atlassian,55.45%,https://www.geeksforgeeks.org/problems/nearest-smaller-tower--170647/1
+Stack,Medium,Geek and Number String,,40.63%,https://www.geeksforgeeks.org/problems/geek-and-number-string--141631/1
+Stack,Medium,Sum of subarray ranges,,50.82%,https://www.geeksforgeeks.org/problems/sum-of-subarray-ranges/1
+Stack,Medium,Greater Tower Sum,,34.62%,https://www.geeksforgeeks.org/problems/save-gotham1222/1
+Stack,Medium,Min Add to Make Parentheses Valid,"Amazon, Microsoft, TCS, +2",57.97%,https://www.geeksforgeeks.org/problems/min-add-to-make-parentheses-valid/1
+Stack,Medium,Subarrays with First as Minimum,,56.75%,https://www.geeksforgeeks.org/problems/subarrays-with-first-element-minimum/1
+Stack,Medium,Max People Visible in a Line,NPCI,50.11%,https://www.geeksforgeeks.org/problems/maximum-people-visible-in-a-line/1
+Stack,Medium,Previous Greater Element,,58.58%,https://www.geeksforgeeks.org/problems/previous-greater-element/1
+Stack,Medium,Implement UNDO & REDO,,61.95%,https://www.geeksforgeeks.org/problems/implement-undo-redo/1
+Stack,Medium,Clone a Stack,Flipkart,85.85%,https://www.geeksforgeeks.org/problems/clone-a-stack-without-usinig-extra-space/1
+Stack,Medium,Shopkeeper Profit,,51.33%,https://www.geeksforgeeks.org/problems/shopkeeper-profit/1
+Stack,Medium,Get Max from Stack,,43.10%,https://www.geeksforgeeks.org/problems/get-max-from-stack/1
+Stack,Medium,Prefix Evaluation,,48.65%,https://www.geeksforgeeks.org/problems/prefix-evaluation/1
+Stack,Medium,Expression Evaluation,,37.84%,https://www.geeksforgeeks.org/problems/fun-with-expresions2523/1
+Stack,Medium,Removing Consecutive Elements,,67.93%,https://www.geeksforgeeks.org/problems/removing-consecutive-elements/1
+Stack,Medium,Design Browser History,,78.13%,https://www.geeksforgeeks.org/problems/design-browser-history/1
+Stack,Medium,Score of Parentheses String,,86.33%,https://www.geeksforgeeks.org/problems/score-of-parentheses-string/1
+Stack,Hard,Trapping Rain Water,"Adobe, Amazon, Flipkart, +3",33.14%,https://www.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1
+Stack,Hard,Histogram Max Rectangular Area,"Google, Microsoft, NPCI",32.12%,https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1
+Stack,Hard,Max of Min for Every Window Size,"Amazon, Flipkart, Microsoft, +1",42.90%,https://www.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size3453/1
+Stack,Hard,Remove Redundant Parenthesis,Oracle,51.49%,https://www.geeksforgeeks.org/problems/redundant-parenthesis--170647/1
+Stack,Hard,Triplet Satisfying arr[i] < arr[k] < arr[j],"Microsoft, Oracle",21.32%,https://www.geeksforgeeks.org/problems/132-geeky-buildings--141631/1
+Stack,Hard,Secret Cipher,,49.98%,https://www.geeksforgeeks.org/problems/secret-cipher--141631/1
+Stack,Hard,Sum of Max of Subarrays,,51.60%,https://www.geeksforgeeks.org/problems/sum-of-max-of-subarrays/1
+Stack,Hard,Implement k stacks in an array,,38.88%,https://www.geeksforgeeks.org/problems/implement-k-stacks-in-an-array/1
+Stack,Hard,Make Prefix Repetition Concise,,34.90%,https://www.geeksforgeeks.org/problems/secret-cipher--141631/1
