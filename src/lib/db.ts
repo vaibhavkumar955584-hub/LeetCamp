@@ -4,7 +4,7 @@ import fs from 'fs';
 
 let dbInstance: Database.Database | null = null;
 
-function findDbPath(): string {
+function findSourceDbPath(): string {
   if (process.env.SQLITE_DB_PATH && fs.existsSync(process.env.SQLITE_DB_PATH)) {
     return process.env.SQLITE_DB_PATH;
   }
@@ -14,12 +14,18 @@ function findDbPath(): string {
     path.resolve(process.cwd(), 'data', 'problems.db'),
     path.join(__dirname, '..', '..', '..', 'data', 'problems.db'),
     path.join(__dirname, '..', '..', 'data', 'problems.db'),
+    path.join(__dirname, '..', 'data', 'problems.db'),
     path.join(process.cwd(), 'problems.db'),
+    '/var/task/data/problems.db',
   ];
   
   for (const p of possiblePaths) {
-    if (fs.existsSync(p)) {
-      return p;
+    try {
+      if (fs.existsSync(p)) {
+        return p;
+      }
+    } catch {
+      // Ignore permission check errors
     }
   }
   
@@ -28,16 +34,40 @@ function findDbPath(): string {
 
 export function getDatabase(): Database.Database {
   if (!dbInstance) {
-    const dbPath = findDbPath();
+    const sourceDbPath = findSourceDbPath();
+    let targetDbPath = sourceDbPath;
+
+    // Check if we are running in Vercel / AWS Lambda / read-only serverless environment
+    const isServerless = !!process.env.VERCEL || !!process.env.AWS_LAMBDA_FUNCTION_NAME;
+    
+    if (isServerless || process.env.NODE_ENV === 'production') {
+      try {
+        const tmpDbPath = path.join('/tmp', 'problems.db');
+        if (fs.existsSync(sourceDbPath)) {
+          // If /tmp/problems.db does not exist or has different size, copy it to /tmp
+          const sourceStat = fs.statSync(sourceDbPath);
+          const needsCopy = !fs.existsSync(tmpDbPath) || fs.statSync(tmpDbPath).size !== sourceStat.size;
+          
+          if (needsCopy) {
+            fs.copyFileSync(sourceDbPath, tmpDbPath);
+          }
+          if (fs.existsSync(tmpDbPath)) {
+            targetDbPath = tmpDbPath;
+          }
+        }
+      } catch (err: any) {
+        console.warn('Serverless /tmp database replication note:', err.message);
+      }
+    }
 
     try {
-      // In serverless / read-only production environment (e.g. Vercel), open directly with readonly: true
-      dbInstance = new Database(dbPath, { readonly: true, fileMustExist: false });
+      dbInstance = new Database(targetDbPath, { readonly: false, fileMustExist: false });
+      dbInstance.pragma('journal_mode = WAL');
+      dbInstance.pragma('synchronous = NORMAL');
     } catch {
       try {
-        dbInstance = new Database(dbPath, { readonly: false });
-        dbInstance.pragma('journal_mode = WAL');
-        dbInstance.pragma('synchronous = NORMAL');
+        // Fallback to readonly if directory permissions prevent WAL creation
+        dbInstance = new Database(targetDbPath, { readonly: true, fileMustExist: false });
       } catch (err: any) {
         console.error('Critical database initialization error:', err.message);
         throw err;
