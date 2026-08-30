@@ -1,8 +1,20 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 import fs from 'fs';
+import os from 'os';
 
 let dbInstance: Database.Database | null = null;
+
+function isDirectoryWritable(dir: string): boolean {
+  try {
+    const testFile = path.join(dir, `.test_write_${Date.now()}`);
+    fs.writeFileSync(testFile, '1');
+    fs.unlinkSync(testFile);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function findSourceDbPath(): string {
   if (process.env.SQLITE_DB_PATH && fs.existsSync(process.env.SQLITE_DB_PATH)) {
@@ -37,14 +49,14 @@ export function getDatabase(): Database.Database {
     const sourceDbPath = findSourceDbPath();
     let targetDbPath = sourceDbPath;
 
-    // Check if we are running in Vercel / AWS Lambda / read-only serverless environment
+    // Check if we are running in Vercel / AWS Lambda or a read-only filesystem environment
     const isServerless = !!process.env.VERCEL || !!process.env.AWS_LAMBDA_FUNCTION_NAME;
+    const sourceDirWritable = isDirectoryWritable(path.dirname(sourceDbPath));
     
-    if (isServerless || process.env.NODE_ENV === 'production') {
+    if (isServerless || !sourceDirWritable) {
       try {
-        const tmpDbPath = path.join('/tmp', 'problems.db');
+        const tmpDbPath = path.join(os.tmpdir(), 'leetcamp_problems.db');
         if (fs.existsSync(sourceDbPath)) {
-          // If /tmp/problems.db does not exist or has different size, copy it to /tmp
           const sourceStat = fs.statSync(sourceDbPath);
           const needsCopy = !fs.existsSync(tmpDbPath) || fs.statSync(tmpDbPath).size !== sourceStat.size;
           
@@ -56,7 +68,7 @@ export function getDatabase(): Database.Database {
           }
         }
       } catch (err: any) {
-        console.warn('Serverless /tmp database replication note:', err.message);
+        console.warn('Serverless temp database replication note:', err.message);
       }
     }
 
@@ -715,22 +727,30 @@ export function getGlobalStats() {
     }
 
     const companyCount = db.prepare('SELECT COUNT(DISTINCT company) as c FROM problems').get() as { c: number };
-    const companyProblemsCount = db.prepare('SELECT COUNT(DISTINCT slug) as c FROM problems').get() as { c: number };
+    const distinctLeetCodeProblems = db.prepare('SELECT COUNT(DISTINCT slug) as c FROM problems').get() as { c: number };
+    const companyQuestionsCount = db.prepare("SELECT COUNT(DISTINCT company || '::' || slug) as c FROM problems").get() as { c: number };
+    const rawCompanyRows = db.prepare('SELECT COUNT(*) as c FROM problems').get() as { c: number };
     const patternCount = db.prepare('SELECT COUNT(DISTINCT category_slug) as c FROM pattern_problems').get() as { c: number };
     const patternProblemsCount = db.prepare('SELECT COUNT(*) as c FROM pattern_problems').get() as { c: number };
 
     return {
       lastIngestedAt: meta['last_ingested_at'] || null,
-      totalCompanies: companyCount?.c || 470,
-      totalCompanyProblems: companyProblemsCount?.c || 37714,
+      totalCompanies: companyCount?.c || 429,
+      totalUniqueLeetCodeProblems: distinctLeetCodeProblems?.c || 3392,
+      totalCompanyQuestions: companyQuestionsCount?.c || 17340,
+      totalCompanyProblems: companyQuestionsCount?.c || 17340, // Canonical company question count
+      totalRawTimeframeRecords: rawCompanyRows?.c || 37714,
       totalPatterns: patternCount?.c || 48,
       totalPatternProblems: patternProblemsCount?.c || 2961,
     };
   } catch {
     return {
       lastIngestedAt: null,
-      totalCompanies: 470,
-      totalCompanyProblems: 37714,
+      totalCompanies: 429,
+      totalUniqueLeetCodeProblems: 3392,
+      totalCompanyQuestions: 17340,
+      totalCompanyProblems: 17340,
+      totalRawTimeframeRecords: 37714,
       totalPatterns: 48,
       totalPatternProblems: 2961,
     };
