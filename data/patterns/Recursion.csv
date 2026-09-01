@@ -23,3 +23,54 @@ Recursion,Medium,N-Digit Numbers with Increasing Digits,ABCO,49.66%,https://www.
 Recursion,Medium,Non-Crossing Handshakes in Circle,Amazon,48.96%,https://www.geeksforgeeks.org/problems/handshakes1303/1
 Recursion,Hard,Josephus problem,"Amazon, Microsoft, Walmart",57.26%,https://www.geeksforgeeks.org/problems/josephus-problem/1
 Recursion,Hard,Next Happy Number,,53.97%,https://www.geeksforgeeks.org/problems/next-happy-number4538/1
+Recursion,Medium,Add Two Numbers,"EarnIn, Jane Street, Ola Cabs, AQR Capital Management, +33",49.20%,https://leetcode.com/problems/add-two-numbers/
+Recursion,Hard,Regular Expression Matching,"Netskope, X, Rokt, Zoho, +18",31.70%,https://leetcode.com/problems/regular-expression-matching/
+Recursion,Easy,Merge Two Sorted Lists,"HPE, Huawei, Wix, Accenture, +33",68.80%,https://leetcode.com/problems/merge-two-sorted-lists/
+Recursion,Medium,Swap Nodes in Pairs,"Altimetrik, Arista Networks, Bloomberg, Microsoft, +10",70.20%,https://leetcode.com/problems/swap-nodes-in-pairs/
+Recursion,Hard,Reverse Nodes in k-Group,"Cadence, Qualcomm, Arista Networks, Palo Alto Networks, +23",67.10%,https://leetcode.com/problems/reverse-nodes-in-k-group/
+Recursion,Hard,Wildcard Matching,"X, Two Sigma, Snap, Zoho, +12",32.70%,https://leetcode.com/problems/wildcard-matching/
+Recursion,Medium,"Pow(x, n)","Wix, eBay, Meta, LinkedIn, +17",39.30%,https://leetcode.com/problems/powx-n/
+Recursion,Hard,Permutation Sequence,"Jump Trading, X, Turing, Bloomberg, +4",54.20%,https://leetcode.com/problems/permutation-sequence/
+Recursion,Medium,Reorder List,"Arista Networks, Bloomberg, UiPath, Snap, +11",66.10%,https://leetcode.com/problems/reorder-list/
+Recursion,Easy,Remove Linked List Elements,"Arista Networks, Meta, Bloomberg, Google, +5",55.30%,https://leetcode.com/problems/remove-linked-list-elements/
+Recursion,Easy,Reverse Linked List,"Luxoft, Nokia, Qualcomm, Yahoo, +31",81.00%,https://leetcode.com/problems/reverse-linked-list/
+Recursion,Hard,Basic Calculator,"Rokt, Ripple, Squarepoint Capital, Uber, +18",47.20%,https://leetcode.com/problems/basic-calculator/
+Recursion,Easy,Power of Two,"Qualcomm, Snap, Nvidia, Meta, +6",50.50%,https://leetcode.com/problems/power-of-two/
+Recursion,Hard,Number of Digit One,"Salesforce, Bloomberg, Microsoft, Google, +2",39.70%,https://leetcode.com/problems/number-of-digit-one/
+Recursion,Easy,Palindrome Linked List,"IXL, Nvidia, AMD, Intel, +12",58.70%,https://leetcode.com/problems/palindrome-linked-list/
+Recursion,Medium,Different Ways to Add Parentheses,"Deutsche Bank, DeltaX, Amazon, Bloomberg, +2",73.60%,https://leetcode.com/problems/different-ways-to-add-parentheses/
+Recursion,Medium,Strobogrammatic Number II,"Meta, Google",53.60%,https://leetcode.com/problems/strobogrammatic-number-ii/
+Recursion,Hard,Strobogrammatic Number III,,42.70%,https://leetcode.com/problems/strobogrammatic-number-iii/
+Recursion,Medium,Verify Preorder Sequence in Binary Search Tree,"Zenefits, Expedia, Salesforce, TikTok, +1",51.80%,https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/
+Recursion,Hard,Integer to English Words,"Gusto, ZScaler, Faire, Roblox, +15",35.20%,https://leetcode.com/problems/integer-to-english-words/
+Recursion,Easy,Power of Three,"Google, Bloomberg, Goldman Sachs, Amazon, +2",51.60%,https://leetcode.com/problems/power-of-three/
+Recursion,Easy,Power of Four,"Two Sigma, Wix, Google, Amazon, +3",52.60%,https://leetcode.com/problems/power-of-four/
+Recursion,Medium,Elimination Game,"Autodesk, Bloomberg, Amazon, Google, +1",46.70%,https://leetcode.com/problems/elimination-game/
+Recursion,Medium,Decode String,"Activision, Compass, Flexport, Tencent, +37",63.20%,https://leetcode.com/problems/decode-string/
+Recursion,Medium,Ternary Expression Parser,Snap,62.70%,https://leetcode.com/problems/ternary-expression-parser/
+Recursion,Medium,Predict the Winner,"PhonePe, Amazon, Meta, Google, +5",59.90%,https://leetcode.com/problems/predict-the-winner/
+Recursion,Easy,Fibonacci Number,"LTI, Cognizant, TCS, Bloomberg, +11",74.60%,https://leetcode.com/problems/fibonacci-number/
+Recursion,Medium,Output Contest Matches,Google,77.50%,https://leetcode.com/problems/output-contest-matches/
+Recursion,Hard,Parse Lisp Expression,"Attentive, Affirm, Apple, Google",54.00%,https://leetcode.com/problems/parse-lisp-expression/
+Recursion,Hard,Basic Calculator IV,"Intuit, Roblox, Google",49.80%,https://leetcode.com/problems/basic-calculator-iv/
+Recursion,Hard,Basic Calculator III,"Houzz, Hulu, Pocket Gems, Intuit, +11",53.50%,https://leetcode.com/problems/basic-calculator-iii/
+Recursion,Medium,Split BST,"Coupang, Amazon",82.10%,https://leetcode.com/problems/split-bst/
+Recursion,Medium,K-th Symbol in Grammar,"DE Shaw, Microsoft, Google, Goldman Sachs, +3",48.70%,https://leetcode.com/problems/k-th-symbol-in-grammar/
+Recursion,Medium,All Possible Full Binary Trees,"Salesforce, Nvidia, Google, Amazon, +1",82.80%,https://leetcode.com/problems/all-possible-full-binary-trees/
+Recursion,Hard,Parsing A Boolean Expression,"HiLabs, Amazon, Goldman Sachs, Google, +3",69.80%,https://leetcode.com/problems/parsing-a-boolean-expression/
+Recursion,Medium,Print Immutable Linked List in Reverse,,94.00%,https://leetcode.com/problems/print-immutable-linked-list-in-reverse/
+Recursion,Medium,Find Kth Bit in Nth Binary String,"Google, Meta, Microsoft, Amazon, +1",73.70%,https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/
+Recursion,Hard,Minimum One Bit Operations to Make Integers Zero,"Expedia, ServiceNow, Oracle, Bloomberg, +1",78.20%,https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/
+Recursion,Hard,Maximize Number of Nice Divisors,Microsoft,37.10%,https://leetcode.com/problems/maximize-number-of-nice-divisors/
+Recursion,Medium,Find the Winner of the Circular Game,"opentext, Goldman Sachs, Nutanix, Accenture, +9",82.30%,https://leetcode.com/problems/find-the-winner-of-the-circular-game/
+Recursion,Medium,Count Good Numbers,"Amazon, Visa, Google, Infosys, +3",58.00%,https://leetcode.com/problems/count-good-numbers/
+Recursion,Medium,Minimum Non-Zero Product of the Array Elements,"PayPal, Amazon",37.70%,https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/
+Recursion,Easy,Finding 3-Digit Even Numbers,"Bloomberg, Google, Meta, Microsoft, +1",78.60%,https://leetcode.com/problems/finding-3-digit-even-numbers/
+Recursion,Medium,Remove Nodes From Linked List,"Amazon, Microsoft, Google, Meta",75.20%,https://leetcode.com/problems/remove-nodes-from-linked-list/
+Recursion,Medium,Count Collisions of Monkeys on a Polygon,"Goldman Sachs, Amazon, Microsoft",30.40%,https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/
+Recursion,Easy,Find the K-th Character in String Game I,"Google, Bloomberg, Meta, Amazon, +1",81.60%,https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/
+Recursion,Hard,Find the K-th Character in String Game II,"Bloomberg, Google, Amazon",48.20%,https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/
+Recursion,Easy,Unique 3-Digit Even Numbers,"Amazon, Bloomberg, Google",70.50%,https://leetcode.com/problems/unique-3-digit-even-numbers/
+Recursion,Medium,Sequential Grid Path Cover,,60.30%,https://leetcode.com/problems/sequential-grid-path-cover/
+Recursion,Medium,Partition Array into Two Equal Product Subsets,Meta,35.10%,https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/
+Recursion,Hard,Last Remaining Integer After Alternating Deletion Operations,,49.20%,https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/
