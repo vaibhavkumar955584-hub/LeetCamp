@@ -56,17 +56,33 @@ export function CommandPalette({ isOpen, onClose }: { isOpen: boolean; onClose: 
     const timer = setTimeout(async () => {
       setLoading(true);
       try {
-        const [compRes, patRes] = await Promise.all([
-          fetch(`/api/companies?search=${encodeURIComponent(query)}&limit=6`),
+        const [compRes, patRes, probRes] = await Promise.all([
+          fetch(`/api/companies?search=${encodeURIComponent(query)}&limit=5`),
           fetch(`/api/patterns?search=${encodeURIComponent(query)}`),
+          fetch(`/api/questions/search?q=${encodeURIComponent(query)}&limit=5`),
         ]);
 
         const newItems: SearchItem[] = [];
 
+        if (probRes.ok) {
+          const probData = await probRes.json();
+          if (Array.isArray(probData.results)) {
+            probData.results.slice(0, 4).forEach((p: any) => {
+              newItems.push({
+                id: `prob-${p.slug}`,
+                title: p.title,
+                subtitle: `${p.difficulty} • Asked by ${p.company_count} ${p.company_count === 1 ? 'Company' : 'Companies'} (${p.sample_companies?.join(', ') || ''})`,
+                category: 'Problems',
+                href: `/lookup?q=${encodeURIComponent(p.slug)}`,
+              });
+            });
+          }
+        }
+
         if (compRes.ok) {
           const compData = await compRes.json();
           if (Array.isArray(compData.companies)) {
-            compData.companies.slice(0, 5).forEach((c: any) => {
+            compData.companies.slice(0, 4).forEach((c: any) => {
               newItems.push({
                 id: `comp-${c.company}`,
                 title: c.company,
@@ -81,7 +97,7 @@ export function CommandPalette({ isOpen, onClose }: { isOpen: boolean; onClose: 
         if (patRes.ok) {
           const patData = await patRes.json();
           if (Array.isArray(patData.patterns)) {
-            patData.patterns.slice(0, 5).forEach((p: any) => {
+            patData.patterns.slice(0, 4).forEach((p: any) => {
               newItems.push({
                 id: `pat-${p.slug}`,
                 title: p.category,

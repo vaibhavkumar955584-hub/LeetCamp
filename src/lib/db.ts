@@ -76,6 +76,14 @@ export function getDatabase(): Database.Database {
       dbInstance = new Database(targetDbPath, { readonly: false, fileMustExist: false });
       dbInstance.pragma('journal_mode = WAL');
       dbInstance.pragma('synchronous = NORMAL');
+      try {
+        dbInstance.exec(`
+          CREATE INDEX IF NOT EXISTS idx_problems_title_nocase ON problems(title COLLATE NOCASE);
+          CREATE INDEX IF NOT EXISTS idx_problems_slug_nocase ON problems(slug COLLATE NOCASE);
+        `);
+      } catch {
+        // Ignore if read-only
+      }
     } catch {
       try {
         // Fallback to readonly if directory permissions prevent WAL creation
@@ -831,3 +839,240 @@ export function checkDbHealth(): { ok: boolean; count: number; error?: string } 
     return { ok: false, count: 0, error: err.message };
   }
 }
+
+// -------------------------------------------------------------
+// Question Reverse-Lookup (Company Finder by Question)
+// -------------------------------------------------------------
+
+export interface QuestionSearchResult {
+  title: string;
+  slug: string;
+  difficulty: 'Easy' | 'Medium' | 'Hard' | 'Basic';
+  leetcode_url: string;
+  topics: string | null;
+  company_count: number;
+  sample_companies: string[];
+}
+
+export interface QuestionCompanyOccurrence {
+  company: string;
+  max_frequency: number;
+  timeframes: string[];
+  hiring_tracks: string[];
+  difficulty: string;
+  acceptance: number | null;
+  topics: string | null;
+  leetcode_url: string;
+}
+
+export interface QuestionPatternOccurrence {
+  category: string;
+  category_slug: string;
+  difficulty: string;
+  accuracy: number | null;
+  url: string;
+}
+
+export interface QuestionLookupDetail {
+  title: string;
+  slug: string;
+  difficulty: string;
+  leetcode_url: string;
+  topics: string[];
+  total_companies: number;
+  companies: QuestionCompanyOccurrence[];
+  patterns: QuestionPatternOccurrence[];
+  timeframe_summary: {
+    in_30_days: number;
+    in_90_days: number;
+    in_6_months: number;
+    in_more_than_six_months: number;
+    in_all_time: number;
+  };
+}
+
+function sanitizeQuestionQuery(raw?: string | null): string {
+  if (!raw) return '';
+  let query = raw.trim();
+  if (query.includes('leetcode.com/problems/')) {
+    const match = query.match(/leetcode\.com\/problems\/([^/?#]+)/i);
+    if (match && match[1]) {
+      return match[1].replace(/-/g, ' ');
+    }
+  }
+  return query;
+}
+
+export function searchQuestionsKeyByKey(rawQuery: string, limit: number = 20): QuestionSearchResult[] {
+  const cleanQ = sanitizeQuestionQuery(rawQuery);
+  if (!cleanQ) return [];
+
+  const db = getDatabase();
+  const term = `%${cleanQ}%`;
+  const prefix = `${cleanQ}%`;
+  const cappedLimit = Math.min(100, Math.max(1, limit));
+
+  try {
+    const rows = db.prepare(`
+      SELECT 
+        title,
+        slug,
+        difficulty,
+        leetcode_url,
+        topics,
+        COUNT(DISTINCT company) as company_count,
+        GROUP_CONCAT(DISTINCT company) as sample_companies
+      FROM problems
+      WHERE title LIKE ? OR slug LIKE ?
+      GROUP BY slug
+      ORDER BY 
+        CASE 
+          WHEN title = ? COLLATE NOCASE THEN 1
+          WHEN slug = ? COLLATE NOCASE THEN 2
+          WHEN title LIKE ? THEN 3
+          WHEN slug LIKE ? THEN 4
+          ELSE 5 
+        END,
+        company_count DESC,
+        title ASC
+      LIMIT ?
+    `).all(term, term, cleanQ, cleanQ, prefix, prefix, cappedLimit) as any[];
+
+    return rows.map((r) => ({
+      title: r.title,
+      slug: r.slug,
+      difficulty: r.difficulty,
+      leetcode_url: r.leetcode_url,
+      topics: r.topics,
+      company_count: r.company_count,
+      sample_companies: r.sample_companies ? r.sample_companies.split(',').slice(0, 5) : [],
+    }));
+  } catch (err) {
+    console.error('Error in searchQuestionsKeyByKey:', err);
+    return [];
+  }
+}
+
+export function getQuestionCompanyDetails(slugOrTitle: string): QuestionLookupDetail | null {
+  if (!slugOrTitle || !slugOrTitle.trim()) return null;
+  let query = slugOrTitle.trim();
+  if (query.includes('leetcode.com/problems/')) {
+    const match = query.match(/leetcode\.com\/problems\/([^/?#]+)/i);
+    if (match && match[1]) {
+      query = match[1];
+    }
+  }
+
+  const db = getDatabase();
+
+  // Find canonical problem info
+  const problemMeta = db.prepare(`
+    SELECT title, slug, difficulty, leetcode_url, topics
+    FROM problems
+    WHERE slug = ? OR title = ? COLLATE NOCASE
+    LIMIT 1
+  `).get(query.toLowerCase(), query) as any;
+
+  if (!problemMeta) return null;
+
+  // Get all company rows for this problem
+  const companyRows = db.prepare(`
+    SELECT 
+      company,
+      difficulty,
+      timeframe,
+      frequency,
+      acceptance,
+      topics,
+      hiring_track,
+      leetcode_url
+    FROM problems
+    WHERE slug = ?
+    ORDER BY company COLLATE NOCASE ASC, CASE WHEN frequency IS NOT NULL THEN frequency ELSE -1 END DESC
+  `).all(problemMeta.slug) as any[];
+
+  // Group by company
+  const companyMap = new Map<string, QuestionCompanyOccurrence>();
+  let in30Days = 0;
+  let in90Days = 0;
+  let in6Months = 0;
+  let inMoreThanSixMonths = 0;
+  let inAllTime = 0;
+
+  for (const row of companyRows) {
+    if (!companyMap.has(row.company)) {
+      companyMap.set(row.company, {
+        company: row.company,
+        max_frequency: row.frequency || 0,
+        timeframes: [],
+        hiring_tracks: [],
+        difficulty: row.difficulty,
+        acceptance: row.acceptance,
+        topics: row.topics,
+        leetcode_url: row.leetcode_url,
+      });
+    }
+
+    const comp = companyMap.get(row.company)!;
+    if (row.frequency && row.frequency > comp.max_frequency) {
+      comp.max_frequency = row.frequency;
+    }
+    if (row.timeframe && !comp.timeframes.includes(row.timeframe)) {
+      comp.timeframes.push(row.timeframe);
+    }
+    if (row.hiring_track && !comp.hiring_tracks.includes(row.hiring_track)) {
+      comp.hiring_tracks.push(row.hiring_track);
+    }
+  }
+
+  // Count timeframe occurrences across unique companies
+  for (const comp of companyMap.values()) {
+    if (comp.timeframes.includes('30_days')) in30Days++;
+    if (comp.timeframes.includes('90_days')) in90Days++;
+    if (comp.timeframes.includes('6_months')) in6Months++;
+    if (comp.timeframes.includes('more_than_six_months')) inMoreThanSixMonths++;
+    if (comp.timeframes.includes('all_time')) inAllTime++;
+  }
+
+  const companies = Array.from(companyMap.values()).sort((a, b) => {
+    if (b.max_frequency !== a.max_frequency) {
+      return b.max_frequency - a.max_frequency;
+    }
+    return a.company.localeCompare(b.company);
+  });
+
+  // Cross-reference with pattern_problems
+  let patterns: QuestionPatternOccurrence[] = [];
+  try {
+    patterns = db.prepare(`
+      SELECT DISTINCT category, category_slug, difficulty, accuracy, url
+      FROM pattern_problems
+      WHERE title LIKE ? OR title LIKE ?
+    `).all(problemMeta.title, `%${problemMeta.title}%`) as QuestionPatternOccurrence[];
+  } catch {
+    patterns = [];
+  }
+
+  const topicList = problemMeta.topics
+    ? problemMeta.topics.split(',').map((t: string) => t.trim()).filter(Boolean)
+    : [];
+
+  return {
+    title: problemMeta.title,
+    slug: problemMeta.slug,
+    difficulty: problemMeta.difficulty,
+    leetcode_url: problemMeta.leetcode_url,
+    topics: topicList,
+    total_companies: companies.length,
+    companies,
+    patterns,
+    timeframe_summary: {
+      in_30_days: in30Days,
+      in_90_days: in90Days,
+      in_6_months: in6Months,
+      in_more_than_six_months: inMoreThanSixMonths,
+      in_all_time: inAllTime,
+    },
+  };
+}
+

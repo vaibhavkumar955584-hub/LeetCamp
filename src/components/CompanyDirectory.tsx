@@ -105,6 +105,13 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
                 <ArrowRight size={14} />
               </Link>
               <Link
+                href="/lookup"
+                className="btn-primary py-2 px-4 text-sm text-[var(--text-primary)] border-[var(--accent-green)]/40 hover:border-[var(--accent-green)] flex items-center gap-1.5"
+              >
+                <Search size={15} className="text-[var(--accent-green)]" />
+                <span>Question Finder</span>
+              </Link>
+              <Link
                 href="/practice"
                 className="btn-primary py-2 px-4 text-sm text-[var(--text-primary)] flex items-center gap-1.5"
               >
@@ -253,6 +260,36 @@ export function CompanyDirectory({ initialCompanies }: CompanyDirectoryProps) {
               <span>Start Practice Session</span>
               <ArrowRight size={13} className="group-hover:translate-x-1.5 transition-transform" />
             </div>
+          </Link>
+        </div>
+
+        {/* Quick Reverse-Lookup Banner */}
+        <div className="p-4 sm:p-5 rounded-[var(--radius-lg)] bg-gradient-to-r from-[var(--bg-surface-raised)] via-[var(--bg-surface)] to-[var(--bg-surface-raised)] border border-[var(--accent-green)]/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-[var(--radius-md)] bg-[var(--accent-green-dim)] border border-[var(--accent-green)]/40 flex items-center justify-center shrink-0">
+              <Search size={20} className="text-[var(--accent-green)]" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-sm sm:text-base text-[var(--text-primary)]">
+                  Question Reverse-Lookup: Check Which Companies Ask Your Problem
+                </h3>
+                <span className="text-[10px] font-mono font-semibold px-1.5 py-0.2 rounded bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 hidden sm:inline">
+                  Key-by-Key
+                </span>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)] mt-0.5">
+                Type any DSA problem name (e.g. <em>Minimum Moves to Clean the Classroom</em>, <em>Two Sum</em>) and find interview recency & frequency scores.
+              </p>
+            </div>
+          </div>
+
+          <Link
+            href="/lookup"
+            className="px-4 py-2 rounded-[var(--radius-sm)] bg-[var(--accent-green)] hover:bg-[var(--accent-green)]/90 text-[#0e0f12] font-semibold text-xs flex items-center gap-1.5 shrink-0 shadow-sm transition-all"
+          >
+            <span>Open Question Finder</span>
+            <ArrowRight size={13} />
           </Link>
         </div>
 
