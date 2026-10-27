@@ -11,15 +11,30 @@ export async function GET(request: NextRequest) {
     const title = searchParams.get('title');
     const limitParam = searchParams.get('limit');
 
-    // 1. If slug or title is provided, return the full question company breakdown
+    // If slug or title is provided, return the full question company breakdown
     if (slug || title) {
       const target = slug || title;
       const details = getQuestionCompanyDetails(target!);
 
       if (!details) {
+        // Try to find by searching
+        if (title) {
+          const results = searchQuestionsKeyByKey(title, 5);
+          if (results.length > 0) {
+            const detailFromResult = getQuestionCompanyDetails(results[0].slug);
+            if (detailFromResult) {
+              return NextResponse.json(detailFromResult, {
+                status: 200,
+                headers: {
+                  'Cache-Control': 'public, s-maxage=120, stale-while-revalidate=600',
+                },
+              });
+            }
+          }
+        }
         return NextResponse.json(
-          { error: 'Not Found', message: `Question '${target}' not found in database.` },
-          { status: 404 }
+          { error: 'Not Found', message: `Question '${target}' not found in database.`, companies: [] },
+          { status: 200 }
         );
       }
 
@@ -31,7 +46,7 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // 2. Key-by-key real-time search query
+    // Key-by-key real-time search query
     if (query !== null) {
       const limit = limitParam ? Math.min(100, Math.max(1, parseInt(limitParam, 10) || 20)) : 20;
       const results = searchQuestionsKeyByKey(query, limit);
@@ -64,8 +79,8 @@ export async function GET(request: NextRequest) {
   } catch (error: any) {
     console.error('Error in GET /api/questions/search:', error);
     return NextResponse.json(
-      { error: 'Internal Server Error', message: error.message },
-      { status: 500 }
+      { error: 'Internal Server Error', message: error.message, companies: [] },
+      { status: 200 }
     );
   }
 }

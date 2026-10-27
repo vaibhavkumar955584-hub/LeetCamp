@@ -59,6 +59,7 @@ export function Navbar() {
     { href: '/', label: 'Companies', icon: Building2, active: pathname === '/' || pathname.startsWith('/company') },
     { href: '/lookup', label: 'Lookup', icon: Search, active: pathname.startsWith('/lookup') },
     { href: '/patterns', label: 'Patterns', icon: Layers, active: pathname.startsWith('/patterns') },
+    { href: '/custom/dp', label: 'My DP', icon: Sparkles, active: pathname.startsWith('/custom') },
     { href: '/practice', label: 'Practice', icon: Zap, active: pathname.startsWith('/practice') },
     { href: '/progress', label: 'Progress', icon: BarChart3, active: pathname.startsWith('/progress') },
     { href: '/compare', label: 'Compare', icon: Scale, active: pathname.startsWith('/compare') },
