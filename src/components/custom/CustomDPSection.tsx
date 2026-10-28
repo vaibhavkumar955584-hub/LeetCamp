@@ -12,6 +12,7 @@ interface CustomProblem {
 
 export function CustomDPSection() {
   const [problems, setProblems] = useState<CustomProblem[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [showAddForm, setShowAddForm] = useState(false);
   const [newTitle, setNewTitle] = useState('');
   const [newUrl, setNewUrl] = useState('');
@@ -150,6 +151,21 @@ export function CustomDPSection() {
 
   const handleAddOrUpdate = async () => {
     if (!newTitle.trim() || !newUrl.trim()) { alert('Provide title and URL'); return; }
+    // Check for duplicates (same URL or same title)
+    const isDuplicate = problems.some(p => {
+      if (editingId && p.id === editingId) return false;
+      try {
+        const pUrl = new URL(p.url);
+        const nUrl = new URL(newUrl.trim());
+        if (pUrl.origin === nUrl.origin && pUrl.pathname === nUrl.pathname) return true;
+      } catch {}
+      if (p.title.toLowerCase().trim() === newTitle.toLowerCase().trim()) return true;
+      return false;
+    });
+    if (isDuplicate) {
+      alert('This question already exists in your list');
+      return;
+    }
     if (editingId) {
       const updated = problems.map((p) => (p.id === editingId ? { ...p, title: newTitle.trim(), url: newUrl.trim() } : p));
       saveProblems(updated);
@@ -172,7 +188,15 @@ export function CustomDPSection() {
 
   const solvedCount = Object.values(solvedMap).filter(Boolean).length;
   const favoriteCount = Object.values(favoriteMap).filter(Boolean).length;
-  const displayProblems = activeTab === 'favorites' ? problems.filter(p => favoriteMap[p.id]) : problems;
+  const filteredProblems = searchQuery.trim() 
+    ? problems.filter(p => 
+        p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.url.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : problems;
+  const displayProblems = activeTab === 'favorites' 
+    ? filteredProblems.filter(p => favoriteMap[p.id]) 
+    : filteredProblems;
 
   if (!authChecked) return <div className="flex items-center justify-center min-h-[400px]"><div className="animate-spin w-6 h-6 border-2 border-[var(--accent-green)] border-t-transparent rounded-full" /></div>;
   if (!isAuthenticated) {
@@ -210,8 +234,17 @@ export function CustomDPSection() {
           </div>
         </div>
         <div className="flex gap-2 pt-2 border-t border-[var(--border-subtle)]">
-          <button onClick={() => setActiveTab('all')} className={`px-3.5 py-1.5 rounded text-xs font-semibold border ${activeTab === 'all' ? 'bg-[var(--accent-green)] text-[#0e0f12] border-[var(--accent-green)]' : 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)]'}`}>All ({problems.length})</button>
-          <button onClick={() => setActiveTab('favorites')} className={`px-3.5 py-1.5 rounded text-xs font-semibold border flex items-center gap-1.5 ${activeTab === 'favorites' ? 'bg-[var(--accent-green)] text-[#0e0f12] border-[var(--accent-green)]' : 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)]'}`}><Star size={13} />Favorites ({favoriteCount})</button>
+          <button onClick={() => setActiveTab('all')} className={`px-3.5 py-1.5 rounded text-xs font-semibold border ${activeTab === 'all' ? 'bg-[var(--accent-green)] text-[#0e0f12] border-[var(--accent-green)]' : 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)]'}`}>All ({filteredProblems.length})</button>
+          <button onClick={() => setActiveTab('favorites')} className={`px-3.5 py-1.5 rounded text-xs font-semibold border flex items-center gap-1.5 ${activeTab === 'favorites' ? 'bg-[var(--accent-green)] text-[#0e0f12] border-[var(--accent-green)]' : 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)]'}`}><Star size={13} />Favorites ({displayProblems.length})</button>
+        </div>
+        <div className="pt-2">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search problems..."
+            className="w-full max-w-md bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] px-3 py-2 rounded text-sm outline-none"
+          />
         </div>
       </div>
 
