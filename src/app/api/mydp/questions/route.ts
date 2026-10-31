@@ -12,18 +12,9 @@ export async function GET(req: NextRequest) {
     const days = 8;
     let rows: any[] = [];
     try {
-      rows = db.prepare(`
-        SELECT id, title, slug, leetcode_url, difficulty, topics, company, created_at
-        FROM questions
-        WHERE created_at >= datetime('now', ?)
-        ORDER BY created_at DESC, id DESC
-      `).all(`-${days} days`) as any[];
+      rows = db.prepare(`SELECT id, title, slug, leetcode_url, difficulty, topics, company FROM questions ORDER BY id ASC`).all() as any[];
     } catch {
-      try {
-        rows = db.prepare(`SELECT id, title, slug, leetcode_url, difficulty, topics, company FROM questions WHERE created_at >= datetime('now','-8 days') ORDER BY id DESC`).all() as any[];
-      } catch {
-        rows = [];
-      }
+      rows = [];
     }
 
     const normalized = rows.map(r => ({
