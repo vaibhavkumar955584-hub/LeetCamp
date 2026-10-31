@@ -42,6 +42,11 @@ export function CustomDPSection() {
   const [passwordInput, setPasswordInput] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [authChecked, setAuthChecked] = useState(false);
+  const [isAuthed, setIsAuthed] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [authErr, setAuthErr] = useState('');
+  const [loginLoading, setLoginLoading] = useState(false);
   const [companyData, setCompanyData] = useState<Record<string, string[]>>({});
   const [aiCompanies, setAiCompanies] = useState<string[]>([]);
   const [aiLoading, setAiLoading] = useState(false);
@@ -148,14 +153,40 @@ export function CustomDPSection() {
   const saveSolved = (newSolved: Record<string, boolean>) => { setSolvedMap(newSolved); try { localStorage.setItem('leetcamp_custom_dp_solved', JSON.stringify(newSolved)); } catch (err) {} };
   const saveFavorites = (newFavorites: Record<string, boolean>) => { setFavoriteMap(newFavorites); try { localStorage.setItem('leetcamp_custom_dp_favorites', JSON.stringify(newFavorites)); } catch (err) {} };
   const saveNotes = (newNotes: Record<string, string>) => { setNotesMap(newNotes); try { localStorage.setItem('leetcamp_custom_dp_notes', JSON.stringify(newNotes)); } catch (err) {} };
-  const handleLogout = () => { setIsAuthenticated(false); sessionStorage.removeItem('leetcamp_dp_auth'); };
+  const handleLogout = async () => { setIsAuthed(false); setProblems([]); try { await fetch('/api/auth/logout', { method: 'POST' }); } catch {} };
   const saveTags = (newTags: Record<string, string[]>) => { setTagsMap(newTags); try { localStorage.setItem('leetcamp_custom_dp_tags', JSON.stringify(newTags)); } catch (err) {} };
   const saveDifficulty = (newDiff: Record<string, 'Easy' | 'Medium' | 'Hard'>) => { setDifficultyMap(newDiff); try { localStorage.setItem('leetcamp_custom_dp_diff', JSON.stringify(newDiff)); } catch (err) {} };
   const saveSolvedOn = (newSolvedOn: Record<string, string>) => { setSolvedOnMap(newSolvedOn); try { localStorage.setItem('leetcamp_custom_dp_solvedon', JSON.stringify(newSolvedOn)); } catch (err) {} };
   const saveRevision = (newRev: Record<string, boolean>) => { setRevisionMap(newRev); try { localStorage.setItem('leetcamp_custom_dp_revision', JSON.stringify(newRev)); } catch (err) {} };
 
   const toggleFavorite = (id: string) => { const newFavorites = { ...favoriteMap, [id]: !favoriteMap[id] }; saveFavorites(newFavorites); };
-  const handleLogin = (e: React.FormEvent) => { e.preventDefault(); if (passwordInput === '1308') { setIsAuthenticated(true); sessionStorage.setItem('leetcamp_dp_auth', 'true'); setPasswordError(''); setPasswordInput(''); } else { setPasswordError('Incorrect password'); } };
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoginLoading(true);
+    setAuthErr('');
+    try {
+      const r = await fetch('/api/auth/guest-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      if (r.ok) {
+        setIsAuthed(true);
+        const q = await fetch('/api/mydp/questions');
+        if (q.ok) {
+          const j = await q.json();
+          if (j.questions) setProblems(j.questions);
+        }
+      } else {
+        const j = await r.json();
+        setAuthErr(j.error || 'Failed');
+      }
+    } catch (err: any) {
+      setAuthErr(err.message);
+    } finally {
+      setLoginLoading(false);
+    }
+  };
   const toggleRevision = (id: string) => { const nr = { ...revisionMap, [id]: !revisionMap[id] }; saveRevision(nr); };
   const setDifficulty = (id: string, diff: 'Easy' | 'Medium' | 'Hard') => { const nd = { ...difficultyMap, [id]: diff }; saveDifficulty(nd); };
   const openTagModal = (id: string) => { setShowTagModal(id); setTagInput(''); };
@@ -267,19 +298,19 @@ export function CustomDPSection() {
   const displayProblems = filteredProblems;
 
   if (!authChecked) return <div className="flex items-center justify-center min-h-[400px]"><div className="animate-spin w-6 h-6 border-2 border-[var(--accent-green)] border-t-transparent rounded-full" /></div>;
-  if (!isAuthenticated) {
+  if (!isAuthed) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
         <div className="data-surface p-8 max-w-md w-full space-y-6">
           <div className="text-center space-y-2">
-            <div className="w-12 h-12 rounded-full bg-[var(--accent-green-dim)] text-[var(--accent-green)] border border-[var(--accent-green)]/30 mx-auto flex items-center justify-center"><Lock size={24} /></div>
-            <h1 className="text-xl font-bold text-[var(--text-primary)]">My DP Section Protected</h1>
-            <p className="text-sm text-[var(--text-secondary)]">Enter password</p>
+            <h1 className="text-xl font-bold text-[var(--text-primary)]">My DP Access</h1>
+            <p className="text-sm text-[var(--text-secondary)]">Enter email and password to access. New users are created instantly.</p>
           </div>
           <form onSubmit={handleLogin} className="space-y-3">
-            <input type="password" value={passwordInput} onChange={(e) => setPasswordInput(e.target.value)} className="w-full bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] px-3 py-2 rounded text-sm outline-none" autoFocus />
-            {passwordError && <p className="text-xs text-[var(--diff-hard)]">{passwordError}</p>}
-            <button type="submit" className="btn-primary py-2 px-4 text-sm w-full">Unlock</button>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required className="w-full bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] px-3 py-2 rounded text-sm outline-none" />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required className="w-full bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] px-3 py-2 rounded text-sm outline-none" />
+            {authErr && <p className="text-xs text-[var(--diff-hard)]">{authErr}</p>}
+            <button type="submit" disabled={loginLoading} className="btn-primary py-2 px-4 text-sm w-full">{loginLoading ? 'Signing in...' : 'Continue'}</button>
           </form>
         </div>
       </div>
