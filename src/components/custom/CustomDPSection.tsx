@@ -172,11 +172,14 @@ export function CustomDPSection() {
       });
       if (r.ok) {
         setIsAuthed(true);
-        const q = await fetch('/api/mydp/questions');
-        if (q.ok) {
-          const j = await q.json();
-          if (j.questions) setProblems(j.questions);
-        }
+            const q = await fetch('/api/mydp/questions');
+            if (q.ok) {
+              const j = await q.json();
+              setProblems(j.questions || []);
+            } else {
+              setProblems([]);
+            }
+            setSolvedMap({}); setFavoriteMap({}); setNotesMap({}); setTagsMap({}); setDifficultyMap({}); setSolvedOnMap({}); setRevisionMap({});
       } else {
         const j = await r.json();
         setAuthErr(j.error || 'Failed');

@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
       `).all(`-${days} days`) as any[];
     } catch {
       try {
-        rows = db.prepare(`SELECT id, title, slug, leetcode_url, difficulty, topics, company FROM questions ORDER BY id DESC LIMIT 50`).all() as any[];
+        rows = db.prepare(`SELECT id, title, slug, leetcode_url, difficulty, topics, company FROM questions WHERE created_at >= datetime('now','-8 days') ORDER BY id DESC`).all() as any[];
       } catch {
         rows = [];
       }
