@@ -396,7 +396,7 @@ export function CustomDPSection() {
                 return acc;
               }, {} as Record<string, typeof displayProblems>)
             ).sort((a, b) => {
-              const order = ['Linear DP', 'Knapsack', 'Interval DP', 'Tree DP', 'State DP', 'Grid DP', 'Digit DP', 'Bitmask DP', 'Other'];
+              const order = ['Linear DP', 'Knapsack', 'Multi Dimensions DP', 'Interval DP', 'Bit DP', 'Digit DP', 'DP on Trees', 'String DP', 'Probability DP', "Kadane's Algorithm", 'LCS', 'LIS', '2D Grid Traversal', 'Cumulative Sum', 'Hashmap (SubArray)', 'DP + Alpha', 'Insertion DP', 'Graph DP', 'Memoization', 'Binary Lifting', 'Math', 'Other'];
               return order.indexOf(a[0]) - order.indexOf(b[0]);
             }).map(([category, probs]) => (
               <div key={category}>
