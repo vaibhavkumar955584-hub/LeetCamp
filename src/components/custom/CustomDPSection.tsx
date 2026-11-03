@@ -172,14 +172,52 @@ export function CustomDPSection() {
       });
       if (r.ok) {
         setIsAuthed(true);
-            const q = await fetch('/api/mydp/questions');
-            if (q.ok) {
-              const j = await q.json();
-              setProblems(j.questions || []);
-            } else {
-              setProblems([]);
-            }
-            setSolvedMap({}); setFavoriteMap({}); setNotesMap({}); setTagsMap({}); setDifficultyMap({}); setSolvedOnMap({}); setRevisionMap({});
+        let questions: any[] = [];
+        const q = await fetch('/api/mydp/questions');
+        if (q.ok) {
+          const j = await q.json();
+          questions = j.questions || [];
+        }
+        if (questions.length === 0) {
+          const qShared = await fetch('/api/mydp/questions?shared=true');
+          if (qShared.ok) {
+            const j2 = await qShared.json();
+            questions = j2.questions || [];
+          }
+        }
+        if (questions.length === 0) {
+          const defaultProblems: CustomProblem[] = [
+            { id: 'dp-1', title: 'Fibonacci Number', url: 'https://leetcode.com/problems/fibonacci-number/', addedAt: Date.now() },
+            { id: 'dp-2', title: 'Climbing Stairs', url: 'https://leetcode.com/problems/climbing-stairs/', addedAt: Date.now() + 1 },
+            { id: 'dp-3', title: 'Count Ways to Reach Nth Stair Using 1, 2, 3 Steps', url: 'https://www.geeksforgeeks.org/search/?q=count%20ways%20to%20reach%20nth%20stair', addedAt: Date.now() + 2 },
+            { id: 'dp-4', title: 'Frog Jump', url: 'https://www.geeksforgeeks.org/problems/geek-jump/1', addedAt: Date.now() + 3 },
+            { id: 'dp-5', title: 'Min Cost Climbing Stairs', url: 'https://leetcode.com/problems/min-cost-climbing-stairs/', addedAt: Date.now() + 4 },
+            { id: 'dp-6', title: 'House Robber', url: 'https://leetcode.com/problems/house-robber/', addedAt: Date.now() + 5 },
+            { id: 'dp-7', title: 'House Robber II', url: 'https://leetcode.com/problems/house-robber-ii/', addedAt: Date.now() + 6 },
+            { id: 'dp-8', title: 'Delete and Earn', url: 'https://leetcode.com/problems/delete-and-earn/', addedAt: Date.now() + 7 },
+            { id: 'dp-9', title: 'Jump Game', url: 'https://leetcode.com/problems/jump-game/', addedAt: Date.now() + 8 },
+            { id: 'dp-10', title: 'Jump Game II', url: 'https://leetcode.com/problems/jump-game-ii/', addedAt: Date.now() + 9 },
+            { id: 'dp-11', title: 'Ways to Tile a Floor', url: 'https://www.geeksforgeeks.org/problems/ways-to-tile-a-floor5836/1', addedAt: Date.now() + 10 },
+            { id: 'dp-12', title: 'Count Derangements', url: 'https://www.geeksforgeeks.org/problems/count-derangements-1587115620/1', addedAt: Date.now() + 11 },
+            { id: 'dp-13', title: 'Maximum Subarray', url: 'https://leetcode.com/problems/maximum-subarray/', addedAt: Date.now() + 12 },
+            { id: 'dp-14', title: 'Decode Ways', url: 'https://leetcode.com/problems/decode-ways/', addedAt: Date.now() + 13 },
+            { id: 'dp-15', title: 'Padovan Sequence', url: 'https://www.geeksforgeeks.org/problems/padovan-sequence2855/1', addedAt: Date.now() + 14 },
+            { id: 'dp-16', title: 'Lucas Number', url: 'https://www.geeksforgeeks.org/search/?q=Lucas%20Number%20GFG', addedAt: Date.now() + 15 },
+            { id: 'dp-17', title: "Consecutive 1's Not Allowed", url: 'https://www.geeksforgeeks.org/problems/consecutive-1s-not-allowed1912/1', addedAt: Date.now() + 16 },
+            { id: 'dp-18', title: 'Dice Combinations', url: 'https://cses.fi/problemset/task/1633', addedAt: Date.now() + 17 },
+            { id: 'dp-19', title: 'Ways to Express N as Sum of 1, 3, 4', url: 'https://www.geeksforgeeks.org/search/?q=ways%20to%20express%20n%20as%20sum%20of%201%203%204', addedAt: Date.now() + 18 },
+            { id: 'dp-20', title: 'Minimize Steps to Reach K from 0', url: 'https://www.geeksforgeeks.org/search/?q=minimize%20steps%20to%20reach%20K%20from%200', addedAt: Date.now() + 19 },
+            { id: 'dp-21', title: 'Minimum Operations to Obtain N', url: 'https://www.geeksforgeeks.org/search/?q=minimum%20operations%20to%20obtain%20N', addedAt: Date.now() + 20 },
+            { id: 'dp-22', title: 'Removing Digits', url: 'https://cses.fi/problemset/task/1637', addedAt: Date.now() + 21 },
+            { id: 'dp-23', title: 'Maximize The Cut Segments', url: 'https://www.geeksforgeeks.org/problems/cutted-segments1642/1', addedAt: Date.now() + 22 },
+            { id: 'dp-24', title: 'Geek and its Game of Coins', url: 'https://www.geeksforgeeks.org/search/?q=Geek%20and%20its%20Game%20of%20Coins', addedAt: Date.now() + 23 },
+            { id: 'dp-25', title: 'Chicks in a Zoo', url: 'https://www.geeksforgeeks.org/search/?q=Chicks%20in%20a%20Zoo', addedAt: Date.now() + 24 },
+          ];
+          setProblems(defaultProblems);
+        } else {
+          setProblems(questions);
+        }
+        setSolvedMap({}); setFavoriteMap({}); setNotesMap({}); setTagsMap({}); setDifficultyMap({}); setSolvedOnMap({}); setRevisionMap({});
       } else {
         const j = await r.json();
         setAuthErr(j.error || 'Failed');
