@@ -52,16 +52,10 @@ export function CustomDPSection() {
   const [aiCompanies, setAiCompanies] = useState<string[]>([]);
   const [aiLoading, setAiLoading] = useState(false);
   const [syncing, setSyncing] = useState(false);
-  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({
+  const [expandedNodes, setExpandedNodes] = useState<Record<string, boolean>>({
+    'DP Fundamentals': true,
     'Linear DP': true,
     'Knapsack': true,
-    'Interval DP': false,
-    'Tree DP': false,
-    'State DP': false,
-    'Grid DP': false,
-    'Digit DP': false,
-    'Bitmask DP': false,
-    'Other': false,
   });
 
   const fetchCompanyDataForProblem = async (prob: CustomProblem): Promise<string[]> => {
@@ -388,65 +382,128 @@ export function CustomDPSection() {
       )}
 
       {displayProblems.length === 0 ? <div className="p-12 text-center text-xs text-[var(--text-muted)]"><p>No problems</p></div> : (
-          <div className="space-y-4">
-            {Object.entries(
-              displayProblems.reduce((acc, prob) => {
-                const dpInfo = categorizedDPProblems.find(p => p.id === prob.id);
-                const cat = dpInfo?.category || 'Other';
-                if (!acc[cat]) acc[cat] = [];
-                acc[cat].push(prob);
-                return acc;
-              }, {} as Record<string, typeof displayProblems>)
-            ).sort((a, b) => {
-              const order = ['Linear DP', 'Knapsack', 'Multi Dimensions DP', 'Interval DP', 'Bit DP', 'Digit DP', 'DP on Trees', 'String DP', 'Probability DP', "Kadane's Algorithm", 'LCS', 'LIS', '2D Grid Traversal', 'Cumulative Sum', 'Hashmap (SubArray)', 'DP + Alpha', 'Insertion DP', 'Graph DP', 'Memoization', 'Binary Lifting', 'Math', 'Other'];
-              return order.indexOf(a[0]) - order.indexOf(b[0]);
-            }).map(([category, probs]) => (
-              <div key={category} className="data-surface overflow-hidden">
-                <button
-                  onClick={() => setExpandedCategories(prev => ({ ...prev, [category]: !prev[category] }))}
-                  className="w-full flex items-center justify-between px-5 py-3 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
-                >
-                  <div className="flex items-center gap-2">
-                    {expandedCategories[category] ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                    <span className="text-xs font-semibold text-[var(--text-primary)]">{category}</span>
-                    <span className="text-[10px] text-[var(--text-muted)]">({probs.length})</span>
-                  </div>
-                </button>
-                {expandedCategories[category] && (
-                  <table className="w-full text-left border-collapse text-xs table-fixed">
-                    <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-2 px-4 w-[52px] text-center">Status</th><th className="py-2 px-3 w-[48px] text-center">Fav</th><th className="py-2 px-3 w-[48px] text-center">Rev</th><th className="py-2 px-3 w-[48px] text-center">#</th><th className="py-2 px-4 w-[28%]">Problem</th><th className="py-2 px-3 w-[70px]">Diff</th><th className="py-2 px-3 w-[16%]">Tags</th><th className="py-2 px-3 w-[16%]">Companies</th><th className="py-2 px-3 w-[18%]">Notes</th><th className="py-2 px-4 w-[110px] text-center">Action</th></tr></thead>
-                    <tbody className="divide-y divide-[var(--border-subtle)]">
-                      {probs.sort((a,b)=>a.addedAt-b.addedAt).map((prob) => {
-                        const isSolved = !!solvedMap[prob.id];
-                        const isFav = !!favoriteMap[prob.id];
-                        const isRev = !!revisionMap[prob.id];
-                        const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
-                        const comps = (companyData[prob.id] || []).slice(0, 2);
-                        const hasNote = !!notesMap[prob.id];
-                        const tags = tagsMap[prob.id] || [];
-                        const diff = difficultyMap[prob.id] || categorizedDPProblems.find(p=>p.id===prob.id)?.difficulty || '';
+        <div className="space-y-2">
+          {(() => {
+            const treeStructure = [
+              {
+                key: 'Linear Patterns',
+                label: 'Linear Patterns',
+                children: ['Linear DP', "Kadane's Algorithm", 'LIS']
+              },
+              {
+                key: 'Knapsack Family',
+                label: 'Knapsack Family',
+                children: ['Knapsack']
+              },
+              {
+                key: 'Intervals & Ranges',
+                label: 'Intervals & Ranges',
+                children: ['Interval DP', 'Cumulative Sum']
+              },
+              {
+                key: 'Tree & Graph',
+                label: 'Tree & Graph',
+                children: ['DP on Trees', 'Graph DP']
+              },
+              {
+                key: 'Strings',
+                label: 'Strings',
+                children: ['String DP', 'LCS']
+              },
+              {
+                key: 'Advanced',
+                label: 'Advanced',
+                children: ['Bit DP', 'Digit DP', 'State DP', 'Multi Dimensions DP', 'Probability DP', 'DP + Alpha', 'Insertion DP', 'Memoization', 'Binary Lifting', 'Math']
+              },
+              {
+                key: 'Grid & Subarrays',
+                label: 'Grid & Subarrays',
+                children: ['2D Grid Traversal', 'Hashmap (SubArray)']
+              }
+            ];
+
+            const problemsByCat = displayProblems.reduce((acc, prob) => {
+              const dpInfo = categorizedDPProblems.find(p => p.id === prob.id);
+              const cat = dpInfo?.category || 'Other';
+              if (!acc[cat]) acc[cat] = [];
+              acc[cat].push(prob);
+              return acc;
+            }, {} as Record<string, typeof displayProblems>);
+
+            return treeStructure.map((group) => {
+              const groupProblems = group.children.flatMap(c => problemsByCat[c] || []);
+              if (groupProblems.length === 0) return null;
+              return (
+                <div key={group.key} className="data-surface overflow-hidden">
+                  <button
+                    onClick={() => setExpandedNodes(prev => ({ ...prev, [group.key]: !prev[group.key] }))}
+                    className="w-full flex items-center justify-between px-5 py-2.5 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
+                  >
+                    <div className="flex items-center gap-2">
+                      {expandedNodes[group.key] !== false ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+                      <span className="text-sm font-semibold text-[var(--text-primary)]">{group.label}</span>
+                      <span className="text-[10px] text-[var(--text-muted)]">({groupProblems.length})</span>
+                    </div>
+                  </button>
+                  {expandedNodes[group.key] !== false && (
+                    <div className="pl-4">
+                      {group.children.map((cat) => {
+                        const probs = problemsByCat[cat] || [];
+                        if (probs.length === 0) return null;
                         return (
-                          <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
-                            <td className="py-2 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={16} className="text-[var(--accent-green)]" /> : <Square size={16} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[9px] text-[var(--text-muted)] mt-0.5">{solvedOnMap[prob.id]}</p>}</td>
-                            <td className="py-2 px-3 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={16} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={16} className="text-[var(--text-muted)]" />}</button></td>
-                            <td className="py-2 px-3 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
-                            <td className="py-2 px-3 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
-                            <td className="py-2 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 truncate ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span className="truncate">{prob.title}</span><ExternalLink size={12} className="flex-shrink-0" /></a></td>
-                            <td className="py-2 px-3"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5 w-full"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
-                            <td className="py-2 px-3"><div className="flex flex-wrap gap-1">{tags.slice(0,2).map((t,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1 truncate max-w-[60px]">{t}<button onClick={() => removeTag(prob.id, t)}><X size={8} /></button></span>))}{tags.length > 2 && <span className="text-[9px] text-[var(--text-muted)]">+{tags.length-2}</span>}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
-                            <td className="py-2 px-3"><div className="flex flex-wrap gap-1">{comps.length>0 ? (<><span className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[70px]">{comps[0]}</span>{comps.length>1 && <span className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[70px]">{comps[1]}</span>}{(companyData[prob.id] || []).length>2 && <span className="text-[9px] text-[var(--text-muted)]">+{(companyData[prob.id]||[]).length-2}</span>}</>) : <span className="text-[10px] text-[var(--text-muted)]">-</span>}</div></td>
-                            <td className="py-2 px-3"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={14} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[9px] text-[var(--text-muted)] mt-1 line-clamp-1 max-w-[140px]">{notesMap[prob.id]}</p>}</td>
-                            <td className="py-2 px-4 text-center"><div className="flex items-center justify-center gap-1.5"><button onClick={() => handleEdit(prob)} className="p-1"><Edit2 size={14} /></button><button onClick={() => handleDelete(prob.id)} className="p-1"><Trash2 size={14} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-1 px-2 text-xs">Solve</a></div></td>
-                          </tr>
+                          <div key={cat} className="border-l border-[var(--border-subtle)]">
+                            <button
+                              onClick={() => setExpandedNodes(prev => ({ ...prev, [cat]: prev[cat] === undefined ? false : !prev[cat] }))}
+                              className="w-full flex items-center gap-2 px-4 py-2 hover:bg-[var(--bg-hover)]"
+                            >
+                              {(expandedNodes[cat] !== false) ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
+                              <span className="text-xs text-[var(--text-primary)]">{cat}</span>
+                              <span className="text-[9px] text-[var(--text-muted)]">({probs.length})</span>
+                            </button>
+                            {expandedNodes[cat] !== false && (
+                              <div className="overflow-x-auto">
+                                <table className="w-full text-left border-collapse text-xs table-fixed">
+                                  <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-1.5 px-4 w-[52px] text-center">Status</th><th className="py-1.5 px-3 w-[48px] text-center">Fav</th><th className="py-1.5 px-3 w-[48px] text-center">Rev</th><th className="py-1.5 px-3 w-[48px] text-center">#</th><th className="py-1.5 px-4 w-[28%]">Problem</th><th className="py-1.5 px-3 w-[70px]">Diff</th><th className="py-1.5 px-3 w-[16%]">Tags</th><th className="py-1.5 px-3 w-[16%]">Companies</th><th className="py-1.5 px-3 w-[18%]">Notes</th><th className="py-1.5 px-4 w-[110px] text-center">Action</th></tr></thead>
+                                  <tbody className="divide-y divide-[var(--border-subtle)]">
+                                    {probs.sort((a,b)=>a.addedAt-b.addedAt).map((prob) => {
+                                      const isSolved = !!solvedMap[prob.id];
+                                      const isFav = !!favoriteMap[prob.id];
+                                      const isRev = !!revisionMap[prob.id];
+                                      const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
+                                      const comps = (companyData[prob.id] || []).slice(0, 2);
+                                      const hasNote = !!notesMap[prob.id];
+                                      const tags = tagsMap[prob.id] || [];
+                                      const diff = difficultyMap[prob.id] || categorizedDPProblems.find(p=>p.id===prob.id)?.difficulty || '';
+                                      return (
+                                        <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
+                                          <td className="py-1.5 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={15} className="text-[var(--accent-green)]" /> : <Square size={15} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[8px] text-[var(--text-muted)]">{solvedOnMap[prob.id]}</p>}</td>
+                                          <td className="py-1.5 px-3 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={15} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={15} className="text-[var(--text-muted)]" />}</button></td>
+                                          <td className="py-1.5 px-3 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
+                                          <td className="py-1.5 px-3 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
+                                          <td className="py-1.5 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 truncate ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span className="truncate">{prob.title}</span><ExternalLink size={11} className="flex-shrink-0" /></a></td>
+                                          <td className="py-1.5 px-3"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5 w-full"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
+                                          <td className="py-1.5 px-3"><div className="flex flex-wrap gap-1">{tags.slice(0,2).map((t,i)=>(<span key={i} className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1 truncate max-w-[50px]">{t}<button onClick={() => removeTag(prob.id, t)}><X size={7} /></button></span>))}{tags.length > 2 && <span className="text-[9px] text-[var(--text-muted)]">+{tags.length-2}</span>}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
+                                          <td className="py-1.5 px-3"><div className="flex flex-wrap gap-1">{comps.length>0 ? (<><span className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[60px]">{comps[0]}</span>{comps.length>1 && <span className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[60px]">{comps[1]}</span>}{(companyData[prob.id]||[]).length>2 && <span className="text-[9px] text-[var(--text-muted)]">+{(companyData[prob.id]||[]).length-2}</span>}</>) : <span className="text-[9px] text-[var(--text-muted)]">-</span>}</div></td>
+                                          <td className="py-1.5 px-3"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={13} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[8px] text-[var(--text-muted)] mt-0.5 line-clamp-1 max-w-[120px]">{notesMap[prob.id]}</p>}</td>
+                                          <td className="py-1.5 px-4 text-center"><div className="flex items-center justify-center gap-1"><button onClick={() => handleEdit(prob)} className="p-0.5"><Edit2 size={13} /></button><button onClick={() => handleDelete(prob.id)} className="p-0.5"><Trash2 size={13} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-0.5 px-1.5 text-[11px]">Solve</a></div></td>
+                                        </tr>
+                                      );
+                                    })}
+                                  </tbody>
+                                </table>
+                              </div>
+                            )}
+                          </div>
                         );
                       })}
-                    </tbody>
-                  </table>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+                    </div>
+                  )}
+                </div>
+              );
+            });
+          })()}
+        </div>
+      )}
 
       {showTagModal && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
