@@ -329,14 +329,14 @@ export function CustomDPSection() {
   }
 
   return (
-    <div className="space-y-6 w-full mx-auto">
-      <div className="data-surface p-6 sm:p-7 space-y-4">
+    <div className="space-y-8 w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px]">
+      <div className="data-surface p-6 sm:p-8 lg:p-10 space-y-6 mb-2">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">My Custom DP Problems</h1>
             <p className="text-sm text-[var(--text-secondary)] mt-1">Personalized DP list</p>
           </div>
-          <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-3 flex-wrap">
             <button onClick={randomUnsolved} className="btn-primary py-2 px-4 text-sm flex items-center gap-2"><Shuffle size={14} /><span>Random Unsolved</span></button>
             <button onClick={exportData} className="py-2 px-4 text-sm border border-[var(--border-subtle)] rounded">Export JSON</button>
             <button onClick={syncCompanies} disabled={syncing} className="btn-primary py-2 px-4 text-sm">{syncing ? 'Syncing...' : 'Sync Companies'}</button>
@@ -344,28 +344,30 @@ export function CustomDPSection() {
             <button onClick={handleLogout} className="p-2 text-[var(--text-muted)] hover:text-[var(--text-primary)]"><LogOut size={16} /></button>
           </div>
         </div>
-        <div className="flex gap-2 pt-2 border-t border-[var(--border-subtle)] flex-wrap items-center">
-          <select value={filterType} onChange={(e) => setFilterType(e.target.value as any)} className="px-3 py-1.5 rounded text-xs bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] text-[var(--text-secondary)]">
-            <option value="all">All</option>
-            <option value="solved">Solved</option>
-            <option value="unsolved">Unsolved</option>
-            <option value="favorites">Favorites</option>
-            <option value="revision">Revision</option>
-            <option value="withNotes">With Notes</option>
-          </select>
-          <select value={sortBy} onChange={(e) => setSortBy(e.target.value as any)} className="px-3 py-1.5 rounded text-xs bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] text-[var(--text-secondary)]">
-            <option value="recent">Recently Added</option>
-            <option value="oldest">Oldest First</option>
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="unsolvedFirst">Unsolved First</option>
-          </select>
-          <label className="flex items-center gap-2 text-xs text-[var(--text-secondary)]"><input type="checkbox" checked={hideSolved} onChange={(e) => setHideSolved(e.target.checked)} /> Hide Solved</label>
+        <div className="flex gap-3 pt-3 border-t border-[var(--border-subtle)] flex-wrap items-center justify-between">
+          <div className="flex gap-2 flex-wrap items-center">
+            <select value={filterType} onChange={(e) => setFilterType(e.target.value as any)} className="px-3 py-1.5 rounded text-xs bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] text-[var(--text-secondary)]">
+              <option value="all">All</option>
+              <option value="solved">Solved</option>
+              <option value="unsolved">Unsolved</option>
+              <option value="favorites">Favorites</option>
+              <option value="revision">Revision</option>
+              <option value="withNotes">With Notes</option>
+            </select>
+            <select value={sortBy} onChange={(e) => setSortBy(e.target.value as any)} className="px-3 py-1.5 rounded text-xs bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] text-[var(--text-secondary)]">
+              <option value="recent">Recently Added</option>
+              <option value="oldest">Oldest</option>
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="unsolvedFirst">Unsolved First</option>
+            </select>
+            <label className="flex items-center gap-2 text-xs text-[var(--text-secondary)]"><input type="checkbox" checked={hideSolved} onChange={(e) => setHideSolved(e.target.checked)} /> Hide Solved</label>
+          </div>
+          <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search problems..." className="w-full sm:w-[320px] bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] pl-3 pr-3 py-2 rounded text-sm outline-none" />
         </div>
-        <div className="pt-2"><input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search problems..." className="w-full max-w-md bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] focus:border-[var(--accent-green)] text-[var(--text-primary)] px-3 py-2 rounded text-sm outline-none" /></div>
       </div>
 
-      {!showAddForm && <button onClick={() => { setShowAddForm(true); setAiCompanies([]); }} className="btn-primary py-2 px-4 text-sm flex items-center gap-2"><Plus size={16} /><span>Add New Problem</span></button>}
+      {!showAddForm && <button onClick={() => { setShowAddForm(true); setAiCompanies([]); }} className="btn-primary py-2 px-4 text-sm flex items-center gap-2 mb-6"><Plus size={16} /><span>Add New Problem</span></button>}
 
       {showAddForm && (
         <div className="data-surface p-5 sm:p-6 space-y-4">
@@ -386,7 +388,7 @@ export function CustomDPSection() {
       )}
 
       {displayProblems.length === 0 ? <div className="p-12 text-center text-xs text-[var(--text-muted)]"><p>No problems</p></div> : (
-          <div className="divide-y divide-[var(--border-subtle)]">
+          <div className="space-y-4">
             {Object.entries(
               displayProblems.reduce((acc, prob) => {
                 const dpInfo = categorizedDPProblems.find(p => p.id === prob.id);
@@ -399,10 +401,10 @@ export function CustomDPSection() {
               const order = ['Linear DP', 'Knapsack', 'Multi Dimensions DP', 'Interval DP', 'Bit DP', 'Digit DP', 'DP on Trees', 'String DP', 'Probability DP', "Kadane's Algorithm", 'LCS', 'LIS', '2D Grid Traversal', 'Cumulative Sum', 'Hashmap (SubArray)', 'DP + Alpha', 'Insertion DP', 'Graph DP', 'Memoization', 'Binary Lifting', 'Math', 'Other'];
               return order.indexOf(a[0]) - order.indexOf(b[0]);
             }).map(([category, probs]) => (
-              <div key={category}>
+              <div key={category} className="data-surface overflow-hidden">
                 <button
                   onClick={() => setExpandedCategories(prev => ({ ...prev, [category]: !prev[category] }))}
-                  className="w-full flex items-center justify-between px-4 py-2.5 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
+                  className="w-full flex items-center justify-between px-5 py-3 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
                 >
                   <div className="flex items-center gap-2">
                     {expandedCategories[category] ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
@@ -411,30 +413,30 @@ export function CustomDPSection() {
                   </div>
                 </button>
                 {expandedCategories[category] && (
-                  <table className="w-full text-left border-collapse text-xs">
-                    <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-2 px-4 w-12 text-center">Status</th><th className="py-2 px-4 w-12 text-center">Fav</th><th className="py-2 px-4 w-12 text-center">Rev</th><th className="py-2 px-4 w-12 text-center">#</th><th className="py-2 px-4">Problem</th><th className="py-2 px-4">Diff</th><th className="py-2 px-4">Tags</th><th className="py-2 px-4">Companies</th><th className="py-2 px-4">Notes</th><th className="py-2 px-4 w-32 text-center">Action</th></tr></thead>
+                  <table className="w-full text-left border-collapse text-xs table-fixed">
+                    <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-2 px-4 w-[52px] text-center">Status</th><th className="py-2 px-3 w-[48px] text-center">Fav</th><th className="py-2 px-3 w-[48px] text-center">Rev</th><th className="py-2 px-3 w-[48px] text-center">#</th><th className="py-2 px-4 w-[28%]">Problem</th><th className="py-2 px-3 w-[70px]">Diff</th><th className="py-2 px-3 w-[16%]">Tags</th><th className="py-2 px-3 w-[16%]">Companies</th><th className="py-2 px-3 w-[18%]">Notes</th><th className="py-2 px-4 w-[110px] text-center">Action</th></tr></thead>
                     <tbody className="divide-y divide-[var(--border-subtle)]">
                       {probs.sort((a,b)=>a.addedAt-b.addedAt).map((prob) => {
                         const isSolved = !!solvedMap[prob.id];
                         const isFav = !!favoriteMap[prob.id];
                         const isRev = !!revisionMap[prob.id];
                         const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
-                        const comps = companyData[prob.id] || [];
+                        const comps = (companyData[prob.id] || []).slice(0, 2);
                         const hasNote = !!notesMap[prob.id];
                         const tags = tagsMap[prob.id] || [];
                         const diff = difficultyMap[prob.id] || categorizedDPProblems.find(p=>p.id===prob.id)?.difficulty || '';
                         return (
                           <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
-                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={16} className="text-[var(--accent-green)]" /> : <Square size={16} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[9px] text-[var(--text-muted)] mt-0.5">{solvedOnMap[prob.id]}</p>}</td>
-                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={16} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={16} className="text-[var(--text-muted)]" />}</button></td>
-                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
-                            <td className="py-2.5 px-4 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
-                            <td className="py-2.5 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span>{prob.title}</span><ExternalLink size={12} /></a></td>
-                            <td className="py-2.5 px-4"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
-                            <td className="py-2.5 px-4"><div className="flex flex-wrap gap-1">{tags.map((t,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1">{t}<button onClick={() => removeTag(prob.id, t)}><X size={8} /></button></span>))}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
-                            <td className="py-2.5 px-4"><div className="flex flex-wrap gap-1">{comps.length>0 ? comps.slice(0,3).map((c,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded">{c}</span>)) : <span className="text-[10px] text-[var(--text-muted)]">-</span>}</div></td>
-                            <td className="py-2.5 px-4"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={14} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[9px] text-[var(--text-muted)] mt-1 line-clamp-2 max-w-[120px]">{notesMap[prob.id]}</p>}</td>
-                            <td className="py-2.5 px-4 text-center"><div className="flex items-center justify-center gap-1"><button onClick={() => handleEdit(prob)} className="p-1.5"><Edit2 size={14} /></button><button onClick={() => handleDelete(prob.id)} className="p-1.5"><Trash2 size={14} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-1 px-2 text-xs">Solve</a></div></td>
+                            <td className="py-2 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={16} className="text-[var(--accent-green)]" /> : <Square size={16} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[9px] text-[var(--text-muted)] mt-0.5">{solvedOnMap[prob.id]}</p>}</td>
+                            <td className="py-2 px-3 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={16} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={16} className="text-[var(--text-muted)]" />}</button></td>
+                            <td className="py-2 px-3 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
+                            <td className="py-2 px-3 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
+                            <td className="py-2 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 truncate ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span className="truncate">{prob.title}</span><ExternalLink size={12} className="flex-shrink-0" /></a></td>
+                            <td className="py-2 px-3"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5 w-full"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
+                            <td className="py-2 px-3"><div className="flex flex-wrap gap-1">{tags.slice(0,2).map((t,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1 truncate max-w-[60px]">{t}<button onClick={() => removeTag(prob.id, t)}><X size={8} /></button></span>))}{tags.length > 2 && <span className="text-[9px] text-[var(--text-muted)]">+{tags.length-2}</span>}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
+                            <td className="py-2 px-3"><div className="flex flex-wrap gap-1">{comps.length>0 ? (<><span className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[70px]">{comps[0]}</span>{comps.length>1 && <span className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[70px]">{comps[1]}</span>}{(companyData[prob.id] || []).length>2 && <span className="text-[9px] text-[var(--text-muted)]">+{(companyData[prob.id]||[]).length-2}</span>}</>) : <span className="text-[10px] text-[var(--text-muted)]">-</span>}</div></td>
+                            <td className="py-2 px-3"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={14} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[9px] text-[var(--text-muted)] mt-1 line-clamp-1 max-w-[140px]">{notesMap[prob.id]}</p>}</td>
+                            <td className="py-2 px-4 text-center"><div className="flex items-center justify-center gap-1.5"><button onClick={() => handleEdit(prob)} className="p-1"><Edit2 size={14} /></button><button onClick={() => handleDelete(prob.id)} className="p-1"><Trash2 size={14} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-1 px-2 text-xs">Solve</a></div></td>
                           </tr>
                         );
                       })}
