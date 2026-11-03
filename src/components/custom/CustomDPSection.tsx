@@ -53,9 +53,8 @@ export function CustomDPSection() {
   const [aiLoading, setAiLoading] = useState(false);
   const [syncing, setSyncing] = useState(false);
   const [expandedNodes, setExpandedNodes] = useState<Record<string, boolean>>({
-    'DP Fundamentals': true,
+    'DP': true,
     'Linear DP': true,
-    'Knapsack': true,
   });
 
   const fetchCompanyDataForProblem = async (prob: CustomProblem): Promise<string[]> => {
@@ -382,46 +381,8 @@ export function CustomDPSection() {
       )}
 
       {displayProblems.length === 0 ? <div className="p-12 text-center text-xs text-[var(--text-muted)]"><p>No problems</p></div> : (
-        <div className="space-y-2">
+        <div className="space-y-1">
           {(() => {
-            const treeStructure = [
-              {
-                key: 'Linear Patterns',
-                label: 'Linear Patterns',
-                children: ['Linear DP', "Kadane's Algorithm", 'LIS']
-              },
-              {
-                key: 'Knapsack Family',
-                label: 'Knapsack Family',
-                children: ['Knapsack']
-              },
-              {
-                key: 'Intervals & Ranges',
-                label: 'Intervals & Ranges',
-                children: ['Interval DP', 'Cumulative Sum']
-              },
-              {
-                key: 'Tree & Graph',
-                label: 'Tree & Graph',
-                children: ['DP on Trees', 'Graph DP']
-              },
-              {
-                key: 'Strings',
-                label: 'Strings',
-                children: ['String DP', 'LCS']
-              },
-              {
-                key: 'Advanced',
-                label: 'Advanced',
-                children: ['Bit DP', 'Digit DP', 'State DP', 'Multi Dimensions DP', 'Probability DP', 'DP + Alpha', 'Insertion DP', 'Memoization', 'Binary Lifting', 'Math']
-              },
-              {
-                key: 'Grid & Subarrays',
-                label: 'Grid & Subarrays',
-                children: ['2D Grid Traversal', 'Hashmap (SubArray)']
-              }
-            ];
-
             const problemsByCat = displayProblems.reduce((acc, prob) => {
               const dpInfo = categorizedDPProblems.find(p => p.id === prob.id);
               const cat = dpInfo?.category || 'Other';
@@ -430,69 +391,158 @@ export function CustomDPSection() {
               return acc;
             }, {} as Record<string, typeof displayProblems>);
 
-            return treeStructure.map((group) => {
-              const groupProblems = group.children.flatMap(c => problemsByCat[c] || []);
-              if (groupProblems.length === 0) return null;
+            const tree = [
+              {
+                id: 'DP',
+                label: 'Dynamic Programming',
+                children: [
+                  {
+                    id: 'Linear DP',
+                    label: 'Linear DP',
+                    children: (problemsByCat['Linear DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Knapsack',
+                    label: 'Knapsack',
+                    children: (problemsByCat['Knapsack'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Multi Dimensions DP',
+                    label: 'Multi Dimensions DP',
+                    children: (problemsByCat['Multi Dimensions DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Interval DP',
+                    label: 'Interval DP',
+                    children: (problemsByCat['Interval DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Bit DP',
+                    label: 'Bitmask/Bit DP',
+                    children: (problemsByCat['Bit DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Digit DP',
+                    label: 'Digit DP',
+                    children: (problemsByCat['Digit DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'DP on Trees',
+                    label: 'DP on Trees',
+                    children: (problemsByCat['DP on Trees'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'String DP',
+                    label: 'String DP',
+                    children: (problemsByCat['String DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Probability DP',
+                    label: 'Probability DP',
+                    children: (problemsByCat['Probability DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: "Kadane's Algorithm",
+                    label: "Kadane's Algorithm",
+                    children: (problemsByCat["Kadane's Algorithm"] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'LCS',
+                    label: 'LCS / Edit Distance',
+                    children: (problemsByCat['LCS'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'LIS',
+                    label: 'LIS',
+                    children: (problemsByCat['LIS'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: '2D Grid Traversal',
+                    label: '2D Grid Traversal',
+                    children: (problemsByCat['2D Grid Traversal'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Cumulative Sum',
+                    label: 'Cumulative Sum',
+                    children: (problemsByCat['Cumulative Sum'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Hashmap (SubArray)',
+                    label: 'Hashmap (SubArray)',
+                    children: (problemsByCat['Hashmap (SubArray)'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'DP + Alpha',
+                    label: 'DP + Alpha',
+                    children: (problemsByCat['DP + Alpha'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Insertion DP',
+                    label: 'Insertion DP',
+                    children: (problemsByCat['Insertion DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Graph DP',
+                    label: 'Graph DP',
+                    children: (problemsByCat['Graph DP'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Memoization',
+                    label: 'Memoization',
+                    children: (problemsByCat['Memoization'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Binary Lifting',
+                    label: 'Binary Lifting',
+                    children: (problemsByCat['Binary Lifting'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                  {
+                    id: 'Math',
+                    label: 'Math',
+                    children: (problemsByCat['Math'] || []).map(p => ({ id: p.id, label: p.title, type: 'problem', problem: p }))
+                  },
+                ].filter(c => (c.children?.length || 0) > 0)
+              }
+            ];
+
+            const renderNode = (node: any, depth: number = 0) => {
+              const isExpanded = expandedNodes[node.id] !== false;
+              const hasChildren = node.children && node.children.length > 0;
               return (
-                <div key={group.key} className="data-surface overflow-hidden">
-                  <button
-                    onClick={() => setExpandedNodes(prev => ({ ...prev, [group.key]: !prev[group.key] }))}
-                    className="w-full flex items-center justify-between px-5 py-2.5 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
+                <div key={node.id} className="select-none">
+                  <div
+                    className="flex items-center gap-1.5 py-1.5 hover:bg-[var(--bg-hover)] rounded cursor-pointer"
+                    style={{ paddingLeft: `${depth * 16 + 8}px` }}
+                    onClick={() => hasChildren && setExpandedNodes(prev => ({ ...prev, [node.id]: prev[node.id] === undefined ? false : !prev[node.id] }))}
                   >
-                    <div className="flex items-center gap-2">
-                      {expandedNodes[group.key] !== false ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                      <span className="text-sm font-semibold text-[var(--text-primary)]">{group.label}</span>
-                      <span className="text-[10px] text-[var(--text-muted)]">({groupProblems.length})</span>
+                    {hasChildren ? (
+                      isExpanded ? <ChevronDown size={12} className="text-[var(--text-muted)]" /> : <ChevronRight size={12} className="text-[var(--text-muted)]" />
+                    ) : <span className="w-3" />}
+                    {node.type === 'problem' ? (
+                      <a href={node.problem.url} target="_blank" rel="noopener noreferrer" className="text-xs text-[var(--text-primary)] hover:text-[var(--accent-green)] flex items-center gap-1.5 flex-1 min-w-0" onClick={(e) => e.stopPropagation()}>
+                        <span className="truncate">{node.label}</span>
+                        <ExternalLink size={10} className="flex-shrink-0 opacity-60" />
+                      </a>
+                    ) : (
+                      <span className={`text-xs ${depth === 0 ? 'font-semibold text-[var(--text-primary)]' : 'text-[var(--text-secondary)]'}`}>{node.label}</span>
+                    )}
+                    {hasChildren && node.type !== 'problem' && (
+                      <span className="text-[9px] text-[var(--text-muted)] ml-auto pr-2">({node.children.length})</span>
+                    )}
+                  </div>
+                  {hasChildren && isExpanded && (
+                    <div>
+                      {node.children.map((child: any) => renderNode(child, depth + 1))}
                     </div>
-                  </button>
-                  {expandedNodes[group.key] !== false && (
-                    <div className="pl-4">
-                      {group.children.map((cat) => {
-                        const probs = problemsByCat[cat] || [];
-                        if (probs.length === 0) return null;
-                        return (
-                          <div key={cat} className="border-l border-[var(--border-subtle)]">
-                            <button
-                              onClick={() => setExpandedNodes(prev => ({ ...prev, [cat]: prev[cat] === undefined ? false : !prev[cat] }))}
-                              className="w-full flex items-center gap-2 px-4 py-2 hover:bg-[var(--bg-hover)]"
-                            >
-                              {(expandedNodes[cat] !== false) ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
-                              <span className="text-xs text-[var(--text-primary)]">{cat}</span>
-                              <span className="text-[9px] text-[var(--text-muted)]">({probs.length})</span>
-                            </button>
-                            {expandedNodes[cat] !== false && (
-                              <div className="overflow-x-auto">
-                                <table className="w-full text-left border-collapse text-xs table-fixed">
-                                  <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-1.5 px-4 w-[52px] text-center">Status</th><th className="py-1.5 px-3 w-[48px] text-center">Fav</th><th className="py-1.5 px-3 w-[48px] text-center">Rev</th><th className="py-1.5 px-3 w-[48px] text-center">#</th><th className="py-1.5 px-4 w-[28%]">Problem</th><th className="py-1.5 px-3 w-[70px]">Diff</th><th className="py-1.5 px-3 w-[16%]">Tags</th><th className="py-1.5 px-3 w-[16%]">Companies</th><th className="py-1.5 px-3 w-[18%]">Notes</th><th className="py-1.5 px-4 w-[110px] text-center">Action</th></tr></thead>
-                                  <tbody className="divide-y divide-[var(--border-subtle)]">
-                                    {probs.sort((a,b)=>a.addedAt-b.addedAt).map((prob) => {
-                                      const isSolved = !!solvedMap[prob.id];
-                                      const isFav = !!favoriteMap[prob.id];
-                                      const isRev = !!revisionMap[prob.id];
-                                      const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
-                                      const comps = (companyData[prob.id] || []).slice(0, 2);
-                                      const hasNote = !!notesMap[prob.id];
-                                      const tags = tagsMap[prob.id] || [];
-                                      const diff = difficultyMap[prob.id] || categorizedDPProblems.find(p=>p.id===prob.id)?.difficulty || '';
-                                      return (
-                                        <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
-                                          <td className="py-1.5 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={15} className="text-[var(--accent-green)]" /> : <Square size={15} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[8px] text-[var(--text-muted)]">{solvedOnMap[prob.id]}</p>}</td>
-                                          <td className="py-1.5 px-3 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={15} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={15} className="text-[var(--text-muted)]" />}</button></td>
-                                          <td className="py-1.5 px-3 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
-                                          <td className="py-1.5 px-3 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
-                                          <td className="py-1.5 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 truncate ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span className="truncate">{prob.title}</span><ExternalLink size={11} className="flex-shrink-0" /></a></td>
-                                          <td className="py-1.5 px-3"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5 w-full"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
-                                          <td className="py-1.5 px-3"><div className="flex flex-wrap gap-1">{tags.slice(0,2).map((t,i)=>(<span key={i} className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1 truncate max-w-[50px]">{t}<button onClick={() => removeTag(prob.id, t)}><X size={7} /></button></span>))}{tags.length > 2 && <span className="text-[9px] text-[var(--text-muted)]">+{tags.length-2}</span>}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
-                                          <td className="py-1.5 px-3"><div className="flex flex-wrap gap-1">{comps.length>0 ? (<><span className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[60px]">{comps[0]}</span>{comps.length>1 && <span className="px-1 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded truncate max-w-[60px]">{comps[1]}</span>}{(companyData[prob.id]||[]).length>2 && <span className="text-[9px] text-[var(--text-muted)]">+{(companyData[prob.id]||[]).length-2}</span>}</>) : <span className="text-[9px] text-[var(--text-muted)]">-</span>}</div></td>
-                                          <td className="py-1.5 px-3"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={13} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[8px] text-[var(--text-muted)] mt-0.5 line-clamp-1 max-w-[120px]">{notesMap[prob.id]}</p>}</td>
-                                          <td className="py-1.5 px-4 text-center"><div className="flex items-center justify-center gap-1"><button onClick={() => handleEdit(prob)} className="p-0.5"><Edit2 size={13} /></button><button onClick={() => handleDelete(prob.id)} className="p-0.5"><Trash2 size={13} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-0.5 px-1.5 text-[11px]">Solve</a></div></td>
-                                        </tr>
-                                      );
-                                    })}
-                                  </tbody>
-                                </table>
-                              </div>
-                            )}
+                  )}
+                </div>
+              );
+            };
+
+            return tree.map(node => renderNode(node, 0));
+          })()}
+        </div>
+      )}
                           </div>
                         );
                       })}
