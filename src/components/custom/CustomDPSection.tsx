@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Plus, X, ExternalLink, CheckSquare, Square, Trash2, Edit2, Star, Lock, LogOut, StickyNote, Filter, ArrowUpDown, Shuffle, Tag, Calendar } from 'lucide-react';
+import { Plus, X, ExternalLink, CheckSquare, Square, Trash2, Edit2, Star, Lock, LogOut, StickyNote, Filter, ArrowUpDown, Shuffle, Tag, Calendar, ChevronDown, ChevronRight } from 'lucide-react';
+import { categorizedDPProblems } from './DPProblemsData';
 
 interface CustomProblem {
   id: string;
@@ -51,6 +52,17 @@ export function CustomDPSection() {
   const [aiCompanies, setAiCompanies] = useState<string[]>([]);
   const [aiLoading, setAiLoading] = useState(false);
   const [syncing, setSyncing] = useState(false);
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({
+    'Linear DP': true,
+    'Knapsack': true,
+    'Interval DP': false,
+    'Tree DP': false,
+    'State DP': false,
+    'Grid DP': false,
+    'Digit DP': false,
+    'Bitmask DP': false,
+    'Other': false,
+  });
 
   const fetchCompanyDataForProblem = async (prob: CustomProblem): Promise<string[]> => {
     try {
@@ -88,33 +100,12 @@ export function CustomDPSection() {
       const savedProblems = localStorage.getItem('leetcamp_custom_dp_problems');
       if (savedProblems) setProblems(JSON.parse(savedProblems));
       else {
-        const defaultProblems: CustomProblem[] = [
-          { id: 'dp-1', title: 'Fibonacci Number', url: 'https://leetcode.com/problems/fibonacci-number/', addedAt: Date.now() },
-          { id: 'dp-2', title: 'Climbing Stairs', url: 'https://leetcode.com/problems/climbing-stairs/', addedAt: Date.now() + 1 },
-          { id: 'dp-3', title: 'Count Ways to Reach Nth Stair Using 1, 2, 3 Steps', url: 'https://www.geeksforgeeks.org/search/?q=count%20ways%20to%20reach%20nth%20stair', addedAt: Date.now() + 2 },
-          { id: 'dp-4', title: 'Frog Jump', url: 'https://www.geeksforgeeks.org/problems/geek-jump/1', addedAt: Date.now() + 3 },
-          { id: 'dp-5', title: 'Min Cost Climbing Stairs', url: 'https://leetcode.com/problems/min-cost-climbing-stairs/', addedAt: Date.now() + 4 },
-          { id: 'dp-6', title: 'House Robber', url: 'https://leetcode.com/problems/house-robber/', addedAt: Date.now() + 5 },
-          { id: 'dp-7', title: 'House Robber II', url: 'https://leetcode.com/problems/house-robber-ii/', addedAt: Date.now() + 6 },
-          { id: 'dp-8', title: 'Delete and Earn', url: 'https://leetcode.com/problems/delete-and-earn/', addedAt: Date.now() + 7 },
-          { id: 'dp-9', title: 'Jump Game', url: 'https://leetcode.com/problems/jump-game/', addedAt: Date.now() + 8 },
-          { id: 'dp-10', title: 'Jump Game II', url: 'https://leetcode.com/problems/jump-game-ii/', addedAt: Date.now() + 9 },
-          { id: 'dp-11', title: 'Ways to Tile a Floor', url: 'https://www.geeksforgeeks.org/problems/ways-to-tile-a-floor5836/1', addedAt: Date.now() + 10 },
-          { id: 'dp-12', title: 'Count Derangements', url: 'https://www.geeksforgeeks.org/problems/count-derangements-1587115620/1', addedAt: Date.now() + 11 },
-          { id: 'dp-13', title: 'Maximum Subarray', url: 'https://leetcode.com/problems/maximum-subarray/', addedAt: Date.now() + 12 },
-          { id: 'dp-14', title: 'Decode Ways', url: 'https://leetcode.com/problems/decode-ways/', addedAt: Date.now() + 13 },
-          { id: 'dp-15', title: 'Padovan Sequence', url: 'https://www.geeksforgeeks.org/problems/padovan-sequence2855/1', addedAt: Date.now() + 14 },
-          { id: 'dp-16', title: 'Lucas Number', url: 'https://www.geeksforgeeks.org/search/?q=Lucas%20Number%20GFG', addedAt: Date.now() + 15 },
-          { id: 'dp-17', title: "Consecutive 1's Not Allowed", url: 'https://www.geeksforgeeks.org/problems/consecutive-1s-not-allowed1912/1', addedAt: Date.now() + 16 },
-          { id: 'dp-18', title: 'Dice Combinations', url: 'https://cses.fi/problemset/task/1633', addedAt: Date.now() + 17 },
-          { id: 'dp-19', title: 'Ways to Express N as Sum of 1, 3, 4', url: 'https://www.geeksforgeeks.org/search/?q=ways%20to%20express%20n%20as%20sum%20of%201%203%204', addedAt: Date.now() + 18 },
-          { id: 'dp-20', title: 'Minimize Steps to Reach K from 0', url: 'https://www.geeksforgeeks.org/search/?q=minimize%20steps%20to%20reach%20K%20from%200', addedAt: Date.now() + 19 },
-          { id: 'dp-21', title: 'Minimum Operations to Obtain N', url: 'https://www.geeksforgeeks.org/search/?q=minimum%20operations%20to%20obtain%20N', addedAt: Date.now() + 20 },
-          { id: 'dp-22', title: 'Removing Digits', url: 'https://cses.fi/problemset/task/1637', addedAt: Date.now() + 21 },
-          { id: 'dp-23', title: 'Maximize The Cut Segments', url: 'https://www.geeksforgeeks.org/problems/cutted-segments1642/1', addedAt: Date.now() + 22 },
-          { id: 'dp-24', title: 'Geek and its Game of Coins', url: 'https://www.geeksforgeeks.org/search/?q=Geek%20and%20its%20Game%20of%20Coins', addedAt: Date.now() + 23 },
-          { id: 'dp-25', title: 'Chicks in a Zoo', url: 'https://www.geeksforgeeks.org/search/?q=Chicks%20in%20a%20Zoo', addedAt: Date.now() + 24 },
-        ];
+        const defaultProblems: CustomProblem[] = categorizedDPProblems.map((p, idx) => ({
+          id: p.id,
+          title: p.title,
+          url: p.url,
+          addedAt: Date.now() + idx,
+        }));
         setProblems(defaultProblems);
         try { localStorage.setItem('leetcamp_custom_dp_problems', JSON.stringify(defaultProblems)); } catch (err) {}
       }
@@ -186,33 +177,12 @@ export function CustomDPSection() {
           }
         }
         if (questions.length === 0) {
-          const defaultProblems: CustomProblem[] = [
-            { id: 'dp-1', title: 'Fibonacci Number', url: 'https://leetcode.com/problems/fibonacci-number/', addedAt: Date.now() },
-            { id: 'dp-2', title: 'Climbing Stairs', url: 'https://leetcode.com/problems/climbing-stairs/', addedAt: Date.now() + 1 },
-            { id: 'dp-3', title: 'Count Ways to Reach Nth Stair Using 1, 2, 3 Steps', url: 'https://www.geeksforgeeks.org/search/?q=count%20ways%20to%20reach%20nth%20stair', addedAt: Date.now() + 2 },
-            { id: 'dp-4', title: 'Frog Jump', url: 'https://www.geeksforgeeks.org/problems/geek-jump/1', addedAt: Date.now() + 3 },
-            { id: 'dp-5', title: 'Min Cost Climbing Stairs', url: 'https://leetcode.com/problems/min-cost-climbing-stairs/', addedAt: Date.now() + 4 },
-            { id: 'dp-6', title: 'House Robber', url: 'https://leetcode.com/problems/house-robber/', addedAt: Date.now() + 5 },
-            { id: 'dp-7', title: 'House Robber II', url: 'https://leetcode.com/problems/house-robber-ii/', addedAt: Date.now() + 6 },
-            { id: 'dp-8', title: 'Delete and Earn', url: 'https://leetcode.com/problems/delete-and-earn/', addedAt: Date.now() + 7 },
-            { id: 'dp-9', title: 'Jump Game', url: 'https://leetcode.com/problems/jump-game/', addedAt: Date.now() + 8 },
-            { id: 'dp-10', title: 'Jump Game II', url: 'https://leetcode.com/problems/jump-game-ii/', addedAt: Date.now() + 9 },
-            { id: 'dp-11', title: 'Ways to Tile a Floor', url: 'https://www.geeksforgeeks.org/problems/ways-to-tile-a-floor5836/1', addedAt: Date.now() + 10 },
-            { id: 'dp-12', title: 'Count Derangements', url: 'https://www.geeksforgeeks.org/problems/count-derangements-1587115620/1', addedAt: Date.now() + 11 },
-            { id: 'dp-13', title: 'Maximum Subarray', url: 'https://leetcode.com/problems/maximum-subarray/', addedAt: Date.now() + 12 },
-            { id: 'dp-14', title: 'Decode Ways', url: 'https://leetcode.com/problems/decode-ways/', addedAt: Date.now() + 13 },
-            { id: 'dp-15', title: 'Padovan Sequence', url: 'https://www.geeksforgeeks.org/problems/padovan-sequence2855/1', addedAt: Date.now() + 14 },
-            { id: 'dp-16', title: 'Lucas Number', url: 'https://www.geeksforgeeks.org/search/?q=Lucas%20Number%20GFG', addedAt: Date.now() + 15 },
-            { id: 'dp-17', title: "Consecutive 1's Not Allowed", url: 'https://www.geeksforgeeks.org/problems/consecutive-1s-not-allowed1912/1', addedAt: Date.now() + 16 },
-            { id: 'dp-18', title: 'Dice Combinations', url: 'https://cses.fi/problemset/task/1633', addedAt: Date.now() + 17 },
-            { id: 'dp-19', title: 'Ways to Express N as Sum of 1, 3, 4', url: 'https://www.geeksforgeeks.org/search/?q=ways%20to%20express%20n%20as%20sum%20of%201%203%204', addedAt: Date.now() + 18 },
-            { id: 'dp-20', title: 'Minimize Steps to Reach K from 0', url: 'https://www.geeksforgeeks.org/search/?q=minimize%20steps%20to%20reach%20K%20from%200', addedAt: Date.now() + 19 },
-            { id: 'dp-21', title: 'Minimum Operations to Obtain N', url: 'https://www.geeksforgeeks.org/search/?q=minimum%20operations%20to%20obtain%20N', addedAt: Date.now() + 20 },
-            { id: 'dp-22', title: 'Removing Digits', url: 'https://cses.fi/problemset/task/1637', addedAt: Date.now() + 21 },
-            { id: 'dp-23', title: 'Maximize The Cut Segments', url: 'https://www.geeksforgeeks.org/problems/cutted-segments1642/1', addedAt: Date.now() + 22 },
-            { id: 'dp-24', title: 'Geek and its Game of Coins', url: 'https://www.geeksforgeeks.org/search/?q=Geek%20and%20its%20Game%20of%20Coins', addedAt: Date.now() + 23 },
-            { id: 'dp-25', title: 'Chicks in a Zoo', url: 'https://www.geeksforgeeks.org/search/?q=Chicks%20in%20a%20Zoo', addedAt: Date.now() + 24 },
-          ];
+          const defaultProblems: CustomProblem[] = categorizedDPProblems.map((p, idx) => ({
+            id: p.id,
+            title: p.title,
+            url: p.url,
+            addedAt: Date.now() + idx,
+          }));
           setProblems(defaultProblems);
         } else {
           setProblems(questions);
@@ -415,39 +385,66 @@ export function CustomDPSection() {
         </div>
       )}
 
-      <div className="data-surface overflow-x-auto">
-        {displayProblems.length === 0 ? <div className="p-12 text-center text-xs text-[var(--text-muted)]"><p>No problems</p></div> : (
-          <table className="w-full text-left border-collapse text-xs">
-            <thead><tr className="border-b border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] text-[var(--text-muted)] label-caps"><th className="py-3 px-4 w-12 text-center">Status</th><th className="py-3 px-4 w-12 text-center">Fav</th><th className="py-3 px-4 w-12 text-center">Rev</th><th className="py-3 px-4 w-12 text-center">#</th><th className="py-3 px-4">Problem</th><th className="py-3 px-4">Diff</th><th className="py-3 px-4">Tags</th><th className="py-3 px-4">Companies</th><th className="py-3 px-4">Notes</th><th className="py-3 px-4 w-32 text-center">Action</th></tr></thead>
-            <tbody className="divide-y divide-[var(--border-subtle)]">
-              {displayProblems.sort((a,b)=>a.addedAt-b.addedAt).map((prob, idx) => {
-                const isSolved = !!solvedMap[prob.id];
-                const isFav = !!favoriteMap[prob.id];
-                const isRev = !!revisionMap[prob.id];
-                const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
-                const comps = companyData[prob.id] || [];
-                const hasNote = !!notesMap[prob.id];
-                const tags = tagsMap[prob.id] || [];
-                const diff = difficultyMap[prob.id];
-                return (
-                  <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
-                    <td className="py-3.5 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={16} className="text-[var(--accent-green)]" /> : <Square size={16} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[9px] text-[var(--text-muted)] mt-0.5">{solvedOnMap[prob.id]}</p>}</td>
-                    <td className="py-3.5 px-4 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={16} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={16} className="text-[var(--text-muted)]" />}</button></td>
-                    <td className="py-3.5 px-4 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
-                    <td className="py-3.5 px-4 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
-                    <td className="py-3.5 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span>{prob.title}</span><ExternalLink size={12} /></a></td>
-                    <td className="py-3.5 px-4"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
-                    <td className="py-3.5 px-4"><div className="flex flex-wrap gap-1">{tags.map((t,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1">{t}<button onClick={() => removeTag(prob.id, t)}><X size={8} /></button></span>))}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
-                    <td className="py-3.5 px-4"><div className="flex flex-wrap gap-1">{comps.length>0 ? comps.slice(0,3).map((c,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded">{c}</span>)) : <span className="text-[10px] text-[var(--text-muted)]">-</span>}</div></td>
-                    <td className="py-3.5 px-4"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={14} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[9px] text-[var(--text-muted)] mt-1 line-clamp-2 max-w-[120px]">{notesMap[prob.id]}</p>}</td>
-                    <td className="py-3.5 px-4 text-center"><div className="flex items-center justify-center gap-1"><button onClick={() => handleEdit(prob)} className="p-1.5"><Edit2 size={14} /></button><button onClick={() => handleDelete(prob.id)} className="p-1.5"><Trash2 size={14} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-1 px-2 text-xs">Solve</a></div></td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+      {displayProblems.length === 0 ? <div className="p-12 text-center text-xs text-[var(--text-muted)]"><p>No problems</p></div> : (
+          <div className="divide-y divide-[var(--border-subtle)]">
+            {Object.entries(
+              displayProblems.reduce((acc, prob) => {
+                const dpInfo = categorizedDPProblems.find(p => p.id === prob.id);
+                const cat = dpInfo?.category || 'Other';
+                if (!acc[cat]) acc[cat] = [];
+                acc[cat].push(prob);
+                return acc;
+              }, {} as Record<string, typeof displayProblems>)
+            ).sort((a, b) => {
+              const order = ['Linear DP', 'Knapsack', 'Interval DP', 'Tree DP', 'State DP', 'Grid DP', 'Digit DP', 'Bitmask DP', 'Other'];
+              return order.indexOf(a[0]) - order.indexOf(b[0]);
+            }).map(([category, probs]) => (
+              <div key={category}>
+                <button
+                  onClick={() => setExpandedCategories(prev => ({ ...prev, [category]: !prev[category] }))}
+                  className="w-full flex items-center justify-between px-4 py-2.5 bg-[var(--bg-surface-raised)] hover:bg-[var(--bg-hover)] border-b border-[var(--border-subtle)]"
+                >
+                  <div className="flex items-center gap-2">
+                    {expandedCategories[category] ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+                    <span className="text-xs font-semibold text-[var(--text-primary)]">{category}</span>
+                    <span className="text-[10px] text-[var(--text-muted)]">({probs.length})</span>
+                  </div>
+                </button>
+                {expandedCategories[category] && (
+                  <table className="w-full text-left border-collapse text-xs">
+                    <thead><tr className="border-b border-[var(--border-subtle)] text-[var(--text-muted)]"><th className="py-2 px-4 w-12 text-center">Status</th><th className="py-2 px-4 w-12 text-center">Fav</th><th className="py-2 px-4 w-12 text-center">Rev</th><th className="py-2 px-4 w-12 text-center">#</th><th className="py-2 px-4">Problem</th><th className="py-2 px-4">Diff</th><th className="py-2 px-4">Tags</th><th className="py-2 px-4">Companies</th><th className="py-2 px-4">Notes</th><th className="py-2 px-4 w-32 text-center">Action</th></tr></thead>
+                    <tbody className="divide-y divide-[var(--border-subtle)]">
+                      {probs.sort((a,b)=>a.addedAt-b.addedAt).map((prob) => {
+                        const isSolved = !!solvedMap[prob.id];
+                        const isFav = !!favoriteMap[prob.id];
+                        const isRev = !!revisionMap[prob.id];
+                        const globalIdx = problems.findIndex(p=>p.id===prob.id)+1;
+                        const comps = companyData[prob.id] || [];
+                        const hasNote = !!notesMap[prob.id];
+                        const tags = tagsMap[prob.id] || [];
+                        const diff = difficultyMap[prob.id] || categorizedDPProblems.find(p=>p.id===prob.id)?.difficulty || '';
+                        return (
+                          <tr key={prob.id} className={`hover:bg-[var(--bg-hover)] ${isSolved ? 'opacity-70' : ''}`}>
+                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleSolved(prob.id)}>{isSolved ? <CheckSquare size={16} className="text-[var(--accent-green)]" /> : <Square size={16} className="text-[var(--text-muted)]" />}</button>{solvedOnMap[prob.id] && <p className="text-[9px] text-[var(--text-muted)] mt-0.5">{solvedOnMap[prob.id]}</p>}</td>
+                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleFavorite(prob.id)}>{isFav ? <Star size={16} className="text-[var(--accent-yellow)] fill-[var(--accent-yellow)]" /> : <Star size={16} className="text-[var(--text-muted)]" />}</button></td>
+                            <td className="py-2.5 px-4 text-center"><button onClick={() => toggleRevision(prob.id)} className={`text-xs ${isRev ? 'text-[var(--accent-orange)]' : 'text-[var(--text-muted)]'}`}>Rev</button></td>
+                            <td className="py-2.5 px-4 text-center text-[var(--text-muted)] mono">{globalIdx}</td>
+                            <td className="py-2.5 px-4"><a href={prob.url} target="_blank" rel="noopener noreferrer" className={`hover:text-[var(--accent-green)] flex items-center gap-1.5 ${isSolved ? 'line-through text-[var(--text-muted)]' : 'text-[var(--text-primary)]'}`}><span>{prob.title}</span><ExternalLink size={12} /></a></td>
+                            <td className="py-2.5 px-4"><select value={diff || ''} onChange={(e) => e.target.value && setDifficulty(prob.id, e.target.value as any)} className="text-[10px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded px-1 py-0.5"><option value="">-</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></td>
+                            <td className="py-2.5 px-4"><div className="flex flex-wrap gap-1">{tags.map((t,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded flex items-center gap-1">{t}<button onClick={() => removeTag(prob.id, t)}><X size={8} /></button></span>))}<button onClick={() => openTagModal(prob.id)} className="text-[9px] text-[var(--accent-green)]">+Tag</button></div></td>
+                            <td className="py-2.5 px-4"><div className="flex flex-wrap gap-1">{comps.length>0 ? comps.slice(0,3).map((c,i)=>(<span key={i} className="px-1.5 py-0.5 text-[9px] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded">{c}</span>)) : <span className="text-[10px] text-[var(--text-muted)]">-</span>}</div></td>
+                            <td className="py-2.5 px-4"><button onClick={() => openNote(prob.id)} className="flex items-center gap-1 text-xs text-[var(--text-secondary)] hover:text-[var(--accent-green)]"><StickyNote size={14} className={hasNote ? 'text-[var(--accent-green)]' : ''} /><span>{hasNote ? 'Edit' : 'Add'}</span></button>{hasNote && <p className="text-[9px] text-[var(--text-muted)] mt-1 line-clamp-2 max-w-[120px]">{notesMap[prob.id]}</p>}</td>
+                            <td className="py-2.5 px-4 text-center"><div className="flex items-center justify-center gap-1"><button onClick={() => handleEdit(prob)} className="p-1.5"><Edit2 size={14} /></button><button onClick={() => handleDelete(prob.id)} className="p-1.5"><Trash2 size={14} /></button><a href={prob.url} target="_blank" rel="noopener noreferrer" className="btn-primary py-1 px-2 text-xs">Solve</a></div></td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            ))}
+          </div>
         )}
-      </div>
 
       {showTagModal && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
